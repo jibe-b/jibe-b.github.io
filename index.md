@@ -1,3 +1,8 @@
+---
+layout: post
+title: Index
+---
+
 # What it is all about
 
 Here start this kind of blog.

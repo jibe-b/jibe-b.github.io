@@ -1,3 +1,5 @@
+# What it is all about
+
 Here start this kind of blog.
 
-![Premier post](/_post/2014-07-29-first-post)
+Here I am going to keep an Open Research Notebook, a blog and a feew other things.
