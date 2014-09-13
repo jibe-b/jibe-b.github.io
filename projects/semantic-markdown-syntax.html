@@ -1,0 +1,46 @@
+<h1 id="syntaxe-semantic-markdown">Syntaxe Semantic Markdown</h1>
+<h2 id="idée-générale">Idée générale</h2>
+<p>La syntaxe du Sémantic Markdown est issue du Markdown de base à laquelle sont greffées des balises correspondant aux balises du html+RDFa.</p>
+<p>De la même manière que les balises html de base ont été remplacées par des caractères spéciaux dont la position dans le texe importe pour le sens, les balises du Sémantic Narkdown sont des balises qui représentent des graphes élémentaires, c'est-à-dire au moins deux noeuds et un lien.</p>
+<h2 id="caractères-réservés">Caractères réservés</h2>
+<p>@ &lt; &gt; §</p>
+<p>L'écritures des liens est par conséquent modifiée par rapport à la syntaxe usuelle. (non défini pour le moment)</p>
+<h2 id="syntaxe">Syntaxe</h2>
+<h3 id="syntaxe-de-base">Syntaxe de base</h3>
+<p>_@_ Sujet ou objet : <span class="citation">@atome</span> ou <span class="citation">@http</span>://dbpedia.org/resource/atome</p>
+<p><em><span class="citation">@Sujet</span>&quot;label&quot;</em> Les guillemets servent à associer un label à un ojet ou sujet : l'<span class="citation">@atome_Hydrogène</span>&quot;atome d'hydrogène&quot;.</p>
+<p><em>§</em> Object Property placée entre le sujet et l'objet (dans cet ordre), équivalent à <em>§&gt;</em></p>
+<p><em>§&lt;</em> Object Property placée entre l'objet et le sujet (dans cet ordre)</p>
+<p><em>§ObjectProperty:Value^format</em> pas d'objet par conséquent</p>
+<h3 id="syntaxe-de-triplet-courts">Syntaxe de triplet courts</h3>
+<p><em>&lt;</em> Seul : début triplet court (@ § @ ou @ §:)</p>
+<p><em>&gt;</em> seul : fin de triplet court</p>
+<h3 id="syntaxe-pour-les-triplets-prolongés">Syntaxe pour les triplets prolongés</h3>
+<p>Pour écrire plurieurs triplets à partir d'un seul élément (par ex. un sujet une propriété et plusieurs objet), les caractères concernés sont doublés.</p>
+<p>_@@_ Sujet ou objet principal</p>
+<p><em>§§</em> Propriété principale</p>
+<h3 id="syntaxe-ligne-paire-ligne-impaire">Syntaxe ligne paire ligne impaire</h3>
+<p>Il est possible de séparer les lignes de sémantique et les lignes de texte afin d'assurer une bonne lisibilité du fichier source (la question de la lisibilité étant fondamentale avec Markdown, le balisage directement dans le texte, bien que minimaliste peut se trouver très lourde parfois).</p>
+<ul>
+<li><p>Les lignes impaires (en considérant la ligne ou est ouvert le triplet comme la ligne 1 sont réservées au balisage sémantique.</p></li>
+<li><p>et les lignes paires sont réservées au texte, avec présence des balises minimales (<em>&lt;</em> <em>&gt;</em> <em>@_ </em>§_) en correspondance avec les balises de la ligne sémantique.</p></li>
+</ul>
+<p>Ex : &lt;&lt; <span class="citation">@http</span>://dbpedia.org/resource/molecule §o-contains <span class="citation">@db-atome</span> <Les @molécules sont constituées d'atome.></p>
+<pre><code>    &gt;&gt;</code></pre>
+<p><em>&lt;&lt;</em> Ouverture d'un ensemble de triplet dans la syntaxe lignes paires/impaires</p>
+<p><em>&gt;&gt;</em> Fermeture d'un ensemble de triplet dans la syntaxe lignes paires/impaires</p>
+<h3 id="règles-dabbréviations"> Règles d'abbréviations</h3>
+<p>Dans l'en-tête (temporairement <PREFIX></PREFIX>), les abbréviations sont à définir en turtle.</p>
+<h3 id="usage-des-abbréviations">Usage des abbréviations</h3>
+<p>Les abbréviations sont placées entre la balise sémantique et le texte, avec un tiret séparant du texte.</p>
+<p>Ex:</p>
+<p><em><span class="citation">@r-blabla</span></em></p>
+<p><em>§o-tadam</em></p>
+<p>_§<o-retroTadam_
+
+## Exemples
+
+<!--
+<PREFIX> r : 'http://pagenpwoblem.tk/resource/' db : 'http://dbpedia.org/resource/' rdf </PREFIX></p>
+<p>&lt;&lt; <span class="citation">@r-Semantic_Markdomn</span> §rdf-a <span class="citation">@db-Markdown</span> Le @&quot;Markdown sémantique&quot; §est une forme de <span class="citation">@Markdown</span>. &gt;&gt;</p>
+<p>--&gt;</p>
