@@ -1,46 +1,71 @@
 <h1 id="syntaxe-semantic-markdown">Syntaxe Semantic Markdown</h1>
-<h2 id="idée-générale">Idée générale</h2>
-<p>La syntaxe du Sémantic Markdown est issue du Markdown de base à laquelle sont greffées des balises correspondant aux balises du html+RDFa.</p>
-<p>De la même manière que les balises html de base ont été remplacées par des caractères spéciaux dont la position dans le texe importe pour le sens, les balises du Sémantic Narkdown sont des balises qui représentent des graphes élémentaires, c'est-à-dire au moins deux noeuds et un lien.</p>
-<h2 id="caractères-réservés">Caractères réservés</h2>
-<p>@ &lt; &gt; §</p>
-<p>L'écritures des liens est par conséquent modifiée par rapport à la syntaxe usuelle. (non défini pour le moment)</p>
-<h2 id="syntaxe">Syntaxe</h2>
-<h3 id="syntaxe-de-base">Syntaxe de base</h3>
-<p>_@_ Sujet ou objet : <span class="citation">@atome</span> ou <span class="citation">@http</span>://dbpedia.org/resource/atome</p>
-<p><em><span class="citation">@Sujet</span>&quot;label&quot;</em> Les guillemets servent à associer un label à un ojet ou sujet : l'<span class="citation">@atome_Hydrogène</span>&quot;atome d'hydrogène&quot;.</p>
-<p><em>§</em> Object Property placée entre le sujet et l'objet (dans cet ordre), équivalent à <em>§&gt;</em></p>
-<p><em>§&lt;</em> Object Property placée entre l'objet et le sujet (dans cet ordre)</p>
-<p><em>§ObjectProperty:Value^format</em> pas d'objet par conséquent</p>
-<h3 id="syntaxe-de-triplet-courts">Syntaxe de triplet courts</h3>
-<p><em>&lt;</em> Seul : début triplet court (@ § @ ou @ §:)</p>
-<p><em>&gt;</em> seul : fin de triplet court</p>
-<h3 id="syntaxe-pour-les-triplets-prolongés">Syntaxe pour les triplets prolongés</h3>
-<p>Pour écrire plurieurs triplets à partir d'un seul élément (par ex. un sujet une propriété et plusieurs objet), les caractères concernés sont doublés.</p>
-<p>_@@_ Sujet ou objet principal</p>
-<p><em>§§</em> Propriété principale</p>
-<h3 id="syntaxe-ligne-paire-ligne-impaire">Syntaxe ligne paire ligne impaire</h3>
-<p>Il est possible de séparer les lignes de sémantique et les lignes de texte afin d'assurer une bonne lisibilité du fichier source (la question de la lisibilité étant fondamentale avec Markdown, le balisage directement dans le texte, bien que minimaliste peut se trouver très lourde parfois).</p>
+<h2 id="main-idea">Main idea</h2>
+<p>The semantic Markdown version derives from <a href="http://daringfireball.net/">John Gruber</a>'s Markdown version, to which semantic markups are added. They correspond to html+RDFa markups, except that the embedding in the text does not correspond exactly to the RDFa embedding.</p>
+<p>Reserved characters are used to embed the semantic markups, intending to represents graphs (two nodes, one link), as the minimal structure.</p>
+<p>Semantic Markdown is intended to enable easy on-the-fly writing of text with RDFa embedded and therefore to author easily RDF triples.</p>
+<h2 id="reserved-characters">Reserved characters</h2>
+<p><em>@ § % as well as &lt; (followed by a space) and &gt; (preceeded by a space)</em></p>
+<p>The short syntax for hyperlinks is not modified compared to <a href="http://daringfireball.net/">John Gruber</a>'s</p>
+<p>Markdown version, but a space is required after <em>&lt;</em> and before <em>&gt;</em>.</p>
+<h2 id="basic-syntax">Basic syntax</h2>
+<h3 id="syntax">Syntax</h3>
+<p>syntax caracter value example1 example2 Note</p>
+<p>base @ subject <span class="citation">@molecule</span> <span class="citation">@http</span>://dbpedia.org/resource/Molecule</p>
+<p>base § predicate §isMadeOf</p>
+<p>base % object %atom <span class="citation">@http</span>://dbpedia.org/resource/Atom</p>
+<p>base &quot; label(beginning and end) <span class="citation">@atom</span>&quot;Atom&quot;</p>
+<p>base &lt; triple beginning &lt; A <span class="citation">@molecule</span>... must be followed by a space, otherwise considered as a not semantic markup</p>
+<p>base &gt; triple end %atoms &gt; must be followed by a space, otherwise considered as a not semantic markup</p>
+<p>base - follows short namespace name <span class="citation">@dbpedia-atom</span></p>
+<p>base : follows predicate and preceeds value in datavalue predicate §hasAge:50</p>
+<p>base ^ datatype in datatype predicate §hasAge:50^integer not totally defined</p>
+<h3 id="what-the-basic-syntax-enables">What the basic syntax enables</h3>
+<pre><code>Basic syntax enables:
+
+
+
+- simple triples - ex: _&lt; @ § % &gt;_ and _&lt; @ §: &gt;_</code></pre>
 <ul>
-<li><p>Les lignes impaires (en considérant la ligne ou est ouvert le triplet comme la ligne 1 sont réservées au balisage sémantique.</p></li>
-<li><p>et les lignes paires sont réservées au texte, avec présence des balises minimales (<em>&lt;</em> <em>&gt;</em> <em>@_ </em>§_) en correspondance avec les balises de la ligne sémantique.</p></li>
+<li>multiple element triple, as long as all these elements will be connected with one another - ex: <em>&lt; @ @ § § § % % &gt;</em> (all subjects are linked to all objects by all the predicates) and <em>&lt; @ § % § % &gt;</em> (the subject is linked to the two objects by the two predicates. Multiple syntax is required to link the subject to the two objects separately (by one predicate for each object))</li>
 </ul>
-<p>Ex : &lt;&lt; <span class="citation">@http</span>://dbpedia.org/resource/molecule §o-contains <span class="citation">@db-atome</span> <Les @molécules sont constituées d'atome.></p>
-<pre><code>    &gt;&gt;</code></pre>
-<p><em>&lt;&lt;</em> Ouverture d'un ensemble de triplet dans la syntaxe lignes paires/impaires</p>
-<p><em>&gt;&gt;</em> Fermeture d'un ensemble de triplet dans la syntaxe lignes paires/impaires</p>
-<h3 id="règles-dabbréviations"> Règles d'abbréviations</h3>
-<p>Dans l'en-tête (temporairement <PREFIX></PREFIX>), les abbréviations sont à définir en turtle.</p>
-<h3 id="usage-des-abbréviations">Usage des abbréviations</h3>
-<p>Les abbréviations sont placées entre la balise sémantique et le texte, avec un tiret séparant du texte.</p>
-<p>Ex:</p>
-<p><em><span class="citation">@r-blabla</span></em></p>
-<p><em>§o-tadam</em></p>
-<p>_§<o-retroTadam_
+<h2 id="multiple-triple-syntax">Multiple triple syntax</h2>
+<h3 id="syntax-1">Syntax</h3>
+<p>syntax caracter value example1 example2 Note</p>
+<p>mult &lt;&lt; multiple triple beginning</p>
+<p>mult &gt;&gt; multiple triple end</p>
+<h3 id="what-the-multiple-triple-syntax-enables">What the multiple triple syntax enables</h3>
+<p>Multiple triple syntax enables:</p>
+<ul>
+<li>using a subject (or predicate, or object) in several triples, where each triple is made of predicates and objects not shared between the triples. - ex:</li>
+</ul>
+<p><em>&lt;&lt; @ &lt; § % &gt; &lt; § % %&gt; &lt; §: &gt; &lt; @ § %&gt; &gt;&gt;</em> (the last subject (@) is added to the first subject like if it was written <em>&lt; @1 @2 § % &gt;</em>.</p>
+<h2 id="lines-differentiation">Lines differentiation</h2>
+<p>In combination with either (or combined) basic and multiple triple syntax,</p>
+<p>disctinction can be made between lines containing semantic markup and lines containing text.</p>
+<p>Even lines must contain semantic markups and odd lines must contain text (with little markup).</p>
+<p>Triples in the even lines are written as in the syntax that makes no distinction between lines,</p>
+<p>except that alternative names (also called labels) can be markuped in the text.</p>
+<h3 id="syntax-2">Syntax</h3>
+<p>syntax caracter value example1 example2 Note</p>
+<p>lines &lt;&lt;&lt; even/odd syntax section beginning not totally defined</p>
+<p>lines &gt;&gt;&gt; even/odd syntax section end not totally defined</p>
+<p>In the line containing text, markups must be put but the following text will not be read as subject,</p>
+<p>predicate or object but as alternative name.</p>
+<h3 id="even-and-odd-lines">Even and odd lines</h3>
+<p>Even lines = lines with even number, with the line where <em>&lt;%</em> is as line zero.</p>
+<p>Odd lines = lines with even number, with the line where <em>&lt;%</em> is as line zero.</p>
+<h3 id="example">Example</h3>
+<p>&lt;&lt;&lt; &lt; <span class="citation">@dbpedia-Molecule</span> §isMadeOf %dbpedia-Atome &gt;</p>
+<p>&lt; A <span class="citation">@molecule</span> §&quot;is made of&quot; %atoms. &gt;</p>
+<blockquote>
+<blockquote>
+<blockquote>
 
-## Exemples
-
-<!--
-<PREFIX> r : 'http://pagenpwoblem.tk/resource/' db : 'http://dbpedia.org/resource/' rdf </PREFIX></p>
-<p>&lt;&lt; <span class="citation">@r-Semantic_Markdomn</span> §rdf-a <span class="citation">@db-Markdown</span> Le @&quot;Markdown sémantique&quot; §est une forme de <span class="citation">@Markdown</span>. &gt;&gt;</p>
-<p>--&gt;</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>In this case, the label of the object is &quot;atoms&quot; as the triple is equivalent to</p>
+<p>&lt; A <span class="citation">@dbpedia-Molecule</span>&quot;molecule&quot; §isMadeOf&quot;is made of&quot; %dbpedia-Atom&quot;atoms&quot;. &gt;</p>
+<h3 id="recommandation">Recommandation</h3>
+<p>It is recommended to adopt the even/odd syntax as soon as there are several triples in the text. This</p>
+<p>is due to readability considerations.</p>
