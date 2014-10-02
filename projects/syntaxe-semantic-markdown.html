@@ -4,71 +4,43 @@
 <p>Reserved characters are used to embed the semantic markups, intending to represents graphs (two nodes, one link), as the minimal structure.</p>
 <p>Semantic Markdown is intended to enable easy on-the-fly writing of text with RDFa embedded and therefore to author easily RDF triples.</p>
 <h2 id="reserved-characters">Reserved characters</h2>
-<p><em>@ § % as well as &lt; (followed by a space) and &gt; (preceeded by a space)</em></p>
-<p>The short syntax for hyperlinks is not modified compared to <a href="http://daringfireball.net/">John Gruber</a>'s</p>
-<p>Markdown version, but a space is required after <em>&lt;</em> and before <em>&gt;</em>.</p>
+<p><em>@ § ¤ as well as &lt; (followed by a space) and &gt; (preceeded by a space)</em></p>
+<p>The short syntax for hyperlinks is not modified compared to <a href="http://daringfireball.net/">John Gruber</a>'s Markdown version, but a space is required after <em>&lt;</em> and before <em>&gt;</em>.</p>
 <h2 id="basic-syntax">Basic syntax</h2>
 <h3 id="syntax">Syntax</h3>
-<p>syntax caracter value example1 example2 Note</p>
-<p>base @ subject <span class="citation">@molecule</span> <span class="citation">@http</span>://dbpedia.org/resource/Molecule</p>
-<p>base § predicate §isMadeOf</p>
-<p>base % object %atom <span class="citation">@http</span>://dbpedia.org/resource/Atom</p>
+<p>syntax caracter value example1 example2 Note base @ subject <span class="citation">@molecule</span> <span class="citation">@http</span>://dbpedia.org/resource/Molecule<br />base § predicate §isMadeOf base ¤ object ¤atom <span class="citation">@http</span>://dbpedia.org/resource/Atom</p>
 <p>base &quot; label(beginning and end) <span class="citation">@atom</span>&quot;Atom&quot;</p>
-<p>base &lt; triple beginning &lt; A <span class="citation">@molecule</span>... must be followed by a space, otherwise considered as a not semantic markup</p>
-<p>base &gt; triple end %atoms &gt; must be followed by a space, otherwise considered as a not semantic markup</p>
-<p>base - follows short namespace name <span class="citation">@dbpedia-atom</span></p>
-<p>base : follows predicate and preceeds value in datavalue predicate §hasAge:50</p>
-<p>base ^ datatype in datatype predicate §hasAge:50^integer not totally defined</p>
+<p>base &lt; triple beginning &lt; A <span class="citation">@molecule</span>... must be followed by a space, otherwise considered as a not semantic markup base &gt; triple end ¤atoms &gt; must be followed by a space, otherwise considered as a not semantic markup</p>
+<p>base - follows short namespace name <span class="citation">@dbpedia-atom</span> base : follows predicate and preceeds value in datavalue predicate §hasAge:50 base ^ datatype in datatype predicate §hasAge:50^integer not totally defined</p>
 <h3 id="what-the-basic-syntax-enables">What the basic syntax enables</h3>
 <p>Basic syntax enables:</p>
 <ul>
-<li><p>simple triples - ex: <em>&lt; @ § % &gt;</em> and <em>&lt; @ §: &gt;</em></p></li>
-<li><p>multiple element triple, as long as all these elements will be connected with one another - ex: <em>&lt; @ @ § § § % % &gt;</em> (all subjects are linked to all objects by all the predicates) and <em>&lt; @ § % § % &gt;</em> (the subject is linked to the two objects by the two predicates. Multiple syntax is required to link the subject to the two objects separately (by one predicate for each object))</p></li>
+<li>simple triples - ex: <em>&lt; @ § ¤ &gt;</em> and <em>&lt; @ §: &gt;</em></li>
+<li>multiple element triple, as long as all these elements will be connected with one another - ex: <em>&lt; @ @ § § § ¤ ¤ &gt;</em> (all subjects are linked to all objects by all the predicates) and <em>&lt; @ § ¤ § ¤ &gt;</em> (the subject is linked to the two objects by the two predicates. Multiple syntax is required to link the subject to the two objects separately (by one predicate for each object))</li>
 </ul>
-
 <h2 id="multiple-triple-syntax">Multiple triple syntax</h2>
 <h3 id="syntax-1">Syntax</h3>
-<p>syntax caracter value example1 example2 Note</p>
-<p>mult &lt;&lt; multiple triple beginning</p>
-<p>mult &gt;&gt; multiple triple end</p>
+<p>syntax caracter value example1 example2 Note mult &lt;&lt; multiple triple beginning mult &gt;&gt; multiple triple end</p>
 <h3 id="what-the-multiple-triple-syntax-enables">What the multiple triple syntax enables</h3>
 <p>Multiple triple syntax enables:</p>
 <ul>
 <li>using a subject (or predicate, or object) in several triples, where each triple is made of predicates and objects not shared between the triples. - ex:</li>
 </ul>
-<p><em>&lt;&lt; @ &lt; § % &gt; &lt; § % %&gt; &lt; §: &gt; &lt; @ § %&gt; &gt;&gt;</em> (the last subject (@) is added to the first subject like if it was written <em>&lt; @1 @2 § % &gt;</em>.</p>
+<p><em>&lt;&lt; @ &lt; § ¤ &gt; &lt; § ¤ ¤&gt; &lt; §: &gt; &lt; @ § ¤&gt; &gt;&gt;</em> (the last subject (@) is added to the first subject like if it was written <em>&lt; @1 @2 § ¤ &gt;</em>.</p>
 <h2 id="lines-differentiation">Lines differentiation</h2>
-<p>In combination with either (or combined) basic and multiple triple syntax,</p>
-<p>disctinction can be made between lines containing semantic markup and lines containing text.</p>
+<p>In combination with either (or combined) basic and multiple triple syntax, disctinction can be made between lines containing semantic markup and lines containing text.</p>
 <p>Even lines must contain semantic markups and odd lines must contain text (with little markup).</p>
-<p>Triples in the even lines are written as in the syntax that makes no distinction between lines,</p>
-<p>except that alternative names (also called labels) can be markuped in the text.</p>
+<p>Triples in the even lines are written as in the syntax that makes no distinction between lines, except that alternative names (also called labels) can be markuped in the text.</p>
 <h3 id="syntax-2">Syntax</h3>
-<p>syntax caracter value example1 example2 Note</p>
-<p>lines &lt;&lt;&lt; even/odd syntax section beginning not totally defined</p>
-<p>lines &gt;&gt;&gt; even/odd syntax section end not totally defined</p>
-<p>In the line containing text, markups must be put but the following text will not be read as subject,</p>
-<p>predicate or object but as alternative name.</p>
+<p>syntax caracter value example1 example2 Note lines &lt;&lt;&lt; even/odd syntax section beginning not totally defined lines &gt;&gt;&gt; even/odd syntax section end not totally defined</p>
+<p>In the line containing text, markups must be put but the following text will not be read as subject, predicate or object but as alternative name.</p>
 <h3 id="even-and-odd-lines">Even and odd lines</h3>
-<p>Even lines = lines with even number, with the line where <em>&lt;%</em> is as line zero.</p>
-<p>Odd lines = lines with even number, with the line where <em>&lt;%</em> is as line zero.</p>
+<p>Even lines = lines with even number, with the line where <em>&lt;¤</em> is as line zero.</p>
+<p>Odd lines = lines with even number, with the line where <em>&lt;¤</em> is as line zero.</p>
 <h3 id="example">Example</h3>
-<p>&lt;&lt;&lt; &lt; <span class="citation">@dbpedia-Molecule</span> §isMadeOf %dbpedia-Atome &gt;</p>
-<p>&lt; A <span class="citation">@molecule</span> §&quot;is made of&quot; %atoms. &gt;</p>
-<blockquote>
-<blockquote>
-<blockquote>
-
-</blockquote>
-</blockquote>
-</blockquote>
-<p>In this case, the label of the object is &quot;atoms&quot; as the triple is equivalent to</p>
-<p>&lt; A <span class="citation">@dbpedia-Molecule</span>&quot;molecule&quot; §isMadeOf&quot;is made of&quot; %dbpedia-Atom&quot;atoms&quot;. &gt;</p>
+<p>&lt;&lt;&lt; &lt; <span class="citation">@dbpedia-Molecule</span> §isMadeOf ¤dbpedia-Atome &gt; &lt; A <span class="citation">@molecule</span> §&quot;is made of&quot; ¤atoms. &gt; &gt;&gt;&gt;</p>
+<p>In this case, the label of the object is &quot;atoms&quot; as the triple is equivalent to &lt; A <span class="citation">@dbpedia-Molecule</span>&quot;molecule&quot; §isMadeOf&quot;is made of&quot; ¤dbpedia-Atom&quot;atoms&quot;. &gt;</p>
 <h3 id="recommandation">Recommandation</h3>
-<p>It is recommended to adopt the even/odd syntax as soon as there are several triples in the text. This</p>
-<p>is due to readability considerations.</p>
-<p>Jibé <span class="citation">[@jibe_jeybee]</span>(https://twitter.com/jibe_jeybee)</p>
+<p>It is recommended to adopt the even/odd syntax as soon as there are several triples in the text. This is due to readability considerations.</p>
+<p>Jibé <a href="https://twitter.com/jibe_jeybee">@jibe_jeybee</a></p>
 <p>All contents on this site are under the <a href="https://creativecommons.org/licenses/by/4.0/">free licence CC-BY</a></p>
-
-
-
