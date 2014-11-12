@@ -1,0 +1,31 @@
+
+# Convertir un texte écrit en markdown en texte pour une présentation
+
+## Idée lors de l'écriture
+
+Lors de l'écriture d'un texte, il est possible de _produire rapidement et sans effort_ une 
+présentation employant la _même structure de titres_ et des _élements présents dans le texte_.
+
+## Ce qu'il faut faire
+
+Pour cela, il suffit d'_indiquer les éléments à conserver en les mettant en exergue_ à l'aide
+de la syntaxe markdown : \_en écrivant comme ceci\_.
+
+Par ailleurs, au moment de la traduction dans un autre langage, il faut _modifier
+le fichier de texte_, par exemple en p_laçant tous les blocs de texte qui ne seront pas
+en exergue en commentaires_.
+
+## Lignes de code à écrire
+
+La commande _pandoc --filter=EXECUTABLE_ permet de _travailler directement sur le fichier
+JSON produit_ par pandoc au cours du traitement du fichier.
+
+Le script python en projet doit réaliser assurer cette modification du fichier JSON.
+
+## Usage
+
+Le script python est à placer dans le PATH de l'utilisateur.
+
+La commande
+  _pandoc -s --filter=clean_text_for_impress.py --revealjs input.md --revealjs output.html
+produit une présentation_ utilisant la librairie javascript revealjs.
