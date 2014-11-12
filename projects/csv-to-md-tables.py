@@ -5,6 +5,8 @@ def test_caracter(car_in, car_out col, line):
     pass
   if car == ',':
     car_out = '|'
+  if car == ' ':
+    car_out = ' '
   if car == EOL:
     car_out = EOL
     line += 1
