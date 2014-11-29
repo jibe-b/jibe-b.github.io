@@ -1,33 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+<p><a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a></p>
+<!-- [Linked Data datasets](http://datahub.io/organization/pagenpwoblem) -->
+
 <h1 id="here-is-a-kind-of-blog">Here is a kind of blog</h1>
 <h2 id="what-can-be-found-here">What can be found here</h2>
 <p>I will use these pages as a blog, an Open LabNotebook, some curation and present some projects I have.</p>
 <p>And maybe will I use it for other things.</p>
+<p>Both English and French languages are used. If you can't read one article because of this, feel free to ask me to translate, that wouldn't be a problem.</p>
 <h2 id="projects">Projects</h2>
 <p>Some projects are on the road. Please find here a short description of some of them.</p>
 <ul>
-<li><a href="projects/presentation-projet-ontologie.html">Physical Sciences ontology project</a></li>
-<li><a href="projects/syntaxe-semantic-markdown.html">Semantic Markdown Syntax</a></li>
+<li><a href="projects/presentation-projet-ontologie.html">Physical Sciences ontology project</a> (status: under development)</li>
+<li><a href="projects/syntaxe-semantic-markdown.html">Semantic Markdown Syntax</a> (status: version 0.1 available)</li>
+<li><a href="projects/text-and-graph-editor-app.html">Text and Graph Editor App</a> (status: paused)</li>
 </ul>
+<!--
+## Sections of this site
+
+Please forgive the mess, this website is under development, and will only
+progressively get ordered, within more or less time.
+
+- [Notebook](notebook/notebook.html)
+- [Pedagogical Experiences](project/experiences-pedagogiques.html)
+
+Upcoming
+
+- [Activity on social networks](https://twitter.com/jibe_jeybee)
+
+search for my [Carnet] posts. Soon, #OpenNotebook will be used instead.
+
+
+##
+
+-->
+
 <h3 id="nota-bene">Nota Bene</h3>
 <p>These site has just started growing. More things will come in the next weeks.</p>
 <p>Concerning the languages, I will mainly use English and French.</p>
 <p>Hope you'll enjoy what you'll find here!</p>
-<p>Jibé</p>
-
-
-
-<h2>Conference par Michel Bauwens et Bernard Stiegler</h2>
-
-<p> I will be attending to this conference. Here will be a stream where you can add
-annotations in real time and have an eye on what the other people say about the
-speaches. At the end it gives an overview of the debate, that's why it is called polemic tweet.
-</p>
-
-<p>If it doesn't load, just click here : <a href="http://polemictweet.com/pour-la-transition-une-conomie-du-partage-de-la-connaissance-et-des-biens-communs/client.php">watch on polemic tweet (source of the stream)</a>
-</p>
-
-<iframe src="http://polemictweet.com/pour-la-transition-une-conomie-du-partage-de-la-connaissance-et-des-biens-communs/client.php?embed=true" width="900" height="600" frameborder="0"></iframe>
-<p><a href="http://polemictweet.com/pour-la-transition-une-conomie-du-partage-de-la-connaissance-et-des-biens-communs/client.php">Source</a> on <a href="http://polemictweet.com/">PolemicTweet</a>.</p>
-
-<p>by Jibé</p>
-<p>All contents on this site are under the [free licence CC-BY](https://creativecommons.org/licenses/by/4.0/)</p> 
+<p>Jibé <a href="https://twitter.com/jibe_jeybee">@jibe_jeybee</a></p>
+<p>All contents on this site are under the <a href="https://creativecommons.org/licenses/by/4.0/">free licence CC-BY</a></p>
+</body>
+</html>
