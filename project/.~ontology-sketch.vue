@@ -1,14 +1,14 @@
 <!-- Tufts VUE 3.2.2 concept-map (ontology-sketch.vue) 2015-01-07 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/opt/VUE/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Wed Jan 07 13:21:48 CET 2015 by jibe on platform Linux 3.13.0-43-generic in JVM 1.7.0_65-b32 -->
+<!-- Do Not Remove: Saved date Wed Jan 07 12:30:51 CET 2015 by jibe on platform Linux 3.13.0-43-generic in JVM 1.7.0_65-b32 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built May 23 2013 at 2146 by tomadm on Linux 2.6.18-348.2.1.el5 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
     label="ontology-sketch.vue" created="1420629471726" x="0.0" y="0.0"
-    width="864.0" height="573.0" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1420633308648" size="26048"
+    width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
+    <resource referenceCreated="1420630252282"
         spec="/home/www/project/ontology-sketch.vue" type="1" xsi:type="URLResource">
         <title>ontology-sketch.vue</title>
         <property key="File" value="/home/www/project/ontology-sketch.vue"/>
