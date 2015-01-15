@@ -11,6 +11,10 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">Jan 15, 2015 1:44:37 PM</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">system</Literal>
     </Annotation>
@@ -23,20 +27,12 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">Dec 9, 2014 7:41:56 AM</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://protege.stanford.edu/webprotege/revision"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">62</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">jibe</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">jibe-b</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">Jan 15, 2015 1:02:00 PM</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -49,6 +45,10 @@
     <Annotation>
         <AnnotationProperty IRI="http://protege.stanford.edu/webprotege/revision"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">38</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://protege.stanford.edu/webprotege/revision"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">70</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -130,6 +130,12 @@
         <ObjectProperty IRI="http://webprotege.stanford.edu/RBeufLWylrYGmkQnwQqMLoq"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RBgHHbNmi23Rrg2vakDO9aq"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RDK4OK4wkWlfrTRSfinDYYK"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://webprotege.stanford.edu/RUIAWriUxBt1TlSGXj62pn"/>
     </Declaration>
     <Declaration>
@@ -243,6 +249,14 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RBgHHbNmi23Rrg2vakDO9aq"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RDK4OK4wkWlfrTRSfinDYYK"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="http://webprotege.stanford.edu/RUIAWriUxBt1TlSGXj62pn"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -287,6 +301,14 @@
         <Class IRI="http://webprotege.stanford.edu/R7es1iOhPOkJmSYh1uUYrii"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RBgHHbNmi23Rrg2vakDO9aq"/>
+        <Class IRI="http://webprotege.stanford.edu/RZNapG95VzedU2M7EAA1aw"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RDK4OK4wkWlfrTRSfinDYYK"/>
+        <Class IRI="http://webprotege.stanford.edu/RBLafaMp3D7LfnGveAHEPPZ"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="http://webprotege.stanford.edu/RUIAWriUxBt1TlSGXj62pn"/>
         <Class IRI="http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62"/>
     </ObjectPropertyDomain>
@@ -323,8 +345,20 @@
         <Class IRI="http://webprotege.stanford.edu/R7tEMLYtDrxfjjF2qbP6sAA"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RBefA654FxBq11MDv7yvO4U"/>
+        <Class IRI="http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="http://webprotege.stanford.edu/RBeufLWylrYGmkQnwQqMLoq"/>
         <Class IRI="http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RBgHHbNmi23Rrg2vakDO9aq"/>
+        <Class IRI="http://webprotege.stanford.edu/RBLafaMp3D7LfnGveAHEPPZ"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/RDK4OK4wkWlfrTRSfinDYYK"/>
+        <Class IRI="http://webprotege.stanford.edu/RZNapG95VzedU2M7EAA1aw"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://webprotege.stanford.edu/RUIAWriUxBt1TlSGXj62pn"/>
@@ -420,6 +454,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RBgHHbNmi23Rrg2vakDO9aq</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">quantityEvolutionGovernedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://webprotege.stanford.edu/RCMZOzcqtxrvPkNVA5kYFAh</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QuantityProperty</Literal>
     </AnnotationAssertion>
@@ -442,6 +481,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://webprotege.stanford.edu/RD0cAykNP1CLFkTCFymDJ78</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">QuanticNumber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RDK4OK4wkWlfrTRSfinDYYK</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">governEvolutionOfQuantity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
