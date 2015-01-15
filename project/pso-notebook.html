@@ -6,7 +6,23 @@
   <meta name="generator" content="pandoc" />
   <title>PSO development notebook</title>
   <style type="text/css">code{white-space: pre;}</style>
-  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  
+  <!-- Piwik -->
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//ppaggenppwoblem.piwikpro.com/";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', 1]);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <noscript><p><img src="//ppaggenppwoblem.piwikpro.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+  <!-- End Piwik Code -->
 </head>
 <body>
 <p><a href="https://github.com/jibe-b/jibe-b.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a></p>
@@ -14,7 +30,35 @@
 <div id="header">
 <h1 class="title">PSO development notebook</h1>
 </div>
-<h1 id="pas-daction-indiquée">Pas d'action indiquée</h1>
+<p>_tool: soon, the reader will have the possibility to choose which entries to display ()</p>
+<h1 id="learning-owl-is-based-on-description-logic">[learning] OWL is based on Description Logic</h1>
+<p>Descrition Logic (and thus the OWL language) consist of</p>
+<h1 id="carnet-development-order">[carnet] Development order</h1>
+<p>Jibé, 15/01/2015</p>
+<p>Order of priority:</p>
+<ul>
+<li>classes and properties definition, enable what comes next</li>
+<li>domain and range definition, correspond to primary specification of properties</li>
+<li>mathematical properties</li>
+<li>combinatoire (fr)</li>
+</ul>
+<h1 id="carnet-exprimer-les-hypothèses-et-affirmations-réification-vs-singleton-property">[carnet] Exprimer les hypothèses et affirmations : réification <em>vs</em> Singleton Property</h1>
+<p>Jibé, 11/01/2015, modified:2015/01/15</p>
+<p>Pour exprimer des hypothèses, il est possible d'écrire :</p>
+<blockquote>
+<p>ex:Affirmation123 ex:sousHypothèse ex:Hypothèse123 ex:ex:Hypothèse123 a rdf:statement ex:Hypothèse123 rdf:subject ex:Atom ex:Hypothèse123 rdf:predicate ex:inPotential ex:Hypothèse123 rdf:object ex:CentralPotential</p>
+</blockquote>
+<p>source: <a href="http://www.w3.org/TR/2014/REC-rdf11-mt-20140225/#reification">http://www.w3.org/TR/2014/REC-rdf11-mt-20140225/#reification</a></p>
+<p>Cela permet de mettre à disposition l'information qu'un tel triplet peut exister mais ne créée pas ce triplet.</p>
+<p>Il est nécessaire de passer par la représentation <a href="http://arxiv.org/abs/1406.3399">RDF*</a> (en particulier turtle* ) pour employer directement un triplet comme sujet ou objet d'un triplet (NB: RDF* n'est pas une spécification du W3C)</p>
+<p>Une autre approche est celle des Singleton Properties : définir des propriétés correspondant aux précisions données sur une propriété.</p>
+<blockquote>
+<p>ex:Atom ex:supposedInPotential ex:CentralPotential</p>
+</blockquote>
+<p>source: <a href="http://mor.nlm.nih.gov/pubs/pdf/2014-www-vn.pdf">http://mor.nlm.nih.gov/pubs/pdf/2014-www-vn.pdf</a></p>
+<p>Un problème avec les Singleton Properties est qu'elles obligent un programme travaillant sur un graph à connaitre les <em>la totalité</em> det détails pour chaque propriété. Donc chaque cas particulier doit être écrit comme une Singleton Property et le programme doit intégrer chacune des spécificités de cette Singleton Property.</p>
+<p>L'approche Singleton Property peut être négligée au profit de la logique descriptive (DL), sur laquelle est basée OWL : TBox pour définir les termes et ABox pour définir des relations générales, en particulier sur des cas particuliers des propriétés (approche de Singleton Property limitée à quelques sous-propriétés).</p>
+<p>En cours d'évaluation des intérêts des deux approches.</p>
 <h1 id="cahier-des-charges">Cahier des charges</h1>
 <p>Jibé, 07/01/2015</p>
 <h2 id="documentation">Documentation</h2>
