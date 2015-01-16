@@ -6,7 +6,7 @@
   <meta name="generator" content="pandoc" />
   <title>PSO development notebook</title>
   <style type="text/css">code{white-space: pre;}</style>
-  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" />
   
   <!-- Piwik -->
   <script type="text/javascript">
@@ -21,18 +21,33 @@
       g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
     })();
   </script>
-  <noscript><p><img src="//ppaggenppwoblem.piwikpro.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+  <noscript><p><img src="http//ppaggenppwoblem.piwikpro.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
   <!-- End Piwik Code -->
 </head>
 <body>
-<p><a href="https://github.com/jibe-b/jibe-b.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a></p>
-<p><nav> <a href="../index.html">Home</a> <a href="../project/presentation-projet-ontologie.html">Projects</a> <a href="../ontology/pso.owl">PSO ontology</a> <a href="../blog/page1.html">Blog</a> <a href="../aboutme.html">About</a> </nav></p>
+<p><nav> <a href="../../index.html">Home</a> <a href="../../project/presentation-projet-ontologie.html">Projects</a> <a href="../../ontology/pso.owl">PSO ontology</a> <a href="../../blog/page1.html">Blog</a> <a href="../../aboutme.html">About</a> </nav></p>
 <div id="header">
 <h1 class="title">PSO development notebook</h1>
 </div>
-<p>_tool: soon, the reader will have the possibility to choose which entries to display ()</p>
+<p><em>tool: soon, the reader will have the possibility to choose which entries to display (carnet, learning, etc)</em></p>
+<h2 id="intention1-five-main-classes">Intention#1: Five main classes</h2>
+<p>Jibé, 2015/01/15</p>
+<ul>
+<li><strong>Object</strong> and <strong>Phenomenon</strong> correspond of the <em>description</em> of the physical world, requiring a low-level of abstraction. Both take part to a kind of <em>zoology</em> in Physical Sciences.</li>
+<li><strong>Quantity</strong> and <strong>Law</strong> enable an approach with a high level of abstraction. <strong>Quantity</strong> require instrumentation and <strong>Law</strong> require theory to be accessible.</li>
+<li>sub-properties of <strong>Property</strong> caracterise <strong>Object</strong> (<strong>ObjectProperty</strong>), <strong>Phenomenon</strong>(<strong>PhenomenonProperty</strong>), <strong>Quantity</strong> (<strong>QuantityProperty</strong>) and <strong>Law</strong> (<strong>LawProperty</strong>).</li>
+</ul>
+<h2 id="issue1-similarity-between-objectproperty-and-phenomenonproperty">Issue#1: Similarity between <strong>ObjectProperty</strong> and <strong>PhenomenonProperty</strong></h2>
+<p>Jibé, 2015/01/15</p>
+<p>Similarity or equivalence?</p>
+<p>Differentiation of <strong>ObjectProperty</strong> and <strong>PhenomenonProperty</strong> uses the [Singleton Property approach].</p>
+<h1 id="authors-intentions-not-technical-documentation">Author's intentions — not technical documentation</h1>
+<p>Jibé, 2015/01/15</p>
+<p>Intentions: what brought me to write the ontology this way. This is not technicajl documenation but what is not made explicit while writing the ontology.</p>
+<p>Issues: problems I identify. Their resolution is intended to be part of the intention part.</p>
 <h1 id="learning-owl-is-based-on-description-logic">[learning] OWL is based on Description Logic</h1>
-<p>Descrition Logic (and thus the OWL language) consist of</p>
+<p>Jibé, 2015/01/15</p>
+<p>Descrition Logic (and thus the OWL language) consists of teminology (TBox) and relations between concepts defined in the terminology (ABox).</p>
 <h1 id="carnet-development-order">[carnet] Development order</h1>
 <p>Jibé, 15/01/2015</p>
 <p>Order of priority:</p>
