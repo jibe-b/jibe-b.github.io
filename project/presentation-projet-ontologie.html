@@ -7,9 +7,24 @@
   <title>Projet PSO (Physical Sciences Ontology)</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="../css/style.css" type="text/css" />
+  
+  <!-- Piwik -->
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//ppaggenppwoblem.piwikpro.com/";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', 1]);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <noscript><p><img src="//ppaggenppwoblem.piwikpro.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+  <!-- End Piwik Code -->
 </head>
 <body>
-<p><a href="https://github.com/jibe-b/jibe-b.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a></p>
 <p><nav> <a href="../index.html">Home</a> <a href="../project/presentation-projet-ontologie.html">Projects</a> <a href="../ontology/pso.owl">PSO ontology</a> <a href="../blog/page1.html">Blog</a> <a href="../aboutme.html">About</a> </nav></p>
 <div id="header">
 <h1 class="title">Projet PSO (Physical Sciences Ontology)</h1>
@@ -18,10 +33,15 @@
 <p>Création d'une ontologie de description des sciences physiques.</p>
 <h2 id="dernière-version">Dernière version</h2>
 <p><a href="../ontology/pso.owl">version-0.0.1</a></p>
+<iframe seemless width="100%" height="400" src="http://vowl.visualdataweb.org/webvowl/index.html#iri=http://jibe-b.github.io/ontology/pso.owl" frameborder="0"> 
+<p>Visualisation</iframe></p>
+<div class="figure">
+<img src="pso/pso-viz.png" alt="PSO-viz" /><p class="caption">PSO-viz</p>
+</div>
 <p><a href="http://vowl.visualdataweb.org/webvowl/index.html#iri=http://jibe-b.github.io/ontology/pso.owl">Visualisation</a></p>
-<p><a href="PSO-development.html">versions en développment</a> (hébergées par la plateforme <a href="http://www.opendata.u-psud.fr">OpenData@UPSud</a>)</p>
+<p><a href="pso/pso-development.html">versions en développment</a> (hébergées par la plateforme <a href="http://www.opendata.u-psud.fr">OpenData@UPSud</a>)</p>
 <h2 id="carnet-de-développement-research-notebook">Carnet de développement (Research Notebook)</h2>
-<p><a href="pso-notebook.html">Carnet</a></p>
+<p><a href="pso/pso-notebook.html">Carnet</a></p>
 <h2 id="contexte-intention">Contexte, intention</h2>
 <p>Le développement des technologies du web sémantique permet une gestion des données plus riche et plus rigoureuse que le simple stockage dans des bases de données relationnelles. Le développement d'ontologies (description formelle des relations entre concepts) permet</p>
 <p>l'interopérabilité entre les jeux de donnée, la visualisation et l'étude des relations entre concepts.</p>
@@ -31,7 +51,7 @@
 <p><a href="https://www.authorea.com/users/5676/articles/14396/_show_article">Article (début d'écriture prochainement)</a> sur Authorea.</p>
 <h2 id="documentation">Documentation</h2>
 <p><a href="https://www.zotero.org/groups/pso/items">Bibliographie et sources</a></p>
-<p><a href="annotated-bibliography.png">Annotation de la bibliographie</a></p>
+<p><a href="pso/annotated-bibliography.png">Annotation de la bibliographie</a></p>
 <h3 id="préambule">Préambule</h3>
 <p>L'objectif de cette documentation est de présenter les axes de développement, les sources d'inspiration et les justifications des choix. En d'autres termes, tout ce qui n'est pas rendu explicite dans le fichier OWL produit.</p>
 <p>Dans les commentaires liés à chaque classe et chaque propriété se trouvent des informations, en particulier la source et une justification succinte de l'existence de cette classe/propriété, sa place dans l'arbre des classes/propriétés, ainsi que la combinatoire, la cardinalité, domaine et range.</p>
