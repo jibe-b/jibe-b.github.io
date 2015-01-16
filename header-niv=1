@@ -1,5 +1,9 @@
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 
+<script src="http://assets.annotateit.org/annotator/v1.2.5/annotator-full.min.js"></script>
+<link rel="stylesheet" href="http://assets.annotateit.org/annotator/v1.2.5/annotator.min.css">
+
+
 <!-- Piwik -->
 <script type="text/javascript">
   var _paq = _paq || [];
