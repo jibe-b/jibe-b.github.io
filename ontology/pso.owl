@@ -282,10 +282,10 @@
         <Class IRI="http://webprotege.stanford.edu/RbBGpBLQo1AAWzA2q1F6wt"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://pagenpwoblem.tk/ontology/pso#involvePhysicalQuantity"/>
+        <ObjectProperty IRI="http://pagenpwoblem.tk/ontology/pso#hasTheoryElementProperty"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://pagenpwoblem.tk/ontology/pso#subTheory"/>
+        <ObjectProperty IRI="http://pagenpwoblem.tk/ontology/pso#involvePhysicalQuantity"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://webprotege.stanford.edu/R76yf7Ouqf79JsPOyBwgSsX"/>
@@ -750,8 +750,8 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://pagenpwoblem.tk/ontology/pso#subTheory"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Theory"/>
+        <ObjectProperty IRI="http://pagenpwoblem.tk/ontology/pso#hasTheoryElementProperty"/>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#TheoryElement"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://webprotege.stanford.edu/R76yf7Ouqf79JsPOyBwgSsX"/>
@@ -806,8 +806,8 @@
         <Class IRI="http://webprotege.stanford.edu/R7es1iOhPOkJmSYh1uUYrii"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://pagenpwoblem.tk/ontology/pso#subTheory"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Theory"/>
+        <ObjectProperty IRI="http://pagenpwoblem.tk/ontology/pso#hasTheoryElementProperty"/>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#TheoryElementProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://webprotege.stanford.edu/R76yf7Ouqf79JsPOyBwgSsX"/>
@@ -889,15 +889,6 @@ The so-called Quantum Theory (that is an individual) is a kind of Quantic Theory
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://pagenpwoblem.tk/ontology/pso#involvePhysicalQuantity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">an equation involves a Physical Quantity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://pagenpwoblem.tk/ontology/pso#subTheory</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">intended to be considered by a reasoner as the equivalent of subClass between individuals.
-
-If an individual belongs to a class, then the subModel of this Nidivdual inherit of all axioms belonging to this individual.
-
-But this is the role of classes. So theory must be both a class (with axioms) and an individual, that inherits of all the axioms of this class.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
