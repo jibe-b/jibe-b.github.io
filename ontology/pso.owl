@@ -638,6 +638,13 @@
     <SubClassOf>
         <Class IRI="http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://webprotege.stanford.edu/R8SHHZEtK0l3gvJ5va264K7"/>
+            <Class IRI="http://pagenpwoblem.tk/ontology/pso#ObjectProperty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://webprotege.stanford.edu/RxjuYZ5YJSYzoMQZhqsHZj"/>
             <Class IRI="http://webprotege.stanford.edu/RZNapG95VzedU2M7EAA1aw"/>
         </ObjectSomeValuesFrom>
@@ -841,6 +848,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://webprotege.stanford.edu/R76yf7Ouqf79JsPOyBwgSsX"/>
         <Class IRI="http://webprotege.stanford.edu/RBLafaMp3D7LfnGveAHEPPZ"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://webprotege.stanford.edu/R8SHHZEtK0l3gvJ5va264K7"/>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ObjectProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://webprotege.stanford.edu/R8qt1m4X3txbQGBCrZ5zmnx"/>
