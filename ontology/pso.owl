@@ -234,9 +234,6 @@
         <Class IRI="http://webprotege.stanford.edu/R7es1iOhPOkJmSYh1uUYrii"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/R7tEMLYtDrxfjjF2qbP6sAA"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://webprotege.stanford.edu/R8XbrZe9jc95R2tsGZ5oMhU"/>
     </Declaration>
     <Declaration>
@@ -253,9 +250,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/RCMZOzcqtxrvPkNVA5kYFAh"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://webprotege.stanford.edu/RCWIzAw7tA4lbQv4CDEw31G"/>
@@ -618,10 +612,6 @@
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/R7tEMLYtDrxfjjF2qbP6sAA"/>
-        <Class IRI="http://webprotege.stanford.edu/RGqbQRoGd81Wy6b5ZlGPN8"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://webprotege.stanford.edu/R8XbrZe9jc95R2tsGZ5oMhU"/>
         <Class IRI="http://webprotege.stanford.edu/RGqbQRoGd81Wy6b5ZlGPN8"/>
     </SubClassOf>
@@ -651,10 +641,6 @@
             <ObjectProperty IRI="http://webprotege.stanford.edu/RxjuYZ5YJSYzoMQZhqsHZj"/>
             <Class IRI="http://webprotege.stanford.edu/RZNapG95VzedU2M7EAA1aw"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/RCMZOzcqtxrvPkNVA5kYFAh"/>
-        <Class IRI="http://webprotege.stanford.edu/RGqbQRoGd81Wy6b5ZlGPN8"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://webprotege.stanford.edu/RCWIzAw7tA4lbQv4CDEw31G"/>
@@ -861,16 +847,8 @@
         <Class IRI="http://webprotege.stanford.edu/R7es1iOhPOkJmSYh1uUYrii"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/R9791aRVP7A38fG2aPHNJS5"/>
-        <Class IRI="http://webprotege.stanford.edu/RCMZOzcqtxrvPkNVA5kYFAh"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="http://webprotege.stanford.edu/RBEdaOCoafMOrj5LTqhbHZd"/>
         <Class IRI="http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RBFRlKewojhYljsAfZbAOJy"/>
-        <Class IRI="http://webprotege.stanford.edu/R7tEMLYtDrxfjjF2qbP6sAA"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://webprotege.stanford.edu/RBefA654FxBq11MDv7yvO4U"/>
@@ -960,11 +938,6 @@ This means they would only be linked to theories with a property such as &quot;d
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/R7tEMLYtDrxfjjF2qbP6sAA</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">LawProperty</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://webprotege.stanford.edu/R8SHHZEtK0l3gvJ5va264K7</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">hasObjectProperty</Literal>
     </AnnotationAssertion>
@@ -1039,11 +1012,6 @@ Non elementary particles are not divided between matter and anti matter. But the
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://webprotege.stanford.edu/RBgHHbNmi23Rrg2vakDO9aq</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">quantityEvolutionGovernedBy</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/RCMZOzcqtxrvPkNVA5kYFAh</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">QuantityProperty</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
