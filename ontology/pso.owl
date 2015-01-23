@@ -78,10 +78,22 @@
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#Baryon"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Charge"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#ClassicalHypothesis"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#ClassicalTheory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ColorCharge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ConservationEquation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#DifferentialEquation"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#DiffusionEquation"/>
@@ -91,6 +103,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#DissipationEquation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ElectricCharge"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#ElectromagniticInteraction"/>
@@ -103,6 +118,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#Energy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#EquationProperty"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#FirstDerivativePositionQuantity"/>
@@ -160,6 +178,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#ObjectProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PartialDerivativesEquation"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#Photon"/>
@@ -327,6 +348,9 @@
         <DataProperty IRI="http://pagenpwoblem.tk/ontology/pso#hasSpin"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="http://pagenpwoblem.tk/ontology/pso#isLinear"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#ClassicHypothesis"/>
     </Declaration>
     <Declaration>
@@ -373,6 +397,10 @@
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#Hadron"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Charge"/>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#ClassicalHypothesis"/>
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalHypothesis"/>
     </SubClassOf>
@@ -381,8 +409,20 @@
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#Theory"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#DiffusionEquation"/>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ColorCharge"/>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Charge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ConservationEquation"/>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PartialDerivativesEquation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#DifferentialEquation"/>
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalEquation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#DiffusionEquation"/>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PartialDerivativesEquation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#DispersionEquation"/>
@@ -390,7 +430,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#DissipationEquation"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalEquation"/>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PartialDerivativesEquation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ElectricCharge"/>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Charge"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#ElectromagniticInteraction"/>
@@ -407,6 +451,10 @@
     <SubClassOf>
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#Energy"/>
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#EquationProperty"/>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#TheoryElementProperty"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#FirstDerivativePositionQuantity"/>
@@ -490,6 +538,10 @@
     <SubClassOf>
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#ObjectProperty"/>
         <Class IRI="http://webprotege.stanford.edu/RGqbQRoGd81Wy6b5ZlGPN8"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PartialDerivativesEquation"/>
+        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalEquation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://pagenpwoblem.tk/ontology/pso#Photon"/>
@@ -889,14 +941,29 @@
         <ObjectProperty IRI="http://webprotege.stanford.edu/Rz7FbW0q8QCGDHhIzUoJQG"/>
         <Class IRI="http://webprotege.stanford.edu/R9egzepJC5g7coSZJ4AuXIo"/>
     </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://pagenpwoblem.tk/ontology/pso#isLinear"/>
+    </FunctionalDataProperty>
     <DataPropertyDomain>
         <DataProperty IRI="http://pagenpwoblem.tk/ontology/pso#hasSpin"/>
         <Class IRI="http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://pagenpwoblem.tk/ontology/pso#isLinear"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://pagenpwoblem.tk/ontology/pso#isLinear"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataAllValuesFrom>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="http://pagenpwoblem.tk/ontology/pso#hasSpin"/>
         <Datatype abbreviatedIRI="xsd:double"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://pagenpwoblem.tk/ontology/pso#ConservationEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">other name: Continuity Equation</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://pagenpwoblem.tk/ontology/pso#ElementaryBoson</IRI>
