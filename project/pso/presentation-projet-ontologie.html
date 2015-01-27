@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Projet PSO (Physical Sciences Ontology)</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+  
+  <script src="http://assets.annotateit.org/annotator/v1.2.5/annotator-full.min.js"></script>
+  <link rel="stylesheet" href="http://assets.annotateit.org/annotator/v1.2.5/annotator.min.css">
+  
+  
+  <!-- Piwik -->
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//ppaggenppwoblem.piwikpro.com/";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', 1]);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <noscript><p><img src="//ppaggenppwoblem.piwikpro.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+  <!-- End Piwik Code -->
+</head>
+<body>
+<p><a href="https://github.com/jibe-b/jibe-b.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a></p>
+<p><nav> <a href="../index.html">Home</a> <a href="../project/presentation-projet-ontologie.html">Projects</a> <a href="../ontology/">PSO ontology</a> <a href="../blog/">Blog</a> <a href="../aboutme.html">About</a> <a href="http://hypothes.is/">Comment with Hypothes.is</a> </nav></p>
+<div id="header">
+<h1 class="title">Projet PSO (Physical Sciences Ontology)</h1>
+</div>
+<h2 id="définition-du-projet">Définition du projet</h2>
+<p>Création d'une ontologie de description des sciences physiques.</p>
+<h2 id="dernière-version">Dernière version</h2>
+<p><a href="../../ontology/pso.owl">version-0.0.1</a></p>
+<p><a href="http://vowl.visualdataweb.org/webvowl/index.html#iri=http://jibe-b.github.io/ontology/pso.owl"><img alt="PSO" width="100%" src="pso/pso-viz.png">Interactive visualisation</img></a></p>
+<p><a href="pso-development.html">versions en développment</a> (hébergées par la plateforme <a href="http://www.opendata.u-psud.fr">OpenData@UPSud</a>)</p>
+<h2 id="carnet-de-développement-research-notebook">Carnet de développement (Research Notebook)</h2>
+<p><a href="pso-notebook.html">Carnet</a></p>
+<h2 id="associated-rdf-graph">Associated RDF graph</h2>
+<p><a href="graph/physics-graph-viz.png"><img alt="RDF graph integrated in PSO development workflow" width="400" src="graph/physics-graph-viz.png"></img></a></p>
+<h2 id="contexte-intention">Contexte, intention</h2>
+<p>Le développement des technologies du web sémantique permet une gestion des données plus riche et plus rigoureuse que le simple stockage dans des bases de données relationnelles. Le développement d'ontologies (description formelle des relations entre concepts) permet</p>
+<p>l'interopérabilité entre les jeux de donnée, la visualisation et l'étude des relations entre concepts.</p>
+<p>Les ontologies sont nombreuses en biologie (plus de 300 sur <a href="http://bioportal.bioontology.org/">Bioportal</a>) mais peu d'ontologies ont été développées en sciences physiques.</p>
+<p>Ce projet consiste donc dans le développement d'une ontologie de description des sciences physiques.</p>
+<h2 id="article-de-présentation">Article de présentation</h2>
+<p><a href="https://www.authorea.com/users/5676/articles/14396/_show_article">Article (début d'écriture prochainement)</a> sur Authorea.</p>
+<h2 id="documentation">Documentation</h2>
+<p><a href="https://www.zotero.org/groups/pso/items">Bibliographie et sources</a></p>
+<p><a href="annotated-bibliography.png">Annotation de la bibliographie</a></p>
+<h3 id="préambule">Préambule</h3>
+<p>L'objectif de cette documentation est de présenter les axes de développement, les sources d'inspiration et les justifications des choix. En d'autres termes, tout ce qui n'est pas rendu explicite dans le fichier OWL produit.</p>
+<p>Dans les commentaires liés à chaque classe et chaque propriété se trouvent des informations, en particulier la source et une justification succinte de l'existence de cette classe/propriété, sa place dans l'arbre des classes/propriétés, ainsi que la combinatoire, la cardinalité, domaine et range.</p>
+<p>Ces justifications dans le fichier OWL sont liées à celles présentées dans la documentation associée au fichier OWL.</p>
+<h3 id="lignes-directrices">Lignes directrices</h3>
+<p>Il s'agit de réaliser une ontologie généraliste appliquée aux sciences physiques. À cette ontologie devront pouvoir être greffées des ontologies spécifiques à chaque domaine de sciences physiques.</p>
+<h3 id="utilisations-possibles-de-cette-ontologie">Utilisations possibles de cette ontologie</h3>
+<ul>
+<li>Production de ressources éducatives en Linked Data, basées sur cette ontologie</li>
+<li>données de recherche en Linked Data</li>
+</ul>
+<h3 id="équipe">Équipe</h3>
+<ul>
+<li>Jibé Bohuon (université Paris Sud)</li>
+<li>partenariats en cours d'établissement (INSERM, )</li>
+<li>projet ouvert aux participations</li>
+</ul>
+<h3 id="roadmap">Roadmap</h3>
+<ol style="list-style-type: decimal">
+<li><p>Acquisition de compétences (RDF, OWL, théorie des ontologies) et recencement des concepts et relations entre concepts</p></li>
+<li><p>Réalisation d'une ontologie</p></li>
+</ol>
+<hr />
+<p>Jibé <a href="https://twitter.com/jibe_jeybee">@jibe_jeybee</a> <a href="aboutme.html">About me</a></p>
+<p>All contents on this site are under the <a href="https://creativecommons.org/licenses/by/4.0/">free licence CC-BY</a></p>
+</body>
+</html>
