@@ -10,12 +10,12 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://webprotege.stanford.edu/project/YjFCRy5AJithhKz3SMsyW"
+     xml:base="http://jibe-b.github.io/ontology/pso/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://webprotege.stanford.edu/project/YjFCRy5AJithhKz3SMsyW">
+     ontologyIRI="http://jibe-b.github.io/ontology/pso/">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -26,12 +26,12 @@
         <Literal datatypeIRI="&xsd;integer">38</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://protege.stanford.edu/webprotege/revision"/>
-        <Literal datatypeIRI="&xsd;integer">70</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <Literal datatypeIRI="&xsd;string">system</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://protege.stanford.edu/webprotege/revision"/>
+        <Literal datatypeIRI="&xsd;integer">70</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
@@ -50,957 +50,957 @@
         <Literal datatypeIRI="&xsd;dateTime">Jan 15, 2015 1:44:37 PM</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="&xsd;string">Ontology for the description of the physical world. Expected to be associated with an ontology for the scientific method and theoretical aspects (i.e. Sciences Ontology).</Literal>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&xsd;string">jibe</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="&xsd;string">This ontology was generated from an ontology revision in WebProtege http://webprotege.stanford.edu</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <Literal datatypeIRI="&xsd;string">jibe</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&xsd;string">Ontology for the description of the physical world. Expected to be associated with an ontology for the scientific method and theoretical aspects (i.e. Sciences Ontology).</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="&xsd;string">Domain ontology intended to describe Physical Sciences (main part).</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Acceleration"/>
+        <Class IRI="Acceleration"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Action"/>
+        <Class IRI="Action"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#AntiMatterParticle"/>
+        <Class IRI="AntiMatterParticle"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Baryon"/>
+        <Class IRI="Baryon"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Charge"/>
+        <Class IRI="Charge"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ClassicalHypothesis"/>
+        <Class IRI="ClassicalHypothesis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ClassicalTheory"/>
+        <Class IRI="ClassicalTheory"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ColorCharge"/>
+        <Class IRI="ColorCharge"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ConservationEquation"/>
+        <Class IRI="ConservationEquation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#DifferentialEquation"/>
+        <Class IRI="DifferentialEquation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#DiffusionEquation"/>
+        <Class IRI="DiffusionEquation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#DispersionEquation"/>
+        <Class IRI="DispersionEquation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#DissipationEquation"/>
+        <Class IRI="DissipationEquation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ElectricCharge"/>
+        <Class IRI="ElectricCharge"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ElectromagniticInteraction"/>
+        <Class IRI="ElectromagniticInteraction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ElementaryBoson"/>
+        <Class IRI="ElementaryBoson"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ElementaryFermion"/>
+        <Class IRI="ElementaryFermion"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Energy"/>
+        <Class IRI="Energy"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#EquationProperty"/>
+        <Class IRI="EquationProperty"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#FirstDerivativePositionQuantity"/>
+        <Class IRI="FirstDerivativePositionQuantity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Force"/>
+        <Class IRI="Force"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#FundamentalInteraction"/>
+        <Class IRI="FundamentalInteraction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Gluon"/>
+        <Class IRI="Gluon"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#GravitationalInteraction"/>
+        <Class IRI="GravitationalInteraction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Hadron"/>
+        <Class IRI="Hadron"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Impulse"/>
+        <Class IRI="Impulse"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#KineticEnergy"/>
+        <Class IRI="KineticEnergy"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Lepton"/>
+        <Class IRI="Lepton"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#LinearityHypothesis"/>
+        <Class IRI="LinearityHypothesis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#LinearityProperty"/>
+        <Class IRI="LinearityProperty"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#MacroscopicalObject"/>
+        <Class IRI="MacroscopicalObject"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#MatterObject"/>
+        <Class IRI="MatterObject"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#MatterParticle"/>
+        <Class IRI="MatterParticle"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Meson"/>
+        <Class IRI="Meson"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Model"/>
+        <Class IRI="Model"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#NonLinearityHypothesis"/>
+        <Class IRI="NonLinearityHypothesis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#NonRelativisticHypothesis"/>
+        <Class IRI="NonRelativisticHypothesis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ObjectProperty"/>
+        <Class IRI="ObjectProperty"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PartialDerivativesEquation"/>
+        <Class IRI="PartialDerivativesEquation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Photon"/>
+        <Class IRI="Photon"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalEquation"/>
+        <Class IRI="PhysicalEquation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalHypothesis"/>
+        <Class IRI="PhysicalHypothesis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalQuantity"/>
+        <Class IRI="PhysicalQuantity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Position"/>
+        <Class IRI="Position"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PositionQuantity"/>
+        <Class IRI="PositionQuantity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PotentialEnergy"/>
+        <Class IRI="PotentialEnergy"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#QuanticHypothesis"/>
+        <Class IRI="QuanticHypothesis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#QuanticTheory"/>
+        <Class IRI="QuanticTheory"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Quark"/>
+        <Class IRI="Quark"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#RelativisticHypothesis"/>
+        <Class IRI="RelativisticHypothesis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#RelativisticPhenomenon"/>
+        <Class IRI="RelativisticPhenomenon"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#RelativisticTheory"/>
+        <Class IRI="RelativisticTheory"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#SecondDerivativePositionQuantity"/>
+        <Class IRI="SecondDerivativePositionQuantity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Speed"/>
+        <Class IRI="Speed"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#StrongInteraction"/>
+        <Class IRI="StrongInteraction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Theory"/>
+        <Class IRI="Theory"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#TheoryElement"/>
+        <Class IRI="TheoryElement"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#TheoryElementProperty"/>
+        <Class IRI="TheoryElementProperty"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Wave"/>
+        <Class IRI="Wave"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#WeakInteraction"/>
+        <Class IRI="WeakInteraction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#orLinearPhenomenon"/>
+        <Class IRI="orLinearPhenomenon"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#orWavePhenomenon"/>
+        <Class IRI="orWavePhenomenon"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/R7es1iOhPOkJmSYh1uUYrii"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/R7es1iOhPOkJmSYh1uUYrii"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/R8XbrZe9jc95R2tsGZ5oMhU"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/R8XbrZe9jc95R2tsGZ5oMhU"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/R9egzepJC5g7coSZJ4AuXIo"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/R9egzepJC5g7coSZJ4AuXIo"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/RBEWZiuHf60Bop80ENHVUsE"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBEWZiuHf60Bop80ENHVUsE"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/RBLafaMp3D7LfnGveAHEPPZ"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBLafaMp3D7LfnGveAHEPPZ"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/RBNe9Z3gLAYkDhpGj4MA8dT"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBNe9Z3gLAYkDhpGj4MA8dT"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBXTBR19eMJbLrQB6GxSj62"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/RCWIzAw7tA4lbQv4CDEw31G"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RCWIzAw7tA4lbQv4CDEw31G"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/RCmJiQrTP4iDjApqxJuWSwo"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RCmJiQrTP4iDjApqxJuWSwo"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/RCshTGyYJ4oKMteWSL5FLeh"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RCshTGyYJ4oKMteWSL5FLeh"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/RD0cAykNP1CLFkTCFymDJ78"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RD0cAykNP1CLFkTCFymDJ78"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/RGqbQRoGd81Wy6b5ZlGPN8"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RGqbQRoGd81Wy6b5ZlGPN8"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/RZNapG95VzedU2M7EAA1aw"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RZNapG95VzedU2M7EAA1aw"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://webprotege.stanford.edu/RbBGpBLQo1AAWzA2q1F6wt"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RbBGpBLQo1AAWzA2q1F6wt"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://pagenpwoblem.tk/ontology/pso#hasPhysicalHypothesis"/>
+        <ObjectProperty IRI="hasPhysicalHypothesis"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://pagenpwoblem.tk/ontology/pso#hasTheoryElementProperty"/>
+        <ObjectProperty IRI="hasTheoryElementProperty"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://pagenpwoblem.tk/ontology/pso#involvePhysicalQuantity"/>
+        <ObjectProperty IRI="involvePhysicalQuantity"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://pagenpwoblem.tk/ontology/pso#testprop"/>
+        <ObjectProperty IRI="testprop"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/R76yf7Ouqf79JsPOyBwgSsX"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/R76yf7Ouqf79JsPOyBwgSsX"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/R8SHHZEtK0l3gvJ5va264K7"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/R8SHHZEtK0l3gvJ5va264K7"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/R8qt1m4X3txbQGBCrZ5zmnx"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/R8qt1m4X3txbQGBCrZ5zmnx"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/R9791aRVP7A38fG2aPHNJS5"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/R9791aRVP7A38fG2aPHNJS5"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RBEdaOCoafMOrj5LTqhbHZd"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RBEdaOCoafMOrj5LTqhbHZd"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RBFRlKewojhYljsAfZbAOJy"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RBFRlKewojhYljsAfZbAOJy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RBefA654FxBq11MDv7yvO4U"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RBefA654FxBq11MDv7yvO4U"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RBeufLWylrYGmkQnwQqMLoq"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RBeufLWylrYGmkQnwQqMLoq"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RBgHHbNmi23Rrg2vakDO9aq"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RBgHHbNmi23Rrg2vakDO9aq"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RDK4OK4wkWlfrTRSfinDYYK"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RDK4OK4wkWlfrTRSfinDYYK"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RUIAWriUxBt1TlSGXj62pn"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RUIAWriUxBt1TlSGXj62pn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RxjuYZ5YJSYzoMQZhqsHZj"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RxjuYZ5YJSYzoMQZhqsHZj"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/Rz7FbW0q8QCGDHhIzUoJQG"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/Rz7FbW0q8QCGDHhIzUoJQG"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://pagenpwoblem.tk/ontology/pso#hasSpin"/>
+        <DataProperty IRI="hasSpin"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://pagenpwoblem.tk/ontology/pso#isLinear"/>
+        <DataProperty IRI="isLinear"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#ClassicHypothesis"/>
+        <NamedIndividual IRI="ClassicHypothesis"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#ClassicalMechanics"/>
+        <NamedIndividual IRI="ClassicalMechanics"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#EinsteinRelativity"/>
+        <NamedIndividual IRI="EinsteinRelativity"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#NonRelativisticHypothesis"/>
+        <NamedIndividual IRI="NonRelativisticHypothesis"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#QuanticHypothesis"/>
+        <NamedIndividual IRI="QuanticHypothesis"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#QuanticandClassicTheory"/>
+        <NamedIndividual IRI="QuanticandClassicTheory"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#QuantumMechanics"/>
+        <NamedIndividual IRI="QuantumMechanics"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#RelativistHypothesis"/>
+        <NamedIndividual IRI="RelativistHypothesis"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#RelativisticQuantumMechanics"/>
+        <NamedIndividual IRI="RelativisticQuantumMechanics"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#StandardModel"/>
+        <NamedIndividual IRI="StandardModel"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Acceleration"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#SecondDerivativePositionQuantity"/>
+        <Class IRI="Acceleration"/>
+        <Class IRI="SecondDerivativePositionQuantity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Action"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalQuantity"/>
+        <Class IRI="Action"/>
+        <Class IRI="PhysicalQuantity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#AntiMatterParticle"/>
-        <Class IRI="http://webprotege.stanford.edu/RBEWZiuHf60Bop80ENHVUsE"/>
+        <Class IRI="AntiMatterParticle"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBEWZiuHf60Bop80ENHVUsE"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Baryon"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Hadron"/>
+        <Class IRI="Baryon"/>
+        <Class IRI="Hadron"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Charge"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalQuantity"/>
+        <Class IRI="Charge"/>
+        <Class IRI="PhysicalQuantity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ClassicalHypothesis"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalHypothesis"/>
+        <Class IRI="ClassicalHypothesis"/>
+        <Class IRI="PhysicalHypothesis"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ClassicalTheory"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Theory"/>
+        <Class IRI="ClassicalTheory"/>
+        <Class IRI="Theory"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ColorCharge"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Charge"/>
+        <Class IRI="ColorCharge"/>
+        <Class IRI="Charge"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ConservationEquation"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PartialDerivativesEquation"/>
+        <Class IRI="ConservationEquation"/>
+        <Class IRI="PartialDerivativesEquation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#DifferentialEquation"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalEquation"/>
+        <Class IRI="DifferentialEquation"/>
+        <Class IRI="PhysicalEquation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#DiffusionEquation"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PartialDerivativesEquation"/>
+        <Class IRI="DiffusionEquation"/>
+        <Class IRI="PartialDerivativesEquation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#DispersionEquation"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#DissipationEquation"/>
+        <Class IRI="DispersionEquation"/>
+        <Class IRI="DissipationEquation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#DissipationEquation"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PartialDerivativesEquation"/>
+        <Class IRI="DissipationEquation"/>
+        <Class IRI="PartialDerivativesEquation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ElectricCharge"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Charge"/>
+        <Class IRI="ElectricCharge"/>
+        <Class IRI="Charge"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ElectromagniticInteraction"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#FundamentalInteraction"/>
+        <Class IRI="ElectromagniticInteraction"/>
+        <Class IRI="FundamentalInteraction"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ElementaryBoson"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#MatterParticle"/>
+        <Class IRI="ElementaryBoson"/>
+        <Class IRI="MatterParticle"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ElementaryFermion"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#MatterParticle"/>
+        <Class IRI="ElementaryFermion"/>
+        <Class IRI="MatterParticle"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Energy"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalQuantity"/>
+        <Class IRI="Energy"/>
+        <Class IRI="PhysicalQuantity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#EquationProperty"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#TheoryElementProperty"/>
+        <Class IRI="EquationProperty"/>
+        <Class IRI="TheoryElementProperty"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#FirstDerivativePositionQuantity"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PositionQuantity"/>
+        <Class IRI="FirstDerivativePositionQuantity"/>
+        <Class IRI="PositionQuantity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Force"/>
-        <Class IRI="http://webprotege.stanford.edu/RCshTGyYJ4oKMteWSL5FLeh"/>
+        <Class IRI="Force"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RCshTGyYJ4oKMteWSL5FLeh"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#FundamentalInteraction"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Force"/>
+        <Class IRI="FundamentalInteraction"/>
+        <Class IRI="Force"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Gluon"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ElementaryBoson"/>
+        <Class IRI="Gluon"/>
+        <Class IRI="ElementaryBoson"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#GravitationalInteraction"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#FundamentalInteraction"/>
+        <Class IRI="GravitationalInteraction"/>
+        <Class IRI="FundamentalInteraction"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Hadron"/>
-        <Class IRI="http://webprotege.stanford.edu/RCWIzAw7tA4lbQv4CDEw31G"/>
+        <Class IRI="Hadron"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RCWIzAw7tA4lbQv4CDEw31G"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Impulse"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#FirstDerivativePositionQuantity"/>
+        <Class IRI="Impulse"/>
+        <Class IRI="FirstDerivativePositionQuantity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#KineticEnergy"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Energy"/>
+        <Class IRI="KineticEnergy"/>
+        <Class IRI="Energy"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Lepton"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ElementaryFermion"/>
+        <Class IRI="Lepton"/>
+        <Class IRI="ElementaryFermion"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#LinearityHypothesis"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalHypothesis"/>
+        <Class IRI="LinearityHypothesis"/>
+        <Class IRI="PhysicalHypothesis"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#LinearityProperty"/>
-        <Class IRI="http://webprotege.stanford.edu/R9egzepJC5g7coSZJ4AuXIo"/>
+        <Class IRI="LinearityProperty"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/R9egzepJC5g7coSZJ4AuXIo"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#MacroscopicalObject"/>
-        <Class IRI="http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62"/>
+        <Class IRI="MacroscopicalObject"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBXTBR19eMJbLrQB6GxSj62"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#MacroscopicalObject"/>
+        <Class IRI="MacroscopicalObject"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://webprotege.stanford.edu/R8SHHZEtK0l3gvJ5va264K7"/>
-            <Class IRI="http://webprotege.stanford.edu/RGqbQRoGd81Wy6b5ZlGPN8"/>
+            <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/R8SHHZEtK0l3gvJ5va264K7"/>
+            <Class IRI="http://jibe-bgithub.io/ontology/pso/RGqbQRoGd81Wy6b5ZlGPN8"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#MatterObject"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#MacroscopicalObject"/>
+        <Class IRI="MatterObject"/>
+        <Class IRI="MacroscopicalObject"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#MatterParticle"/>
-        <Class IRI="http://webprotege.stanford.edu/RBEWZiuHf60Bop80ENHVUsE"/>
+        <Class IRI="MatterParticle"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBEWZiuHf60Bop80ENHVUsE"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Meson"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Hadron"/>
+        <Class IRI="Meson"/>
+        <Class IRI="Hadron"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Model"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#TheoryElement"/>
+        <Class IRI="Model"/>
+        <Class IRI="TheoryElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#NonLinearityHypothesis"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalHypothesis"/>
+        <Class IRI="NonLinearityHypothesis"/>
+        <Class IRI="PhysicalHypothesis"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#NonRelativisticHypothesis"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalHypothesis"/>
+        <Class IRI="NonRelativisticHypothesis"/>
+        <Class IRI="PhysicalHypothesis"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ObjectProperty"/>
-        <Class IRI="http://webprotege.stanford.edu/RGqbQRoGd81Wy6b5ZlGPN8"/>
+        <Class IRI="ObjectProperty"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RGqbQRoGd81Wy6b5ZlGPN8"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PartialDerivativesEquation"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalEquation"/>
+        <Class IRI="PartialDerivativesEquation"/>
+        <Class IRI="PhysicalEquation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Photon"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ElementaryBoson"/>
+        <Class IRI="Photon"/>
+        <Class IRI="ElementaryBoson"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalEquation"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#TheoryElement"/>
+        <Class IRI="PhysicalEquation"/>
+        <Class IRI="TheoryElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalHypothesis"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#TheoryElement"/>
+        <Class IRI="PhysicalHypothesis"/>
+        <Class IRI="TheoryElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalQuantity"/>
-        <Class IRI="http://webprotege.stanford.edu/RZNapG95VzedU2M7EAA1aw"/>
+        <Class IRI="PhysicalQuantity"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RZNapG95VzedU2M7EAA1aw"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Position"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PositionQuantity"/>
+        <Class IRI="Position"/>
+        <Class IRI="PositionQuantity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PositionQuantity"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalQuantity"/>
+        <Class IRI="PositionQuantity"/>
+        <Class IRI="PhysicalQuantity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PotentialEnergy"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Energy"/>
+        <Class IRI="PotentialEnergy"/>
+        <Class IRI="Energy"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#QuanticHypothesis"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalHypothesis"/>
+        <Class IRI="QuanticHypothesis"/>
+        <Class IRI="PhysicalHypothesis"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#QuanticTheory"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Theory"/>
+        <Class IRI="QuanticTheory"/>
+        <Class IRI="Theory"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#QuanticTheory"/>
+        <Class IRI="QuanticTheory"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://pagenpwoblem.tk/ontology/pso#hasPhysicalHypothesis"/>
-            <Class IRI="http://pagenpwoblem.tk/ontology/pso#QuanticHypothesis"/>
+            <ObjectProperty IRI="hasPhysicalHypothesis"/>
+            <Class IRI="QuanticHypothesis"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#QuanticTheory"/>
+        <Class IRI="QuanticTheory"/>
         <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="http://pagenpwoblem.tk/ontology/pso#hasPhysicalHypothesis"/>
-            <Class IRI="http://pagenpwoblem.tk/ontology/pso#QuanticHypothesis"/>
+            <ObjectProperty IRI="hasPhysicalHypothesis"/>
+            <Class IRI="QuanticHypothesis"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Quark"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ElementaryFermion"/>
+        <Class IRI="Quark"/>
+        <Class IRI="ElementaryFermion"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#RelativisticHypothesis"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalHypothesis"/>
+        <Class IRI="RelativisticHypothesis"/>
+        <Class IRI="PhysicalHypothesis"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#RelativisticPhenomenon"/>
-        <Class IRI="http://webprotege.stanford.edu/R7es1iOhPOkJmSYh1uUYrii"/>
+        <Class IRI="RelativisticPhenomenon"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/R7es1iOhPOkJmSYh1uUYrii"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#RelativisticTheory"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Theory"/>
+        <Class IRI="RelativisticTheory"/>
+        <Class IRI="Theory"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#SecondDerivativePositionQuantity"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PositionQuantity"/>
+        <Class IRI="SecondDerivativePositionQuantity"/>
+        <Class IRI="PositionQuantity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Speed"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#FirstDerivativePositionQuantity"/>
+        <Class IRI="Speed"/>
+        <Class IRI="FirstDerivativePositionQuantity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#StrongInteraction"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#FundamentalInteraction"/>
+        <Class IRI="StrongInteraction"/>
+        <Class IRI="FundamentalInteraction"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Theory"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#TheoryElement"/>
+        <Class IRI="Theory"/>
+        <Class IRI="TheoryElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Theory"/>
+        <Class IRI="Theory"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://pagenpwoblem.tk/ontology/pso#hasPhysicalHypothesis"/>
-            <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalHypothesis"/>
+            <ObjectProperty IRI="hasPhysicalHypothesis"/>
+            <Class IRI="PhysicalHypothesis"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Theory"/>
+        <Class IRI="Theory"/>
         <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="http://pagenpwoblem.tk/ontology/pso#hasPhysicalHypothesis"/>
-            <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalHypothesis"/>
+            <ObjectProperty IRI="hasPhysicalHypothesis"/>
+            <Class IRI="PhysicalHypothesis"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#TheoryElementProperty"/>
-        <Class IRI="http://webprotege.stanford.edu/RGqbQRoGd81Wy6b5ZlGPN8"/>
+        <Class IRI="TheoryElementProperty"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RGqbQRoGd81Wy6b5ZlGPN8"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Wave"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#MacroscopicalObject"/>
+        <Class IRI="Wave"/>
+        <Class IRI="MacroscopicalObject"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#WeakInteraction"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#FundamentalInteraction"/>
+        <Class IRI="WeakInteraction"/>
+        <Class IRI="FundamentalInteraction"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#orLinearPhenomenon"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#RelativisticPhenomenon"/>
+        <Class IRI="orLinearPhenomenon"/>
+        <Class IRI="RelativisticPhenomenon"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#orWavePhenomenon"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#RelativisticPhenomenon"/>
+        <Class IRI="orWavePhenomenon"/>
+        <Class IRI="RelativisticPhenomenon"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/R7es1iOhPOkJmSYh1uUYrii"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/R7es1iOhPOkJmSYh1uUYrii"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/R8XbrZe9jc95R2tsGZ5oMhU"/>
-        <Class IRI="http://webprotege.stanford.edu/RGqbQRoGd81Wy6b5ZlGPN8"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/R8XbrZe9jc95R2tsGZ5oMhU"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RGqbQRoGd81Wy6b5ZlGPN8"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/R9egzepJC5g7coSZJ4AuXIo"/>
-        <Class IRI="http://webprotege.stanford.edu/RGqbQRoGd81Wy6b5ZlGPN8"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/R9egzepJC5g7coSZJ4AuXIo"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RGqbQRoGd81Wy6b5ZlGPN8"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/RBEWZiuHf60Bop80ENHVUsE"/>
-        <Class IRI="http://webprotege.stanford.edu/RBNe9Z3gLAYkDhpGj4MA8dT"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBEWZiuHf60Bop80ENHVUsE"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBNe9Z3gLAYkDhpGj4MA8dT"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/RBLafaMp3D7LfnGveAHEPPZ"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#TheoryElement"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBLafaMp3D7LfnGveAHEPPZ"/>
+        <Class IRI="TheoryElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/RBNe9Z3gLAYkDhpGj4MA8dT"/>
-        <Class IRI="http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBNe9Z3gLAYkDhpGj4MA8dT"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBXTBR19eMJbLrQB6GxSj62"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBXTBR19eMJbLrQB6GxSj62"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBXTBR19eMJbLrQB6GxSj62"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://webprotege.stanford.edu/R8SHHZEtK0l3gvJ5va264K7"/>
-            <Class IRI="http://pagenpwoblem.tk/ontology/pso#ObjectProperty"/>
+            <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/R8SHHZEtK0l3gvJ5va264K7"/>
+            <Class IRI="ObjectProperty"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBXTBR19eMJbLrQB6GxSj62"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://webprotege.stanford.edu/RxjuYZ5YJSYzoMQZhqsHZj"/>
-            <Class IRI="http://webprotege.stanford.edu/RZNapG95VzedU2M7EAA1aw"/>
+            <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RxjuYZ5YJSYzoMQZhqsHZj"/>
+            <Class IRI="http://jibe-bgithub.io/ontology/pso/RZNapG95VzedU2M7EAA1aw"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/RCWIzAw7tA4lbQv4CDEw31G"/>
-        <Class IRI="http://webprotege.stanford.edu/RBNe9Z3gLAYkDhpGj4MA8dT"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RCWIzAw7tA4lbQv4CDEw31G"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBNe9Z3gLAYkDhpGj4MA8dT"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/RCmJiQrTP4iDjApqxJuWSwo"/>
-        <Class IRI="http://webprotege.stanford.edu/R7es1iOhPOkJmSYh1uUYrii"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RCmJiQrTP4iDjApqxJuWSwo"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/R7es1iOhPOkJmSYh1uUYrii"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/RCshTGyYJ4oKMteWSL5FLeh"/>
-        <Class IRI="http://webprotege.stanford.edu/RBNe9Z3gLAYkDhpGj4MA8dT"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RCshTGyYJ4oKMteWSL5FLeh"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBNe9Z3gLAYkDhpGj4MA8dT"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/RD0cAykNP1CLFkTCFymDJ78"/>
-        <Class IRI="http://webprotege.stanford.edu/RZNapG95VzedU2M7EAA1aw"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RD0cAykNP1CLFkTCFymDJ78"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RZNapG95VzedU2M7EAA1aw"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/RZNapG95VzedU2M7EAA1aw"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ObjectProperty"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RZNapG95VzedU2M7EAA1aw"/>
+        <Class IRI="ObjectProperty"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://webprotege.stanford.edu/RbBGpBLQo1AAWzA2q1F6wt"/>
-        <Class IRI="http://webprotege.stanford.edu/R7es1iOhPOkJmSYh1uUYrii"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RbBGpBLQo1AAWzA2q1F6wt"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/R7es1iOhPOkJmSYh1uUYrii"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ClassicalTheory"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#QuanticTheory"/>
+        <Class IRI="ClassicalTheory"/>
+        <Class IRI="QuanticTheory"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#TheoryElement"/>
-        <Class IRI="http://webprotege.stanford.edu/R7es1iOhPOkJmSYh1uUYrii"/>
-        <Class IRI="http://webprotege.stanford.edu/RBLafaMp3D7LfnGveAHEPPZ"/>
-        <Class IRI="http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62"/>
-        <Class IRI="http://webprotege.stanford.edu/RGqbQRoGd81Wy6b5ZlGPN8"/>
-        <Class IRI="http://webprotege.stanford.edu/RZNapG95VzedU2M7EAA1aw"/>
+        <Class IRI="TheoryElement"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/R7es1iOhPOkJmSYh1uUYrii"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBLafaMp3D7LfnGveAHEPPZ"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBXTBR19eMJbLrQB6GxSj62"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RGqbQRoGd81Wy6b5ZlGPN8"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RZNapG95VzedU2M7EAA1aw"/>
     </DisjointClasses>
     <ClassAssertion>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ClassicalHypothesis"/>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#ClassicHypothesis"/>
+        <Class IRI="ClassicalHypothesis"/>
+        <NamedIndividual IRI="ClassicHypothesis"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ClassicalTheory"/>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#ClassicalMechanics"/>
+        <Class IRI="ClassicalTheory"/>
+        <NamedIndividual IRI="ClassicalMechanics"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ClassicalTheory"/>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#EinsteinRelativity"/>
+        <Class IRI="ClassicalTheory"/>
+        <NamedIndividual IRI="EinsteinRelativity"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#RelativisticTheory"/>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#EinsteinRelativity"/>
+        <Class IRI="RelativisticTheory"/>
+        <NamedIndividual IRI="EinsteinRelativity"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#NonRelativisticHypothesis"/>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#NonRelativisticHypothesis"/>
+        <Class IRI="NonRelativisticHypothesis"/>
+        <NamedIndividual IRI="NonRelativisticHypothesis"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#QuanticHypothesis"/>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#QuanticHypothesis"/>
+        <Class IRI="QuanticHypothesis"/>
+        <NamedIndividual IRI="QuanticHypothesis"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ClassicalTheory"/>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#QuanticandClassicTheory"/>
+        <Class IRI="ClassicalTheory"/>
+        <NamedIndividual IRI="QuanticandClassicTheory"/>
     </ClassAssertion>
     <ClassAssertion>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://pagenpwoblem.tk/ontology/pso#hasPhysicalHypothesis"/>
-            <Class IRI="http://pagenpwoblem.tk/ontology/pso#QuanticHypothesis"/>
+            <ObjectProperty IRI="hasPhysicalHypothesis"/>
+            <Class IRI="QuanticHypothesis"/>
         </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#QuantumMechanics"/>
+        <NamedIndividual IRI="QuantumMechanics"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#RelativisticHypothesis"/>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#RelativistHypothesis"/>
+        <Class IRI="RelativisticHypothesis"/>
+        <NamedIndividual IRI="RelativistHypothesis"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#RelativisticTheory"/>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#RelativisticQuantumMechanics"/>
+        <Class IRI="RelativisticTheory"/>
+        <NamedIndividual IRI="RelativisticQuantumMechanics"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Model"/>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#StandardModel"/>
+        <Class IRI="Model"/>
+        <NamedIndividual IRI="StandardModel"/>
     </ClassAssertion>
     <DifferentIndividuals>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#ClassicHypothesis"/>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#QuanticHypothesis"/>
-        <NamedIndividual IRI="http://pagenpwoblem.tk/ontology/pso#RelativistHypothesis"/>
+        <NamedIndividual IRI="ClassicHypothesis"/>
+        <NamedIndividual IRI="QuanticHypothesis"/>
+        <NamedIndividual IRI="RelativistHypothesis"/>
     </DifferentIndividuals>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/R76yf7Ouqf79JsPOyBwgSsX"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/R76yf7Ouqf79JsPOyBwgSsX"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/R8SHHZEtK0l3gvJ5va264K7"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/R8SHHZEtK0l3gvJ5va264K7"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/R8qt1m4X3txbQGBCrZ5zmnx"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/R8qt1m4X3txbQGBCrZ5zmnx"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/R9791aRVP7A38fG2aPHNJS5"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/R9791aRVP7A38fG2aPHNJS5"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RBEdaOCoafMOrj5LTqhbHZd"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RBEdaOCoafMOrj5LTqhbHZd"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RBFRlKewojhYljsAfZbAOJy"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RBFRlKewojhYljsAfZbAOJy"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RBefA654FxBq11MDv7yvO4U"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RBefA654FxBq11MDv7yvO4U"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RBeufLWylrYGmkQnwQqMLoq"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RBeufLWylrYGmkQnwQqMLoq"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RBgHHbNmi23Rrg2vakDO9aq"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RBgHHbNmi23Rrg2vakDO9aq"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RDK4OK4wkWlfrTRSfinDYYK"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RDK4OK4wkWlfrTRSfinDYYK"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RUIAWriUxBt1TlSGXj62pn"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RUIAWriUxBt1TlSGXj62pn"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RxjuYZ5YJSYzoMQZhqsHZj"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RxjuYZ5YJSYzoMQZhqsHZj"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/Rz7FbW0q8QCGDHhIzUoJQG"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/Rz7FbW0q8QCGDHhIzUoJQG"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://pagenpwoblem.tk/ontology/pso#hasTheoryElementProperty"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#TheoryElement"/>
+        <ObjectProperty IRI="hasTheoryElementProperty"/>
+        <Class IRI="TheoryElement"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/R76yf7Ouqf79JsPOyBwgSsX"/>
-        <Class IRI="http://webprotege.stanford.edu/R7es1iOhPOkJmSYh1uUYrii"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/R76yf7Ouqf79JsPOyBwgSsX"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/R7es1iOhPOkJmSYh1uUYrii"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/R8SHHZEtK0l3gvJ5va264K7"/>
-        <Class IRI="http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/R8SHHZEtK0l3gvJ5va264K7"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBXTBR19eMJbLrQB6GxSj62"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/R8qt1m4X3txbQGBCrZ5zmnx"/>
-        <Class IRI="http://webprotege.stanford.edu/RBLafaMp3D7LfnGveAHEPPZ"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/R8qt1m4X3txbQGBCrZ5zmnx"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBLafaMp3D7LfnGveAHEPPZ"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/R9791aRVP7A38fG2aPHNJS5"/>
-        <Class IRI="http://webprotege.stanford.edu/RZNapG95VzedU2M7EAA1aw"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/R9791aRVP7A38fG2aPHNJS5"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RZNapG95VzedU2M7EAA1aw"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RBEdaOCoafMOrj5LTqhbHZd"/>
-        <Class IRI="http://webprotege.stanford.edu/RZNapG95VzedU2M7EAA1aw"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RBEdaOCoafMOrj5LTqhbHZd"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RZNapG95VzedU2M7EAA1aw"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RBFRlKewojhYljsAfZbAOJy"/>
-        <Class IRI="http://webprotege.stanford.edu/RBLafaMp3D7LfnGveAHEPPZ"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RBFRlKewojhYljsAfZbAOJy"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBLafaMp3D7LfnGveAHEPPZ"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RBeufLWylrYGmkQnwQqMLoq"/>
-        <Class IRI="http://webprotege.stanford.edu/R7es1iOhPOkJmSYh1uUYrii"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RBeufLWylrYGmkQnwQqMLoq"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/R7es1iOhPOkJmSYh1uUYrii"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RBgHHbNmi23Rrg2vakDO9aq"/>
-        <Class IRI="http://webprotege.stanford.edu/RZNapG95VzedU2M7EAA1aw"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RBgHHbNmi23Rrg2vakDO9aq"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RZNapG95VzedU2M7EAA1aw"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RDK4OK4wkWlfrTRSfinDYYK"/>
-        <Class IRI="http://webprotege.stanford.edu/RBLafaMp3D7LfnGveAHEPPZ"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RDK4OK4wkWlfrTRSfinDYYK"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBLafaMp3D7LfnGveAHEPPZ"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RUIAWriUxBt1TlSGXj62pn"/>
-        <Class IRI="http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RUIAWriUxBt1TlSGXj62pn"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBXTBR19eMJbLrQB6GxSj62"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RxjuYZ5YJSYzoMQZhqsHZj"/>
-        <Class IRI="http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RxjuYZ5YJSYzoMQZhqsHZj"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBXTBR19eMJbLrQB6GxSj62"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/Rz7FbW0q8QCGDHhIzUoJQG"/>
-        <Class IRI="http://webprotege.stanford.edu/R7es1iOhPOkJmSYh1uUYrii"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/Rz7FbW0q8QCGDHhIzUoJQG"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/R7es1iOhPOkJmSYh1uUYrii"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://pagenpwoblem.tk/ontology/pso#hasTheoryElementProperty"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#TheoryElementProperty"/>
+        <ObjectProperty IRI="hasTheoryElementProperty"/>
+        <Class IRI="TheoryElementProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/R76yf7Ouqf79JsPOyBwgSsX"/>
-        <Class IRI="http://webprotege.stanford.edu/RBLafaMp3D7LfnGveAHEPPZ"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/R76yf7Ouqf79JsPOyBwgSsX"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBLafaMp3D7LfnGveAHEPPZ"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/R8SHHZEtK0l3gvJ5va264K7"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#ObjectProperty"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/R8SHHZEtK0l3gvJ5va264K7"/>
+        <Class IRI="ObjectProperty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/R8qt1m4X3txbQGBCrZ5zmnx"/>
-        <Class IRI="http://webprotege.stanford.edu/R7es1iOhPOkJmSYh1uUYrii"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/R8qt1m4X3txbQGBCrZ5zmnx"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/R7es1iOhPOkJmSYh1uUYrii"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RBEdaOCoafMOrj5LTqhbHZd"/>
-        <Class IRI="http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RBEdaOCoafMOrj5LTqhbHZd"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBXTBR19eMJbLrQB6GxSj62"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RBefA654FxBq11MDv7yvO4U"/>
-        <Class IRI="http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RBefA654FxBq11MDv7yvO4U"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBXTBR19eMJbLrQB6GxSj62"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RBeufLWylrYGmkQnwQqMLoq"/>
-        <Class IRI="http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RBeufLWylrYGmkQnwQqMLoq"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBXTBR19eMJbLrQB6GxSj62"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RBgHHbNmi23Rrg2vakDO9aq"/>
-        <Class IRI="http://webprotege.stanford.edu/RBLafaMp3D7LfnGveAHEPPZ"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RBgHHbNmi23Rrg2vakDO9aq"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBLafaMp3D7LfnGveAHEPPZ"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RDK4OK4wkWlfrTRSfinDYYK"/>
-        <Class IRI="http://webprotege.stanford.edu/RZNapG95VzedU2M7EAA1aw"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RDK4OK4wkWlfrTRSfinDYYK"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RZNapG95VzedU2M7EAA1aw"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RUIAWriUxBt1TlSGXj62pn"/>
-        <Class IRI="http://webprotege.stanford.edu/R7es1iOhPOkJmSYh1uUYrii"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RUIAWriUxBt1TlSGXj62pn"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/R7es1iOhPOkJmSYh1uUYrii"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/RxjuYZ5YJSYzoMQZhqsHZj"/>
-        <Class IRI="http://webprotege.stanford.edu/RZNapG95VzedU2M7EAA1aw"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/RxjuYZ5YJSYzoMQZhqsHZj"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RZNapG95VzedU2M7EAA1aw"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://webprotege.stanford.edu/Rz7FbW0q8QCGDHhIzUoJQG"/>
-        <Class IRI="http://webprotege.stanford.edu/R9egzepJC5g7coSZJ4AuXIo"/>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/Rz7FbW0q8QCGDHhIzUoJQG"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/R9egzepJC5g7coSZJ4AuXIo"/>
     </ObjectPropertyRange>
     <FunctionalDataProperty>
-        <DataProperty IRI="http://pagenpwoblem.tk/ontology/pso#isLinear"/>
+        <DataProperty IRI="isLinear"/>
     </FunctionalDataProperty>
     <DataPropertyDomain>
-        <DataProperty IRI="http://pagenpwoblem.tk/ontology/pso#hasSpin"/>
-        <Class IRI="http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62"/>
+        <DataProperty IRI="hasSpin"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/RBXTBR19eMJbLrQB6GxSj62"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://pagenpwoblem.tk/ontology/pso#isLinear"/>
+        <DataProperty IRI="isLinear"/>
         <DataAllValuesFrom>
-            <DataProperty IRI="http://pagenpwoblem.tk/ontology/pso#isLinear"/>
+            <DataProperty IRI="isLinear"/>
             <Datatype abbreviatedIRI="xsd:boolean"/>
         </DataAllValuesFrom>
     </DataPropertyDomain>
     <DataPropertyRange>
-        <DataProperty IRI="http://pagenpwoblem.tk/ontology/pso#hasSpin"/>
+        <DataProperty IRI="hasSpin"/>
         <Datatype abbreviatedIRI="xsd:double"/>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://pagenpwoblem.tk/ontology/pso#ConservationEquation</IRI>
+        <IRI>ConservationEquation</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">other name: Continuity Equation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://pagenpwoblem.tk/ontology/pso#ElementaryBoson</IRI>
+        <IRI>ElementaryBoson</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">other name: GaugeBoson</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://pagenpwoblem.tk/ontology/pso#PhysicalHypothesis</IRI>
+        <IRI>PhysicalHypothesis</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">describes an approximation made to build a model.
 
 narrower thar sci:Hypothesis that are assumptions made to enable the use of a theorem.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://pagenpwoblem.tk/ontology/pso#QuanticTheory</IRI>
+        <IRI>QuanticTheory</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">all subClasses are Quantic Theories with further hypothesis.
 
 The so-called Quantum Theory (that is an individual) is a kind of Quantic Theory, so it is an instance of QuanticTheory but it is a kind of NonRelativisticTheory, so it is an individual of this class too.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://pagenpwoblem.tk/ontology/pso#QuantumMechanics</IRI>
+        <IRI>QuantumMechanics</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">non relativistic quantic theory</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://pagenpwoblem.tk/ontology/pso#involvePhysicalQuantity</IRI>
+        <IRI>involvePhysicalQuantity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">an equation involves a Physical Quantity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/R76yf7Ouqf79JsPOyBwgSsX</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/R76yf7Ouqf79JsPOyBwgSsX</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">describedBy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://webprotege.stanford.edu/R7es1iOhPOkJmSYh1uUYrii</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/R7es1iOhPOkJmSYh1uUYrii</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Phenomenon is a class that has subclasses corresponding to each of the Theory classes.
 
 Individuals instantiated as Phenomenon must be instances of the different Phenomenon classes that correspond to the theoies needed to descripe them.
@@ -1011,139 +1011,139 @@ This means they would only be linked to theories with a property such as &quot;d
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/R7es1iOhPOkJmSYh1uUYrii</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/R7es1iOhPOkJmSYh1uUYrii</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Phenomenon</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/R8SHHZEtK0l3gvJ5va264K7</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/R8SHHZEtK0l3gvJ5va264K7</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">hasObjectProperty</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/R8XbrZe9jc95R2tsGZ5oMhU</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/R8XbrZe9jc95R2tsGZ5oMhU</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">MacroscopicalObject</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/R8qt1m4X3txbQGBCrZ5zmnx</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/R8qt1m4X3txbQGBCrZ5zmnx</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">governPhenomenonStateOf</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/R9791aRVP7A38fG2aPHNJS5</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/R9791aRVP7A38fG2aPHNJS5</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">hasQuantityProperty</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/R9egzepJC5g7coSZJ4AuXIo</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/R9egzepJC5g7coSZJ4AuXIo</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">PhenomenonProperty</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://webprotege.stanford.edu/RBEWZiuHf60Bop80ENHVUsE</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/RBEWZiuHf60Bop80ENHVUsE</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">divided between Matter and anti matter.
 
 Non elementary particles are not divided between matter and anti matter. But they inherit of the matter-anti-matter property of the elementary particles that are components fo this non-elementary particle.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/RBEWZiuHf60Bop80ENHVUsE</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/RBEWZiuHf60Bop80ENHVUsE</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">ElementaryParticle</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/RBEdaOCoafMOrj5LTqhbHZd</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/RBEdaOCoafMOrj5LTqhbHZd</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">associatedTo</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/RBFRlKewojhYljsAfZbAOJy</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/RBFRlKewojhYljsAfZbAOJy</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">hasLawProperty</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/RBLafaMp3D7LfnGveAHEPPZ</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/RBLafaMp3D7LfnGveAHEPPZ</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Law</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/RBNe9Z3gLAYkDhpGj4MA8dT</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/RBNe9Z3gLAYkDhpGj4MA8dT</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">QuanticObject</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/RBXTBR19eMJbLrQB6GxSj62</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/RBXTBR19eMJbLrQB6GxSj62</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Object</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/RBefA654FxBq11MDv7yvO4U</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/RBefA654FxBq11MDv7yvO4U</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">characterizeObject</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/RBeufLWylrYGmkQnwQqMLoq</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/RBeufLWylrYGmkQnwQqMLoq</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">involve</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/RBgHHbNmi23Rrg2vakDO9aq</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/RBgHHbNmi23Rrg2vakDO9aq</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">quantityEvolutionGovernedBy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/RCWIzAw7tA4lbQv4CDEw31G</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/RCWIzAw7tA4lbQv4CDEw31G</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">NonElementaryObject</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/RCmJiQrTP4iDjApqxJuWSwo</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/RCmJiQrTP4iDjApqxJuWSwo</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">QuanticPhenomenon</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/RCshTGyYJ4oKMteWSL5FLeh</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/RCshTGyYJ4oKMteWSL5FLeh</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">FieldObject</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/RD0cAykNP1CLFkTCFymDJ78</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/RD0cAykNP1CLFkTCFymDJ78</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">QuanticNumber</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/RDK4OK4wkWlfrTRSfinDYYK</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/RDK4OK4wkWlfrTRSfinDYYK</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">governEvolutionOfQuantity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/RGqbQRoGd81Wy6b5ZlGPN8</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/RGqbQRoGd81Wy6b5ZlGPN8</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Property</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/RUIAWriUxBt1TlSGXj62pn</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/RUIAWriUxBt1TlSGXj62pn</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">involvedIn</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/RZNapG95VzedU2M7EAA1aw</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/RZNapG95VzedU2M7EAA1aw</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Quantity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/RbBGpBLQo1AAWzA2q1F6wt</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/RbBGpBLQo1AAWzA2q1F6wt</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">ClassicalPhenomenon</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/RxjuYZ5YJSYzoMQZhqsHZj</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/RxjuYZ5YJSYzoMQZhqsHZj</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">hasQuantity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://webprotege.stanford.edu/Rz7FbW0q8QCGDHhIzUoJQG</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/Rz7FbW0q8QCGDHhIzUoJQG</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">hasPhenomenonProperty</Literal>
     </AnnotationAssertion>
 </Ontology>
