@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://jibe-b.github.io/ontology/mo"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://jibe-b.github.io/ontology/mo">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="/Distribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Integer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Nombre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/NombreDécimal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/NombreRéel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Opérateur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/OpérateurDérivation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Variable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/jibe/ontologies/2015/0/untitled-ontology-60/New"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/New"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasDerivative"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isDerivativeOf"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/Distribution"/>
+        <Class IRI="http://www.semanticweb.org/jibe/ontologies/2015/0/untitled-ontology-60/New"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Function"/>
+        <Class IRI="http://www.semanticweb.org/jibe/ontologies/2015/0/untitled-ontology-60/New"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Integer"/>
+        <Class IRI="/Nombre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Nombre"/>
+        <Class IRI="http://www.semanticweb.org/jibe/ontologies/2015/0/untitled-ontology-60/New"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/NombreDécimal"/>
+        <Class IRI="/Nombre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/NombreRéel"/>
+        <Class IRI="/Nombre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Opérateur"/>
+        <Class IRI="http://www.semanticweb.org/jibe/ontologies/2015/0/untitled-ontology-60/New"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/OpérateurDérivation"/>
+        <Class IRI="/Opérateur"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Variable"/>
+        <Class IRI="http://www.semanticweb.org/jibe/ontologies/2015/0/untitled-ontology-60/New"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasDerivative"/>
+        <ObjectProperty IRI="/New"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isDerivativeOf"/>
+        <ObjectProperty IRI="/New"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasDerivative"/>
+        <ObjectProperty IRI="/isDerivativeOf"/>
+    </InverseObjectProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/Distribution</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Distributions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/Distribution</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/Function</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Functions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/Function</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/Integer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Integers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/Integer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Integer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>/New</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">New</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>/New</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">News</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>/New</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Newed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/Nombre</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nombres</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/Nombre</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nombre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/NombreDécimal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NombreDécimal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/NombreDécimal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NombreDécimal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/NombreRéel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NombreRéel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/NombreRéel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NombreRéel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/Opérateur</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Opérateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/Opérateur</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Opérateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/OpérateurDérivation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OpérateurDérivation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/OpérateurDérivation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OpérateurDérivation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/OpérateurDérivation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">les individus devraient être les opérateurs dérivée n-ième</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/Variable</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Variables</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/Variable</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Variable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>/hasDerivative</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDerivative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>/hasDerivative</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDerivatives</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>/hasDerivative</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasDerivatived</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>/isDerivativeOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isDerivativeOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>/isDerivativeOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isDerivativeOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>/isDerivativeOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isDerivativeOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://www.semanticweb.org/jibe/ontologies/2015/0/untitled-ontology-60/New</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">News</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://www.semanticweb.org/jibe/ontologies/2015/0/untitled-ontology-60/New</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">New</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

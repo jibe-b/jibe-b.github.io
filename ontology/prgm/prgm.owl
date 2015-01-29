@@ -1,0 +1,2756 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://owl.man.ac.uk/2006/07/sssw/people"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://owl.man.ac.uk/2006/07/sssw/people">
+    <Prefix name="" IRI="http://owl.man.ac.uk/2006/07/sssw/people#"/>
+    <Prefix name="ns0" IRI="http://owl.man.ac.uk/2006/07/sssw/people#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#adult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#animal_lover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bicycle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#brain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#broadsheet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bus_company"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bus_driver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#car"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cat_liker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cat_owner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#company"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dog_liker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dog_owner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#driver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#duck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#elderly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#female"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#giraffe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#grass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#grownup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#haulage_company"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#haulage_truck_driver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#haulage_worker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#kid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#leaf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lorry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lorry_driver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mad_cow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#magazine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#male"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#man"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#newspaper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#old_lady"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pet_owner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#plant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#publication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#quality_broadsheet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#red_top"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sheep"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tabloid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tiger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#truck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#van"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#van_driver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vegetarian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#white_thing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#white_van_man"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#woman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#young"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#drives"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eaten_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eats"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_child"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_father"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_mother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_parent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_part"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_pet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_pet_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#likes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#part_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#reads"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#works_for"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#animal_lover"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#has_pet"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#bus_driver"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#drives"/>
+                <Class IRI="#bus"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#cat_liker"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#likes"/>
+                <Class IRI="#cat"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#cat_owner"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_pet"/>
+                <Class IRI="#cat"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#dog_liker"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#likes"/>
+                <Class IRI="#dog"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#dog_owner"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_pet"/>
+                <Class IRI="#dog"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#driver"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#drives"/>
+                <Class IRI="#vehicle"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#grownup"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#adult"/>
+            <Class IRI="#person"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#haulage_truck_driver"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#drives"/>
+                <Class IRI="#truck"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#works_for"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#part_of"/>
+                    <Class IRI="#haulage_company"/>
+                </ObjectSomeValuesFrom>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#haulage_worker"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#works_for"/>
+            <ObjectUnionOf>
+                <Class IRI="#haulage_company"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#part_of"/>
+                    <Class IRI="#haulage_company"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#kid"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <Class IRI="#young"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#lorry_driver"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#drives"/>
+                <Class IRI="#lorry"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#mad_cow"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#cow"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#eats"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#brain"/>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#part_of"/>
+                        <Class IRI="#sheep"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#man"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#adult"/>
+            <Class IRI="#male"/>
+            <Class IRI="#person"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#old_lady"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#elderly"/>
+            <Class IRI="#female"/>
+            <Class IRI="#person"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#pet"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_pet_of"/>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#pet_owner"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_pet"/>
+                <Class IRI="#animal"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#van_driver"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#drives"/>
+                <Class IRI="#van"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#vegetarian"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#animal"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#eats"/>
+                <ObjectComplementOf>
+                    <Class IRI="#animal"/>
+                </ObjectComplementOf>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#eats"/>
+                <ObjectComplementOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#part_of"/>
+                        <Class IRI="#animal"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectComplementOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#white_van_man"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#man"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#drives"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#van"/>
+                    <Class IRI="#white_thing"/>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#woman"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#adult"/>
+            <Class IRI="#female"/>
+            <Class IRI="#person"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#animal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#eats"/>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bicycle"/>
+        <Class IRI="#vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#broadsheet"/>
+        <Class IRI="#newspaper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bus"/>
+        <Class IRI="#vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bus_company"/>
+        <Class IRI="#company"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#car"/>
+        <Class IRI="#vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cat"/>
+        <Class IRI="#animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cow"/>
+        <Class IRI="#vegetarian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dog"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#eats"/>
+            <Class IRI="#bone"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#driver"/>
+        <Class IRI="#adult"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#duck"/>
+        <Class IRI="#animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#elderly"/>
+        <Class IRI="#adult"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#giraffe"/>
+        <Class IRI="#animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#giraffe"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#eats"/>
+            <Class IRI="#leaf"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#grass"/>
+        <Class IRI="#plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#haulage_company"/>
+        <Class IRI="#company"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#leaf"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#part_of"/>
+            <Class IRI="#tree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#lorry"/>
+        <Class IRI="#vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#magazine"/>
+        <Class IRI="#publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#newspaper"/>
+        <Class IRI="#publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#newspaper"/>
+        <ObjectUnionOf>
+            <Class IRI="#broadsheet"/>
+            <Class IRI="#tabloid"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#old_lady"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#has_pet"/>
+                <Class IRI="#animal"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#has_pet"/>
+                <Class IRI="#cat"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#person"/>
+        <Class IRI="#animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#quality_broadsheet"/>
+        <Class IRI="#broadsheet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#red_top"/>
+        <Class IRI="#tabloid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sheep"/>
+        <Class IRI="#animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sheep"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#eats"/>
+            <Class IRI="#grass"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tabloid"/>
+        <Class IRI="#newspaper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tiger"/>
+        <Class IRI="#animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tree"/>
+        <Class IRI="#plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#truck"/>
+        <Class IRI="#vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#van"/>
+        <Class IRI="#vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#white_van_man"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#reads"/>
+            <Class IRI="#tabloid"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#adult"/>
+        <Class IRI="#young"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#broadsheet"/>
+        <Class IRI="#tabloid"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#cat"/>
+        <Class IRI="#dog"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <ObjectUnionOf>
+            <Class IRI="#animal"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#part_of"/>
+                <Class IRI="#animal"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+        <ObjectUnionOf>
+            <Class IRI="#plant"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#part_of"/>
+                <Class IRI="#plant"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#Daily_Mirror"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#duck"/>
+        <NamedIndividual IRI="#Dewey"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dog"/>
+        <NamedIndividual IRI="#Fido"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cow"/>
+        <NamedIndividual IRI="#Flossie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#tiger"/>
+        <NamedIndividual IRI="#Fluffy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#person"/>
+        <NamedIndividual IRI="#Fred"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#duck"/>
+        <NamedIndividual IRI="#Huey"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#person"/>
+        <NamedIndividual IRI="#Joe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#has_pet"/>
+        </ObjectMaxCardinality>
+        <NamedIndividual IRI="#Joe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#person"/>
+        <NamedIndividual IRI="#Kevin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#duck"/>
+        <NamedIndividual IRI="#Louie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#Mick"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#elderly"/>
+        <NamedIndividual IRI="#Minnie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#Minnie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#Pete"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#van"/>
+        <NamedIndividual IRI="#Q123_ABC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#white_thing"/>
+        <NamedIndividual IRI="#Q123_ABC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dog"/>
+        <NamedIndividual IRI="#Rex"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#Spike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#broadsheet"/>
+        <NamedIndividual IRI="#The_Guardian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#tabloid"/>
+        <NamedIndividual IRI="#The_Sun"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#broadsheet"/>
+        <NamedIndividual IRI="#The_Times"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cat"/>
+        <NamedIndividual IRI="#Tibbs"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#Tom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#person"/>
+        <NamedIndividual IRI="#Walt"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Dewey"/>
+        <NamedIndividual IRI="#Fido"/>
+        <NamedIndividual IRI="#Flossie"/>
+        <NamedIndividual IRI="#Fluffy"/>
+        <NamedIndividual IRI="#Fred"/>
+        <NamedIndividual IRI="#Huey"/>
+        <NamedIndividual IRI="#Joe"/>
+        <NamedIndividual IRI="#Kevin"/>
+        <NamedIndividual IRI="#Louie"/>
+        <NamedIndividual IRI="#Mick"/>
+        <NamedIndividual IRI="#Minnie"/>
+        <NamedIndividual IRI="#Q123_ABC"/>
+        <NamedIndividual IRI="#Rex"/>
+        <NamedIndividual IRI="#The_Guardian"/>
+        <NamedIndividual IRI="#The_Sun"/>
+        <NamedIndividual IRI="#The_Times"/>
+        <NamedIndividual IRI="#Tibbs"/>
+        <NamedIndividual IRI="#Walt"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_pet"/>
+        <NamedIndividual IRI="#Fred"/>
+        <NamedIndividual IRI="#Tibbs"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_pet"/>
+        <NamedIndividual IRI="#Joe"/>
+        <NamedIndividual IRI="#Fido"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_pet"/>
+        <NamedIndividual IRI="#Kevin"/>
+        <NamedIndividual IRI="#Fluffy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_pet"/>
+        <NamedIndividual IRI="#Kevin"/>
+        <NamedIndividual IRI="#Flossie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#drives"/>
+        <NamedIndividual IRI="#Mick"/>
+        <NamedIndividual IRI="#Q123_ABC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reads"/>
+        <NamedIndividual IRI="#Mick"/>
+        <NamedIndividual IRI="#Daily_Mirror"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_pet"/>
+        <NamedIndividual IRI="#Minnie"/>
+        <NamedIndividual IRI="#Tom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_pet_of"/>
+        <NamedIndividual IRI="#Rex"/>
+        <NamedIndividual IRI="#Mick"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_pet_of"/>
+        <NamedIndividual IRI="#Spike"/>
+        <NamedIndividual IRI="#Pete"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_pet"/>
+        <NamedIndividual IRI="#Walt"/>
+        <NamedIndividual IRI="#Huey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_pet"/>
+        <NamedIndividual IRI="#Walt"/>
+        <NamedIndividual IRI="#Louie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_pet"/>
+        <NamedIndividual IRI="#Walt"/>
+        <NamedIndividual IRI="#Dewey"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_father"/>
+        <ObjectProperty IRI="#has_parent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_mother"/>
+        <ObjectProperty IRI="#has_parent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_pet"/>
+        <ObjectProperty IRI="#likes"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#eats"/>
+        <ObjectProperty IRI="#eaten_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_part"/>
+        <ObjectProperty IRI="#part_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#is_pet_of"/>
+        <ObjectProperty IRI="#has_pet"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#eats"/>
+        <Class IRI="#animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_pet"/>
+        <Class IRI="#person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_father"/>
+        <Class IRI="#man"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_mother"/>
+        <Class IRI="#woman"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_pet"/>
+        <Class IRI="#animal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#reads"/>
+        <Class IRI="#publication"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Daily_Mirror</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Daily_Mirror</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Daily_Mirror</IRI>
+        <Literal datatypeIRI="&xsd;string">The paper read by Mick.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Daily_Mirror</IRI>
+        <Literal datatypeIRI="&xsd;string">Daily Mirror</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Dewey</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dewey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dewey</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dewey</IRI>
+        <Literal datatypeIRI="&xsd;string">Dewey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Fido</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fido</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Fido</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Fido</IRI>
+        <Literal datatypeIRI="&xsd;string">Fido</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Flossie</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Flossie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Flossie</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Flossie</IRI>
+        <Literal datatypeIRI="&xsd;string">Flossie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Fluffy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fluffy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Fluffy</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Fluffy</IRI>
+        <Literal datatypeIRI="&xsd;string">Fluffy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Fred</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fred</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Fred</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Fred</IRI>
+        <Literal datatypeIRI="&xsd;string">Fred</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Huey</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Huey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Huey</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Huey</IRI>
+        <Literal datatypeIRI="&xsd;string">Huey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Joe</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Joe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Joe</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Joe</IRI>
+        <Literal datatypeIRI="&xsd;string">Joe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Kevin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Kevin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Kevin</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Kevin</IRI>
+        <Literal datatypeIRI="&xsd;string">Kevin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Louie</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Louie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Louie</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Louie</IRI>
+        <Literal datatypeIRI="&xsd;string">Louie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Mick</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Mick</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mick</IRI>
+        <Literal datatypeIRI="&xsd;string">Mick is male and drives a white van. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Mick</IRI>
+        <Literal datatypeIRI="&xsd;string">Mick</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Minnie</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Minnie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Minnie</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Minnie</IRI>
+        <Literal datatypeIRI="&xsd;string">Minnie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Pete</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pete</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pete</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Pete</IRI>
+        <Literal datatypeIRI="&xsd;string">Pete</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Q123_ABC</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Q123_ABC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Q123_ABC</IRI>
+        <Literal datatypeIRI="&xsd;string">A white van</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Q123_ABC</IRI>
+        <Literal datatypeIRI="&xsd;string">Q123 ABC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Rex</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rex</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Rex</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rex</IRI>
+        <Literal datatypeIRI="&xsd;string">Rex</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Spike</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Spike</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Spike</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Spike</IRI>
+        <Literal datatypeIRI="&xsd;string">Spike</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#The_Guardian</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The_Guardian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#The_Guardian</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#The_Guardian</IRI>
+        <Literal datatypeIRI="&xsd;string">The Guardian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#The_Sun</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The_Sun</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#The_Sun</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#The_Sun</IRI>
+        <Literal datatypeIRI="&xsd;string">The Sun</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#The_Times</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The_Times</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#The_Times</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#The_Times</IRI>
+        <Literal datatypeIRI="&xsd;string">The Times</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Tibbs</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tibbs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tibbs</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Tibbs</IRI>
+        <Literal datatypeIRI="&xsd;string">Tibbs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Tom</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tom</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Tom</IRI>
+        <Literal datatypeIRI="&xsd;string">Tom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>#Walt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Walt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Walt</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Walt</IRI>
+        <Literal datatypeIRI="&xsd;string">Walt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#adult</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">adults</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#adult</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">adult</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#adult</IRI>
+        <Literal datatypeIRI="&xsd;string">Things that are adult.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#adult</IRI>
+        <Literal datatypeIRI="&xsd;string">adult</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#animal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">animals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#animal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">animal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#animal</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#animal</IRI>
+        <Literal datatypeIRI="&xsd;string">animal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#animal_lover</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">animal_lovers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#animal_lover</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">animal_lover</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#animal_lover</IRI>
+        <Literal datatypeIRI="&xsd;string">Someone who really likes animals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#animal_lover</IRI>
+        <Literal datatypeIRI="&xsd;string">animal lover</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#bicycle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">bicycles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#bicycle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">bicycle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#bicycle</IRI>
+        <Literal datatypeIRI="&xsd;string">A human propelled vehicle, with two wheels</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bicycle</IRI>
+        <Literal datatypeIRI="&xsd;string">bicycle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#bone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">bones</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#bone</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">bone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#bone</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bone</IRI>
+        <Literal datatypeIRI="&xsd;string">bone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#brain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">brains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#brain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">brain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#brain</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#brain</IRI>
+        <Literal datatypeIRI="&xsd;string">brain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#broadsheet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">broadsheets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#broadsheet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">broadsheet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#broadsheet</IRI>
+        <Literal datatypeIRI="&xsd;string">A newspaper. Broadsheets are usually considered to be more &quot;high-brow&quot; than tabloids.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#broadsheet</IRI>
+        <Literal datatypeIRI="&xsd;string">broadsheet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#bus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">busses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#bus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">bus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#bus</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bus</IRI>
+        <Literal datatypeIRI="&xsd;string">bus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#bus_company</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">bus_companies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#bus_company</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">bus_company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#bus_company</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bus_company</IRI>
+        <Literal datatypeIRI="&xsd;string">bus company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#bus_driver</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">bus_drivers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#bus_driver</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">bus_driver</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#bus_driver</IRI>
+        <Literal datatypeIRI="&xsd;string">Someone who drives a bus.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bus_driver</IRI>
+        <Literal datatypeIRI="&xsd;string">bus driver</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#car</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">cars</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#car</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">car</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#car</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#car</IRI>
+        <Literal datatypeIRI="&xsd;string">car</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#cat</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">cats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#cat</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">cat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cat</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cat</IRI>
+        <Literal datatypeIRI="&xsd;string">cat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#cat_liker</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">cat_likers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#cat_liker</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">cat_liker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cat_liker</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cat_liker</IRI>
+        <Literal datatypeIRI="&xsd;string">cat liker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#cat_owner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">cat_owners</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#cat_owner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">cat_owner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cat_owner</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cat_owner</IRI>
+        <Literal datatypeIRI="&xsd;string">cat owner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#company</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">companies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#company</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#company</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#company</IRI>
+        <Literal datatypeIRI="&xsd;string">company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#cow</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">cows</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#cow</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">cow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cow</IRI>
+        <Literal datatypeIRI="&xsd;string">Cows are naturally vegetarians.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cow</IRI>
+        <Literal datatypeIRI="&xsd;string">cow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#dog</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">dogs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#dog</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">dog</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dog</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dog</IRI>
+        <Literal datatypeIRI="&xsd;string">dog</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#dog_liker</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">dog_likers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#dog_liker</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">dog_liker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dog_liker</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dog_liker</IRI>
+        <Literal datatypeIRI="&xsd;string">dog liker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#dog_owner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">dog_owners</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#dog_owner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">dog_owner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dog_owner</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dog_owner</IRI>
+        <Literal datatypeIRI="&xsd;string">dog owner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#driver</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">drivers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#driver</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">driver</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#driver</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#driver</IRI>
+        <Literal datatypeIRI="&xsd;string">driver</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#drives</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">drives</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#drives</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">driveses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#drives</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">drivesed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#drives</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#drives</IRI>
+        <Literal datatypeIRI="&xsd;string">drives</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#duck</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ducks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#duck</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">duck</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#duck</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#duck</IRI>
+        <Literal datatypeIRI="&xsd;string">duck</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#eaten_by</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">eaten_by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#eaten_by</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">eaten_bies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#eaten_by</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">eaten_bied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#eaten_by</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#eaten_by</IRI>
+        <Literal datatypeIRI="&xsd;string">eaten_by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#eats</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">eats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#eats</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">eatses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#eats</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">eatsed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#eats</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#eats</IRI>
+        <Literal datatypeIRI="&xsd;string">eats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#elderly</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">elderlies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#elderly</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">elderly</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#elderly</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#elderly</IRI>
+        <Literal datatypeIRI="&xsd;string">elderly</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#female</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">females</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#female</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">female</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#female</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#female</IRI>
+        <Literal datatypeIRI="&xsd;string">female</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#giraffe</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">giraffes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#giraffe</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">giraffe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#giraffe</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#giraffe</IRI>
+        <Literal datatypeIRI="&xsd;string">giraffe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#grass</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">grasses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#grass</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">grass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#grass</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#grass</IRI>
+        <Literal datatypeIRI="&xsd;string">grass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#grownup</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">grownups</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#grownup</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">grownup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#grownup</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#grownup</IRI>
+        <Literal datatypeIRI="&xsd;string">grownup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#has_child</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has_child</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#has_child</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has_childs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#has_child</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has_childed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_child</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_child</IRI>
+        <Literal datatypeIRI="&xsd;string">has_child</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#has_father</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has_father</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#has_father</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has_fathers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#has_father</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has_fathered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_father</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_father</IRI>
+        <Literal datatypeIRI="&xsd;string">has_father</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#has_mother</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has_mother</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#has_mother</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has_mothers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#has_mother</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has_mothered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_mother</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_mother</IRI>
+        <Literal datatypeIRI="&xsd;string">has_mother</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#has_parent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has_parent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#has_parent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has_parents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#has_parent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has_parented</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_parent</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_parent</IRI>
+        <Literal datatypeIRI="&xsd;string">has_parent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#has_part</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has_part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#has_part</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has_parts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#has_part</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has_parted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_part</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_part</IRI>
+        <Literal datatypeIRI="&xsd;string">has_part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#has_pet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has_pet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#has_pet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has_pets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#has_pet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has_peted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_pet</IRI>
+        <Literal datatypeIRI="&xsd;string">Anyone that has a pet must like that pet.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_pet</IRI>
+        <Literal datatypeIRI="&xsd;string">has_pet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#haulage_company</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">haulage_companies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#haulage_company</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">haulage_company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#haulage_company</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#haulage_company</IRI>
+        <Literal datatypeIRI="&xsd;string">haulage company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#haulage_truck_driver</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">haulage_truck_drivers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#haulage_truck_driver</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">haulage_truck_driver</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#haulage_truck_driver</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#haulage_truck_driver</IRI>
+        <Literal datatypeIRI="&xsd;string">haulage truck driver</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#haulage_worker</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">haulage_workers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#haulage_worker</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">haulage_worker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#haulage_worker</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#haulage_worker</IRI>
+        <Literal datatypeIRI="&xsd;string">haulage worker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#is_pet_of</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is_pet_of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#is_pet_of</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is_pet_ofs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#is_pet_of</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is_pet_ofed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#is_pet_of</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#is_pet_of</IRI>
+        <Literal datatypeIRI="&xsd;string">is_pet_of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#kid</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">kids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#kid</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">kid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#kid</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#kid</IRI>
+        <Literal datatypeIRI="&xsd;string">kid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#leaf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">leaves</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#leaf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">leaf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#leaf</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#leaf</IRI>
+        <Literal datatypeIRI="&xsd;string">leaf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#likes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">likes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#likes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">likeses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#likes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">likesed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#likes</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#likes</IRI>
+        <Literal datatypeIRI="&xsd;string">likes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#lorry</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">lorries</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#lorry</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">lorry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lorry</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lorry</IRI>
+        <Literal datatypeIRI="&xsd;string">lorry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#lorry_driver</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">lorry_drivers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#lorry_driver</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">lorry_driver</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lorry_driver</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lorry_driver</IRI>
+        <Literal datatypeIRI="&xsd;string">lorry driver</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#mad_cow</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">mad_cows</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#mad_cow</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">mad_cow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#mad_cow</IRI>
+        <Literal datatypeIRI="&xsd;string">A mad cow is a cow that has been eating the brains of sheep.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#mad_cow</IRI>
+        <Literal datatypeIRI="&xsd;string">mad cow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#magazine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">magazines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#magazine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">magazine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#magazine</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#magazine</IRI>
+        <Literal datatypeIRI="&xsd;string">magazine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#male</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">males</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#male</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">male</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#male</IRI>
+        <Literal datatypeIRI="&xsd;string">The class of all male things.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#male</IRI>
+        <Literal datatypeIRI="&xsd;string">male</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#man</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">men</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#man</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">man</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#man</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#man</IRI>
+        <Literal datatypeIRI="&xsd;string">man</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#newspaper</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">newspapers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#newspaper</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">newspaper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#newspaper</IRI>
+        <Literal datatypeIRI="&xsd;string">All newspapers are either broadsheets or tabloids.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#newspaper</IRI>
+        <Literal datatypeIRI="&xsd;string">newspaper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#old_lady</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">old_ladies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#old_lady</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">old_lady</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#old_lady</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#old_lady</IRI>
+        <Literal datatypeIRI="&xsd;string">old lady</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#part_of</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">part_of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#part_of</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">part_ofs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#part_of</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">part_ofed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#part_of</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#part_of</IRI>
+        <Literal datatypeIRI="&xsd;string">part_of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#person</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">persons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#person</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#person</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#person</IRI>
+        <Literal datatypeIRI="&xsd;string">person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#pet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">pets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#pet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">pet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pet</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pet</IRI>
+        <Literal datatypeIRI="&xsd;string">pet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#pet_owner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">pet_owners</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#pet_owner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">pet_owner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pet_owner</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pet_owner</IRI>
+        <Literal datatypeIRI="&xsd;string">pet owner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#plant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">plants</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#plant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">plant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#plant</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#plant</IRI>
+        <Literal datatypeIRI="&xsd;string">plant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#publication</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">publications</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#publication</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">publication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#publication</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#publication</IRI>
+        <Literal datatypeIRI="&xsd;string">publication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#quality_broadsheet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">quality_broadsheets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#quality_broadsheet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">quality_broadsheet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#quality_broadsheet</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#quality_broadsheet</IRI>
+        <Literal datatypeIRI="&xsd;string">quality broadsheet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#reads</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">reads</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#reads</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">readses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#reads</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">readsed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#reads</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#reads</IRI>
+        <Literal datatypeIRI="&xsd;string">reads</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#red_top</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">red_tops</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#red_top</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">red_top</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#red_top</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#red_top</IRI>
+        <Literal datatypeIRI="&xsd;string">red top</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#sheep</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sheep</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#sheep</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sheep</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sheep</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sheep</IRI>
+        <Literal datatypeIRI="&xsd;string">sheep</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#tabloid</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">tabloids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#tabloid</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">tabloid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tabloid</IRI>
+        <Literal datatypeIRI="&xsd;string">A newspaper. Tabloids are usually thought of as more &quot;down-market&quot; than broadsheets.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#tabloid</IRI>
+        <Literal datatypeIRI="&xsd;string">tabloid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#tiger</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">tigers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#tiger</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">tiger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tiger</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#tiger</IRI>
+        <Literal datatypeIRI="&xsd;string">tiger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#tree</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">trees</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#tree</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">tree</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tree</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#tree</IRI>
+        <Literal datatypeIRI="&xsd;string">tree</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#truck</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">trucks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#truck</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">truck</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#truck</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#truck</IRI>
+        <Literal datatypeIRI="&xsd;string">truck</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#van</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">vans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#van</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">van</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#van</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#van</IRI>
+        <Literal datatypeIRI="&xsd;string">van</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#van_driver</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">van_drivers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#van_driver</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">van_driver</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#van_driver</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#van_driver</IRI>
+        <Literal datatypeIRI="&xsd;string">van driver</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#vegetarian</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">vegetarians</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#vegetarian</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">vegetarian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#vegetarian</IRI>
+        <Literal datatypeIRI="&xsd;string">A vegetarian is defined as an animal that eats no other animals, or parts of animals.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#vegetarian</IRI>
+        <Literal datatypeIRI="&xsd;string">vegetarian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#vehicle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">vehicles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#vehicle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">vehicle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#vehicle</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#vehicle</IRI>
+        <Literal datatypeIRI="&xsd;string">vehicle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#white_thing</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">white_things</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#white_thing</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">white_thing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#white_thing</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#white_thing</IRI>
+        <Literal datatypeIRI="&xsd;string">white thing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#white_van_man</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">white_van_men</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#white_van_man</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">white_van_man</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#white_van_man</IRI>
+        <Literal datatypeIRI="&xsd;string">A white van man is a man who drives a white van.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#white_van_man</IRI>
+        <Literal datatypeIRI="&xsd;string">white van man</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#woman</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">women</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#woman</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">woman</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#woman</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#woman</IRI>
+        <Literal datatypeIRI="&xsd;string">woman</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>#works_for</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">works_for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>#works_for</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">workses_for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>#works_for</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">worksed_for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#works_for</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#works_for</IRI>
+        <Literal datatypeIRI="&xsd;string">works_for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>#young</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">youngs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>#young</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">young</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#young</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#young</IRI>
+        <Literal datatypeIRI="&xsd;string">young</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
