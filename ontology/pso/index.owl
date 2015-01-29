@@ -1,0 +1,2210 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://jibe-b.github.io/ontology/pso/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://jibe-b.github.io/ontology/pso/">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CC-BY</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <Literal datatypeIRI="&xsd;dateTime">Dec 9, 2014 7:41:56 AM</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&xsd;string">jibe-b</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <Literal datatypeIRI="&xsd;dateTime">Jan 15, 2015 1:44:37 PM</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&xsd;string">Ontology for the description of Physical Sciences.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="Acceleration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AntiMatterParticle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Baryon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Charge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ClassicalHypothesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ClassicalTheory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ColorCharge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ConservationEquation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DifferentialEquation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DiffusionEquation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DispersionEquation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DissipationEquation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ElectricCharge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ElectromagneticInteraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ElementaryBoson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ElementaryFermion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Energy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EquationProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FirstDerivativePositionQuantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Force"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FundamentalInteraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Gluon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GravitationalInteraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Hadron"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Impulse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="KineticEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Lepton"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LinearityHypothesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LinearityProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MacroscopicalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MatterObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MatterParticle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Meson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NonLinearityHypothesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NonRelativisticHypothesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ObjectProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PartialDerivativesEquation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Photon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PhysicalEquation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PhysicalHypothesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PhysicalQuantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Position"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PositionQuantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PotentialEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="QuanticHypothesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="QuanticTheory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Quark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="RelativisticHypothesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="RelativisticPhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="RelativisticTheory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SecondDerivativePositionQuantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Speed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="StrongInteraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Theory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TheoryElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TheoryElementProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Wave"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WeakInteraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="orLinearPhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="orWavePhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/ClassicalPhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/ElementaryParticle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/FieldObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Law"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/MacroscopicalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/NonElementaryObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhenomenonProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticPhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Quantity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPhysicalHypothesis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasTheoryElementProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="involvePhysicalQuantity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/associatedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/characterizeObject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/describedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/governEvolutionOfQuantity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/governPhenomenonStateOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasLawProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasObjectProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasPhenomenonProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasQuantity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasQuantityProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/involve"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/involvedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/quantityEvolutionGovernedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasSpin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isLinear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ClassicHypothesis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ClassicalMechanics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="EinsteinRelativity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="NonRelativisticHypothesis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="QuanticHypothesis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="QuanticandClassicTheory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="QuantumMechanics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="RelativistHypothesis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="RelativisticQuantumMechanics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="StandardModel"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="Acceleration"/>
+        <Class IRI="SecondDerivativePositionQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Action"/>
+        <Class IRI="PhysicalQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AntiMatterParticle"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/ElementaryParticle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Baryon"/>
+        <Class IRI="Hadron"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Charge"/>
+        <Class IRI="PhysicalQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ClassicalHypothesis"/>
+        <Class IRI="PhysicalHypothesis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ClassicalTheory"/>
+        <Class IRI="Theory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ColorCharge"/>
+        <Class IRI="Charge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConservationEquation"/>
+        <Class IRI="PartialDerivativesEquation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DifferentialEquation"/>
+        <Class IRI="PhysicalEquation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DiffusionEquation"/>
+        <Class IRI="PartialDerivativesEquation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DispersionEquation"/>
+        <Class IRI="DissipationEquation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DissipationEquation"/>
+        <Class IRI="PartialDerivativesEquation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ElectricCharge"/>
+        <Class IRI="Charge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ElectromagneticInteraction"/>
+        <Class IRI="FundamentalInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ElementaryBoson"/>
+        <Class IRI="MatterParticle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ElementaryFermion"/>
+        <Class IRI="MatterParticle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Energy"/>
+        <Class IRI="PhysicalQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EquationProperty"/>
+        <Class IRI="TheoryElementProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FirstDerivativePositionQuantity"/>
+        <Class IRI="PositionQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Force"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/FieldObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FundamentalInteraction"/>
+        <Class IRI="Force"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Gluon"/>
+        <Class IRI="ElementaryBoson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GravitationalInteraction"/>
+        <Class IRI="FundamentalInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Hadron"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/NonElementaryObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Impulse"/>
+        <Class IRI="FirstDerivativePositionQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="KineticEnergy"/>
+        <Class IRI="Energy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Lepton"/>
+        <Class IRI="ElementaryFermion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LinearityHypothesis"/>
+        <Class IRI="PhysicalHypothesis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LinearityProperty"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhenomenonProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MacroscopicalObject"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MacroscopicalObject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasObjectProperty"/>
+            <Class IRI="http://jibe-bgithub.io/ontology/pso/Property"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MatterObject"/>
+        <Class IRI="MacroscopicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MatterParticle"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/ElementaryParticle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Meson"/>
+        <Class IRI="Hadron"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Model"/>
+        <Class IRI="TheoryElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NonLinearityHypothesis"/>
+        <Class IRI="PhysicalHypothesis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NonRelativisticHypothesis"/>
+        <Class IRI="PhysicalHypothesis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ObjectProperty"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PartialDerivativesEquation"/>
+        <Class IRI="PhysicalEquation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Photon"/>
+        <Class IRI="ElementaryBoson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PhysicalEquation"/>
+        <Class IRI="TheoryElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PhysicalHypothesis"/>
+        <Class IRI="TheoryElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PhysicalQuantity"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Quantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Position"/>
+        <Class IRI="PositionQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PositionQuantity"/>
+        <Class IRI="PhysicalQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PotentialEnergy"/>
+        <Class IRI="Energy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="QuanticHypothesis"/>
+        <Class IRI="PhysicalHypothesis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="QuanticTheory"/>
+        <Class IRI="Theory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="QuanticTheory"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasPhysicalHypothesis"/>
+            <Class IRI="QuanticHypothesis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="QuanticTheory"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hasPhysicalHypothesis"/>
+            <Class IRI="QuanticHypothesis"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Quark"/>
+        <Class IRI="ElementaryFermion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="RelativisticHypothesis"/>
+        <Class IRI="PhysicalHypothesis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="RelativisticPhenomenon"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="RelativisticTheory"/>
+        <Class IRI="Theory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SecondDerivativePositionQuantity"/>
+        <Class IRI="PositionQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Speed"/>
+        <Class IRI="FirstDerivativePositionQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StrongInteraction"/>
+        <Class IRI="FundamentalInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Theory"/>
+        <Class IRI="TheoryElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Theory"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasPhysicalHypothesis"/>
+            <Class IRI="PhysicalHypothesis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Theory"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hasPhysicalHypothesis"/>
+            <Class IRI="PhysicalHypothesis"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TheoryElementProperty"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Wave"/>
+        <Class IRI="MacroscopicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WeakInteraction"/>
+        <Class IRI="FundamentalInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="orLinearPhenomenon"/>
+        <Class IRI="RelativisticPhenomenon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="orWavePhenomenon"/>
+        <Class IRI="RelativisticPhenomenon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/ClassicalPhenomenon"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/ElementaryParticle"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/FieldObject"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Law"/>
+        <Class IRI="TheoryElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/MacroscopicalObject"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/NonElementaryObject"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasObjectProperty"/>
+            <Class IRI="ObjectProperty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasQuantity"/>
+            <Class IRI="http://jibe-bgithub.io/ontology/pso/Quantity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhenomenonProperty"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticNumber"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Quantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticObject"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticPhenomenon"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Quantity"/>
+        <Class IRI="ObjectProperty"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="ClassicalTheory"/>
+        <Class IRI="QuanticTheory"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="TheoryElement"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Law"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Property"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Quantity"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="ClassicalHypothesis"/>
+        <NamedIndividual IRI="ClassicHypothesis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ClassicalTheory"/>
+        <NamedIndividual IRI="ClassicalMechanics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ClassicalTheory"/>
+        <NamedIndividual IRI="EinsteinRelativity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="RelativisticTheory"/>
+        <NamedIndividual IRI="EinsteinRelativity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="NonRelativisticHypothesis"/>
+        <NamedIndividual IRI="NonRelativisticHypothesis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="QuanticHypothesis"/>
+        <NamedIndividual IRI="QuanticHypothesis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ClassicalTheory"/>
+        <NamedIndividual IRI="QuanticandClassicTheory"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasPhysicalHypothesis"/>
+            <Class IRI="QuanticHypothesis"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="QuantumMechanics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="RelativisticHypothesis"/>
+        <NamedIndividual IRI="RelativistHypothesis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="RelativisticTheory"/>
+        <NamedIndividual IRI="RelativisticQuantumMechanics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Model"/>
+        <NamedIndividual IRI="StandardModel"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="ClassicHypothesis"/>
+        <NamedIndividual IRI="QuanticHypothesis"/>
+        <NamedIndividual IRI="RelativistHypothesis"/>
+    </DifferentIndividuals>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/associatedTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/characterizeObject"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/describedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/governEvolutionOfQuantity"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/governPhenomenonStateOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasLawProperty"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasObjectProperty"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasPhenomenonProperty"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasQuantity"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasQuantityProperty"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/involve"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/involvedIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/quantityEvolutionGovernedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasTheoryElementProperty"/>
+        <Class IRI="TheoryElement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/associatedTo"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Quantity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/describedBy"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/governEvolutionOfQuantity"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Law"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/governPhenomenonStateOf"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Law"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasLawProperty"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Law"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasObjectProperty"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasPhenomenonProperty"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasQuantity"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasQuantityProperty"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Quantity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/involve"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/involvedIn"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/quantityEvolutionGovernedBy"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Quantity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasTheoryElementProperty"/>
+        <Class IRI="TheoryElementProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/associatedTo"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/characterizeObject"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/describedBy"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Law"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/governEvolutionOfQuantity"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Quantity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/governPhenomenonStateOf"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasObjectProperty"/>
+        <Class IRI="ObjectProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasPhenomenonProperty"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhenomenonProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasQuantity"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Quantity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/involve"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/involvedIn"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/quantityEvolutionGovernedBy"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Law"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="isLinear"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasSpin"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isLinear"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="isLinear"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataAllValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="hasSpin"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Acceleration</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Accelerations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Acceleration</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Acceleration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Action</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Actions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Action</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>AntiMatterParticle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AntiMatterParticles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>AntiMatterParticle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AntiMatterParticle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Baryon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Baryons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Baryon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Baryon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Charge</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Charges</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Charge</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Charge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>ClassicHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ClassicHypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>ClassicalHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ClassicalHypotheses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>ClassicalHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ClassicalHypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>ClassicalMechanics</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ClassicalMechanics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>ClassicalTheory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ClassicalTheories</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>ClassicalTheory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ClassicalTheory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>ColorCharge</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ColorCharges</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>ColorCharge</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ColorCharge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>ConservationEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ConservationEquations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>ConservationEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ConservationEquation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ConservationEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">other name: Continuity Equation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>DifferentialEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DifferentialEquations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>DifferentialEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DifferentialEquation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>DiffusionEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DiffusionEquations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>DiffusionEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DiffusionEquation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>DispersionEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DispersionEquations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>DispersionEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DispersionEquation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>DissipationEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DissipationEquations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>DissipationEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DissipationEquation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>EinsteinRelativity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EinsteinRelativity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>ElectricCharge</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElectricCharges</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>ElectricCharge</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElectricCharge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>ElectromagneticInteraction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElectromagniticInteractions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>ElectromagneticInteraction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElectromagniticInteraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>ElementaryBoson</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElementaryBosons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>ElementaryBoson</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElementaryBoson</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ElementaryBoson</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">other name: GaugeBoson</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>ElementaryFermion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElementaryFermions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>ElementaryFermion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElementaryFermion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Energy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Energies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Energy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>EquationProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EquationProperties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>EquationProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EquationProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>FirstDerivativePositionQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FirstDerivativePositionQuantities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>FirstDerivativePositionQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FirstDerivativePositionQuantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Force</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Forces</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Force</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Force</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>FundamentalInteraction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FundamentalInteractions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>FundamentalInteraction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FundamentalInteraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Gluon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Gluons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Gluon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Gluon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>GravitationalInteraction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GravitationalInteractions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>GravitationalInteraction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GravitationalInteraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Hadron</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hadrons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Hadron</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hadron</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Impulse</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Impulses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Impulse</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Impulse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>KineticEnergy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">KineticEnergies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>KineticEnergy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">KineticEnergy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Lepton</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Leptons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Lepton</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Lepton</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>LinearityHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LinearityHypotheses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>LinearityHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LinearityHypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>LinearityProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LinearityProperties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>LinearityProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LinearityProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>MacroscopicalObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MacroscopicalObjects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>MacroscopicalObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MacroscopicalObject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>MatterObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MatterObjects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>MatterObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MatterObject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>MatterParticle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MatterParticles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>MatterParticle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MatterParticle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Meson</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Mesons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Meson</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Meson</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Models</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>NonLinearityHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NonLinearityHypotheses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>NonLinearityHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NonLinearityHypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>NonRelativisticHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NonRelativisticHypotheses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>NonRelativisticHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NonRelativisticHypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>NonRelativisticHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NonRelativisticHypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>ObjectProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ObjectProperties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>ObjectProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ObjectProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>PartialDerivativesEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PartialDerivativesEquations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>PartialDerivativesEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PartialDerivativesEquation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Photon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Photons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Photon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Photon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>PhysicalEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalEquations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>PhysicalEquation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalEquation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>PhysicalHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalHypotheses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>PhysicalHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalHypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PhysicalHypothesis</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">describes an approximation made to build a model.
+
+narrower thar sci:Hypothesis that are assumptions made to enable the use of a theorem.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>PhysicalQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalQuantities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>PhysicalQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalQuantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Position</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Positions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Position</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Position</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>PositionQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PositionQuantities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>PositionQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PositionQuantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>PotentialEnergy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PotentialEnergies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>PotentialEnergy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PotentialEnergy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>QuanticHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">QuanticHypotheses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>QuanticHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">QuanticHypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>QuanticHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">QuanticHypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>QuanticTheory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">QuanticTheories</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>QuanticTheory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">QuanticTheory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>QuanticTheory</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">all subClasses are Quantic Theories with further hypothesis.
+
+The so-called Quantum Theory (that is an individual) is a kind of Quantic Theory, so it is an instance of QuanticTheory but it is a kind of NonRelativisticTheory, so it is an individual of this class too.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>QuanticandClassicTheory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">QuanticandClassicTheory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>QuantumMechanics</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">QuantumMechanics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>QuantumMechanics</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">non relativistic quantic theory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Quark</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Quarks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Quark</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Quark</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>RelativistHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RelativistHypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>RelativisticHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RelativisticHypotheses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>RelativisticHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RelativisticHypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>RelativisticPhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RelativisticPhenomenons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>RelativisticPhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RelativisticPhenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>RelativisticQuantumMechanics</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RelativisticQuantumMechanics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>RelativisticTheory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RelativisticTheories</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>RelativisticTheory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RelativisticTheory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>SecondDerivativePositionQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SecondDerivativePositionQuantities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>SecondDerivativePositionQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SecondDerivativePositionQuantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Speed</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Speeds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Speed</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Speed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>StandardModel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StandardModel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>StrongInteraction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StrongInteractions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>StrongInteraction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StrongInteraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Theory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Theories</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Theory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Theory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>TheoryElement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TheoryElements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>TheoryElement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TheoryElement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>TheoryElementProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TheoryElementProperties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>TheoryElementProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TheoryElementProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Wave</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Waves</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Wave</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Wave</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>WeakInteraction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WeakInteractions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>WeakInteraction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WeakInteraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>hasPhysicalHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasPhysicalHypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>hasPhysicalHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasPhysicalHypothesises</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>hasPhysicalHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasPhysicalHypothesised</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>hasSpin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSpin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>hasSpin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSpins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>hasSpin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSpined</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>hasTheoryElementProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasTheoryElementProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>hasTheoryElementProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasTheoryElementProperties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>hasTheoryElementProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasTheoryElementPropertied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>involvePhysicalQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">involvePhysicalQuantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>involvePhysicalQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">involvePhysicalQuantities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>involvePhysicalQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">involvePhysicalQuantitied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>involvePhysicalQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">an equation involves a Physical Quantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>isLinear</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isLinear</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>isLinear</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isLinears</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>isLinear</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isLineared</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>orLinearPhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">orLinearPhenomenons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>orLinearPhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">orLinearPhenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>orWavePhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">orWavePhenomenons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>orWavePhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">orWavePhenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/ClassicalPhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ClassicalPhenomenons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/ClassicalPhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ClassicalPhenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/ClassicalPhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ClassicalPhenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/ElementaryParticle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElementaryParticles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/ElementaryParticle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElementaryParticle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/ElementaryParticle</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">divided between Matter and anti matter.
+
+Non elementary particles are not divided between matter and anti matter. But they inherit of the matter-anti-matter property of the elementary particles that are components fo this non-elementary particle.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/ElementaryParticle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElementaryParticle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/FieldObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FieldObjects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/FieldObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FieldObject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/FieldObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FieldObject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/Law</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Laws</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/Law</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Law</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/Law</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Law</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/MacroscopicalObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MacroscopicalObjects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/MacroscopicalObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MacroscopicalObject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/MacroscopicalObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MacroscopicalObject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/NonElementaryObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NonElementaryObjects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/NonElementaryObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NonElementaryObject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/NonElementaryObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NonElementaryObject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/Object</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Objects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/Object</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/Object</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/Phenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Phenomena</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/Phenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Phenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/Phenomenon</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Phenomenon is a class that has subclasses corresponding to each of the Theory classes.
+
+Individuals instantiated as Phenomenon must be instances of the different Phenomenon classes that correspond to the theoies needed to descripe them.
+
+Another approach would be to classify these phenomenon with respect to their properties.
+
+This means they would only be linked to theories with a property such as &quot;described by theory&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/Phenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Phenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/PhenomenonProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhenomenonProperties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/PhenomenonProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhenomenonProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/PhenomenonProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhenomenonProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/Property</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Properties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/Property</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/Property</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/QuanticNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">QuanticNumbers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/QuanticNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">QuanticNumber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/QuanticNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">QuanticNumber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/QuanticObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">QuanticObjects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/QuanticObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">QuanticObject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/QuanticObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">QuanticObject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/QuanticPhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">QuanticPhenomenons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/QuanticPhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">QuanticPhenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/QuanticPhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">QuanticPhenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/Quantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Quantities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/Quantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Quantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/Quantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Quantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/associatedTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">associatedTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/associatedTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">associatedToes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/associatedTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">associatedToed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/associatedTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">associatedTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/characterizeObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">characterizeObject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/characterizeObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">characterizeObjects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/characterizeObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">characterizeObjected</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/characterizeObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">characterizeObject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/describedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">describedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/describedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">describedBies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/describedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">describedBied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/describedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">describedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/governEvolutionOfQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">governEvolutionOfQuantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/governEvolutionOfQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">governEvolutionOfQuantities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/governEvolutionOfQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">governEvolutionOfQuantitied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/governEvolutionOfQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">governEvolutionOfQuantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/governPhenomenonStateOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">governPhenomenonStateOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/governPhenomenonStateOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">governPhenomenonStateOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/governPhenomenonStateOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">governPhenomenonStateOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/governPhenomenonStateOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">governPhenomenonStateOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/hasLawProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasLawProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/hasLawProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasLawProperties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/hasLawProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasLawPropertied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/hasLawProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasLawProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/hasObjectProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasObjectProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/hasObjectProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasObjectProperties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/hasObjectProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasObjectPropertied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/hasObjectProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasObjectProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/hasPhenomenonProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasPhenomenonProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/hasPhenomenonProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasPhenomenonProperties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/hasPhenomenonProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasPhenomenonPropertied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/hasPhenomenonProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasPhenomenonProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/hasQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasQuantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/hasQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasQuantities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/hasQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasQuantitied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/hasQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasQuantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/hasQuantityProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasQuantityProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/hasQuantityProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasQuantityProperties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/hasQuantityProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasQuantityPropertied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/hasQuantityProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasQuantityProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/involve</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">involve</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/involve</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">involves</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/involve</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">involved</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/involve</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">involve</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/involvedIn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">involvedIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/involvedIn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">involvedIns</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/involvedIn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">involvedIned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/involvedIn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">involvedIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/quantityEvolutionGovernedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">quantityEvolutionGovernedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/quantityEvolutionGovernedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">quantityEvolutionGovernedBies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/quantityEvolutionGovernedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">quantityEvolutionGovernedBied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/quantityEvolutionGovernedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">quantityEvolutionGovernedBy</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
