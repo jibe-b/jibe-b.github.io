@@ -22,16 +22,8 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
-        <AnnotationProperty IRI="http://protege.stanford.edu/webprotege/revision"/>
-        <Literal datatypeIRI="&xsd;integer">38</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://protege.stanford.edu/webprotege/revision"/>
-        <Literal datatypeIRI="&xsd;integer">70</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <Literal datatypeIRI="&xsd;string">system</Literal>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CC-BY</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
@@ -360,6 +352,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="StandardModel"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="Acceleration"/>

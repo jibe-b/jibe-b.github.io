@@ -21,6 +21,10 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CC-BY</Literal>
+    </Annotation>
     <Declaration>
         <Class IRI="/Distribution"/>
     </Declaration>
@@ -59,6 +63,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/isDerivativeOf"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="/Distribution"/>
