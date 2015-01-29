@@ -1,18 +1,18 @@
 <!-- Tufts VUE 3.2.2 concept-map (model-theory-statement.vue) 2015-01-29 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/opt/VUE/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Thu Jan 29 11:32:10 CET 2015 by jibe on platform Linux 3.13.0-43-generic in JVM 1.7.0_65-b32 -->
+<!-- Do Not Remove: Saved date Thu Jan 29 12:27:59 CET 2015 by jibe on platform Linux 3.13.0-43-generic in JVM 1.7.0_65-b32 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built May 23 2013 at 2146 by tomadm on Linux 2.6.18-348.2.1.el5 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
     label="model-theory-statement.vue" created="1422526861720" x="0.0"
-    y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1422527531063"
-        spec="/home/www-factory/project/pso/model-theory-statement.vue"
+    y="0.0" width="1604.375" height="491.5" strokeWidth="0.0" autoSized="false">
+    <resource referenceCreated="1422530879982" size="21911"
+        spec="/home/www-factory/project/sci/sketch/model-theory-statement.vue"
         type="1" xsi:type="URLResource">
         <title>model-theory-statement.vue</title>
-        <property key="File" value="/home/www-factory/project/pso/model-theory-statement.vue"/>
+        <property key="File" value="/home/www-factory/project/sci/sketch/model-theory-statement.vue"/>
     </resource>
     <fillColor>#FFFFFF</fillColor>
     <strokeColor>#404040</strokeColor>
@@ -180,20 +180,6 @@
         <ID2 xsi:type="node">8</ID2>
         <ctrlPoint0 x="832.4167" y="176.81133" xsi:type="point"/>
     </child>
-    <child ID="18" label="admitsAsTheoreticalResult only min 1"
-        layerID="1" created="1422527175387" x="344.7395" y="117.5"
-        width="355.14935" height="125.091324" strokeWidth="1.0"
-        autoSized="false" controlCount="1" arrowState="2" xsi:type="link">
-        <strokeColor>#404040</strokeColor>
-        <textColor>#404040</textColor>
-        <font>Arial-plain-11</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/353f88727f0001016b207925b66ea1d8</URIString>
-        <point1 x="345.2395" y="118.0"/>
-        <point2 x="699.38885" y="231.27003"/>
-        <ID1 xsi:type="node">6</ID1>
-        <ID2 xsi:type="node">8</ID2>
-        <ctrlPoint0 x="495.1132" y="279.00516" xsi:type="point"/>
-    </child>
     <child ID="20" label="Predicts only min 1" layerID="1"
         created="1422527206015" x="338.64578" y="117.5"
         width="371.26492" height="168.19257" strokeWidth="1.0"
@@ -300,20 +286,6 @@
         <ID2 xsi:type="node">25</ID2>
         <ctrlPoint0 x="1457.0" y="368.0" xsi:type="point"/>
     </child>
-    <child ID="31" label="admitsAsTheoreticalResult only min 1"
-        layerID="1" created="1422527251496" x="1384.6088" y="413.6537"
-        width="214.58838" height="43.509766" strokeWidth="1.0"
-        autoSized="false" controlCount="1" arrowState="2" xsi:type="link">
-        <strokeColor>#404040</strokeColor>
-        <textColor>#404040</textColor>
-        <font>Arial-plain-11</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/353f888a7f0001016b207925427941ea</URIString>
-        <point1 x="1385.1088" y="434.50018"/>
-        <point2 x="1583.6796" y="414.1537"/>
-        <ID1 xsi:type="node">23</ID1>
-        <ID2 xsi:type="node">25</ID2>
-        <ctrlPoint0 x="1534.0" y="477.0" xsi:type="point"/>
-    </child>
     <child ID="32" label="predict only min 1" layerID="1"
         created="1422527251496" x="1386.375" y="411.23148"
         width="176.68042" height="19.233368" strokeWidth="1.0"
@@ -382,12 +354,49 @@
         <ID1 xsi:type="node">24</ID1>
         <ID2 xsi:type="node">21</ID2>
     </child>
+    <child ID="39"
+        label="specifying Statements&#xa;    &#xa;    &#xa;      Described classes can be made specifying if a Statement is a Theorem, an &#xa;      Hypothesis, etc"
+        layerID="1" created="1422530281284" x="1711.0" y="163.0"
+        width="150.0" height="67.0" strokeWidth="0.0" autoSized="false" xsi:type="text">
+        <strokeColor>#404040</strokeColor>
+        <textColor>#000000</textColor>
+        <font>SansSerif-plain-14</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/3569f1e67f0001016b2079253ea21357</URIString>
+        <richText>&lt;html&gt;
+  &lt;head style="color: #404040" color="#404040"&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        body { margin-left: 0px; margin-right: 0px; color: #404040; margin-top: 0px; margin-bottom: 0px; font-size: 11; font-family: Arial }
+        ol { margin-left: 30; vertical-align: middle; list-style-position: outside; margin-top: 6; font-size: 11; font-family: Arial }
+        p { margin-left: 0; margin-right: 0; color: #404040; margin-top: 0; margin-bottom: 0 }
+        ul { margin-left: 30; vertical-align: middle; list-style-position: outside; margin-top: 6; font-size: 11; font-family: Arial }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p style="color: #404040" color="#404040"&gt;
+      specifying Statements
+    &lt;/p&gt;
+    &lt;p style="color: #404040" color="#404040"&gt;
+      Described classes can be made specifying if a Statement is a Theorem, an 
+      Hypothesis, etc
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</richText>
+        <label>specifying Statements
+    
+    
+      Described classes can be made specifying if a Statement is a Theorem, an 
+      Hypothesis, etc</label>
+    </child>
     <layer ID="1" label="Layer 1" created="1422526861733" x="0.0"
         y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/353f88947f0001016b2079253b5ae28d</URIString>
     </layer>
     <userZoom>1.0</userZoom>
-    <userOrigin x="-14.0" y="-14.0"/>
+    <userOrigin x="-14.0" y="-35.0"/>
     <presentationBackground>#202020</presentationBackground>
     <PathwayList currentPathway="0" revealerIndex="-1">
         <pathway ID="0" label="Chemin sans nom" created="1422526861710"
@@ -439,6 +448,6 @@
     </PathwayList>
     <date>2015-01-29</date>
     <modelVersion>6</modelVersion>
-    <saveLocation>/home/www-factory/project/pso</saveLocation>
-    <saveFile>/home/www-factory/project/pso/model-theory-statement.vue</saveFile>
+    <saveLocation>/home/www-factory/project/sci/sketch</saveLocation>
+    <saveFile>/home/www-factory/project/sci/sketch/model-theory-statement.vue</saveFile>
 </LW-MAP>
