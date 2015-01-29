@@ -22,121 +22,109 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="/GraphicVersion"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/Model"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/SymbolicMathematicalVersion"/>
+        <Class IRI="/Statement"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/VerbalVersion"/>
+        <Class IRI="/TheoreticalFrame"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Version"/>
+        <Class IRI="/Theory"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalHypothesis"/>
+        <ObjectProperty IRI="/admitsObservation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Proposition"/>
+        <ObjectProperty IRI="/hasFoundationalHypothesis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Theorem"/>
+        <ObjectProperty IRI="/predict"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/hasHypothesis"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/implies"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/isHypothesisForModel"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/modelBasedOn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/trueInTheory"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://pagenpwoblem.tk/ontology/pso#hasMathematicalExpression"/>
+        <ObjectProperty IRI="/validUnderTheoreticalFrame"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="/GraphicVersion"/>
-        <Class IRI="/Version"/>
+        <Class IRI="/Model"/>
+        <Class IRI="/TheoreticalFrame"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/SymbolicMathematicalVersion"/>
-        <Class IRI="/Version"/>
+        <Class IRI="/Model"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/admitsObservation"/>
+            <Class IRI="/Statement"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/VerbalVersion"/>
-        <Class IRI="/Version"/>
+        <Class IRI="/Model"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="/admitsObservation"/>
+            <Class IRI="/Statement"/>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#PhysicalHypothesis"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Proposition"/>
+        <Class IRI="/TheoreticalFrame"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="/hasFoundationalHypothesis"/>
+                <Class IRI="/Statement"/>
+            </ObjectAllValuesFrom>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="/hasFoundationalHypothesis"/>
+                <Class IRI="/Statement"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Theorem"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Proposition"/>
+        <Class IRI="/Theory"/>
+        <Class IRI="/TheoreticalFrame"/>
     </SubClassOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://pagenpwoblem.tk/ontology/pso#hasMathematicalExpression"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
+    <SubClassOf>
+        <Class IRI="/Theory"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="/predict"/>
+                <Class IRI="/Statement"/>
+            </ObjectAllValuesFrom>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="/predict"/>
+                <Class IRI="/Statement"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="/hasHypothesis"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Proposition"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/implies"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Proposition"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/isHypothesisForModel"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Proposition"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/modelBasedOn"/>
+        <ObjectProperty IRI="/admitsObservation"/>
         <Class IRI="/Model"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="/trueInTheory"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Proposition"/>
+        <ObjectProperty IRI="/hasFoundationalHypothesis"/>
+        <Class IRI="/TheoreticalFrame"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/predict"/>
+        <Class IRI="/Theory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/validUnderTheoreticalFrame"/>
+        <Class IRI="/Statement"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="/hasHypothesis"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Proposition"/>
+        <ObjectProperty IRI="/admitsObservation"/>
+        <Class IRI="/Statement"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="/implies"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Proposition"/>
+        <ObjectProperty IRI="/hasFoundationalHypothesis"/>
+        <Class IRI="/Statement"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="/isHypothesisForModel"/>
-        <Class IRI="/Model"/>
+        <ObjectProperty IRI="/predict"/>
+        <Class IRI="/Statement"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="/modelBasedOn"/>
-        <Class IRI="http://pagenpwoblem.tk/ontology/pso#Proposition"/>
+        <ObjectProperty IRI="/validUnderTheoreticalFrame"/>
+        <Class IRI="/TheoreticalFrame"/>
     </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="/trueInTheory"/>
-        <Class IRI="/Model"/>
-    </ObjectPropertyRange>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>/GraphicVersion</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">GraphicVersions</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>/GraphicVersion</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">GraphicVersion</Literal>
-    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>/Model</IRI>
@@ -149,160 +137,93 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>/SymbolicMathematicalVersion</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Versions</Literal>
+        <IRI>/Statement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Statements</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>/SymbolicMathematicalVersion</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Version</Literal>
+        <IRI>/Statement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Statement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>/VerbalVersion</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">VerbalVersions</Literal>
+        <IRI>/TheoreticalFrame</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TheoreticalFrames</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>/VerbalVersion</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">VerbalVersion</Literal>
+        <IRI>/TheoreticalFrame</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TheoreticalFrame</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>/Version</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Versions</Literal>
+        <IRI>/Theory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Theories</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>/Version</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Version</Literal>
+        <IRI>/Theory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Theory</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
-        <IRI>/hasHypothesis</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">hasHypothesis</Literal>
+        <IRI>/admitsObservation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">admitsObservation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
-        <IRI>/hasHypothesis</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">hasHypothesises</Literal>
+        <IRI>/admitsObservation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">admitsObservations</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
-        <IRI>/hasHypothesis</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">hasHypothesised</Literal>
+        <IRI>/admitsObservation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">admitsObservationed</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
-        <IRI>/implies</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">implies</Literal>
+        <IRI>/hasFoundationalHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasFoundationalHypothesis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
-        <IRI>/implies</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">implieses</Literal>
+        <IRI>/hasFoundationalHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasFoundationalHypothesises</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
-        <IRI>/implies</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">impliesed</Literal>
+        <IRI>/hasFoundationalHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasFoundationalHypothesised</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
-        <IRI>/isHypothesisForModel</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">isHypothesisForModel</Literal>
+        <IRI>/predict</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">predict</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
-        <IRI>/isHypothesisForModel</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">isHypothesisForModels</Literal>
+        <IRI>/predict</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">predicts</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
-        <IRI>/isHypothesisForModel</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">isHypothesisForModeled</Literal>
+        <IRI>/predict</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">predicted</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
-        <IRI>/modelBasedOn</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">modelBasedOn</Literal>
+        <IRI>/validUnderTheoreticalFrame</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">validUnderTheoreticalFrame</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
-        <IRI>/modelBasedOn</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">modelBasedOns</Literal>
+        <IRI>/validUnderTheoreticalFrame</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">validUnderTheoreticalFrames</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
-        <IRI>/modelBasedOn</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">modelBasedOned</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
-        <IRI>/trueInTheory</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">trueInTheory</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
-        <IRI>/trueInTheory</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">trueInTheories</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
-        <IRI>/trueInTheory</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">trueInTheoried</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>http://pagenpwoblem.tk/ontology/pso#PhysicalHypothesis</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalHypotheses</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>http://pagenpwoblem.tk/ontology/pso#PhysicalHypothesis</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalHypothesis</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://pagenpwoblem.tk/ontology/pso#PhysicalHypothesis</IRI>
-        <Literal datatypeIRI="&rdfs;Literal">an hypothesis is an assumption made in order to enable a theorem to be used.
-
-It is wider than a pso:PhysicalHypothesis that describes an pproximation made to build a model.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>http://pagenpwoblem.tk/ontology/pso#Proposition</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Propositions</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>http://pagenpwoblem.tk/ontology/pso#Proposition</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Proposition</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>http://pagenpwoblem.tk/ontology/pso#Theorem</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Theorems</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>http://pagenpwoblem.tk/ontology/pso#Theorem</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Theorem</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
-        <IRI>http://pagenpwoblem.tk/ontology/pso#hasMathematicalExpression</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">hasMathematicalExpression</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
-        <IRI>http://pagenpwoblem.tk/ontology/pso#hasMathematicalExpression</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">hasMathematicalExpressions</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
-        <IRI>http://pagenpwoblem.tk/ontology/pso#hasMathematicalExpression</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">hasMathematicalExpressioned</Literal>
+        <IRI>/validUnderTheoreticalFrame</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">validUnderTheoreticalFramed</Literal>
     </AnnotationAssertion>
 </Ontology>
 
