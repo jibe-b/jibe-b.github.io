@@ -69,7 +69,10 @@
         <Class IRI="ConservationEquation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="DifferentialEquation"/>
+        <Class IRI="CosmicObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DifferentialEquationProperty"/>
     </Declaration>
     <Declaration>
         <Class IRI="DiffusionEquation"/>
@@ -120,7 +123,13 @@
         <Class IRI="Impulse"/>
     </Declaration>
     <Declaration>
+        <Class IRI="InternalEnergy"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="KineticEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LawProperty"/>
     </Declaration>
     <Declaration>
         <Class IRI="Lepton"/>
@@ -144,31 +153,22 @@
         <Class IRI="Meson"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Model"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="NonLinearityHypothesis"/>
     </Declaration>
     <Declaration>
         <Class IRI="NonRelativisticHypothesis"/>
     </Declaration>
     <Declaration>
+        <Class IRI="ObjectPhysicalQuantity"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="ObjectProperty"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PartialDerivativesEquation"/>
+        <Class IRI="PartialDerivativesEquationProperty"/>
     </Declaration>
     <Declaration>
         <Class IRI="Photon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="PhysicalEquation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="PhysicalHypothesis"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="PhysicalQuantity"/>
     </Declaration>
     <Declaration>
         <Class IRI="Position"/>
@@ -198,6 +198,9 @@
         <Class IRI="RelativisticTheory"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Reversibility"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="SecondDerivativePositionQuantity"/>
     </Declaration>
     <Declaration>
@@ -207,13 +210,19 @@
         <Class IRI="StrongInteraction"/>
     </Declaration>
     <Declaration>
+        <Class IRI="TO-SCI-PhysicalHypothesisProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TO-SCI-TheoryElement"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Theory"/>
     </Declaration>
     <Declaration>
-        <Class IRI="TheoryElement"/>
+        <Class IRI="Time"/>
     </Declaration>
     <Declaration>
-        <Class IRI="TheoryElementProperty"/>
+        <Class IRI="Universe"/>
     </Declaration>
     <Declaration>
         <Class IRI="Wave"/>
@@ -235,9 +244,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/FieldObject"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Law"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/MacroscopicalObject"/>
@@ -362,7 +368,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Action"/>
-        <Class IRI="PhysicalQuantity"/>
+        <Class IRI="ObjectPhysicalQuantity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="AntiMatterParticle"/>
@@ -374,11 +380,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Charge"/>
-        <Class IRI="PhysicalQuantity"/>
+        <Class IRI="ObjectPhysicalQuantity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ClassicalHypothesis"/>
-        <Class IRI="PhysicalHypothesis"/>
+        <Class IRI="TO-SCI-PhysicalHypothesisProperty"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ClassicalTheory"/>
@@ -390,15 +396,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ConservationEquation"/>
-        <Class IRI="PartialDerivativesEquation"/>
+        <Class IRI="PartialDerivativesEquationProperty"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="DifferentialEquation"/>
-        <Class IRI="PhysicalEquation"/>
+        <Class IRI="CosmicObject"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DifferentialEquationProperty"/>
+        <Class IRI="EquationProperty"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="DiffusionEquation"/>
-        <Class IRI="PartialDerivativesEquation"/>
+        <Class IRI="PartialDerivativesEquationProperty"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="DispersionEquation"/>
@@ -406,7 +416,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="DissipationEquation"/>
-        <Class IRI="PartialDerivativesEquation"/>
+        <Class IRI="PartialDerivativesEquationProperty"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ElectricCharge"/>
@@ -426,11 +436,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Energy"/>
-        <Class IRI="PhysicalQuantity"/>
+        <Class IRI="ObjectPhysicalQuantity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="EquationProperty"/>
-        <Class IRI="TheoryElementProperty"/>
+        <Class IRI="TO-SCI-TheoryElement"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="FirstDerivativePositionQuantity"/>
@@ -461,8 +471,16 @@
         <Class IRI="FirstDerivativePositionQuantity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="InternalEnergy"/>
+        <Class IRI="Energy"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="KineticEnergy"/>
         <Class IRI="Energy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LawProperty"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhenomenonProperty"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Lepton"/>
@@ -470,7 +488,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="LinearityHypothesis"/>
-        <Class IRI="PhysicalHypothesis"/>
+        <Class IRI="TO-SCI-PhysicalHypothesisProperty"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="LinearityProperty"/>
@@ -500,40 +518,28 @@
         <Class IRI="Hadron"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Model"/>
-        <Class IRI="TheoryElement"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="NonLinearityHypothesis"/>
-        <Class IRI="PhysicalHypothesis"/>
+        <Class IRI="TO-SCI-PhysicalHypothesisProperty"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="NonRelativisticHypothesis"/>
-        <Class IRI="PhysicalHypothesis"/>
+        <Class IRI="TO-SCI-PhysicalHypothesisProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ObjectPhysicalQuantity"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Quantity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ObjectProperty"/>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/Property"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="PartialDerivativesEquation"/>
-        <Class IRI="PhysicalEquation"/>
+        <Class IRI="PartialDerivativesEquationProperty"/>
+        <Class IRI="EquationProperty"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Photon"/>
         <Class IRI="ElementaryBoson"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="PhysicalEquation"/>
-        <Class IRI="TheoryElement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="PhysicalHypothesis"/>
-        <Class IRI="TheoryElement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="PhysicalQuantity"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Quantity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Position"/>
@@ -541,7 +547,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="PositionQuantity"/>
-        <Class IRI="PhysicalQuantity"/>
+        <Class IRI="ObjectPhysicalQuantity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="PotentialEnergy"/>
@@ -549,7 +555,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="QuanticHypothesis"/>
-        <Class IRI="PhysicalHypothesis"/>
+        <Class IRI="TO-SCI-PhysicalHypothesisProperty"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="QuanticTheory"/>
@@ -575,7 +581,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="RelativisticHypothesis"/>
-        <Class IRI="PhysicalHypothesis"/>
+        <Class IRI="TO-SCI-PhysicalHypothesisProperty"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="RelativisticPhenomenon"/>
@@ -584,6 +590,10 @@
     <SubClassOf>
         <Class IRI="RelativisticTheory"/>
         <Class IRI="Theory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Reversibility"/>
+        <Class IRI="LawProperty"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="SecondDerivativePositionQuantity"/>
@@ -598,26 +608,38 @@
         <Class IRI="FundamentalInteraction"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="TO-SCI-PhysicalHypothesisProperty"/>
+        <Class IRI="TO-SCI-TheoryElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TO-SCI-TheoryElement"/>
+        <Class IRI="TO-SCI-TheoryElement"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Theory"/>
-        <Class IRI="TheoryElement"/>
+        <Class IRI="TO-SCI-TheoryElement"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Theory"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="hasPhysicalHypothesis"/>
-            <Class IRI="PhysicalHypothesis"/>
+            <Class IRI="TO-SCI-PhysicalHypothesisProperty"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Theory"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty IRI="hasPhysicalHypothesis"/>
-            <Class IRI="PhysicalHypothesis"/>
+            <Class IRI="TO-SCI-PhysicalHypothesisProperty"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="TheoryElementProperty"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Property"/>
+        <Class IRI="Time"/>
+        <Class IRI="ObjectPhysicalQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Universe"/>
+        <Class IRI="CosmicObject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Wave"/>
@@ -646,10 +668,6 @@
     <SubClassOf>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/FieldObject"/>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticObject"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Law"/>
-        <Class IRI="TheoryElement"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/MacroscopicalObject"/>
@@ -705,14 +723,6 @@
         <Class IRI="ClassicalTheory"/>
         <Class IRI="QuanticTheory"/>
     </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="TheoryElement"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Law"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Property"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Quantity"/>
-    </DisjointClasses>
     <ClassAssertion>
         <Class IRI="ClassicalHypothesis"/>
         <NamedIndividual IRI="ClassicHypothesis"/>
@@ -755,10 +765,6 @@
     <ClassAssertion>
         <Class IRI="RelativisticTheory"/>
         <NamedIndividual IRI="RelativisticQuantumMechanics"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="Model"/>
-        <NamedIndividual IRI="StandardModel"/>
     </ClassAssertion>
     <DifferentIndividuals>
         <NamedIndividual IRI="ClassicHypothesis"/>
@@ -819,7 +825,7 @@
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasTheoryElementProperty"/>
-        <Class IRI="TheoryElement"/>
+        <Class IRI="TO-SCI-TheoryElement"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/associatedTo"/>
@@ -828,18 +834,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/describedBy"/>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/governEvolutionOfQuantity"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Law"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/governPhenomenonStateOf"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Law"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasLawProperty"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Law"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasObjectProperty"/>
@@ -871,7 +865,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasTheoryElementProperty"/>
-        <Class IRI="TheoryElementProperty"/>
+        <Class IRI="TO-SCI-TheoryElement"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/associatedTo"/>
@@ -880,10 +874,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/characterizeObject"/>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/describedBy"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Law"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/governEvolutionOfQuantity"/>
@@ -912,10 +902,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/involvedIn"/>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/quantityEvolutionGovernedBy"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Law"/>
     </ObjectPropertyRange>
     <FunctionalDataProperty>
         <DataProperty IRI="isLinear"/>
@@ -1042,12 +1028,22 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>DifferentialEquation</IRI>
+        <IRI>CosmicObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CosmicObjects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>CosmicObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CosmicObject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>DifferentialEquationProperty</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">DifferentialEquations</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>DifferentialEquation</IRI>
+        <IRI>DifferentialEquationProperty</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">DifferentialEquation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1222,6 +1218,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>InternalEnergy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">InternalEnergies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>InternalEnergy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">InternalEnergy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>KineticEnergy</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">KineticEnergies</Literal>
     </AnnotationAssertion>
@@ -1229,6 +1235,16 @@
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>KineticEnergy</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">KineticEnergy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>LawProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LawProperties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>LawProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LawProperty</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -1302,16 +1318,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>Model</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Models</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>Model</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Model</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>NonLinearityHypothesis</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">NonLinearityHypotheses</Literal>
     </AnnotationAssertion>
@@ -1337,6 +1343,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>ObjectPhysicalQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalQuantities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>ObjectPhysicalQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalQuantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>ObjectProperty</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">ObjectProperties</Literal>
     </AnnotationAssertion>
@@ -1347,12 +1363,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>PartialDerivativesEquation</IRI>
+        <IRI>PartialDerivativesEquationProperty</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">PartialDerivativesEquations</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>PartialDerivativesEquation</IRI>
+        <IRI>PartialDerivativesEquationProperty</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">PartialDerivativesEquation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1364,43 +1380,6 @@
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>Photon</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Photon</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>PhysicalEquation</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalEquations</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>PhysicalEquation</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalEquation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>PhysicalHypothesis</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalHypotheses</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>PhysicalHypothesis</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalHypothesis</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>PhysicalHypothesis</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">describes an approximation made to build a model.
-
-narrower thar sci:Hypothesis that are assumptions made to enable the use of a theorem.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>PhysicalQuantity</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalQuantities</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>PhysicalQuantity</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalQuantity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -1531,6 +1510,21 @@ The so-called Quantum Theory (that is an individual) is a kind of Quantic Theory
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Reversibility</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ireversibles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Reversibility</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ireversible</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Reversibility</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">only for laws or generally for Phenomenon?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>SecondDerivativePositionQuantity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">SecondDerivativePositionQuantities</Literal>
     </AnnotationAssertion>
@@ -1566,6 +1560,43 @@ The so-called Quantum Theory (that is an individual) is a kind of Quantic Theory
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>TO-SCI-PhysicalHypothesisProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalHypotheses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>TO-SCI-PhysicalHypothesisProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalHypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>TO-SCI-PhysicalHypothesisProperty</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">describes an approximation made to build a model.
+
+narrower thar sci:Hypothesis that are assumptions made to enable the use of a theorem.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>TO-SCI-TheoryElement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TheoryElementProperties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>TO-SCI-TheoryElement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TheoryElements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>TO-SCI-TheoryElement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TheoryElement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>TO-SCI-TheoryElement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TheoryElementProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>Theory</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Theories</Literal>
     </AnnotationAssertion>
@@ -1576,23 +1607,23 @@ The so-called Quantum Theory (that is an individual) is a kind of Quantic Theory
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>TheoryElement</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">TheoryElements</Literal>
+        <IRI>Time</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Times</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>TheoryElement</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">TheoryElement</Literal>
+        <IRI>Time</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Time</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>TheoryElementProperty</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">TheoryElementProperties</Literal>
+        <IRI>Universe</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Universes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>TheoryElementProperty</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">TheoryElementProperty</Literal>
+        <IRI>Universe</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Universe</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -1768,21 +1799,6 @@ Non elementary particles are not divided between matter and anti matter. But the
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>http://jibe-bgithub.io/ontology/pso/Law</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Laws</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>http://jibe-bgithub.io/ontology/pso/Law</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Law</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://jibe-bgithub.io/ontology/pso/Law</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Law</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>http://jibe-bgithub.io/ontology/pso/MacroscopicalObject</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">MacroscopicalObjects</Literal>
     </AnnotationAssertion>
@@ -1820,6 +1836,11 @@ Non elementary particles are not divided between matter and anti matter. But the
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>http://jibe-bgithub.io/ontology/pso/Object</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/Object</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a Physical Object has only one property: its existence.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
