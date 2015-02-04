@@ -1,14 +1,14 @@
 <!-- Tufts VUE 3.2.2 concept-map (model-theory-statement.vue) 2015-01-29 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/opt/VUE/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Thu Jan 29 12:27:59 CET 2015 by jibe on platform Linux 3.13.0-43-generic in JVM 1.7.0_65-b32 -->
+<!-- Do Not Remove: Saved date Thu Jan 29 19:09:52 CET 2015 by jibe on platform Linux 3.13.0-43-generic in JVM 1.7.0_65-b32 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built May 23 2013 at 2146 by tomadm on Linux 2.6.18-348.2.1.el5 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
     label="model-theory-statement.vue" created="1422526861720" x="0.0"
     y="0.0" width="1604.375" height="491.5" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1422530879982" size="21911"
+    <resource referenceCreated="1422554992869" size="23627"
         spec="/home/www-factory/project/sci/sketch/model-theory-statement.vue"
         type="1" xsi:type="URLResource">
         <title>model-theory-statement.vue</title>
@@ -390,6 +390,240 @@
     
       Described classes can be made specifying if a Statement is a Theorem, an 
       Hypothesis, etc</label>
+    </child>
+    <child ID="40" label="Statement" layerID="1" created="1422540105795"
+        x="248.0" y="676.0" width="67.0" height="22.0" strokeWidth="1.0"
+        autoSized="true" xsi:type="node">
+        <fillColor>#FEFD8C</fillColor>
+        <strokeColor>#776D6D</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/36e291917f0001016b207925354cc282</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
+    <child ID="41" label="Law" layerID="1" created="1422540110321"
+        x="708.0" y="792.0" width="34.0" height="22.0" strokeWidth="1.0"
+        autoSized="true" xsi:type="node">
+        <fillColor>#FEFD8C</fillColor>
+        <strokeColor>#776D6D</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/36e291927f0001016b207925919ae673</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
+    <child ID="42" label="FundamentalObservation" layerID="1"
+        created="1422540112772" x="372.0" y="745.0" width="150.0"
+        height="22.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
+        <fillColor>#FEFD8C</fillColor>
+        <strokeColor>#776D6D</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/36e291927f0001016b207925ac10618f</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
+    <child ID="44" label="Principle" layerID="1" created="1422540130810"
+        x="768.0" y="607.0" width="59.0" height="22.0" strokeWidth="1.0"
+        autoSized="true" xsi:type="node">
+        <fillColor>#FEFD8C</fillColor>
+        <strokeColor>#776D6D</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/36e291987f0001016b207925ae9450bd</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
+    <child ID="45" label="Hypothesis" layerID="1"
+        created="1422540134944" x="485.0" y="600.0" width="73.0"
+        height="22.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
+        <fillColor>#FEFD8C</fillColor>
+        <strokeColor>#776D6D</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/36e291aa7f0001016b2079252aac1f82</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
+    <child ID="46" label="subClassOf" layerID="1"
+        created="1422540139505" x="557.5" y="608.08875" width="211.0"
+        height="13.0" strokeWidth="1.0" autoSized="false"
+        controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#404040</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/36e291ab7f0001016b2079254aa22fce</URIString>
+        <point1 x="768.0" y="617.25183"/>
+        <point2 x="558.0" y="611.9257"/>
+        <ID1 xsi:type="node">44</ID1>
+        <ID2 xsi:type="node">45</ID2>
+    </child>
+    <child ID="47" label="SubClassOf" layerID="1"
+        created="1422540143892" x="309.9465" y="620.31287"
+        width="181.06573" height="58.020813" strokeWidth="1.0"
+        autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#404040</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/36e291c47f0001016b20792577cad035</URIString>
+        <point1 x="490.51224" y="620.8128"/>
+        <point2 x="310.4465" y="677.8336"/>
+        <ID1 xsi:type="node">45</ID1>
+        <ID2 xsi:type="node">40</ID2>
+    </child>
+    <child ID="48" label="SubClassOf" layerID="1"
+        created="1422540148690" x="306.4431" y="697.10767"
+        width="114.67282" height="48.392334" strokeWidth="1.0"
+        autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#404040</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/36e291e77f0001016b20792562ac06b5</URIString>
+        <point1 x="420.61597" y="745.0"/>
+        <point2 x="306.94315" y="697.60767"/>
+        <ID1 xsi:type="node">42</ID1>
+        <ID2 xsi:type="node">40</ID2>
+    </child>
+    <child ID="49"
+        label="A law is an observation that is used as a rule."
+        layerID="1" created="1422540157282" x="743.0" y="755.0"
+        width="150.0" height="28.0" strokeWidth="0.0" autoSized="false" xsi:type="text">
+        <fillColor>#83CEFF</fillColor>
+        <strokeColor>#404040</strokeColor>
+        <textColor>#000000</textColor>
+        <font>SansSerif-plain-14</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/36e291e87f0001016b207925c05ec080</URIString>
+        <richText>&lt;html&gt;
+  &lt;head style="color: #404040" color="#404040"&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        body { margin-left: 0px; margin-right: 0px; color: #404040; margin-top: 0px; margin-bottom: 0px; font-size: 11; font-family: Arial }
+        ol { margin-left: 30; vertical-align: middle; list-style-position: outside; margin-top: 6; font-size: 11; font-family: Arial }
+        p { margin-left: 0; margin-right: 0; color: #404040; margin-top: 0; margin-bottom: 0 }
+        ul { margin-left: 30; vertical-align: middle; list-style-position: outside; margin-top: 6; font-size: 11; font-family: Arial }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p style="color: #404040" color="#404040"&gt;
+      A law is an observation that is used as a rule.
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</richText>
+        <label>A law is an observation that is used as a rule.</label>
+    </child>
+    <child ID="50" label="validUnderHypothesis" layerID="1"
+        created="1422540181382" x="532.6589" y="621.5" width="182.00342"
+        height="171.77478" strokeWidth="1.0" autoSized="false"
+        controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#404040</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/36e291eb7f0001016b2079250bacd136</URIString>
+        <point1 x="714.1623" y="792.7748"/>
+        <point2 x="533.1589" y="622.0"/>
+        <ID1 xsi:type="node">41</ID1>
+        <ID2 xsi:type="node">45</ID2>
+    </child>
+    <child ID="52" label="eixistenceOfAnObject" layerID="1"
+        created="1422540208062" x="455.0" y="862.0" width="127.0"
+        height="22.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
+        <fillColor>#FEFD8C</fillColor>
+        <strokeColor>#776D6D</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/36e291fe7f0001016b20792577b59ed4</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
+    <child ID="53" label="subClassOf" layerID="1"
+        created="1422540216577" x="453.22223" y="766.5"
+        width="59.055542" height="96.0" strokeWidth="1.0"
+        autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#404040</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/36e2921d7f0001016b20792569dc2d70</URIString>
+        <point1 x="511.77777" y="862.0"/>
+        <point2 x="453.72223" y="767.0"/>
+        <ID1 xsi:type="node">52</ID1>
+        <ID2 xsi:type="node">42</ID2>
+    </child>
+    <child ID="54" label="How to write this in DL?" layerID="1"
+        created="1422540227271" x="438.0" y="936.0" width="150.0"
+        height="16.0" strokeWidth="0.0" autoSized="false" xsi:type="text">
+        <strokeColor>#404040</strokeColor>
+        <textColor>#000000</textColor>
+        <font>SansSerif-plain-14</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/36e292407f0001016b207925dd1e9ad7</URIString>
+        <richText>&lt;html&gt;
+  &lt;head style="color: #000000" color="#000000"&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        body { margin-left: 0px; margin-right: 0px; color: #000000; margin-top: 0px; margin-bottom: 0px; font-size: 12; font-family: Arial }
+        ol { margin-left: 30; vertical-align: middle; list-style-position: outside; margin-top: 6; font-size: 12; font-family: Arial }
+        p { margin-left: 0; margin-right: 0; color: #000000; margin-top: 0; margin-bottom: 0 }
+        ul { margin-left: 30; vertical-align: middle; list-style-position: outside; margin-top: 6; font-size: 12; font-family: Arial }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p style="color: #000000" color="#000000"&gt;
+      How to write this in DL?
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</richText>
+        <label>How to write this in DL?</label>
+    </child>
+    <child ID="55" label="More precisely, statements can be:"
+        layerID="1" created="1422540245962" x="277.0" y="541.0"
+        width="246.0" height="30.0" strokeWidth="0.0" autoSized="false" xsi:type="text">
+        <strokeColor>#404040</strokeColor>
+        <textColor>#000000</textColor>
+        <font>SansSerif-plain-14</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/36e292417f0001016b20792588fbe139</URIString>
+        <richText>&lt;html&gt;
+  &lt;head style="color: #000000" color="#000000"&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        body { margin-left: 0px; margin-right: 0px; color: #000000; margin-top: 0px; margin-bottom: 0px; font-size: 12; font-family: Arial }
+        ol { margin-left: 30; vertical-align: middle; list-style-position: outside; margin-top: 6; font-size: 12; font-family: Arial }
+        p { margin-left: 0; margin-right: 0; color: #000000; margin-top: 0; margin-bottom: 0 }
+        ul { margin-left: 30; vertical-align: middle; list-style-position: outside; margin-top: 6; font-size: 12; font-family: Arial }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p style="color: #000000" color="#000000"&gt;
+      More precisely, statements can be:
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</richText>
+        <label>More precisely, statements can be:</label>
+    </child>
+    <child ID="56" label="Quantity" layerID="1" created="1422540966573"
+        x="917.0" y="912.0" width="55.0" height="22.0" strokeWidth="1.0"
+        autoSized="true" xsi:type="node">
+        <fillColor>#83CEFF</fillColor>
+        <strokeColor>#776D6D</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/36e292487f0001016b207925282cc38b</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
+    <child ID="57" label="governEvolutionOf" layerID="1"
+        created="1422540971340" x="738.7575" y="810.29456"
+        width="186.82849" height="102.59186" strokeWidth="1.0"
+        autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#404040</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/36e292557f0001016b20792561fe7172</URIString>
+        <point1 x="739.2575" y="810.79456"/>
+        <point2 x="925.086" y="912.3864"/>
+        <ID1 xsi:type="node">41</ID1>
+        <ID2 xsi:type="node">56</ID2>
     </child>
     <layer ID="1" label="Layer 1" created="1422526861733" x="0.0"
         y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
