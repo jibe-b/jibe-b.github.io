@@ -26,18 +26,6 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">CC-BY</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="/Model"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Statement"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/TheoreticalFrame"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/Theory"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="/admitsObservation"/>
     </Declaration>
     <Declaration>
@@ -45,6 +33,12 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/predict"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/sufficientToDescribePhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/unsufficientToDescribePhenomenon"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/validUnderTheoreticalFrame"/>
@@ -52,126 +46,6 @@
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
     </Declaration>
-    <SubClassOf>
-        <Class IRI="/Model"/>
-        <Class IRI="/TheoreticalFrame"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Model"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="/admitsObservation"/>
-            <Class IRI="/Statement"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Model"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="/admitsObservation"/>
-            <Class IRI="/Statement"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/TheoreticalFrame"/>
-        <ObjectIntersectionOf>
-            <ObjectAllValuesFrom>
-                <ObjectProperty IRI="/hasFoundationalHypothesis"/>
-                <Class IRI="/Statement"/>
-            </ObjectAllValuesFrom>
-            <ObjectMinCardinality cardinality="1">
-                <ObjectProperty IRI="/hasFoundationalHypothesis"/>
-                <Class IRI="/Statement"/>
-            </ObjectMinCardinality>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Theory"/>
-        <Class IRI="/TheoreticalFrame"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Theory"/>
-        <ObjectIntersectionOf>
-            <ObjectAllValuesFrom>
-                <ObjectProperty IRI="/predict"/>
-                <Class IRI="/Statement"/>
-            </ObjectAllValuesFrom>
-            <ObjectMinCardinality cardinality="1">
-                <ObjectProperty IRI="/predict"/>
-                <Class IRI="/Statement"/>
-            </ObjectMinCardinality>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/admitsObservation"/>
-        <Class IRI="/Model"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/hasFoundationalHypothesis"/>
-        <Class IRI="/TheoreticalFrame"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/predict"/>
-        <Class IRI="/Theory"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/validUnderTheoreticalFrame"/>
-        <Class IRI="/Statement"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="/admitsObservation"/>
-        <Class IRI="/Statement"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="/hasFoundationalHypothesis"/>
-        <Class IRI="/Statement"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="/predict"/>
-        <Class IRI="/Statement"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="/validUnderTheoreticalFrame"/>
-        <Class IRI="/TheoreticalFrame"/>
-    </ObjectPropertyRange>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>/Model</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Models</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>/Model</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Model</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>/Statement</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Statements</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>/Statement</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Statement</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>/TheoreticalFrame</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">TheoreticalFrames</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>/TheoreticalFrame</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">TheoreticalFrame</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>/Theory</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Theories</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>/Theory</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Theory</Literal>
-    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
         <IRI>/admitsObservation</IRI>
@@ -219,6 +93,46 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>/sufficientToDescribePhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sufficientToDescribePhenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>/sufficientToDescribePhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sufficientToDescribePhenomenons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>/sufficientToDescribePhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sufficientToDescribePhenomenoned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/sufficientToDescribePhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A model is efficient. Some phenomenon can be described.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>/unsufficientToDescribePhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unsufficientToDescribePhenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>/unsufficientToDescribePhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unsufficientToDescribePhenomenons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>/unsufficientToDescribePhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unsufficientToDescribePhenomenoned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/unsufficientToDescribePhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A model is limited. Some phenomenon can not be described.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
         <IRI>/validUnderTheoreticalFrame</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">validUnderTheoreticalFrame</Literal>
     </AnnotationAssertion>
@@ -236,5 +150,5 @@
 
 
 
-<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
 
