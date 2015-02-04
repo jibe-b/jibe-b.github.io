@@ -23,13 +23,40 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">CC-BY</Literal>
+        <IRI>http://creativecommons.org/licences/by/4.0/</IRI>
     </Annotation>
+    <Declaration>
+        <Class IRI="/Definition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/EquationElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Hypothesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/KnowledgeProposition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Theorem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TheoreticalFrame"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Theory"/>
+    </Declaration>
     <Declaration>
         <ObjectProperty IRI="/admitsObservation"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/hasFoundationalHypothesis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hypothesisForTheoreticalFrame"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/predict"/>
@@ -46,6 +73,62 @@
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
     </Declaration>
+    <SubClassOf>
+        <Class IRI="/Definition"/>
+        <Class IRI="/KnowledgeProposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Hypothesis"/>
+        <Class IRI="/KnowledgeProposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Model"/>
+        <Class IRI="/TheoreticalFrame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Theorem"/>
+        <Class IRI="/KnowledgeProposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Theory"/>
+        <Class IRI="/TheoreticalFrame"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/sufficientToDescribePhenomenon"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hypothesisForTheoreticalFrame"/>
+        <ObjectProperty IRI="/hasFoundationalHypothesis"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasFoundationalHypothesis"/>
+        <Class IRI="/TheoreticalFrame"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hypothesisForTheoreticalFrame"/>
+        <Class IRI="/Hypothesis"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/validUnderTheoreticalFrame"/>
+        <Class IRI="/KnowledgeProposition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasFoundationalHypothesis"/>
+        <Class IRI="/Hypothesis"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hypothesisForTheoreticalFrame"/>
+        <Class IRI="/TheoreticalFrame"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/validUnderTheoreticalFrame"/>
+        <Class IRI="/TheoreticalFrame"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="/sufficientToDescribePhenomenon"/>
+        <ObjectProperty IRI="/unsufficientToDescribePhenomenon"/>
+    </DisjointObjectProperties>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
         <IRI>/admitsObservation</IRI>
@@ -60,21 +143,6 @@
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
         <IRI>/admitsObservation</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">admitsObservationed</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
-        <IRI>/hasFoundationalHypothesis</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">hasFoundationalHypothesis</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
-        <IRI>/hasFoundationalHypothesis</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">hasFoundationalHypothesises</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
-        <IRI>/hasFoundationalHypothesis</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">hasFoundationalHypothesised</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>

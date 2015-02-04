@@ -22,10 +22,6 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">CC-BY</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <Literal datatypeIRI="&xsd;string">jibe-b</Literal>
     </Annotation>
@@ -36,6 +32,10 @@
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="&xsd;string">Ontology for the description of Physical Sciences.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+        <IRI>http://creativecommons.org/licences/by/4.0/</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
@@ -141,6 +141,12 @@
         <Class IRI="Meson"/>
     </Declaration>
     <Declaration>
+        <Class IRI="MesoscopicalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MicroscopicalObject"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Molecule"/>
     </Declaration>
     <Declaration>
@@ -157,6 +163,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="Photon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PhysicalState"/>
     </Declaration>
     <Declaration>
         <Class IRI="Position"/>
@@ -181,6 +190,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="Speed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="State"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="StateOfFreedom"/>
     </Declaration>
     <Declaration>
         <Class IRI="StrongInteraction"/>
@@ -273,6 +288,12 @@
         <ObjectProperty IRI="hasTheoryElementProperty"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="inPhysicalState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inState"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="intensiveExtensiveProperty"/>
     </Declaration>
     <Declaration>
@@ -363,7 +384,22 @@
         <NamedIndividual IRI="StandardModel"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="TotalFreedom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://jibe-b.github.io/resource/GazeousState"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://jibe-b.github.io/resource/LiquidState"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://jibe-b.github.io/resource/SolidState"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="AbstractObject"/>
@@ -505,6 +541,14 @@
         <Class IRI="Hadron"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="MesoscopicalObject"/>
+        <Class IRI="ClassicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MicroscopicalObject"/>
+        <Class IRI="ClassicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Molecule"/>
         <Class IRI="KnownNumberOfElementObject"/>
     </SubClassOf>
@@ -527,6 +571,10 @@
     <SubClassOf>
         <Class IRI="Photon"/>
         <Class IRI="ElementaryBoson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PhysicalState"/>
+        <Class IRI="State"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Position"/>
@@ -561,6 +609,14 @@
         <Class IRI="FirstDerivativePositionQuantity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="State"/>
+        <Class IRI="ObjectProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StateOfFreedom"/>
+        <Class IRI="State"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="StrongInteraction"/>
         <Class IRI="FundamentalInteraction"/>
     </SubClassOf>
@@ -578,7 +634,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Wave"/>
-        <Class IRI="MacroscopicalObject"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/FieldObject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="WeakInteraction"/>
@@ -654,14 +710,39 @@
         <Class IRI="http://jibe-bgithub.io/ontology/pso/Quantity"/>
         <Class IRI="ObjectProperty"/>
     </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="StateOfFreedom"/>
+        <NamedIndividual IRI="TotalFreedom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PhysicalState"/>
+        <NamedIndividual IRI="http://jibe-b.github.io/resource/GazeousState"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PhysicalState"/>
+        <NamedIndividual IRI="http://jibe-b.github.io/resource/LiquidState"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PhysicalState"/>
+        <NamedIndividual IRI="http://jibe-b.github.io/resource/SolidState"/>
+    </ClassAssertion>
     <DifferentIndividuals>
         <NamedIndividual IRI="ClassicHypothesis"/>
         <NamedIndividual IRI="QuanticHypothesis"/>
         <NamedIndividual IRI="RelativistHypothesis"/>
     </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="http://jibe-b.github.io/resource/GazeousState"/>
+        <NamedIndividual IRI="http://jibe-b.github.io/resource/LiquidState"/>
+        <NamedIndividual IRI="http://jibe-b.github.io/resource/SolidState"/>
+    </DifferentIndividuals>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasQuanticNumber"/>
         <ObjectProperty IRI="hasPhysicalQuantity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="inPhysicalState"/>
+        <ObjectProperty IRI="inState"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/associatedTo"/>
@@ -715,8 +796,22 @@
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/quantityEvolutionGovernedBy"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="inPhysicalState"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="inState"/>
+    </AsymmetricObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasComponent"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inPhysicalState"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inState"/>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -762,6 +857,14 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasComponent"/>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="inPhysicalState"/>
+        <Class IRI="PhysicalState"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="inState"/>
+        <Class IRI="State"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/associatedTo"/>
@@ -1234,6 +1337,11 @@ Exemple: surface de Fermi.</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">MatterObject</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>MatterObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">depreciated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>MatterParticle</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">MatterParticles</Literal>
@@ -1252,6 +1360,26 @@ Exemple: surface de Fermi.</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>Meson</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Meson</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>MesoscopicalObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MesoscopicalObjects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>MesoscopicalObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MesoscopicalObject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>MicroscopicalObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MicroscopicalObjects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>MicroscopicalObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MicroscopicalObject</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -1437,6 +1565,16 @@ Exemple: surface de Fermi.</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
         <IRI>StandardModel</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">StandardModel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>State</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The state of an object depends on the value of its several Physical Quantities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>StateOfFreedom</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">depends of the number of levels of freedom</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
