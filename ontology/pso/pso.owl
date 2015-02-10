@@ -60,10 +60,28 @@
         <Class IRI="Atom"/>
     </Declaration>
     <Declaration>
+        <Class IRI="AtomicOrMolecularEntity"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Baryon"/>
     </Declaration>
     <Declaration>
+        <Class IRI="BaryonicNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="BottomQuark"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Charge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ChargeDensity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ChargedLepton"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CharmQuark"/>
     </Declaration>
     <Declaration>
         <Class IRI="ClassicalObject"/>
@@ -75,10 +93,34 @@
         <Class IRI="CosmicalObject"/>
     </Declaration>
     <Declaration>
+        <Class IRI="DensityQuantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Deuterium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DeuteriumNucleus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DownQuark"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="ElectricCharge"/>
     </Declaration>
     <Declaration>
+        <Class IRI="ElectricChargeDensity"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="ElectromagneticInteraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Electron"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ElectronicLeptonicNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ElectronicNeutrino"/>
     </Declaration>
     <Declaration>
         <Class IRI="ElementaryBoson"/>
@@ -99,6 +141,12 @@
         <Class IRI="FundamentalInteraction"/>
     </Declaration>
     <Declaration>
+        <Class IRI="GazeousState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GlassPhase"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Gluon"/>
     </Declaration>
     <Declaration>
@@ -108,10 +156,37 @@
         <Class IRI="Hadron"/>
     </Declaration>
     <Declaration>
+        <Class IRI="He3Nucleus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="He4Nucleus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="HeliumElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="HeliumIsotopesNucleus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Hydrogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="HydrogenElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="HydrogenIsotopeNucleus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="HydrogenNucleus"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Impulse"/>
     </Declaration>
     <Declaration>
         <Class IRI="InternalEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Ion"/>
     </Declaration>
     <Declaration>
         <Class IRI="KineticEnergy"/>
@@ -126,13 +201,22 @@
         <Class IRI="Lepton"/>
     </Declaration>
     <Declaration>
+        <Class IRI="LeptonicNumber"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="LinearityProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LiquidState"/>
     </Declaration>
     <Declaration>
         <Class IRI="MacroscopicalObject"/>
     </Declaration>
     <Declaration>
-        <Class IRI="MatterObject"/>
+        <Class IRI="Mass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MassDensity"/>
     </Declaration>
     <Declaration>
         <Class IRI="MatterParticle"/>
@@ -147,10 +231,28 @@
         <Class IRI="MicroscopicalObject"/>
     </Declaration>
     <Declaration>
+        <Class IRI="MolecularIon"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Molecule"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Muon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MuonicElectronicNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MuonicNeutrino"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Nanoparticle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NeutralLepton"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Neutron"/>
     </Declaration>
     <Declaration>
         <Class IRI="Nucleus"/>
@@ -168,6 +270,9 @@
         <Class IRI="PhysicalState"/>
     </Declaration>
     <Declaration>
+        <Class IRI="PlasmasState"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Position"/>
     </Declaration>
     <Declaration>
@@ -175,6 +280,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="PotentialEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Proton"/>
     </Declaration>
     <Declaration>
         <Class IRI="Quark"/>
@@ -189,7 +297,16 @@
         <Class IRI="SecondDerivativePositionQuantity"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Solid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SolidState"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Speed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Spin"/>
     </Declaration>
     <Declaration>
         <Class IRI="State"/>
@@ -198,16 +315,40 @@
         <Class IRI="StateOfFreedom"/>
     </Declaration>
     <Declaration>
+        <Class IRI="StrangeQuark"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="StrongInteraction"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Tau"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TauicLeptonicNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TauicNeutrino"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TopQuark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Tritium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TritiumNucleus"/>
     </Declaration>
     <Declaration>
         <Class IRI="Universe"/>
     </Declaration>
     <Declaration>
         <Class IRI="UnknownNumberOfComponentsElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="UpQuark"/>
     </Declaration>
     <Declaration>
         <Class IRI="Wave"/>
@@ -220,6 +361,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="orWavePhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="test"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/ClassicalPhenomenon"/>
@@ -276,6 +420,9 @@
         <ObjectProperty IRI="hasDimension"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasPart"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasPhysicalHypothesis"/>
     </Declaration>
     <Declaration>
@@ -298,6 +445,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="involvePhysicalQuantity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPartOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/associatedTo"/>
@@ -339,61 +489,46 @@
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/quantityEvolutionGovernedBy"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="hasBaryonicNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasCharge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasElectricalCharge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasElectronicLeptonicNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasLeptonicNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasMass"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasMuonicLeptonicNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasQuantityValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasSavorCharge"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="hasSpin"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="hasValue"/>
+        <DataProperty IRI="hasTauicLeptonicNumber"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="hasValueHighBorder"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="hasValueLowBorder"/>
+        <DataProperty IRI="hasTrueFalseValue"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="isLinear"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="ClassicHypothesis"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="ClassicalMechanics"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="EinsteinRelativity"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="NonRelativisticHypothesis"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="QuanticHypothesis"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="QuanticandClassicTheory"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="QuantumMechanics"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="RelativistHypothesis"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="RelativisticQuantumMechanics"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="StandardModel"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="TotalFreedom"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://jibe-b.github.io/resource/GazeousState"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://jibe-b.github.io/resource/LiquidState"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://jibe-b.github.io/resource/SolidState"/>
+        <NamedIndividual IRI="Boson1"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
@@ -401,6 +536,416 @@
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="Agregate"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="KnownNumberOfElementObject"/>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="hasPart"/>
+                        <Class IRI="Atom"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectMaxCardinality cardinality="100">
+                        <ObjectProperty IRI="hasPart"/>
+                        <Class IRI="Atom"/>
+                    </ObjectMaxCardinality>
+                </ObjectIntersectionOf>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="hasPart"/>
+                    <Class IRI="Molecule"/>
+                </ObjectSomeValuesFrom>
+                <ObjectMaxCardinality cardinality="100">
+                    <ObjectProperty IRI="hasPart"/>
+                    <Class IRI="Molecule"/>
+                </ObjectMaxCardinality>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Atom"/>
+        <ObjectIntersectionOf>
+            <Class IRI="AtomicOrMolecularEntity"/>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="Nucleus"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="AtomicOrMolecularEntity"/>
+        <ObjectIntersectionOf>
+            <Class IRI="KnownNumberOfElementObject"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="Electron"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="Nucleus"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Baryon"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="hasBaryonicNumber"/>
+            <DataOneOf>
+                <Literal datatypeIRI="&xsd;integer">1</Literal>
+            </DataOneOf>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="ChargedLepton"/>
+        <ObjectIntersectionOf>
+            <Class IRI="Lepton"/>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="hasElectricalCharge"/>
+                <DataOneOf>
+                    <Literal datatypeIRI="&xsd;decimal">-1.6</Literal>
+                </DataOneOf>
+            </DataExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Deuterium"/>
+        <ObjectIntersectionOf>
+            <Class IRI="HydrogenElement"/>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="DeuteriumNucleus"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="DeuteriumNucleus"/>
+        <ObjectIntersectionOf>
+            <Class IRI="HydrogenIsotopeNucleus"/>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="Neutron"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Electron"/>
+        <ObjectIntersectionOf>
+            <Class IRI="ChargedLepton"/>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="hasElectronicLeptonicNumber"/>
+                <DataOneOf>
+                    <Literal datatypeIRI="&xsd;integer">1</Literal>
+                </DataOneOf>
+            </DataExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="ElectronicNeutrino"/>
+        <ObjectIntersectionOf>
+            <Class IRI="NeutralLepton"/>
+            <DataAllValuesFrom>
+                <DataProperty IRI="hasElectronicLeptonicNumber"/>
+                <DataOneOf>
+                    <Literal datatypeIRI="&xsd;integer">1</Literal>
+                </DataOneOf>
+            </DataAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="ElementaryBoson"/>
+        <ObjectIntersectionOf>
+            <Class IRI="MatterParticle"/>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="hasSpin"/>
+                <DataOneOf>
+                    <Literal datatypeIRI="&xsd;integer">1</Literal>
+                </DataOneOf>
+            </DataExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="ElementaryFermion"/>
+        <ObjectIntersectionOf>
+            <Class IRI="MatterParticle"/>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="hasSpin"/>
+                <DataOneOf>
+                    <Literal datatypeIRI="&xsd;decimal">0.5</Literal>
+                </DataOneOf>
+            </DataExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="He3Nucleus"/>
+        <ObjectIntersectionOf>
+            <Class IRI="HeliumIsotopesNucleus"/>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="Neutron"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="He4Nucleus"/>
+        <ObjectIntersectionOf>
+            <Class IRI="HeliumIsotopesNucleus"/>
+            <ObjectExactCardinality cardinality="2">
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="Neutron"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="HeliumElement"/>
+        <ObjectIntersectionOf>
+            <Class IRI="Atom"/>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="HeliumIsotopesNucleus"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="HeliumIsotopesNucleus"/>
+        <ObjectIntersectionOf>
+            <Class IRI="Nucleus"/>
+            <ObjectExactCardinality cardinality="2">
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="Proton"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Hydrogen"/>
+        <ObjectIntersectionOf>
+            <Class IRI="HydrogenElement"/>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="HydrogenNucleus"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="HydrogenElement"/>
+        <ObjectIntersectionOf>
+            <Class IRI="Atom"/>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="Electron"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="HydrogenIsotopeNucleus"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="HydrogenIsotopeNucleus"/>
+        <ObjectIntersectionOf>
+            <Class IRI="Nucleus"/>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="Proton"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">L&apos;information qu&apos;il n&apos;y a pas de neutron dans l&apos;atone d&apos;hydrogène n&apos;est pas suffisante pour le résonneur, qui considère que cette classe est sous-classe de Nothing.</Literal>
+        </Annotation>
+        <Class IRI="HydrogenNucleus"/>
+        <ObjectIntersectionOf>
+            <Class IRI="HydrogenIsotopeNucleus"/>
+            <ObjectExactCardinality cardinality="0">
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="Neutron"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Ion"/>
+        <ObjectIntersectionOf>
+            <Class IRI="AtomicOrMolecularEntity"/>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="Electron"/>
+            </ObjectMinCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="Nucleus"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Lepton"/>
+        <ObjectIntersectionOf>
+            <Class IRI="ElementaryFermion"/>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="hasElectricalCharge"/>
+                <DataOneOf>
+                    <Literal datatypeIRI="&xsd;decimal">-1.6</Literal>
+                    <Literal datatypeIRI="&xsd;integer">0</Literal>
+                </DataOneOf>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="hasLeptonicNumber"/>
+                <DataOneOf>
+                    <Literal datatypeIRI="&xsd;integer">1</Literal>
+                </DataOneOf>
+            </DataExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Meson"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="hasBaryonicNumber"/>
+            <DataOneOf>
+                <Literal datatypeIRI="&xsd;integer">0</Literal>
+            </DataOneOf>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="MolecularIon"/>
+        <ObjectIntersectionOf>
+            <Class IRI="AtomicOrMolecularEntity"/>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="Electron"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Molecule"/>
+        <ObjectIntersectionOf>
+            <Class IRI="AtomicOrMolecularEntity"/>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="Nucleus"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Muon"/>
+        <ObjectIntersectionOf>
+            <Class IRI="ChargedLepton"/>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="hasMuonicLeptonicNumber"/>
+                <DataOneOf>
+                    <Literal datatypeIRI="&xsd;integer">1</Literal>
+                </DataOneOf>
+            </DataExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="MuonicNeutrino"/>
+        <ObjectIntersectionOf>
+            <Class IRI="NeutralLepton"/>
+            <DataAllValuesFrom>
+                <DataProperty IRI="hasMuonicLeptonicNumber"/>
+                <DataOneOf>
+                    <Literal datatypeIRI="&xsd;integer">1</Literal>
+                </DataOneOf>
+            </DataAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="NeutralLepton"/>
+        <ObjectIntersectionOf>
+            <Class IRI="Lepton"/>
+            <DataAllValuesFrom>
+                <DataProperty IRI="hasElectricalCharge"/>
+                <DataOneOf>
+                    <Literal datatypeIRI="&xsd;integer">0</Literal>
+                </DataOneOf>
+            </DataAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Nucleus"/>
+        <ObjectIntersectionOf>
+            <Class IRI="KnownNumberOfElementObject"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="Neutron"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="Proton"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Quark"/>
+        <ObjectIntersectionOf>
+            <Class IRI="ElementaryFermion"/>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="hasElectricalCharge"/>
+                <DataOneOf>
+                    <Literal datatypeIRI="&rdf;PlainLiteral">-1/3</Literal>
+                </DataOneOf>
+            </DataExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Tau"/>
+        <ObjectIntersectionOf>
+            <Class IRI="ChargedLepton"/>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="hasTauicLeptonicNumber"/>
+                <DataOneOf>
+                    <Literal datatypeIRI="&xsd;integer">1</Literal>
+                </DataOneOf>
+            </DataExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="TauicNeutrino"/>
+        <ObjectIntersectionOf>
+            <Class IRI="NeutralLepton"/>
+            <DataAllValuesFrom>
+                <DataProperty IRI="hasTauicLeptonicNumber"/>
+                <DataOneOf>
+                    <Literal datatypeIRI="&xsd;integer">1</Literal>
+                </DataOneOf>
+            </DataAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Tritium"/>
+        <ObjectIntersectionOf>
+            <Class IRI="HydrogenElement"/>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="TritiumNucleus"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="TritiumNucleus"/>
+        <ObjectIntersectionOf>
+            <Class IRI="HydrogenIsotopeNucleus"/>
+            <ObjectExactCardinality cardinality="2">
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="Neutron"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="test"/>
+        <ObjectIntersectionOf>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="Electron"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="hasPart"/>
+                <Class IRI="HydrogenNucleus"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="AbstractObject"/>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
@@ -423,15 +968,31 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Atom"/>
-        <Class IRI="KnownNumberOfElementObject"/>
+        <Class IRI="AtomicOrMolecularEntity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Baryon"/>
         <Class IRI="Hadron"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="BaryonicNumber"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticNumber"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BottomQuark"/>
+        <Class IRI="Quark"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Charge"/>
         <Class IRI="ObjectPhysicalQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ChargeDensity"/>
+        <Class IRI="DensityQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CharmQuark"/>
+        <Class IRI="Quark"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ClassicalObject"/>
@@ -446,19 +1007,39 @@
         <Class IRI="ClassicalObject"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="DensityQuantity"/>
+        <Class IRI="ObjectPhysicalQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Deuterium"/>
+        <Class IRI="HydrogenElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DownQuark"/>
+        <Class IRI="Quark"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="ElectricCharge"/>
         <Class IRI="Charge"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ElectricChargeDensity"/>
+        <Class IRI="ChargeDensity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ElectromagneticInteraction"/>
         <Class IRI="FundamentalInteraction"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="ElementaryBoson"/>
-        <Class IRI="MatterParticle"/>
+        <Class IRI="ElectronicLeptonicNumber"/>
+        <Class IRI="LeptonicNumber"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="ElementaryFermion"/>
+        <Class IRI="ElectronicNeutrino"/>
+        <Class IRI="NeutralLepton"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ElementaryBoson"/>
         <Class IRI="MatterParticle"/>
     </SubClassOf>
     <SubClassOf>
@@ -478,6 +1059,14 @@
         <Class IRI="Force"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="GazeousState"/>
+        <Class IRI="PhysicalState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GlassPhase"/>
+        <Class IRI="PhysicalState"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Gluon"/>
         <Class IRI="ElementaryBoson"/>
     </SubClassOf>
@@ -490,12 +1079,20 @@
         <Class IRI="KnownNumberOfElementObject"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="HeliumElement"/>
+        <Class IRI="Atom"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Impulse"/>
         <Class IRI="FirstDerivativePositionQuantity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="InternalEnergy"/>
         <Class IRI="Energy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Ion"/>
+        <Class IRI="AtomicOrMolecularEntity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="KineticEnergy"/>
@@ -514,8 +1111,16 @@
         <Class IRI="ElementaryFermion"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="LeptonicNumber"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticNumber"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="LinearityProperty"/>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/PhenomenonProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LiquidState"/>
+        <Class IRI="PhysicalState"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="MacroscopicalObject"/>
@@ -529,8 +1134,12 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="MatterObject"/>
-        <Class IRI="MacroscopicalObject"/>
+        <Class IRI="Mass"/>
+        <Class IRI="ObjectPhysicalQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MassDensity"/>
+        <Class IRI="DensityQuantity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="MatterParticle"/>
@@ -549,16 +1158,32 @@
         <Class IRI="ClassicalObject"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="MolecularIon"/>
+        <Class IRI="AtomicOrMolecularEntity"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Molecule"/>
-        <Class IRI="KnownNumberOfElementObject"/>
+        <Class IRI="AtomicOrMolecularEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MuonicElectronicNumber"/>
+        <Class IRI="LeptonicNumber"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MuonicNeutrino"/>
+        <Class IRI="NeutralLepton"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Nanoparticle"/>
         <Class IRI="UnknownNumberOfComponentsElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Nucleus"/>
-        <Class IRI="KnownNumberOfElementObject"/>
+        <Class IRI="NeutralLepton"/>
+        <Class IRI="Lepton"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Neutron"/>
+        <Class IRI="Baryon"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ObjectPhysicalQuantity"/>
@@ -577,6 +1202,10 @@
         <Class IRI="State"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="PlasmasState"/>
+        <Class IRI="PhysicalState"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Position"/>
         <Class IRI="PositionQuantity"/>
     </SubClassOf>
@@ -589,8 +1218,8 @@
         <Class IRI="Energy"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Quark"/>
-        <Class IRI="ElementaryFermion"/>
+        <Class IRI="Proton"/>
+        <Class IRI="Baryon"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="RelativisticPhenomenon"/>
@@ -605,8 +1234,20 @@
         <Class IRI="PositionQuantity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Solid"/>
+        <Class IRI="MacroscopicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SolidState"/>
+        <Class IRI="PhysicalState"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Speed"/>
         <Class IRI="FirstDerivativePositionQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Spin"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticNumber"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="State"/>
@@ -617,12 +1258,32 @@
         <Class IRI="State"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="StrangeQuark"/>
+        <Class IRI="Quark"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="StrongInteraction"/>
         <Class IRI="FundamentalInteraction"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="TauicLeptonicNumber"/>
+        <Class IRI="LeptonicNumber"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TauicNeutrino"/>
+        <Class IRI="NeutralLepton"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Time"/>
         <Class IRI="ObjectPhysicalQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TopQuark"/>
+        <Class IRI="Quark"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Tritium"/>
+        <Class IRI="HydrogenElement"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Universe"/>
@@ -631,6 +1292,10 @@
     <SubClassOf>
         <Class IRI="UnknownNumberOfComponentsElement"/>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/NonElementaryObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="UpQuark"/>
+        <Class IRI="Quark"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Wave"/>
@@ -711,31 +1376,9 @@
         <Class IRI="ObjectProperty"/>
     </SubClassOf>
     <ClassAssertion>
-        <Class IRI="StateOfFreedom"/>
-        <NamedIndividual IRI="TotalFreedom"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="Boson1"/>
     </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="PhysicalState"/>
-        <NamedIndividual IRI="http://jibe-b.github.io/resource/GazeousState"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="PhysicalState"/>
-        <NamedIndividual IRI="http://jibe-b.github.io/resource/LiquidState"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="PhysicalState"/>
-        <NamedIndividual IRI="http://jibe-b.github.io/resource/SolidState"/>
-    </ClassAssertion>
-    <DifferentIndividuals>
-        <NamedIndividual IRI="ClassicHypothesis"/>
-        <NamedIndividual IRI="QuanticHypothesis"/>
-        <NamedIndividual IRI="RelativistHypothesis"/>
-    </DifferentIndividuals>
-    <DifferentIndividuals>
-        <NamedIndividual IRI="http://jibe-b.github.io/resource/GazeousState"/>
-        <NamedIndividual IRI="http://jibe-b.github.io/resource/LiquidState"/>
-        <NamedIndividual IRI="http://jibe-b.github.io/resource/SolidState"/>
-    </DifferentIndividuals>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasQuanticNumber"/>
         <ObjectProperty IRI="hasPhysicalQuantity"/>
@@ -796,6 +1439,10 @@
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/quantityEvolutionGovernedBy"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isPartOf"/>
+        <ObjectProperty IRI="hasPart"/>
+    </InverseObjectProperties>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="inPhysicalState"/>
     </AsymmetricObjectProperty>
@@ -903,16 +1550,52 @@
         <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
+        <DataProperty IRI="hasBaryonicNumber"/>
+        <DataProperty IRI="hasQuantityValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasCharge"/>
+        <DataProperty IRI="hasQuantityValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasElectricalCharge"/>
+        <DataProperty IRI="hasCharge"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasElectronicLeptonicNumber"/>
+        <DataProperty IRI="hasQuantityValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasLeptonicNumber"/>
+        <DataProperty IRI="hasElectronicLeptonicNumber"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasMass"/>
+        <DataProperty IRI="hasQuantityValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasMuonicLeptonicNumber"/>
+        <DataProperty IRI="hasElectronicLeptonicNumber"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasQuantityValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasSavorCharge"/>
+        <DataProperty IRI="hasCharge"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="hasSpin"/>
-        <DataProperty IRI="hasValue"/>
+        <DataProperty IRI="hasQuantityValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasTauicLeptonicNumber"/>
+        <DataProperty IRI="hasElectronicLeptonicNumber"/>
     </SubDataPropertyOf>
     <FunctionalDataProperty>
         <DataProperty IRI="isLinear"/>
     </FunctionalDataProperty>
-    <DataPropertyDomain>
-        <DataProperty IRI="hasSpin"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
-    </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="isLinear"/>
         <DataAllValuesFrom>
@@ -921,8 +1604,12 @@
         </DataAllValuesFrom>
     </DataPropertyDomain>
     <DataPropertyRange>
-        <DataProperty IRI="hasSpin"/>
-        <Datatype abbreviatedIRI="xsd:double"/>
+        <DataProperty IRI="hasQuantityValue"/>
+        <Datatype abbreviatedIRI="xsd:long"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasTrueFalseValue"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -993,6 +1680,16 @@ Exemple: surface de Fermi.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>AtomicOrMolecularEntity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AtomicConstituants</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>AtomicOrMolecularEntity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AtomicConstituant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>Baryon</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Baryons</Literal>
     </AnnotationAssertion>
@@ -1000,6 +1697,31 @@ Exemple: surface de Fermi.</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>Baryon</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Baryon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>BaryonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BaryonicNumbers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>BaryonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BaryonicNumber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>Boson1</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Boson1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>BottomQuark</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BottomQuarks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>BottomQuark</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BottomQuark</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -1012,14 +1734,34 @@ Exemple: surface de Fermi.</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">Charge</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
-        <IRI>ClassicHypothesis</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">ClassicHypothesis</Literal>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>ChargeDensity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChargeDensities</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
-        <IRI>ClassicalMechanics</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">ClassicalMechanics</Literal>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>ChargeDensity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChargeDensity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>ChargedLepton</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChargedLeptons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>ChargedLepton</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ChargedLepton</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>CharmQuark</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CharmQuarks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>CharmQuark</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CharmQuark</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -1122,9 +1864,44 @@ Exemple: surface de Fermi.</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">CosmicObject</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
-        <IRI>EinsteinRelativity</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">EinsteinRelativity</Literal>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>DensityQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DensityQuantities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>DensityQuantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DensityQuantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Deuterium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Deuteriums</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Deuterium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Deuterium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>DeuteriumNucleus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DeuteriumNucleuses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>DeuteriumNucleus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DeuteriumNucleus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>DownQuark</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DownQuarks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>DownQuark</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DownQuark</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -1138,6 +1915,16 @@ Exemple: surface de Fermi.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>ElectricChargeDensity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElectricChargeDensities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>ElectricChargeDensity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElectricChargeDensity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>ElectromagneticInteraction</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">ElectromagniticInteractions</Literal>
     </AnnotationAssertion>
@@ -1145,6 +1932,36 @@ Exemple: surface de Fermi.</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>ElectromagneticInteraction</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">ElectromagniticInteraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Electron</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Electrons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Electron</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Electron</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>ElectronicLeptonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElectromicLeptonicNumbers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>ElectronicLeptonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElectromicLeptonicNumber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>ElectronicNeutrino</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElectronicMuons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>ElectronicNeutrino</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ElectronicMuon</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -1213,6 +2030,26 @@ Exemple: surface de Fermi.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>GazeousState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GazeousStates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>GazeousState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GazeousState</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>GlassPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GlassPhases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>GlassPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GlassPhase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>Gluon</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Gluons</Literal>
     </AnnotationAssertion>
@@ -1243,6 +2080,86 @@ Exemple: surface de Fermi.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>He3Nucleus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">He3Nucleuses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>He3Nucleus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">He3Nucleus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>He4Nucleus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">He4Nucleuses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>He4Nucleus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">He4Nucleus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>HeliumElement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HeliumElements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>HeliumElement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HeliumElement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>HeliumIsotopesNucleus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HeliumIsotopesNucleuses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>HeliumIsotopesNucleus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HeliumIsotopesNucleus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Hydrogen</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hydrogens</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Hydrogen</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hydrogen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>HydrogenElement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HydrogenElements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>HydrogenElement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HydrogenElement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>HydrogenIsotopeNucleus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HydrogenIsotopeNucleuses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>HydrogenIsotopeNucleus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HydrogenIsotopeNucleus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>HydrogenNucleus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HydrogenNucleuses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>HydrogenNucleus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HydrogenNucleus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>Impulse</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Impulses</Literal>
     </AnnotationAssertion>
@@ -1260,6 +2177,16 @@ Exemple: surface de Fermi.</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>InternalEnergy</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">InternalEnergy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Ion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Ion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ion</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -1308,6 +2235,16 @@ Exemple: surface de Fermi.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>LeptonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LeptonicNumbers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>LeptonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LeptonicNumber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>LinearityProperty</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">LinearityProperties</Literal>
     </AnnotationAssertion>
@@ -1315,6 +2252,16 @@ Exemple: surface de Fermi.</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>LinearityProperty</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">LinearityProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>LiquidState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LiquidStates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>LiquidState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LiquidState</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -1328,18 +2275,23 @@ Exemple: surface de Fermi.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>MatterObject</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">MatterObjects</Literal>
+        <IRI>Mass</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Masses</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>MatterObject</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">MatterObject</Literal>
+        <IRI>Mass</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Mass</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>MatterObject</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">depreciated</Literal>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>MassDensity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MassDensities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>MassDensity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MassDensity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -1383,6 +2335,16 @@ Exemple: surface de Fermi.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>MolecularIon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MolecularIons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>MolecularIon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MolecularIon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>Molecule</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">molecules</Literal>
     </AnnotationAssertion>
@@ -1390,6 +2352,36 @@ Exemple: surface de Fermi.</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>Molecule</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">molecule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Muon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Muons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Muon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Muon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>MuonicElectronicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MuonicElectronicNumbers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>MuonicElectronicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MuonicElectronicNumber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>MuonicNeutrino</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MuonicNeutrinoes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>MuonicNeutrino</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MuonicNeutrino</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -1402,9 +2394,24 @@ Exemple: surface de Fermi.</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">nanoparticle</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
-        <IRI>NonRelativisticHypothesis</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">NonRelativisticHypothesis</Literal>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>NeutralLepton</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NeutralLeptons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>NeutralLepton</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NeutralLepton</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Neutron</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Neutrons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Neutron</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Neutron</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -1448,6 +2455,26 @@ Exemple: surface de Fermi.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>PhysicalState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalStates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>PhysicalState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalState</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>PlasmasState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PlasmasStates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>PlasmasState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PlasmasState</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>Position</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Positions</Literal>
     </AnnotationAssertion>
@@ -1477,24 +2504,14 @@ Exemple: surface de Fermi.</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">PotentialEnergy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
-        <IRI>QuanticHypothesis</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">QuanticHypothesis</Literal>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Proton</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Protons</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
-        <IRI>QuanticandClassicTheory</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">QuanticandClassicTheory</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
-        <IRI>QuantumMechanics</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">QuantumMechanics</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>QuantumMechanics</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">non relativistic quantic theory</Literal>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Proton</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Proton</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -1507,11 +2524,6 @@ Exemple: surface de Fermi.</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">Quark</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
-        <IRI>RelativistHypothesis</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">RelativistHypothesis</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>RelativisticPhenomenon</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">RelativisticPhenomenons</Literal>
@@ -1520,11 +2532,6 @@ Exemple: surface de Fermi.</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>RelativisticPhenomenon</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">RelativisticPhenomenon</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
-        <IRI>RelativisticQuantumMechanics</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">RelativisticQuantumMechanics</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -1553,6 +2560,26 @@ Exemple: surface de Fermi.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Solid</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Solids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Solid</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Solid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>SolidState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SolidStates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>SolidState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SolidState</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>Speed</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Speeds</Literal>
     </AnnotationAssertion>
@@ -1562,9 +2589,24 @@ Exemple: surface de Fermi.</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">Speed</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
-        <IRI>StandardModel</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">StandardModel</Literal>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Spin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Spins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Spin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Spin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>State</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">States</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>State</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">State</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1572,9 +2614,29 @@ Exemple: surface de Fermi.</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">The state of an object depends on the value of its several Physical Quantities.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>StateOfFreedom</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StateOfFreedoms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>StateOfFreedom</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StateOfFreedom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>StateOfFreedom</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">depends of the number of levels of freedom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>StrangeQuark</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StrangeQuarks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>StrangeQuark</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StrangeQuark</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -1588,6 +2650,36 @@ Exemple: surface de Fermi.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Tau</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Taus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Tau</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tau</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>TauicLeptonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TauicLeptonicNumbers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>TauicLeptonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TauicLeptonicNumber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>TauicNeutrino</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TauicNeutrinoes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>TauicNeutrino</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TauicNeutrino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>Time</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Times</Literal>
     </AnnotationAssertion>
@@ -1595,6 +2687,36 @@ Exemple: surface de Fermi.</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>Time</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>TopQuark</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TopQuarks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>TopQuark</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TopQuark</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Tritium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tritiums</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Tritium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tritium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>TritiumNucleus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TritiumNucleuses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>TritiumNucleus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TritiumNucleus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -1623,6 +2745,16 @@ Exemple: surface de Fermi.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>UpQuark</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UpQuarks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>UpQuark</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UpQuark</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>Wave</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Waves</Literal>
     </AnnotationAssertion>
@@ -1640,6 +2772,36 @@ Exemple: surface de Fermi.</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>WeakInteraction</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">WeakInteraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>hasBaryonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasBaryonicNumber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>hasBaryonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasBaryonicNumbers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>hasBaryonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasBaryonicNumbered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>hasCharge</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasCharge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>hasCharge</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasCharges</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>hasCharge</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasCharged</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
@@ -1675,6 +2837,96 @@ Exemple: surface de Fermi.</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
         <IRI>hasDimension</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">hasDimensioned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>hasElectricalCharge</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasElectricalCharge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>hasElectricalCharge</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasElectricalCharges</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>hasElectricalCharge</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasElectricalCharged</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>hasElectronicLeptonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasElectronicLeptonicNumber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>hasElectronicLeptonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasElectronicLeptonicNumbers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>hasElectronicLeptonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasElectronicLeptonicNumbered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>hasLeptonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasLeptonicNumber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>hasLeptonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasLeptonicNumbers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>hasLeptonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasLeptonicNumbered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>hasMass</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasMass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>hasMass</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasMasses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>hasMass</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasMassed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>hasMuonicLeptonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasMuonicLeptonicNumber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>hasMuonicLeptonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasMuonicLeptonicNumbers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>hasMuonicLeptonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasMuonicLeptonicNumbered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>hasPart</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasPart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>hasPart</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasParts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>hasPart</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasParted</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
@@ -1723,6 +2975,48 @@ Exemple: surface de Fermi.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>hasQuantityValue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>hasQuantityValue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasValues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>hasQuantityValue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasValued</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasQuantityValue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A DataProperty will be created for each PhysicalQuantity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasQuantityValue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The most wide datatype range is given (long double), so that any value can be considered.
+
+Boolean values are only in PhysicalProperty dataproperties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>hasSavorCharge</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSavorCharge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>hasSavorCharge</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSavorCharges</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>hasSavorCharge</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSavorCharged</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
         <IRI>hasSpin</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">hasSpin</Literal>
     </AnnotationAssertion>
@@ -1737,9 +3031,19 @@ Exemple: surface de Fermi.</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">hasSpined</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>hasSpin</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">specification of hasValue. When hasValue hasDomain Spin, PropertyChain determines the value of hasSpin</Literal>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>hasTauicLeptonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasTauicLeptonicNumber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>hasTauicLeptonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasTauicLeptonicNumbers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>hasTauicLeptonicNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasTauicLeptonicNumbered</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
@@ -1758,58 +3062,48 @@ Exemple: surface de Fermi.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
-        <IRI>hasValue</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">hasValue</Literal>
+        <IRI>hasTrueFalseValue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasTrueFalseValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
-        <IRI>hasValue</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">hasValues</Literal>
+        <IRI>hasTrueFalseValue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasTrueFalseValues</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
-        <IRI>hasValue</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">hasValued</Literal>
+        <IRI>hasTrueFalseValue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasTrueFalseValued</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
-        <IRI>hasValueHighBorder</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">hasValueHighBorder</Literal>
+        <IRI>inPhysicalState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">inPhysicalState</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
-        <IRI>hasValueHighBorder</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">hasValueHighBorders</Literal>
+        <IRI>inPhysicalState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">inPhysicalStates</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
-        <IRI>hasValueHighBorder</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">hasValueHighBordered</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>hasValueHighBorder</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">…b]</Literal>
+        <IRI>inPhysicalState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">inPhysicalStated</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
-        <IRI>hasValueLowBorder</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">hasValueLowBorder</Literal>
+        <IRI>inState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">inState</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
-        <IRI>hasValueLowBorder</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">hasValueLowBorders</Literal>
+        <IRI>inState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">inStates</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
-        <IRI>hasValueLowBorder</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">hasValueLowBordered</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>hasValueLowBorder</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">[a…</Literal>
+        <IRI>inState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">inStated</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
@@ -1862,6 +3156,21 @@ Exemple: surface de Fermi.</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">isLineared</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>isPartOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPartOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>isPartOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPartOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>isPartOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPartOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>orLinearPhenomenon</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">orLinearPhenomenons</Literal>
@@ -1880,6 +3189,16 @@ Exemple: surface de Fermi.</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>orWavePhenomenon</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">orWavePhenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>test</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">tests</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>test</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>

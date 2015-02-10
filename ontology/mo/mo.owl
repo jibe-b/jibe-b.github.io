@@ -26,34 +26,49 @@
         <IRI>http://creativecommons.org/licences/by/4.0/</IRI>
     </Annotation>
     <Declaration>
+        <Class IRI="/ComplexNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/DecimalNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/DerivationOperator"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/Distribution"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Function"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Integer"/>
+        <Class IRI="/IntegerNumber"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Nombre"/>
+        <Class IRI="/MathematicalObject"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/NombreDécimal"/>
+        <Class IRI="/NaturalInteger"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/NombreRéel"/>
+        <Class IRI="/Number"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Opérateur"/>
+        <Class IRI="/Operator"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/OpérateurDérivation"/>
+        <Class IRI="/PartialDerivationOperator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/RationalNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/RealNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TotalDerivationOperator"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Variable"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.semanticweb.org/jibe/ontologies/2015/0/untitled-ontology-60/New"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/New"/>
@@ -68,40 +83,60 @@
         <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
     </Declaration>
     <SubClassOf>
+        <Class IRI="/ComplexNumber"/>
+        <Class IRI="/Number"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/DecimalNumber"/>
+        <Class IRI="/Number"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/DerivationOperator"/>
+        <Class IRI="/Operator"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Distribution"/>
-        <Class IRI="http://www.semanticweb.org/jibe/ontologies/2015/0/untitled-ontology-60/New"/>
+        <Class IRI="/MathematicalObject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Function"/>
-        <Class IRI="http://www.semanticweb.org/jibe/ontologies/2015/0/untitled-ontology-60/New"/>
+        <Class IRI="/MathematicalObject"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Integer"/>
-        <Class IRI="/Nombre"/>
+        <Class IRI="/IntegerNumber"/>
+        <Class IRI="/Number"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Nombre"/>
-        <Class IRI="http://www.semanticweb.org/jibe/ontologies/2015/0/untitled-ontology-60/New"/>
+        <Class IRI="/NaturalInteger"/>
+        <Class IRI="/Number"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/NombreDécimal"/>
-        <Class IRI="/Nombre"/>
+        <Class IRI="/Number"/>
+        <Class IRI="/MathematicalObject"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/NombreRéel"/>
-        <Class IRI="/Nombre"/>
+        <Class IRI="/Operator"/>
+        <Class IRI="/MathematicalObject"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Opérateur"/>
-        <Class IRI="http://www.semanticweb.org/jibe/ontologies/2015/0/untitled-ontology-60/New"/>
+        <Class IRI="/PartialDerivationOperator"/>
+        <Class IRI="/DerivationOperator"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/OpérateurDérivation"/>
-        <Class IRI="/Opérateur"/>
+        <Class IRI="/RationalNumber"/>
+        <Class IRI="/Number"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/RealNumber"/>
+        <Class IRI="/Number"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TotalDerivationOperator"/>
+        <Class IRI="/DerivationOperator"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Variable"/>
-        <Class IRI="http://www.semanticweb.org/jibe/ontologies/2015/0/untitled-ontology-60/New"/>
+        <Class IRI="/MathematicalObject"/>
     </SubClassOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/hasDerivative"/>
@@ -115,6 +150,21 @@
         <ObjectProperty IRI="/hasDerivative"/>
         <ObjectProperty IRI="/isDerivativeOf"/>
     </InverseObjectProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/DerivationOperator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OpérateurDérivation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/DerivationOperator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OpérateurDérivation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/DerivationOperator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">les individus devraient être les opérateurs dérivée n-ième</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>/Distribution</IRI>
@@ -137,12 +187,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>/Integer</IRI>
+        <IRI>/IntegerNumber</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Integers</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>/Integer</IRI>
+        <IRI>/IntegerNumber</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Integer</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -162,58 +212,33 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>/Nombre</IRI>
+        <IRI>/Number</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Nombres</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>/Nombre</IRI>
+        <IRI>/Number</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Nombre</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>/NombreDécimal</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">NombreDécimal</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>/NombreDécimal</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">NombreDécimal</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>/NombreRéel</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">NombreRéel</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>/NombreRéel</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">NombreRéel</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>/Opérateur</IRI>
+        <IRI>/Operator</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Opérateur</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>/Opérateur</IRI>
+        <IRI>/Operator</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Opérateur</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>/OpérateurDérivation</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">OpérateurDérivation</Literal>
+        <IRI>/RealNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NombreRéel</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>/OpérateurDérivation</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">OpérateurDérivation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/OpérateurDérivation</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">les individus devraient être les opérateurs dérivée n-ième</Literal>
+        <IRI>/RealNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NombreRéel</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -254,16 +279,6 @@
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
         <IRI>/isDerivativeOf</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">isDerivativeOfed</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>http://www.semanticweb.org/jibe/ontologies/2015/0/untitled-ontology-60/New</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">News</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>http://www.semanticweb.org/jibe/ontologies/2015/0/untitled-ontology-60/New</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">New</Literal>
     </AnnotationAssertion>
 </Ontology>
 

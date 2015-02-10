@@ -21,15 +21,25 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://jibe-b.github.io/ontology/mo</Import>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
         <IRI>http://creativecommons.org/licences/by/4.0/</IRI>
     </Annotation>
     <Declaration>
+        <Class IRI="/Bloc"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/Definition"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/Equation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/EquationElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/EquationTerm"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Hypothesis"/>
@@ -39,6 +49,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="/Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PartialDerivativeEquation"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Theorem"/>
@@ -53,10 +66,25 @@
         <ObjectProperty IRI="/admitsObservation"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="/bloc"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="/hasFoundationalHypothesis"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="/hasPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasSymbolicExpression"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="/hypothesisForTheoreticalFrame"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/operator"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/predict"/>
@@ -73,9 +101,88 @@
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="/Bloc"/>
+        <ObjectIntersectionOf>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="/hasPart"/>
+                    <Class IRI="http://jibe-b.github.io/ontology/mo/Number"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="/hasPart"/>
+                    <Class IRI="http://jibe-b.github.io/ontology/mo/Variable"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="/hasPart"/>
+                    <Class IRI="/Bloc"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="/hasPart"/>
+                <Class IRI="http://jibe-b.github.io/ontology/mo/Operator"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/Equation"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="/hasPart"/>
+            <Class IRI="/EquationTerm"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/EquationTerm"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="/hasPart"/>
+                <Class IRI="http://jibe-b.github.io/ontology/mo/Operator"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="/hasPart"/>
+                <Class IRI="/Bloc"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/KnowledgeProposition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasSymbolicExpression"/>
+            <Class IRI="/Equation"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/PartialDerivativeEquation"/>
+        <ObjectIntersectionOf>
+            <Class IRI="/Equation"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="/hasPart"/>
+                <Class IRI="http://jibe-b.github.io/ontology/mo/Operator"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/Theorem"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasFoundationalHypothesis"/>
+            <Class IRI="/Hypothesis"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="/Bloc"/>
+        <Class IRI="/EquationElement"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="/Definition"/>
         <Class IRI="/KnowledgeProposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Equation"/>
+        <Class IRI="/EquationElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/EquationTerm"/>
+        <Class IRI="/EquationElement"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Hypothesis"/>
@@ -84,6 +191,10 @@
     <SubClassOf>
         <Class IRI="/Model"/>
         <Class IRI="/TheoreticalFrame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PartialDerivativeEquation"/>
+        <Class IRI="/Equation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Theorem"/>
@@ -101,6 +212,14 @@
         <ObjectProperty IRI="/hypothesisForTheoreticalFrame"/>
         <ObjectProperty IRI="/hasFoundationalHypothesis"/>
     </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/isPartOf"/>
+        <ObjectProperty IRI="/hasPart"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/bloc"/>
+        <Class IRI="/EquationElement"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/hasFoundationalHypothesis"/>
         <Class IRI="/TheoreticalFrame"/>
@@ -108,6 +227,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/hypothesisForTheoreticalFrame"/>
         <Class IRI="/Hypothesis"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/operator"/>
+        <Class IRI="/EquationElement"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/validUnderTheoreticalFrame"/>
@@ -122,6 +245,10 @@
         <Class IRI="/TheoreticalFrame"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="/operator"/>
+        <Class IRI="http://jibe-b.github.io/ontology/mo/Operator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="/validUnderTheoreticalFrame"/>
         <Class IRI="/TheoreticalFrame"/>
     </ObjectPropertyRange>
@@ -129,6 +256,86 @@
         <ObjectProperty IRI="/sufficientToDescribePhenomenon"/>
         <ObjectProperty IRI="/unsufficientToDescribePhenomenon"/>
     </DisjointObjectProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/Definition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definitions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/Definition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/EquationElement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EquationElements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/EquationElement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EquationElement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/Hypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hypotheses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/Hypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/KnowledgeProposition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">KnowledgePropositions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/KnowledgeProposition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">KnowledgeProposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/Model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Models</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/Model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/Theorem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Theorems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/Theorem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Theorem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/TheoreticalFrame</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TheoreticalFrames</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/TheoreticalFrame</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TheoreticalFrame</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/Theory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Theories</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/Theory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Theory</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
         <IRI>/admitsObservation</IRI>
@@ -143,6 +350,51 @@
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
         <IRI>/admitsObservation</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">admitsObservationed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>/hasFoundationalHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasFoundationalHypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>/hasFoundationalHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasFoundationalHypothesises</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>/hasFoundationalHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasFoundationalHypothesised</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>/hypothesisForTheoreticalFrame</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hypothesisForTheoreticalFrame</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>/hypothesisForTheoreticalFrame</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hypothesisForTheoreticalFrames</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>/hypothesisForTheoreticalFrame</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hypothesisForTheoreticalFramed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>/operator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">operator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>/operator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">operators</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>/operator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">operatored</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
