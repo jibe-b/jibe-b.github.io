@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<isv:project xmlns:isv="http://www.w3.org/2001/10/IsaViz" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <isv:baseURI value="http://jibe-b.github.io/resource/"/>
+    <isv:nsBindings>
+        <isv:nsBinding dispPrefix="true" prefix="method" uri="http://jibe-b.github.io/ontology/method/"/>
+        <isv:nsBinding dispPrefix="true" prefix="mo" uri="http://jibe-b.github.io/ontology/mo/"/>
+        <isv:nsBinding dispPrefix="true" prefix="pso" uri="http://jibe-b.github.io/ontology/pso/"/>
+        <isv:nsBinding dispPrefix="true" prefix="sci-ps" uri="http://jibe-b.github.io/ontology/sci-ps/"/>
+        <isv:nsBinding dispPrefix="true" prefix="sci" uri="http://jibe-b.github.io/ontology/sci/"/>
+        <isv:nsBinding dispPrefix="true" prefix="rdf" uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:nsBinding dispPrefix="true" prefix="rdfs" uri="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:nsBinding dispPrefix="true" prefix="gss" uri="http://www.w3.org/2001/11/IsaViz/graphstylesheets#"/>
+        <isv:nsBinding dispPrefix="true" prefix="xsd" uri="http://www.w3.org/2001/XMLSchema#"/>
+        <isv:nsBinding dispPrefix="true" prefix="sof" uri="sans ontologie fixe"/>
+    </isv:nsBindings>
+    <isv:propertyTypes>
+        <isv:propertyType name="hasInput" ns="http://jibe-b.github.io/ontology/method/"/>
+        <isv:propertyType name="hasOutput" ns="http://jibe-b.github.io/ontology/method/"/>
+        <isv:propertyType name="isInputFor" ns="http://jibe-b.github.io/ontology/method/"/>
+        <isv:propertyType
+            name="_??   (Membership property auto-numbering: _1, _2, ...)" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="object" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="predicate" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="subject" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="type" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="value" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="comment" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="domain" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="isDefinedBy" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="label" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="range" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="seeAlso" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="subClassOf" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="subPropertyOf" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="hasMathematicalExpression" ns="sans ontologie fixe"/>
+    </isv:propertyTypes>
+    <isv:colorTable>
+        <isv:color b="115" g="191" r="115"/>
+        <isv:color b="66" g="105" r="66"/>
+        <isv:color b="206" g="89" r="90"/>
+        <isv:color b="206" g="89" r="90"/>
+        <isv:color b="123" g="223" r="255"/>
+        <isv:color b="66" g="117" r="132"/>
+    </isv:colorTable>
+    <isv:fontTable>
+        <isv:font desc="Dialog Plain 10"/>
+    </isv:fontTable>
+    <isv:bookmarks/>
+    <isv:resources>
+        <isv:iresource display="true" fill="0" h="18" id="0" shape="0"
+            stroke="1" w="64" x="23" y="-89">
+            <isv:URIorID x="-30" y="-91">
+                <isv:uri>r:Thoérème_De_Bloch</isv:uri>
+            </isv:URIorID>
+        </isv:iresource>
+        <isv:iresource display="true" fill="0" h="18" id="1" shape="0"
+            stroke="1" w="95" x="154" y="29">
+            <isv:URIorID x="75" y="27">
+                <isv:uri>r:Hypothèse_De_Champ_Moyen</isv:uri>
+            </isv:URIorID>
+        </isv:iresource>
+        <isv:iresource display="true" fill="0" h="18" id="2" shape="0"
+            stroke="1" w="73" x="-40" y="17">
+            <isv:URIorID x="-101" y="15">
+                <isv:uri>r:Hypothèse_Adiabatique</isv:uri>
+            </isv:URIorID>
+        </isv:iresource>
+        <isv:iresource display="true" fill="0" h="18" id="3" shape="0"
+            stroke="1" w="102" x="-67" y="-183">
+            <isv:URIorID x="-152" y="-185">
+                <isv:uri>r:Expression_Des_Ondes_De_Bloch</isv:uri>
+            </isv:URIorID>
+        </isv:iresource>
+    </isv:resources>
+    <isv:literals>
+        <isv:iliteral display="true" fill="4" h="18" id="4" shape="1"
+            stroke="5" w="65" x="175" y="-225">
+            <isv:value x="121" y="-228">psi(x) = u_k(x) e^(ikx)</isv:value>
+        </isv:iliteral>
+    </isv:literals>
+    <isv:properties>
+        <isv:iproperty display="true" ob="0" sb="2" stroke="2">
+            <isv:uri x="-8" y="-36">
+                <isv:namespace>http://jibe-b.github.io/ontology/method/</isv:namespace>
+                <isv:localname>isInputFor</isv:localname>
+            </isv:uri>
+            <isv:path d="M-29 1L12 71"/>
+            <isv:head or="-2.6117437" w="5" x="12" y="-71"/>
+        </isv:iproperty>
+        <isv:iproperty display="true" ob="0" sb="1" stroke="2">
+            <isv:uri x="88" y="-30">
+                <isv:namespace>http://jibe-b.github.io/ontology/method/</isv:namespace>
+                <isv:localname>isInputFor</isv:localname>
+            </isv:uri>
+            <isv:path d="M134 -11L43 71"/>
+            <isv:head or="2.3042183" w="5" x="43" y="-71"/>
+        </isv:iproperty>
+        <isv:iproperty display="true" ob="3" sb="0" stroke="2">
+            <isv:uri x="-22" y="-136">
+                <isv:namespace>http://jibe-b.github.io/ontology/method/</isv:namespace>
+                <isv:localname>hasOutput</isv:localname>
+            </isv:uri>
+            <isv:path d="M6 107L-50 165"/>
+            <isv:head or="2.3737366" w="5" x="-50" y="-165"/>
+        </isv:iproperty>
+        <isv:iproperty display="true" ob="4" sb="3" stroke="2">
+            <isv:uri x="54" y="-196">
+                <isv:namespace>sans ontologie fixe</isv:namespace>
+                <isv:localname>hasMathematicalExpression</isv:localname>
+            </isv:uri>
+            <isv:path d="M33 179L149 207"/>
+            <isv:head or="-1.8121039" w="5" x="149" y="-207"/>
+        </isv:iproperty>
+    </isv:properties>
+</isv:project>

@@ -1,0 +1,322 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://jibe-b.github.io/ontology/sci-ps"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://jibe-b.github.io/ontology/sci-ps">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://jibe-b.github.io/ontology/pso/</Import>
+    <Import>http://jibe-b.github.io/ontology/sci</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CC-BY</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has all generalities inherited from SCI. Any general axiom or change MUST be made in SCI and then inherited.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="/ConditionsAuxLimites"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ConditionsAuxLimitesPériodiques"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Definiton"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Equation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Hypothesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PhysicalSciencesTheorem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Theorem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TheoreticalFrame"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Theory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://jibe-b.github.io/ontology/sci/admitsObservation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://jibe-b.github.io/ontology/sci/predict"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://jibe-b.github.io/ontology/sci/sufficientToDescribePhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://jibe-b.github.io/ontology/sci/unsufficientToDescribePhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://jibe-b.github.io/ontology/sci/validUnderTheoreticalFrame"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/ConditionsAuxLimitesPériodiques"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Conditions_BVK"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/ConditionsAuxLimitesPériodiques"/>
+        <Class IRI="/ConditionsAuxLimites"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Model"/>
+        <Class IRI="/TheoreticalFrame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PhysicalSciencesTheorem"/>
+        <Class IRI="http://jibe-b.github.io/ontology/sci/Theorem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Theory"/>
+        <Class IRI="/TheoreticalFrame"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="/ConditionsAuxLimitesPériodiques"/>
+        <NamedIndividual IRI="/ConditionsAuxLimitesPériodiques"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/ConditionsAuxLimitesPériodiques"/>
+        <NamedIndividual IRI="/Conditions_BVK"/>
+    </ClassAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/ConditionsAuxLimites</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ConditionsAuxLimiteses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/ConditionsAuxLimites</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ConditionsAuxLimites</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/ConditionsAuxLimitesPériodiques</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ConditionsAuxLimitesPériodiques</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/ConditionsAuxLimitesPériodiques</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ConditionsAuxLimitesPériodiques</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>/ConditionsAuxLimitesPériodiques</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ConditionsAuxLimitesPériodiques</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>/Conditions_BVK</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Conditions_BVK</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/Definiton</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definitons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/Definiton</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definiton</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/Equation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Equations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/Equation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Equation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/Hypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hypotheses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/Hypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/Model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Models</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/Model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/PhysicalSciencesTheorem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalSciencesTheorems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/PhysicalSciencesTheorem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalSciencesTheorem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/Theorem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Theorems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/Theorem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Theorem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/TheoreticalFrame</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TheoreticalFrames</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/TheoreticalFrame</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TheoreticalFrame</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/Theory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Theories</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/Theory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Theory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://jibe-b.github.io/ontology/sci/Theorem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Theorems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://jibe-b.github.io/ontology/sci/Theorem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Theorem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://jibe-b.github.io/ontology/sci/admitsObservation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">admitsObservation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://jibe-b.github.io/ontology/sci/admitsObservation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">admitsObservations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://jibe-b.github.io/ontology/sci/admitsObservation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">admitsObservationed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://jibe-b.github.io/ontology/sci/predict</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">predict</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://jibe-b.github.io/ontology/sci/predict</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">predicts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://jibe-b.github.io/ontology/sci/predict</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">predicted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://jibe-b.github.io/ontology/sci/sufficientToDescribePhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sufficientToDescribePhenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://jibe-b.github.io/ontology/sci/sufficientToDescribePhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sufficientToDescribePhenomenons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://jibe-b.github.io/ontology/sci/sufficientToDescribePhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sufficientToDescribePhenomenoned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://jibe-b.github.io/ontology/sci/sufficientToDescribePhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A model is efficient. Some phenomenon can be described.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://jibe-b.github.io/ontology/sci/unsufficientToDescribePhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unsufficientToDescribePhenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://jibe-b.github.io/ontology/sci/unsufficientToDescribePhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unsufficientToDescribePhenomenons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://jibe-b.github.io/ontology/sci/unsufficientToDescribePhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unsufficientToDescribePhenomenoned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://jibe-b.github.io/ontology/sci/unsufficientToDescribePhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A model is limited. Some phenomenon can not be described.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://jibe-b.github.io/ontology/sci/validUnderTheoreticalFrame</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">validUnderTheoreticalFrame</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://jibe-b.github.io/ontology/sci/validUnderTheoreticalFrame</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">validUnderTheoreticalFrames</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://jibe-b.github.io/ontology/sci/validUnderTheoreticalFrame</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">validUnderTheoreticalFramed</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

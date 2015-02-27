@@ -1,0 +1,1845 @@
+
+
+\documentclass[10pt,thmsa]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{sw20jart}
+\setcounter{MaxMatrixCols}{30}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+
+\providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
+
+\textwidth 16 cm
+\textheight 23 cm
+\setlength{\topmargin}{-1 cm}
+\setlength{\oddsidemargin}{0 cm}
+\renewcommand {\baselinestretch}{1.2}
+
+\title{ONDES\ NON-LINEAIRES : SOLITONS, CHOCS}
+\author{
+
+}
+\begin{document}
+
+
+\maketitle
+\tableofcontents%
+
+%TCIMACRO{\TeXButton{newpage}{\newpage}}%
+%BeginExpansion
+\newpage
+%EndExpansion
+
+
+\section{INTRODUCTION}
+
+En th\'{e}orie lin\'{e}aire, les amplitudes des ondes qui se propagent dans un
+plasma sont consid\'{e}r\'{e}es comme tr\`{e}s faibles; une analyse
+perturbative permet alors de ne retenir que les termes du premier ordre. Mais
+si les ondes ont des amplitudes suffisamment \'{e}lev\'{e}es, les termes
+non-lin\'{e}aires pr\'{e}sents dans les \'{e}quations qui gouvernent leur
+propagation ne sont plus des perturbations n\'{e}gligeables mais leurs
+contributions doivent \^{e}tre prises en compte\footnote{Notons toutefois que
+les amplitudes des ondes ne doivent pas \^{e}tre trop \'{e}lev\'{e}es. En
+effet, si tel \'{e}tait le cas, d'autres m\'{e}thodes de r\'{e}solution
+devraient \^{e}tre substitu\'{e}es \`{a} la m\'{e}thode perturbative, et nous
+serions dans le domaine de la turbulence forte qui n'est pas notre propos dans
+ce chapitre.}, permettant ainsi la mise en \'{e}vidence d'effets physiques
+nouveaux. C'est ce que nous \'{e}tudierons dans ce chapitre; en particulier,
+nous prendrons comme exemple les ondes \'{e}lectrostatiques acoustiques ioniques.
+
+La dispersion et la non-lin\'{e}arit\'{e} sont deux aspects fondamentaux en
+physique des plasmas. Nous verrons comment une balance entre ces deux effets
+dans un plasma permet l'apparition d'une structure remarquable : le soliton,
+onde non-lin\'{e}aire solitaire qui se propage dans un plasma sans se
+d\'{e}former ni sans \^{e}tre affect\'{e}e par d'\'{e}ventuelles interactions
+avec d'autres solitons. Ainsi, les effets dispersifs peuvent emp\^{e}cher
+l'effondrement d'une onde que provoqueraient les effets non-lin\'{e}aires
+li\'{e}s au raidissement du front d'onde. Les ondes solitons sont des
+solutions stationnaires de l'\'{e}quation dite de Korteweg-de Vries. Cette
+\'{e}quation, obtenue par Korteweg et de Vries lors de la r\'{e}solution d'un
+probl\`{e}me d'hydrodynamique (ondes \`{a} la surface de l'eau), appara\^{\i}t
+dans le traitement de nombreux probl\`{e}mes physiques concernant des
+syst\`{e}mes dispersifs faiblement non-lin\'{e}aires.
+
+D'autre part, lorsqu'un processus de dissipation est pr\'{e}sent, un autre
+type d'onde non-lin\'{e}aire peut se propager : c'est l'onde de choc non
+collisionnelle, qui permet par sa structure de connecter entre elles des
+r\'{e}gions de l'espace o\`{u} le plasma est fortement perturb\'{e} et des
+r\'{e}gions o\`{u} il ne l'est pas. Ces ondes peuvent exister dans un plasma
+m\^{e}me en l'absence de collisions interparticulaires, ce qui peut
+para\^{\i}tre de prime abord surprenant. Elles constituent des solutions
+stationnaires de l'\'{e}quation dite de Burger-Korteweg-de Vries qui inclut
+\`{a} la fois des termes dispersif, dissipatif et non-lin\'{e}aire.
+
+\section{EQUATIONS\ D'ONDES\ NON-LINEAIRES}
+
+\subsection{L'onde solitaire en hydrodynamique}
+
+John Scott Russell (1808-1882) est un ing\'{e}nieur \'{e}cossais qui
+d\'{e}crivit pour la premi\`{e}re fois l'observation qu'il fit d'une onde
+solitaire se propageant le long d'un canal. Russell \'{e}tudiait le mouvement
+des vagues \`{a} la surface de l'eau et leur r\^{o}le dans la r\'{e}sistance
+au mouvement des bateaux pour en d\'{e}duire les formes des coques de navires
+les plus aptes \`{a} la navigation dans des canaux. Il \'{e}crit :
+''\textit{J'observais le mouvement d'un bateau que deux chevaux tiraient
+rapidement dans un canal \'{e}troit, lorsque ce bateau vint \`{a}
+s'arr\^{e}ter tout \`{a} coup; mais il n'en fut pas de m\^{e}me de la masse
+d'eau qu'il avait mise en mouvement; elle s'accumula autour de la proue dans
+un \'{e}tat de violente agitation, puis, laissant tout \`{a} coup le bateau en
+arri\`{e}re, se mit \`{a} cheminer en avant avec une grande vitesse sous la
+forme d'une seule grande ondulation, dont la surface \'{e}tait arrondie, lisse
+et parfaitement d\'{e}termin\'{e}e. Cette onde continua sa marche dans le
+canal sans que sa forme et sa vitesse parussent s'alt\'{e}rer en rien. Je la
+suivis \`{a} cheval et la retrouvai encore cheminant encore avec une vitesse
+de 8 \`{a} 9 milles\footnote{Un mille vaut 1.6 km.} \`{a} l'heure et
+conservant sa img/figure initiale (environ 30 pieds de longueur sur 1 pied \`{a} 1
+pied et demi de hauteur\footnote{Un pied vaut 30.48 cm.}). La hauteur de
+l'onde diminuait graduellement, et apr\`{e}s l'avoir suivie pendant un mille
+ou deux, je la perdis dans les sinuosit\'{e}s du canal. Ainsi au mois
+d'ao\^{u}t 1834 ai-je eu la chance de ma premi\`{e}re rencontre avec ce
+ph\'{e}nom\`{e}ne \'{e}trange et beau.}''\footnote{Quelques ann\'{e}es plus
+tard, en 1865, dans sa ''Recherche exp\'{e}rimentale sur la propagation des
+ondes'', M. Bazin r\'{e}sume ainsi :'' \textit{Toutes les fois qu'un certain
+volume d'eau, momentan\'{e}ment soulev\'{e} au-dessus du niveau
+g\'{e}n\'{e}ral de la masse, est abandonn\'{e} \`{a} lui-m\^{e}me, il donne
+naissance, en s'affaissant pour y rentrer, \`{a} une onde de translation. Ce
+soul\`{e}vement momentan\'{e} peut \^{e}tre produit soit par le mouvement d'un
+solide (comme le bateau dont il vient d'\^{e}tre parl\'{e}) agissant \`{a} la
+fa\c{c}on d'un piston qui pousse le liquide, soit par la projection d'un
+certain volume d'eau dans un liquide tranquille, etc. L'onde de translation
+est tout enti\`{e}re en saillie au-dessus du niveau de l'eau sur laquelle elle
+chemine, ce qui la distingue des ondes oscillatoires que nous \'{e}tudierons
+plus loin et dont chaque saillie est accompagn\'{e}e d'une cavit\'{e}
+correspondante. De plus, les ondes d'oscillation sont toujours r\'{e}unies par
+groupe et se succ\`{e}dent \`{a} intervalles r\'{e}guliers : l'onde de
+translation chemine seule, aussi Scott Russell a-t'il donn\'{e} \`{a} celle
+qu'il a \'{e}tudi\'{e}e la d\'{e}nomination d'onde solitaire, qui est
+appliqu\'{e}e plus sp\'{e}cialement aujourd'hui \`{a} une onde de translation
+particuli\`{e}re ayant la propri\'{e}t\'{e} de se propager sans se
+d\'{e}former}''.}
+
+Bien que l'\'{e}tude math\'{e}matique de la propagation d'ondes de faible
+amplitude \`{a} la surface d'un fluide ait d\'{e}but\'{e} d\`{e}s le
+18$^{i\grave{e}me}$ si\`{e}cle, la description analytique d'ondes de plus
+grande amplitude et stables telles que l'onde solitaire d\'{e}crite par
+Russell a \'{e}t\'{e} r\'{e}alis\'{e}e par Boussinesq (1869) et Saint-Venant
+(1885), puis la r\'{e}solution exacte du probl\`{e}me a \'{e}t\'{e}
+effectu\'{e}e par Korteweg et de Vries en 1895. Apr\`{e}s un d\'{e}clin de
+l'int\'{e}r\^{e}t pour le sujet de pr\`{e}s de 60 ans, les deux chercheurs
+am\'{e}ricains Zabusky et Kruskal\footnote{N.J.\ Zabusky and M.D. Kruskal,
+Interaction of solitons in a collisionless plasma and the recurrence of
+initial states, \textit{Phys. Rev. Lett}., 15(6), 240, 1965.} d\'{e}montrent
+en 1965 par des simulations num\'{e}riques que deux ondes solitaires
+v\'{e}rifiant l'\'{e}quation de Korteweg-de Vries, dirig\'{e}es de mani\`{e}re
+\`{a} se heurter, entrant en collision sans se d\'{e}former. Cet effet
+tr\`{e}s surprenant et remarquable donne alors naissance au terme de
+''\textit{soliton}''. Le concept de soliton infiltre ensuite rapidement dans
+de nombreux domaines des math\'{e}matiques et de la physique o\`{u} il a
+permis de d\'{e}crire et de comprendre de multiples ph\'{e}nom\`{e}nes en
+hydrodynamique, en optique non-lin\'{e}aire, en physique des solides, des gaz,
+des plasmas, des lasers, ou encore en neurobiologie, par exemple.
+
+Essayons de comprendre \`{a} pr\'{e}sent quels sont les divers
+ph\'{e}nom\`{e}nes physiques qui interviennent dans la formation et la
+propagation d'une onde solitaire dans un plasma.
+
+\subsection{Non-lin\'{e}arit\'{e}s dans le mouvement d'un fluide}
+
+L'\'{e}quation hydrodynamique d'un fluide dans un plasma (ions ou
+\'{e}lectrons) est donn\'{e}e par
+\begin{equation}
+\underline{\overline{mn\frac{d\mathbf{U}}{dt}=mn\left[  \frac{\partial
+\mathbf{U}}{\partial t}+(\mathbf{U\cdot\nabla)U}\right]  \mathbf{=F,\qquad
+U=U(r},t\mathbf{),}}}\label{A1}%
+\end{equation}
+o\`{u} $\mathbf{U}$ est la vitesse du fluide consid\'{e}r\'{e} et $mn$ sa
+densit\'{e} de masse; $\mathbf{F}$ est la force totale s'exer\c{c}ant sur le
+fluide, pouvant inclure les effets \'{e}lectromagn\'{e}tiques, collisionnels
+et thermiques. Le terme $(\mathbf{U\cdot\nabla)U}$ est un terme
+non-lin\'{e}aire appel\'{e} d\'{e}riv\'{e}e convective de la vitesse. Quels
+effets physiques induit-il ?
+
+Consid\'{e}rons un cas simple. Dans un mod\`{e}le \`{a} une dimension et en
+l'absence de force, (\ref{A1}) s'\'{e}crit sous la forme
+\begin{equation}
+\frac{dU}{d\tau}=\frac{\partial U}{\partial\tau}+\frac{\partial U}{\partial
+\xi}\frac{d\xi}{d\tau}=\frac{\partial U}{\partial\tau}+U\frac{\partial
+U}{\partial\xi}=0,\qquad U=U(\xi,\tau),\label{A2}%
+\end{equation}
+o\`{u} $\xi$ et $\tau$ sont deux variables ind\'{e}pendantes d'espace et de
+temps; $U\frac{\partial U}{\partial\xi}$ est la d\'{e}riv\'{e}e convective de
+la vitesse. La solution g\'{e}n\'{e}rale de (\ref{A2}) est de la forme
+\begin{equation}
+U(\xi,\tau)\equiv F(s(\xi,\tau))=F(\xi-U(\xi,\tau)\tau),\label{A3}%
+\end{equation}
+o\`{u} la fonction diff\'{e}rentiable $F(s)$ est une solution implicite de
+(\ref{A2}). On le v\'{e}rifie ais\'{e}ment en diff\'{e}rentiant (\ref{A3})
+\begin{equation}
+U(\xi,\tau)=F(s(\xi,\tau))\Rightarrow dF=\frac{dF}{ds}ds=\frac{dF}{ds}%
+(\frac{\partial s}{\partial\xi}d\xi+\frac{\partial s}{\partial\tau}%
+d\tau)=dU=\frac{\partial U}{\partial\xi}d\xi+\frac{\partial U}{\partial\tau
+}d\tau,
+\end{equation}
+d'o\`{u}
+\begin{equation}
+\frac{\partial U}{\partial\xi}=\frac{dF}{ds}\frac{\partial s}{\partial\xi
+}=F^{\prime}(s)(1-\frac{\partial U}{\partial\xi}\tau)\text{,\qquad}%
+\frac{\partial U}{\partial\tau}=\frac{dF}{ds}\frac{\partial s}{\partial\tau
+}=-F^{\prime}(s)(U+\frac{\partial U}{\partial\tau}\tau),
+\end{equation}
+puisque
+\begin{equation}
+s=\xi-U(\xi,\tau)\tau=s(\xi,\tau)\Rightarrow ds=\frac{\partial s}{\partial\xi
+}d\xi+\frac{\partial s}{\partial\tau}d\tau=(1-\frac{\partial U}{\partial\xi
+}\tau)d\xi-(U+\frac{\partial U}{\partial\tau}\tau)d\tau.
+\end{equation}
+Par cons\'{e}quent il vient
+\begin{equation}
+\frac{\partial U}{\partial\tau}=-\frac{UF^{\prime}(s)}{1+\tau F^{\prime}%
+(s)},\qquad\frac{\partial U}{\partial\xi}=\frac{F^{\prime}(s)}{1+\tau
+F^{\prime}(s)},\label{A7}%
+\end{equation}
+qui montre (\ref{A3}). Consid\'{e}rons, \`{a} $\tau=0$, une valeur
+particuli\`{e}re $U=F(\xi)$ correspondant \`{a} une certaine valeur de $\xi.$
+A un temps $\tau>0$ ult\'{e}rieur, cette m\^{e}me valeur de $U$ correspondra
+\`{a} une valeur de $\xi$ telle que la valeur de $F(\xi-U(\xi,\tau)\tau) $ est
+inchang\'{e}e (voir (\ref{A3})), c'est-\`{a}-dire \`{a} un $\xi=\xi^{\prime}$
+plus grand que le pr\'{e}c\'{e}dent d'une quantit\'{e} $U\tau$%
+\begin{equation}
+\left\{
+\begin{array}
+[c]{c}%
+\tau=0,\quad U=F(\xi)\\
+\tau>0,\quad U=F(\xi^{\prime}-U\tau)
+\end{array}
+\right\}  \Rightarrow F(\xi)=F(\xi^{\prime}-U\tau),\qquad\xi^{\prime}%
+=\xi+U\tau.\label{A8}%
+\end{equation}
+Cela signifie que chaque valeur particuli\`{e}re de $U$ se propage vers la
+droite (i.e., vers les $\xi$ croissants) avec la vitesse $U$. Par
+cons\'{e}quent, les grandes valeurs de $U$ se propagent plus vite que les
+petites, ce qui entra\^{\i}ne une distortion de $U$ en fonction de $\xi$ lors
+de son \'{e}volution temporelle, comme le montre la img/figure 1. La pente
+n\'{e}gative de $U$ devient de plus en plus abrupte \`{a} mesure que le temps
+s'\'{e}coule: c'est le ph\'{e}nom\`{e}ne de\textit{\ raidissement du front}.
+Il arrive un moment o\`{u} la pente $\frac{\partial U}{\partial\xi}<0$ devient
+infinie (voir $U(\xi,\tau=\tau_{2})$, img/figure 1) pour une certaine valeur de
+$\xi$; au-del\`{a} de cette valeur, la solution de (\ref{A2}) devient
+multivalu\'{e}e, ce qui est impossible physiquement, puisqu'au m\^{e}me point
+$\xi$, le fluide ne peut pas se propager avec plusieurs vitesses $U $
+diff\'{e}rentes (voir $U(\xi,\tau=\tau_{3})$, img/figure 1). La pente
+$\frac{\partial U}{\partial\xi}$ devient infinie au temps $\tau_{c}$
+\begin{equation}
+\frac{\partial U}{\partial\xi}\rightarrow\infty\Rightarrow\tau_{c}=\min
+_{s}\left(  -\frac{1}{F^{\prime}(s)}\right)  ,\label{A9}%
+\end{equation}
+et, finalement, l'onde se brise comme le ferait une vague sur la mer
+(ph\'{e}nom\`{e}ne d'\textit{effondrement}).
+
+Le raidissement du front est li\'{e} \`{a} l'apparition de composantes de
+courtes longueurs d'ondes dans la perturbation, qui sont dues \`{a}
+l'existence d'harmoniques sup\'{e}rieures $(nk,n\omega,n>1)$ de l'onde
+$(k,\omega)$ g\'{e}n\'{e}r\'{e}es par le terme non-lin\'{e}aire
+$(\mathbf{U\cdot\nabla)U}$. L'effondrement de l'onde qui ach\`{e}ve sa phase
+de distortion r\'{e}sulte du fait que le terme de non-lin\'{e}arit\'{e}
+$U\frac{\partial U}{\partial\xi}$ n'est pas contrebalanc\'{e} dans (\ref{A2})
+par des termes de dispersion ou de dissipation qui tendent \`{a} limiter le
+raidissement du front. En effet, celui-ci appara\^{\i}t quand les harmoniques
+sup\'{e}rieures se couplent non-lin\'{e}airement avec l'onde $(k,\omega),$ ce
+couplage \'{e}tant d'autant plus fort si l'onde et ses harmoniques se
+propagent \`{a} la m\^{e}me vitesse; si ce n'est pas le cas, l'effet de
+raidissement est r\'{e}duit \`{a} cause de la dispersion. Pour les ondes
+acoustiques ioniques par exemple, la relation de dispersion (voir plus loin
+(\ref{A26})-(\ref{AA26})) montre que les composantes de plus petites longueurs
+d'onde se propagent moins vite que l'onde principale $(k,\omega)$ , rendant le
+couplage non-lin\'{e}aire inefficace: le raidissement du front est en partie
+contrecarr\'{e} par la dispersion. Ainsi, nous verrons plus loin comment,
+gr\^{a}ce \`{a} une balance entre dispersion et non-lin\'{e}arit\'{e} dans
+l'\'{e}quation (\ref{A2}), la perturbation $U$ peut \^{e}tre une structure
+propagative stable appel\'{e}e impulsion solitaire ou soliton, v\'{e}rifiant
+l'\'{e}quation de Korteweg-de Vries. D'autre part, l'introduction d'un terme
+dissipatif dans l'\'{e}quation hydrodynamique (\ref{A2}) conduit \`{a}
+l'\'{e}quation de Burger, dont les solutions stationnaires sont des ondes de
+chocs non collisionnelles.
+
+\begin{center}
+.%
+%TCIMACRO{\FRAME{dtbpFU}{5.4206in}{2.6031in}{0pt}{\Qcb{\QTR{bf}{Figure
+%1}\QTR{small}{. Variation de }$U(\xi,\tau)$\QTR{small}{\ en fonction de }$\xi
+%$\QTR{small}{\ pour diff\'{e}rents instants de temps }$\tau$\QTR{small}{; on
+%observe le raidissement\ du front pour }$\tau\lesssim\tau_{2}$\QTR{small}{\ et
+%l'effondrement pour }$\tau\simeq\tau_{3}.$}}{}{img/fig1new.tif}%
+%{\special{ language "Scientific Word";  type "GRAPHIC";
+%maintain-aspect-ratio TRUE;  display "USEDEF";  valid_file "F";
+%width 5.4206in;  height 2.6031in;  depth 0pt;  original-width 14.8436in;
+%original-height 7.1044in;  cropleft "0";  croptop "1";  cropright "1";
+%cropbottom "0";  filename 'img/fig1new.tif';file-properties "XNPEU";}}}%
+%BeginExpansion
+\begin{center}
+\includegraphics[
+natheight=7.104400in,
+natwidth=14.843600in,
+height=2.6031in,
+width=5.4206in
+]%
+{img/fig1new.tif}%
+\\
+\textbf{Figure 1}{\protect\small . Variation de }$U(\xi,\tau)$%
+{\protect\small \ en fonction de }$\xi${\protect\small \ pour diff\'{e}rents
+instants de temps }$\tau${\protect\small ; on observe le raidissement\ du
+front pour }$\tau\lesssim\tau_{2}${\protect\small \ et l'effondrement pour
+}$\tau\simeq\tau_{3}.$%
+\end{center}
+%EndExpansion
+
+\end{center}
+
+\subsection{Equations non-lin\'{e}aires dispersives}
+
+En 1895, les physiciens Korteweg et de Vries pr\'{e}sentent une \'{e}quation
+contenant les effets dispersifs et non-lin\'{e}aires \'{e}voqu\'{e}s plus haut
+pour laquelle ils obtiennent une famille de solutions exactes stationnaires,
+avec, comme solution particuli\`{e}re, l'onde solitaire. Cette \'{e}quation,
+dite de Korteweg-de Vries ou plus simplement KdV, appara\^{\i}t dans le
+traitement de diff\'{e}rents probl\`{e}mes physiques concernant des
+syst\`{e}mes dispersifs faiblement non-lin\'{e}aires et s'\'{e}crit sous la
+forme
+\begin{equation}
+\underline{\overline{\frac{\partial U}{\partial\tau}+aU\frac{\partial
+U}{\partial\xi}+b\frac{\partial^{3}U}{\partial\xi^{3}}=0,}}\label{A10}%
+\end{equation}
+o\`{u} $\tau$ et $\xi$ sont des variables ind\'{e}pendantes et $a$ et $b$ sont
+des r\'{e}els. Alors que les corrections non-lin\'{e}aires (terme
+$U\frac{\partial U}{\partial\xi}$) ont tendance \`{a} rendre le profil de
+l'onde plus abrupt (effet de raidissement), les corrections dispersives (terme
+$\frac{\partial^{3}U}{\partial\xi^{3}}$) ont par contre tendance \`{a}
+\'{e}taler ce profil\footnote{Ces ondes acoustiques de tr\`{e}s grandes
+longueurs d'onde dans un milieu isotrope ont une \'{e}quation de dispersion de
+la forme $\omega^{2}\simeq c_{s}^{2}k^{2}.$ Dans ce cas, les ondes se
+propagent sans dispersion: leur vitesse de groupe est \'{e}gale \`{a} leur
+vitesse de phase et \`{a} la vitesse $c_{s}$. Si les ondes ne poss\`{e}dent
+pas de tr\`{e}s grandes longueurs d'ondes, la dispersion appara\^{\i}t sous la
+forme d'une correction $-\beta^{2}k^{4}$
+\[
+\omega^{2}\simeq c_{s}^{2}k^{2}-\beta^{2}k^{4}\Rightarrow\omega\simeq
+c_{s}k-\frac{\beta^{2}}{2c_{s}}k^{3},
+\]
+le dernier terme en $k^{3}$ correspondant \`{a} $\frac{\partial^{3}U}%
+{\partial\xi^{3}}.$}. La forme particuli\`{e}re de l'onde solitaire et sa
+stabilit\'{e} r\'{e}sultent de la comp\'{e}tition entre ces deux effets et de
+leur compensation en tout point du profil de l'onde. En faisant le changement
+de variable $\xi\longrightarrow\xi b^{-1/3}$ et $U\longrightarrow Uab^{-1/3}$,
+(\ref{A10}) se met sous une forme simple
+\begin{equation}
+\underline{\overline{\frac{\partial U}{\partial\tau}+U\frac{\partial
+U}{\partial\xi}+\frac{\partial^{3}U}{\partial\xi^{3}}=0.}}\label{A11}%
+\end{equation}
+L'\'{e}quation de Burger est une \'{e}quation non-lin\'{e}aire comprenant non
+plus un terme dispersif mais un terme dissipatif $\alpha\frac{\partial^{2}%
+U}{\partial\xi^{2}}$ ainsi que le terme non-lin\'{e}aire $U\frac{\partial
+U}{\partial\xi}$
+\begin{equation}
+\overline{\underline{\frac{\partial U}{\partial\tau}+U\frac{\partial
+U}{\partial\xi}-\alpha\frac{\partial^{2}U}{\partial\xi^{2}}=0,\qquad\alpha
+>0.}}\label{A12}%
+\end{equation}
+Notons que l'\'{e}quation (\ref{A12}) sans son terme non-lin\'{e}aire est de
+type diffusif puisqu'elle s'\'{e}crit $\frac{\partial U}{\partial\tau}%
+=\alpha_{D}\ \nabla^{2}U$, o\`{u} $\alpha_{D}$ est un coefficient de
+diffusion, montrant bien la pr\'{e}sence d'une dissipation dans (\ref{A12}).
+
+Notons \'{e}galement l'existence d'autres \'{e}quations non-lin\'{e}aires
+admettant des solutions de type soliton, que nous n'\'{e}tudierons pas ici,
+comme l'\'{e}quation de Kadomtsev-Petviashvili qui est la
+g\'{e}n\'{e}ralisation \`{a} deux dimensions ($\xi,\xi^{\prime}$) de
+l'\'{e}quation KdV
+\begin{equation}
+\frac{\partial^{2}\phi}{\partial\xi\partial\tau}+\frac{\partial\phi}%
+{\partial\xi}\frac{\partial^{2}\phi}{\partial\xi^{2}}+\frac{\partial^{4}\phi
+}{\partial\xi^{4}}+\frac{1}{2}\frac{\partial^{2}\phi}{\partial\xi^{\prime2}%
+}=0,\qquad\mathbf{U}=\mathbf{\nabla}\phi,\label{AB12}%
+\end{equation}
+o\`{u} $\phi$ est le potentiel associ\'{e} \`{a} $\mathbf{U,}$ ou encore
+l'\'{e}quation de Sine-Gordon
+\begin{equation}
+\frac{\partial^{2}U}{\partial\xi^{2}}-a\frac{\partial^{2}U}{\partial\tau^{2}%
+}=\sin U\label{AA12}%
+\end{equation}
+qui d\'{e}crit de nombreux ph\'{e}nom\`{e}nes physiques, notamment en physique
+des solides et des supraconducteurs. Toutefois, nous \'{e}tudierons dans un
+prochain chapitre l'\'{e}quation de Schr\"{o}dinger non-lin\'{e}aire qui admet
+comme solution le \textquotedblright soliton enveloppe\textquotedblright.
+
+\subsection{L'\'{e}quation de Korteweg-de Vries}
+
+L'existence de solutions de type ''solitons'' dans l'\'{e}quation de
+Korteweg-de Vries est li\'{e}e \`{a} l'existence d'une infinit\'{e} de lois de
+conservation \`{a} une dimension du type
+\begin{equation}
+\frac{\partial T_{n}}{\partial\tau}+\frac{\partial X_{n}}{\partial\xi
+}=0,\qquad n\geq1,\label{AC12}%
+\end{equation}
+o\`{u} $T_{n}$ et $X_{n}$ sont des fonctions de $\xi,$ $\tau,$ $U$ et des
+d\'{e}riv\'{e}es de $U$ par rapport \`{a} $\xi$; par cons\'{e}quent, $T_{n}$
+est associ\'{e} \`{a} l'invariant $I_{n}$ de l'\'{e}quation de Korteweg-de
+Vries de la fa\c{c}on suivante
+\begin{equation}
+(\text{\ref{AC12}})\Rightarrow\underset{-\infty}{\overset{\infty}{\int}}%
+\frac{\partial T_{n}}{\partial\tau}d\xi=\left[  X_{n}\right]  _{-\infty
+}^{\infty}=0\Rightarrow I_{n}=\underset{-\infty}{\overset{\infty}{\int}}%
+T_{n}(\xi,\tau)d\xi,\qquad\frac{\partial I_{n}}{\partial\tau}=0,\qquad
+n\geq1.\label{ACC12}%
+\end{equation}
+Cette remarquable propri\'{e}t\'{e} montre l'int\'{e}r\^{e}t fondamental de
+l'\'{e}quation KdV pour la physique. Celle-ci peut s'\'{e}crire sous la forme
+d'une \'{e}quation de conservation pour $n=1$ (pour simplifier les expressions
+ci-dessous, on a fait le changement de variable $U\rightarrow-6U $ dans
+(\ref{A11}))
+\begin{equation}
+\text{(\ref{A10})}\Rightarrow\frac{\partial U}{\partial\tau}+\frac{\partial
+}{\partial\xi}\left(  -3U^{2}+\frac{\partial^{2}U}{\partial\xi^{2}}\right)
+=0,\qquad X_{1}=-3U^{2}+\frac{\partial^{2}U}{\partial\xi^{2}},\qquad
+T_{1}=U,\label{AD12}%
+\end{equation}
+qui est une \'{e}quation de conservation de la quantit\'{e} de mouvement;
+l'invariant correspondant est
+\begin{equation}
+I_{1}=\underset{-\infty}{\overset{\infty}{\int}}U(\xi,\tau)d\xi,\label{ADD12}%
+\end{equation}
+comme nous le verrons \'{e}galement plus loin.
+
+En multipliant (\ref{AD12}) par $2U$, puis en r\'{e}arrangeant l'expression
+correspondante, une autre loi de conservation s'obtient sous la forme (le
+changement de variables ci-dessus est maintenu)
+\begin{equation}
+\frac{\partial}{\partial\tau}U^{2}+\frac{\partial}{\partial\xi}\left[
+-4U^{3}+2U\frac{\partial^{2}U}{\partial\xi^{2}}-\left(  \frac{\partial
+U}{\partial\xi}\right)  ^{2}\right]  =0,\qquad T_{2}=U^{2},\label{AE12}%
+\end{equation}
+repr\'{e}sentant la conservation de l'\'{e}nergie. Les lois de conservation
+d'ordres sup\'{e}rieurs n'ont par contre pas de signification physique.
+
+L'\'{e}quation KdV peut \^{e}tre r\'{e}solue de fa\c{c}on exacte comme un
+probl\`{e}me aux conditions initiales par la m\'{e}thode dite
+''\textit{Inverse Scattering Method}'', ce qui peut \^{e}tre traduit par
+''\textit{M\'{e}thode de Diffusion }ou de\textit{\ Dispersion Inverse''}.
+Celle-ci permet de r\'{e}duire le probl\`{e}me consistant \`{a} r\'{e}soudre
+une \'{e}quation non-lin\'{e}aire aux d\'{e}riv\'{e}es partielles en $\xi$ et
+$\tau$ \`{a} un probl\`{e}me comprenant deux \'{e}quations lin\'{e}aires,
+c'est-\`{a}-dire, d'une part, \`{a} une \'{e}quation de type Schr\"{o}dinger
+ind\'{e}pendante du temps ($\tau=0$) et \ d'autre part, \`{a} une \'{e}quation
+int\'{e}grale dite de Gelfand-Levitan o\`{u} $\tau$ appara\^{\i}t comme un
+param\`{e}tre. Toutefois, le but de ce chapitre n'est pas d'exposer cette
+m\'{e}thode mais, comme nous le verrons dans le paragraphe suivant, d'obtenir
+l'\'{e}quation de type KdV correspondante pour les ondes acoustiques ioniques,
+puis de la r\'{e}soudre pour des solutions stationnaires du type ''soliton''
+ou ''train de solitons''.
+
+Illustrons la r\'{e}solution num\'{e}rique de l'\'{e}quation KdV par un
+exemple en prenant
+\begin{equation}
+\frac{\partial U}{\partial\tau}+\frac{a}{2}U\frac{\partial U}{\partial\xi
+}+b\frac{\partial^{3}U}{\partial\xi^{3}}=0,\qquad b=0.022,\qquad
+a=2,\label{AG12}%
+\end{equation}
+avec la condition initiale suivante
+\begin{equation}
+U(\xi,\tau=0)=\cos\pi\xi,\label{AH12}%
+\end{equation}
+comme le montre la courbe en pointill\'{e}s sur la img/figure 2a.%
+
+%TCIMACRO{\FRAME{dtbpFU}{5.5988in}{3.6132in}{0pt}{\Qcb{\QTR{bf}{Figure 2a.}
+%\QTR{small}{Variation de }$U(\xi,\tau)$\QTR{small}{\ en fonction de }$\xi
+%$\QTR{small}{\ (en unit\'{e}s arbitraires) pour trois instants de temps
+%}$\tau=t$\QTR{small}{\ : }$\tau=0$\QTR{small}{\ (impulsion excitatrice),
+%}$\tau=t_{B}$\QTR{small}{\ et }$\tau=3.6t_{B}$\QTR{small}{\ (N.J.\ Zabusky and
+%M.D. Kruskal, Interaction of solitons in a collisionless plasma and the
+%recurrence of initial states, Phys. Rev. Lett., 15(6), 240, 1965).}}}%
+%{}{img/fig2new.tif}{\special{ language "Scientific Word";  type "GRAPHIC";
+%display "USEDEF";  valid_file "F";  width 5.5988in;  height 3.6132in;
+%depth 0pt;  original-width 9.8649in;  original-height 6.2915in;
+%cropleft "0";  croptop "1";  cropright "1";  cropbottom "0";
+%filename 'img/fig2new.TIF';file-properties "XNPEU";}}}%
+%BeginExpansion
+\begin{center}
+\includegraphics[
+natheight=6.291500in,
+natwidth=9.864900in,
+height=3.6132in,
+width=5.5988in
+]%
+{img/fig2new.tif}%
+\\
+\textbf{Figure 2a.} {\protect\small Variation de }$U(\xi,\tau)$%
+{\protect\small \ en fonction de }$\xi${\protect\small \ (en unit\'{e}s
+arbitraires) pour trois instants de temps }$\tau=t${\protect\small \ : }%
+$\tau=0${\protect\small \ (impulsion excitatrice), }$\tau=t_{B}$%
+{\protect\small \ et }$\tau=3.6t_{B}${\protect\small \ (N.J.\ Zabusky and M.D.
+Kruskal, Interaction of solitons in a collisionless plasma and the recurrence
+of initial states, Phys. Rev. Lett., 15(6), 240, 1965).}%
+\end{center}
+%EndExpansion
+
+
+Les simulations num\'{e}riques effectu\'{e}es montrent qu'au temps $t=t_{B}$
+(img/figure 2a), le front de l'onde devient abrupt dans la r\'{e}gion o\`{u} la
+pente \'{e}tait initialement n\'{e}gative. La structure oscillante visible
+pour $\xi<1/2$ est due au terme dispersif $\frac{\partial^{3}U}{\partial
+\xi^{3}}$ qui pr\'{e}vient la formation d'une discontinuit\'{e}. Pour
+$t>t_{B}$, l'amplitude des oscillations cro\^{\i}t et finalement en
+$t=3.6t_{B} $ le train de solitons est form\'{e} (les solitons sont
+num\'{e}rot\'{e}s de 1 \`{a} 8 sur la img/figure 2a); chaque soliton se
+d\'{e}place avec une vitesse uniforme proportionnelle \`{a} son amplitude. La
+img/figure 2b montre un autre exemple\ d'\'{e}volution temporelle d'une impulsion
+initiale en train de solitons.%
+
+%TCIMACRO{\FRAME{dtbpFU}{2.6524in}{4.3042in}{0pt}{\Qcb{\QTR{bf}{Figure 2b.}
+%\QTR{small}{Variation de }$U(\xi,\tau)$\QTR{small}{\ en fonction de }$\xi
+%$\QTR{small}{\ (en unit\'{e}s arbitraires) pour diff\'{e}rents instants de
+%temps }$\tau$\QTR{small}{\ =7.5, 10, 15, 20, 30, 40, 50, 60}$\mu
+%s,$\QTR{small}{\ l'impulsion initiale (}$\tau=0)$\QTR{small}{\ \'{e}tant
+%repr\'{e}sent\'{e}e par la courbe sup\'{e}rieure (E.\ Okutsu and Y. Nakamura,
+%Experiment on ion-acoustic solitons as an initial value problem,
+%\QTR{it}{Plasma Physics}, 21, 1053, 1979).}}}{}{img/fig2newbis.tif}%
+%{\special{ language "Scientific Word";  type "GRAPHIC";  display "USEDEF";
+%valid_file "F";  width 2.6524in;  height 4.3042in;  depth 0pt;
+%original-width 3.474in;  original-height 9.3798in;  cropleft "0";
+%croptop "1";  cropright "1";  cropbottom "0";
+%filename 'img/fig2newbis.tif';file-properties "XNPEU";}}}%
+%BeginExpansion
+\begin{center}
+\includegraphics[
+natheight=9.379800in,
+natwidth=3.474000in,
+height=4.3042in,
+width=2.6524in
+]%
+{img/fig2newbis.tif}%
+\\
+\textbf{Figure 2b.} {\protect\small Variation de }$U(\xi,\tau)$%
+{\protect\small \ en fonction de }$\xi${\protect\small \ (en unit\'{e}s
+arbitraires) pour diff\'{e}rents instants de temps }$\tau$%
+{\protect\small \ =7.5, 10, 15, 20, 30, 40, 50, 60}$\mu s,$%
+{\protect\small \ l'impulsion initiale (}$\tau=0)${\protect\small \ \'{e}tant
+repr\'{e}sent\'{e}e par la courbe sup\'{e}rieure (E.\ Okutsu and Y. Nakamura,
+Experiment on ion-acoustic solitons as an initial value problem,
+\textit{Plasma Physics}, 21, 1053, 1979).}%
+\end{center}
+%EndExpansion
+
+
+\section{LE\ SOLITON ACOUSTIQUE\ IONIQUE}
+
+Dans ce paragraphe nous allons obtenir, \`{a} partir des \'{e}quations
+hydrodynamiques et de Maxwell, l'\'{e}quation d'\'{e}volution non-lin\'{e}aire
+d'une onde acoustique ionique. Nous montrerons que cette \'{e}quation est du
+type KdV et, en la r\'{e}solvant, nous obtiendrons des solutions
+stationnaires, les solitons acoustiques ioniques, et nous les
+caract\'{e}riserons. Pour simplifier notre \'{e}tude, nous la limiterons au
+cas des ondes acoustiques ioniques. Bien que nous nous soyons limit\'{e}s ici
+\`{a} l'\'{e}tude de ce type de solitons, il en existe \'{e}videmment
+d'autres, comme par exemple les solitons de Langmuir, associ\'{e}s aux ondes
+de plasma \'{e}lectroniques. Notons que bien que le plasma se comporte comme
+un milieu non-lin\'{e}aire et que presque tous les types d'ondes dans un
+plasma pr\'{e}sentent de la dispersion, les solitons n'existent que pour un
+nombre limit\'{e} d'ondes, dont font partie les ondes acoustiques ioniques.
+
+\subsection{Dispersion lin\'{e}aire des ondes acoustiques ioniques}
+
+Etudions tout d'abord les propri\'{e}t\'{e}s dispersives des ondes acoustiques
+ioniques en th\'{e}orie lin\'{e}aire. Dans le cadre d'un mod\`{e}le \`{a} une
+dimension, on consid\`{e}re un plasma uniforme, non collisionnel et non
+magn\'{e}tis\'{e}, neutre \`{a} l'\'{e}quilibre, $n_{e0}=n_{i0}\equiv n_{0}$.
+Les ions sont suppos\'{e}s froids et immobiles \`{a} l'\'{e}quilibre,
+$v_{i0}=0.$ Les \'{e}lectrons sont chauds, $T_{i}\ll T_{e},$ et l'on
+n\'{e}glige leur inertie, i.e., $m_{e}\longrightarrow0.$ On suppose que la
+temp\'{e}rature des \'{e}lectrons est constante et que l'\'{e}quation
+d'\'{e}tat isotherme est v\'{e}rifi\'{e}e
+\begin{equation}
+p_{e}=n_{e}k_{B}T_{e},\qquad\gamma_{e}=1.\label{A13}%
+\end{equation}
+Etudions la propagation d'ondes planes \'{e}lectrostatiques dans ce
+syst\`{e}me bi--fluide (on utilisera les correspondances $\frac{\partial
+}{\partial x^{\prime}}\leftrightarrow ik$ et $\frac{\partial}{\partial
+t^{\prime}}\leftrightarrow-i\omega$). On d\'{e}signe par $x^{\prime}$ et
+$t^{\prime} $ les coordonn\'{e}es d'espace et de temps dans le
+r\'{e}f\'{e}rentiel du laboratoire ($\mathcal{R}_{L}$). On suppose que le
+potentiel est nul \`{a} l'\'{e}quilibre, $\varphi_{0}=0$. En utilisant les
+d\'{e}veloppements perturbatifs
+\begin{equation}
+\varphi=\varphi_{0}+\delta\varphi=\delta\varphi,\qquad v_{i}=v_{i0}+\delta
+v_{i}=\delta v_{i},\label{A15}%
+\end{equation}%
+\begin{equation}
+n_{e}=n_{0}+\delta n_{e},\qquad n_{i}=n_{0}+\delta n_{i},\qquad\delta
+n_{e},\delta n_{i}\ll n_{0},\label{A14}%
+\end{equation}
+o\`{u} toutes les perturbations par rapport \`{a} l'\'{e}tat d'\'{e}quilibre
+sont suppos\'{e}es tr\`{e}s faibles, on peut lin\'{e}ariser l'\'{e}quation de
+Poisson
+\begin{equation}
+\frac{\partial^{2}\varphi}{\partial x^{\prime2}}=\frac{e}{\varepsilon_{0}%
+}(n_{e}-n_{i})\Rightarrow\frac{\partial^{2}}{\partial x^{\prime2}}%
+\delta\varphi=-k^{2}\delta\varphi=\frac{e}{\varepsilon_{0}}(\delta
+n_{e}-\delta n_{i}).\label{A16}%
+\end{equation}
+D'autre part, les ions v\'{e}rifient l'\'{e}quation de conservation
+\begin{equation}
+\frac{\partial n_{i}}{\partial t^{\prime}}+\frac{\partial(n_{i}v_{i}%
+)}{\partial x^{\prime}}=0\label{A17}%
+\end{equation}%
+\begin{equation}
+\Rightarrow-i\omega\delta n_{i}+\frac{\partial}{\partial x^{\prime}}%
+(n_{0}\delta v_{i}+\delta n_{i}\delta v_{i})=0\Rightarrow-i\omega\delta
+n_{i}+ikn_{0}\delta v_{i}\simeq0\Rightarrow\delta n_{i}\simeq\frac
+{kn_{0}\delta v_{i}}{\omega},\label{A18}%
+\end{equation}
+et l'\'{e}quation hydrodynamique
+\begin{equation}
+\frac{\partial v_{i}}{\partial t^{\prime}}+v_{i}\frac{\partial v_{i}}{\partial
+x^{\prime}}=\frac{e}{m_{i}}E=-\frac{e}{m_{i}}\frac{\partial\varphi}{\partial
+x^{\prime}}\label{A19}%
+\end{equation}%
+\begin{equation}
+\Rightarrow-i\omega\delta v_{i}+\delta v_{i}ik\delta v_{i}=-\frac{e}{m_{i}%
+}ik\delta\varphi\Rightarrow\delta v_{i}\simeq\frac{ek}{m_{i}\omega}%
+\delta\varphi,\label{A20}%
+\end{equation}
+o\`{u} $\mathbf{E}=-\mathbf{\nabla}\varphi$ est le champ \'{e}lectrique. La
+lin\'{e}arisation au premier ordre de l'\'{e}quation du mouvement des
+\'{e}lectrons donne \`{a} son tour ($m_{e}\simeq0)$%
+\begin{equation}
+m_{e}\frac{dv_{e}}{dt}=-eE-\frac{1}{n_{e}}\frac{\partial p_{e}}{\partial
+x^{\prime}}\Rightarrow eE\simeq-\frac{1}{n_{e}}\frac{\partial p_{e}}{\partial
+x^{\prime}}\Rightarrow\frac{\partial n_{e}}{\partial x^{\prime}}\simeq
+\frac{en_{e}}{k_{B}T_{e}}\frac{\partial\varphi}{\partial x^{\prime}%
+}\Rightarrow n_{e}\simeq n_{0}\exp(\frac{e\varphi}{k_{B}T_{e}})\label{A21}%
+\end{equation}%
+\begin{equation}
+\Rightarrow n_{0}+\delta n_{e}\simeq n_{0}(1+\frac{e\delta\varphi}{k_{B}T_{e}%
+})\Rightarrow\delta n_{e}\simeq\frac{en_{0}}{k_{B}T_{e}}\delta\varphi
+.\label{A22}%
+\end{equation}
+En combinant (\ref{A16})-(\ref{A22}), il vient
+\begin{equation}
+-k^{2}\delta\varphi=\frac{e}{\varepsilon_{0}}(\delta n_{e}-\delta n_{i}%
+)\simeq\frac{e}{\varepsilon_{0}}(\frac{en_{0}}{k_{B}T_{e}}\delta\varphi
+-\frac{kn_{0}\delta v_{i}}{\omega})\simeq\frac{e}{\varepsilon_{0}}%
+\delta\varphi(\frac{en_{0}}{k_{B}T_{e}}-\frac{ek^{2}n_{0}}{m_{i}\omega^{2}%
+}).\label{A23}%
+\end{equation}
+Cette relation fournit l'\'{e}quation de dispersion des ondes acoustiques
+ioniques
+\begin{equation}
+k^{2}=\frac{n_{0}e^{2}}{\varepsilon_{0}k_{B}T_{e}}(\frac{k^{2}k_{B}T_{e}%
+}{m_{i}\omega^{2}}-1)\Rightarrow\omega^{2}=c_{s}^{2}k^{2}(1+k^{2}\lambda
+_{D}^{2})^{-1},\label{A24}%
+\end{equation}%
+\begin{equation}
+\Rightarrow\overline{\underline{\omega=\pm c_{s}\left\vert k\right\vert
+(1+k^{2}\lambda_{D}^{2})^{-1/2},\qquad c_{s}=\left(  \frac{k_{B}T_{e}}{m_{i}%
+}\right)  ^{1/2}}},\label{A25}%
+\end{equation}
+o\`{u} $c_{s}$ est la vitesse acoustique ionique ($T_{i}\simeq0$). Dans
+l'approximation des grandes longueurs d'ondes ($k\lambda_{D}\ll1$), un
+d\'{e}veloppement limit\'{e} de (\ref{A25}) donne
+\begin{equation}
+\omega\simeq c_{s}\left\vert k\right\vert (1-\frac{1}{2}k^{2}\lambda_{D}%
+^{2})+...\simeq c_{s}\left\vert k\right\vert ,\label{A26}%
+\end{equation}
+o\`{u} seul le signe $+$ dans (\ref{A24}) a \'{e}t\'{e} conserv\'{e} car
+$\omega>0$. Si $k\lambda_{D}$ est grand, un tel d\'{e}veloppement limit\'{e}
+n'est pas possible et, dans ce cas, le terme proportionnel \`{a} $k^{3},$
+d\^{u} aux effets thermiques \'{e}lectroniques, n'est plus un terme correctif
+dans l'\'{e}quation de dispersion lin\'{e}aire (\ref{A26}). Ce terme est
+dispersif puisque les vitesses de phase et de groupe des ondes acoustiques
+ioniques
+\begin{equation}
+v_{\varphi}=\frac{\omega}{k}\simeq c_{s}(1-\frac{1}{2}k^{2}\lambda_{D}%
+^{2}),\qquad v_{g}=\frac{d\omega}{dk}\simeq c_{s}(1-\frac{3}{2}k^{2}%
+\lambda_{D}^{2}),\qquad k>0,\label{AA26}%
+\end{equation}
+d\'{e}pendent de $k$ par son interm\'{e}diaire. De m\^{e}me, vu la
+correspondance $ik\leftrightarrow\frac{\partial}{\partial\xi},$ le terme
+$\frac{\partial^{3}U}{\partial\xi^{3}}$ dans l'\'{e}quation KdV obtenue plus
+loin et qui d\'{e}crit l'\'{e}volution non-lin\'{e}aire des ondes acoustiques
+ioniques est un terme dispersif.
+
+\subsection{L'\'{e}quation d'\'{e}volution non-lin\'{e}aire}
+
+Lors de la lin\'{e}arisation effectu\'{e}e au paragraphe pr\'{e}c\'{e}dent, le
+terme convectif dans l'\'{e}quation hydrodynamique des ions (\ref{A19}%
+)-(\ref{A20}), du deuxi\`{e}me ordre, a \'{e}t\'{e} n\'{e}glig\'{e}. Il s'agit
+maintenant de le prendre en compte (on consid\`{e}re que les perturbations ne
+sont plus n\'{e}gligeables, bien qu'\'{e}tant toutefois faibles) et
+d'\'{e}tudier les ph\'{e}nom\`{e}nes physiques induits par la
+non-lin\'{e}arit\'{e} qu'il introduit dans l'\'{e}quation d'\'{e}volution des
+ondes acoustiques ioniques.
+
+Pour simplifier l'\'{e}criture des \'{e}quations, on utilise la normalisation
+suivante
+\begin{equation}
+v=\frac{v_{i}}{c_{s}},\qquad x=\frac{x^{\prime}}{\lambda_{D}},\qquad
+t=\omega_{pi}t^{\prime},\qquad n=\frac{n_{i}}{n_{0}},\qquad\Phi=\frac
+{e\varphi}{k_{B}T_{e}}.\label{A27}%
+\end{equation}
+Les \'{e}quations de Poisson (\ref{A16}), de conservation des ions
+(\ref{A17}), du mouvement des ions (\ref{A19}) et des \'{e}lectrons
+(\ref{A21}) s'\'{e}crivent alors sous la forme
+\begin{equation}
+\frac{k_{B}T_{e}}{e}\frac{1}{\lambda_{D}^{2}}\frac{\partial^{2}\Phi}{\partial
+x^{2}}=\frac{n_{0}e}{\varepsilon_{0}}(e^{\Phi}-n)\Rightarrow
+\underline{\overline{\frac{\partial^{2}\Phi}{\partial x^{2}}=e^{\Phi}-n,}%
+}\label{A28}%
+\end{equation}
+\begin{equation}
+\omega_{pi}\frac{\partial n}{\partial t}+\frac{c_{s}}{\lambda_{D}}%
+\frac{\partial(nv)}{\partial x}=0\Rightarrow\overline{\underline{\frac
+{\partial n}{\partial t}+\frac{\partial(nv)}{\partial x}=0,}}\label{A29}%
+\end{equation}
+\begin{equation}
+c_{s}\omega_{pi}\left(  \frac{\partial v}{\partial t}+\frac{c_{s}}{\omega
+_{pi}\lambda_{D}}v\frac{\partial v}{\partial x}\right)  =-\frac{e}{m_{i}}%
+\frac{\partial\Phi}{\partial x}\frac{k_{B}T_{e}}{e\lambda_{D}}\Rightarrow
+\underline{\overline{\left(  \frac{\partial v}{\partial t}+v\frac{\partial
+v}{\partial x}\right)  =-\frac{\partial\Phi}{\partial x},}}\label{A30}%
+\end{equation}
+\begin{equation}
+\frac{\partial n_{e}}{\partial x}=n_{e}\frac{\partial\Phi}{\partial
+x}\Rightarrow\overline{\underline{\frac{{}}{{}}n_{e}=n_{0}e^{\Phi}\frac{{}}%
+{{}},}}\label{A31}%
+\end{equation}
+o\`{u} nous avons introduit l'\'{e}quation de Boltzmann (\ref{A31}) dans
+(\ref{A28}). Remarquons que (\ref{A31}) est identique \`{a} (\ref{A21}), car
+l'hypoth\`{e}se $m_{e}\simeq0$ ne permet pas d'introduire le terme
+non-lin\'{e}aire convectif.
+
+Effectuons le changement de variables suivant (notons que cela revient \`{a}
+changer de r\'{e}f\'{e}rentiel)
+\begin{equation}
+\xi=\varepsilon^{1/2}(x-t),\qquad\tau=\varepsilon^{3/2}t,\qquad0<\varepsilon
+\ll1,\label{A32}%
+\end{equation}
+o\`{u} $\varepsilon$ est un r\'{e}el, et calculons les op\'{e}rateurs
+diff\'{e}rentiels
+\begin{equation}
+x=x(\xi,\tau)\Rightarrow\frac{\partial}{\partial x}=\frac{\partial\xi
+}{\partial x}\frac{\partial}{\partial\xi}+\frac{\partial\tau}{\partial x}%
+\frac{\partial}{\partial\tau}=\varepsilon^{1/2}\frac{\partial}{\partial\xi
+},\label{A33}%
+\end{equation}
+\begin{equation}
+t=t(\xi,\tau)\Rightarrow\frac{\partial}{\partial t}=\frac{\partial\xi
+}{\partial t}\frac{\partial}{\partial\xi}+\frac{\partial\tau}{\partial t}%
+\frac{\partial}{\partial\tau}=-\varepsilon^{1/2}\frac{\partial}{\partial\xi
+}+\varepsilon^{3/2}\frac{\partial}{\partial\tau}.\label{A34}%
+\end{equation}
+Les \'{e}quations (\ref{A28})-(\ref{A30}) deviennent alors
+\begin{equation}
+\varepsilon\frac{\partial^{2}\Phi}{\partial\xi^{2}}=e^{\Phi}-n,\label{A35}%
+\end{equation}
+\begin{equation}
+\varepsilon\frac{\partial n}{\partial\tau}-\frac{\partial n}{\partial\xi
+}+\frac{\partial(nv)}{\partial\xi}=0,\label{A36}%
+\end{equation}
+\begin{equation}
+(v-1)\frac{\partial v}{\partial\xi}+\varepsilon\frac{\partial v}{\partial\tau
+}=-\frac{\partial\Phi}{\partial\xi}.\label{A37}%
+\end{equation}
+Soit le d\'{e}veloppement en s\'{e}rie d'une fonction $f(x)$ autour de
+l'\'{e}tat d'\'{e}quilibre non perturb\'{e} $f^{(0)}$
+\begin{equation}
+f(x)=\underset{n}{\sum}\varepsilon^{n}f^{(n)}=f^{(0)}+\varepsilon
+f^{(1)}+\varepsilon^{2}f^{(2)}+...,\label{A38}%
+\end{equation}
+o\`{u} $\varepsilon^{n}f^{(n)}$ est la perturbation d'ordre $n$ et o\`{u} le
+r\'{e}el $\varepsilon\ll1$ est une mesure de l'amplitude de la perturbation
+(voir aussi (\ref{A32})). Puisqu'\`{a} l'\'{e}quilibre $n_{i}=n_{0}$
+$(n^{(0)}=1)$, $v_{i}=0$ $(v^{(0)}=0)$ et $\varphi=0$ $(\Phi^{(0)}=0)$, on
+obtient
+\begin{align}
+n  & =n^{(0)}+\varepsilon n^{(1)}+\varepsilon^{2}n^{(2)}+...=1+\varepsilon
+n^{(1)}+\varepsilon^{2}n^{(2)}+...,\label{A39}\\
+v  & =v^{(0)}+\varepsilon v^{(1)}+\varepsilon^{2}v^{(2)}+...=\varepsilon
+v^{(1)}+\varepsilon^{2}v^{(2)}+...,\label{A40}\\
+\Phi & =\Phi^{(0)}+\varepsilon\Phi^{(1)}+\varepsilon^{2}\Phi^{(2)}%
++...=\varepsilon\Phi^{(1)}+\varepsilon^{2}\Phi^{(2)}+...\label{A41}%
+\end{align}
+En introduisant (\ref{A39})-(\ref{A41}) dans (\ref{A35})-(\ref{A37}) et en ne
+gardant que les termes d'ordres inf\'{e}rieurs ou \'{e}gaux \`{a} 2, il vient
+\
+\[
+\varepsilon\left(  \varepsilon\frac{\partial^{2}\Phi^{(1)}}{\partial\xi^{2}%
+}+\varepsilon^{2}\frac{\partial^{2}\Phi^{(2)}}{\partial\xi^{2}}+...\right)
+=\exp(\varepsilon\Phi^{(1)}+\varepsilon^{2}\Phi^{(2)}+...)-1-\varepsilon
+n^{(1)}-\varepsilon^{2}n^{(2)}+...
+\]
+\begin{equation}
+\Rightarrow\varepsilon\left(  \Phi^{(1)}-n^{(1)}\right)  +\varepsilon
+^{2}\left(  -\frac{\partial^{2}\Phi^{(1)}}{\partial\xi^{2}}-n^{(2)}+\Phi
+^{(2)}+\frac{1}{2}[\Phi^{(1)}]^{2}\right)  \simeq0,\label{A42}%
+\end{equation}
+\medskip%
+\[
+\varepsilon\left(  \varepsilon\frac{\partial n^{(1)}}{\partial\tau
+}+\varepsilon^{2}\frac{\partial n^{(2)}}{\partial\tau}+...\right)  -\left(
+\varepsilon\frac{\partial n^{(1)}}{\partial\xi}+\varepsilon^{2}\frac{\partial
+n^{(2)}}{\partial\xi}+...\right)  +\frac{\partial}{\partial\xi}\left(
+1+\varepsilon n^{(1)}+\varepsilon^{2}n^{(2)}+...)(\varepsilon v^{(1)}%
++\varepsilon^{2}v^{(2)}+...\right)  =0
+\]
+\begin{equation}
+\Rightarrow\varepsilon\left(  -\frac{\partial n^{(1)}}{\partial\xi}%
++\frac{\partial v^{(1)}}{\partial\xi}\right)  +\varepsilon^{2}\left(
+\frac{\partial n^{(1)}}{\partial\tau}-\frac{\partial n^{(2)}}{\partial\xi
+}+\frac{\partial}{\partial\xi}\left(  n^{(1)}v^{(1)}\right)  +\frac{\partial
+v^{(2)}}{\partial\xi}\right)  \simeq0,\label{A43}%
+\end{equation}
+\medskip%
+\[
+(-1+\varepsilon v^{(1)}+\varepsilon^{2}v^{(2)}+...)\left(  \varepsilon
+\frac{\partial v^{(1)}}{\partial\xi}+\varepsilon^{2}\frac{\partial v^{(2)}%
+}{\partial\xi}+...\right)  +\varepsilon\left(  \varepsilon\frac{\partial
+v^{(1)}}{\partial\tau}+\varepsilon^{2}\frac{\partial v^{(2)}}{\partial\tau
+}+...\right)  =-\varepsilon\frac{\partial\Phi^{(1)}}{\partial\xi}%
+-\varepsilon^{2}\frac{\partial\Phi^{(2)}}{\partial\xi}%
+\]
+\begin{equation}
+\Rightarrow\varepsilon\left(  -\frac{\partial v^{(1)}}{\partial\xi}%
++\frac{\partial\Phi^{(1)}}{\partial\xi}\right)  +\varepsilon^{2}\left(
+v^{(1)}\frac{\partial v^{(1)}}{\partial\xi}-\frac{\partial v^{(2)}}%
+{\partial\xi}+\frac{\partial v^{(1)}}{\partial\tau}+\frac{\partial\Phi^{(2)}%
+}{\partial\xi}\right)  \simeq0.\label{A44}%
+\end{equation}
+\medskip En identifiant de part et d'autre dans (\ref{A42})-(\ref{A44}) les
+termes en $\varepsilon$, on obtient
+\begin{equation}
+\Phi^{(1)}=n^{(1)},\qquad\frac{\partial n^{(1)}}{\partial\xi}=\frac{\partial
+v^{(1)}}{\partial\xi}=\frac{\partial\Phi^{(1)}}{\partial\xi}.\label{A45}%
+\end{equation}
+L'int\'{e}gration de (\ref{A45}) entra\^{\i}ne que $\Phi^{(1)}=v^{(1)}%
++f_{1}(\tau),$ $\Phi^{(1)}=n^{(1)}+f_{2}(\tau)$ et $v^{(1)}=n^{(1)}+f_{3}%
+(\tau),$ $\forall\xi,$ o\`{u} $f_{1},f_{2}$ et $f_{3} $ sont des fonctions
+quelconques de $\tau$. Puisque l'on s'int\'{e}resse \`{a} des perturbations
+localis\'{e}es (voir le paragraphe suivant), la condition suivante doit
+\^{e}tre v\'{e}rifi\'{e}e
+\begin{equation}
+\Phi^{(1)},v^{(1)},n^{(1)}\rightarrow0\qquad\text{quand}\qquad\xi
+\rightarrow\infty.\label{A46}%
+\end{equation}
+Par cons\'{e}quent $f_{1}(\tau)=f_{2}(\tau)=f_{3}(\tau)=0$ et
+\begin{equation}
+\underline{\overline{\frac{^{{}}}{{}}\Phi^{(1)}=n^{(1)}=v^{(1)}\frac{^{{}}}%
+{{}}.}}\label{A47}%
+\end{equation}
+D'autre part, en injectant l'expression de $n^{(2)}$ issue de l'annulation du
+terme proportionnel \`{a} $\varepsilon^{2}$ dans (\ref{A42}),
+c'est-\`{a}-dire
+\begin{equation}
+n^{(2)}=-\frac{\partial^{2}\Phi^{(1)}}{\partial\xi^{2}}+\Phi^{(2)}+\frac{1}%
+{2}[\Phi^{(1)}]^{2},\label{A48}%
+\end{equation}
+dans l'\'{e}quation fournie par l'annulation du terme proportionnel \`{a}
+$\varepsilon^{2}$ dans (\ref{A43})
+\begin{equation}
+-\frac{\partial v^{(2)}}{\partial\xi}=\frac{\partial n^{(1)}}{\partial\tau
+}-\frac{\partial n^{(2)}}{\partial\xi}+\frac{\partial}{\partial\xi}\left(
+n^{(1)}v^{(1)}\right)  ,\label{A49}%
+\end{equation}
+on obtient
+\begin{equation}
+-\frac{\partial v^{(2)}}{\partial\xi}=\frac{\partial^{3}\Phi^{(1)}}%
+{\partial\xi^{3}}-\frac{\partial\Phi^{(2)}}{\partial\xi}-\frac{1}{2}%
+\frac{\partial}{\partial\xi}[\Phi^{(1)}]^{2}+\frac{\partial n^{(1)}}%
+{\partial\tau}+\frac{\partial}{\partial\xi}\left(  n^{(1)}v^{(1)}\right)
+.\label{A50}%
+\end{equation}
+En injectant (\ref{A50}) dans (\ref{A44}) et en utilisant (\ref{A47}),
+l'annulation du terme proportionnel \`{a} $\varepsilon^{2}$ dans (\ref{A44})
+aboutit \`{a}
+\[
+\frac{\partial^{3}n^{(1)}}{\partial\xi^{3}}-\frac{\partial\Phi^{(2)}}%
+{\partial\xi}-\frac{1}{2}\frac{\partial}{\partial\xi}[\Phi^{(1)}]^{2}%
++\frac{\partial n^{(1)}}{\partial\tau}+\frac{\partial\lbrack n^{(1)}]^{2}%
+}{\partial\xi}+\frac{\partial n^{(1)}}{\partial\tau}+n^{(1)}\frac{\partial
+n^{(1)}}{\partial\xi}=-\frac{\partial\Phi^{(2)}}{\partial\xi},
+\]
+ce qui donne finalement
+\begin{equation}
+\overline{\underline{\frac{\partial n^{(1)}}{\partial\tau}+n^{(1)}%
+\frac{\partial n^{(1)}}{\partial\xi}+\frac{1}{2}\frac{\partial^{3}n^{(1)}%
+}{\partial\xi^{3}}=0,}}\label{A52}%
+\end{equation}
+qui est l'\'{e}quation de Korteweg-de Vries (\ref{A10}) pour $a=1$ et $b=1/2$;
+(\ref{A52}) est \'{e}galement v\'{e}rifi\'{e} par les perturbations de
+potentiel et de vitesse, $\Phi^{(1)}$ et $v^{(1)}$ (voir (\ref{A47})). Cette
+\'{e}quation d\'{e}crit l'\'{e}volution non-lin\'{e}aire des perturbations
+$n^{(1)}$, $\Phi^{(1)}$ et $v^{(1)}$ se propageant au voisinage de la vitesse
+acoustique ionique, comme nous le verrons au paragraphe suivant. Le terme
+non-lin\'{e}aire $n^{(1)}\frac{\partial n^{(1)}}{\partial\xi}$ provient de la
+convection et le terme dispersif $\frac{\partial^{3}n^{(1)}}{\partial\xi^{3}}$
+de l'\'{e}cart $\delta n_{e}-\delta n_{i}$ \`{a} la neutralit\'{e} dans
+l'\'{e}quation de Poisson (voir (\ref{A16}), (\ref{A28}) et (\ref{A35})).
+
+\section{SOLUTIONS\ DE\ L'EQUATION\ DE\ KORTEWEG-DE\ VRIES}
+
+\subsection{Recherche de solutions stationnaires}
+
+Cherchons des solutions stationnaires de l'\'{e}quation KdV (\ref{A52}).
+Faisons le changement de r\'{e}f\'{e}rentiel suivant
+\begin{equation}
+s(\xi,\tau)=\xi-c_{M}\tau\Rightarrow ds=d\xi-c_{M}d\tau,\qquad c_{M}%
+>0.\label{A53}%
+\end{equation}
+Puisque $\xi=\varepsilon^{1/2}(x-t)\ $et $\tau=\varepsilon^{3/2}t$
+(\ref{A32}), on a
+\begin{equation}
+s=\varepsilon^{1/2}(x-t)-c_{M}\varepsilon^{3/2}t=\varepsilon^{1/2}%
+(x-t(c_{M}\varepsilon+1))\Rightarrow s=\varepsilon^{1/2}(x-Mt),\label{A70}%
+\end{equation}
+o\`{u} le facteur $\varepsilon c_{M}$ d\'{e}finit le nombre de Mach $M$ par
+\begin{equation}
+\underline{\overline{\frac{^{{}}}{{}}\varepsilon c_{M}\equiv\delta M\equiv
+M-1>0,\frac{^{{}}}{{}}}}\label{A71}%
+\end{equation}
+\begin{equation}
+\overline{\underline{\frac{^{{}}}{{}}\varepsilon\ll1,\quad0<\varepsilon
+c_{M}\ll1\Rightarrow0<\delta M\ll1\Rightarrow M\gtrsim1\frac{^{{}}}{{}}.}%
+}\label{AA71}%
+\end{equation}
+On se place par cons\'{e}quent dans le r\'{e}f\'{e}rentiel en mouvement avec
+une vitesse normalis\'{e}e $M$ par rapport \`{a} ($\mathcal{R}_{L});$
+$\varepsilon c_{M}=\delta M$ repr\'{e}sente l'\'{e}cart du nombre de Mach $M$
+au nombre de Mach $M=1;$ $\delta M$ est choisi suffisamment petit pour que
+l'amplitude de la perturbation $U$ soit suffisamment faible.
+
+Dans ce paragraphe, on notera les perturbations $n^{(1)}$, $\Phi^{(1)}$ et
+$v^{(1)}$ indiff\'{e}remment par la variable $U^{(1)}$ ou plus simplement $U;$
+on utilisera les formes diff\'{e}rentielles suivantes
+\begin{equation}
+U(s)=U(s(\xi,\tau))\Rightarrow dU=\frac{dU}{ds}ds=\frac{dU}{ds}(\frac{\partial
+s}{\partial\xi}d\xi+\frac{\partial s}{\partial\tau}d\tau)\label{A56}%
+\end{equation}
+\begin{equation}
+\Rightarrow\frac{\partial U}{\partial\xi}=\frac{dU}{ds}\frac{\partial
+s}{\partial\xi}=\frac{dU}{ds},\qquad\frac{\partial U}{\partial\tau}=\frac
+{dU}{ds}\frac{\partial s}{\partial\tau}=-c_{M}\frac{dU}{ds}.\label{A57}%
+\end{equation}
+L'\'{e}quation KdV\ (\ref{A10}) ou (\ref{A52}) devient alors
+\begin{equation}
+\frac{\partial U}{\partial\tau}+U\frac{\partial U}{\partial\xi}+b\frac
+{\partial^{3}U}{\partial\xi^{3}}=0\Rightarrow-c_{M}\frac{dU}{ds}+U\frac
+{dU}{ds}+b\frac{d^{3}U}{ds^{3}}=0,\label{A59}%
+\end{equation}
+\begin{equation}
+\Rightarrow-c_{M}\int\frac{dU}{ds}ds+\frac{1}{2}\int\frac{d(U^{2})}%
+{ds}ds+b\int\frac{d}{ds}\left(  \frac{d^{2}U}{ds^{2}}\right)
+ds=\mathrm{const}\label{A60}%
+\end{equation}
+\begin{equation}
+\Rightarrow-c_{M}U+\frac{U^{2}}{2}+b\frac{d^{2}U}{ds^{2}}=\mathrm{const}%
+=K=0.\label{A61}%
+\end{equation}
+La constante $K$ est nulle car $U\rightarrow0$ et $\frac{d^{n}U}{ds^{n}}\equiv
+U^{(n)}\rightarrow0$ quand $\left|  s\right|  \rightarrow\infty$ (on cherche
+des perturbations localis\'{e}es). Poursuivant l'int\'{e}gration de
+(\ref{A61}), on obtient
+\begin{equation}
+-c_{M}\int U\frac{dU}{ds}ds+\frac{1}{2}\int U^{2}\frac{dU}{ds}ds+b\int%
+\frac{dU}{ds}\frac{d^{2}U}{ds^{2}}ds=K^{\prime}\label{A62}%
+\end{equation}
+\begin{equation}
+\Rightarrow-c_{M}\frac{U^{2}}{2}+\frac{U^{3}}{6}+\frac{b}{2}\left(  \frac
+{dU}{ds}\right)  ^{2}=K^{\prime}=0\label{A63}%
+\end{equation}
+\begin{equation}
+\Rightarrow\left(  \frac{dU}{ds}\right)  ^{2}=\frac{1}{b}U^{2}(c_{M}%
+-U/3)\Rightarrow\int\frac{dU}{U\sqrt{c_{M}-U/3}}=\pm\sqrt{\frac{1}{b}%
+}s+K^{\prime\prime}.\label{A64}%
+\end{equation}
+Pour int\'{e}grer (\ref{A64}), faisons le changement de variable
+\begin{equation}
+c_{M}-U/3=y^{2}\Rightarrow-dU/3=2ydy,\qquad\epsilon_{y}=sign(y),\label{A65}%
+\end{equation}
+permettant d'\'{e}crire
+\begin{equation}
+\int\frac{dU}{U\sqrt{c_{M}-U/3}}=2\epsilon_{y}\int\frac{dy}{y^{2}-c_{M}}%
+=\frac{\epsilon_{y}}{\sqrt{c_{M}}}\mathrm{Ln}\left[  \frac{y-\sqrt{c_{M}}%
+}{y+\sqrt{c_{M}}}\right]  =-\frac{2\epsilon_{y}}{\sqrt{c_{M}}}\tanh^{-1}%
+(\frac{y}{\sqrt{c_{M}}})\label{A66}%
+\end{equation}
+\begin{equation}
+\Rightarrow\tanh^{-1}(\frac{y}{\sqrt{c_{M}}})=\pm\sqrt{\frac{c_{M}}{4b}%
+}s+K^{\prime\prime}\Rightarrow y^{2}=c_{M}\tanh^{2}\left(  \pm\sqrt
+{\frac{c_{M}}{4b}}s+K^{\prime\prime}\right)  =c_{M}-U/3,\label{A67}%
+\end{equation}
+o\`{u} $\tanh^{-1}(x)\equiv$Arg$\tanh(x)$ repr\'{e}sente la fonction inverse
+de $\tanh(x)$. Finalement, on obtient une solution de l'\'{e}quation KdV (pour
+$K^{\prime\prime}=0$) sous la forme\footnote{On tient compte des relations
+suivantes
+\[
+\sec(x)=\sec(-x),\qquad\sec x=\frac{1}{\cosh x},\qquad\tanh^{2}x+\sec
+^{2}x=1\qquad\tanh^{-1}x=\frac{1}{2}\mathrm{Ln}\left[  \frac{x+1}{x-1}\right]
+.
+\]
+}
+\begin{equation}
+U(s)\equiv U^{(1)}(s)=3c_{M}\sec^{2}\left(  \sqrt{\frac{c_{M}}{4b}}s\right)
+.\label{A68}%
+\end{equation}
+Finalement, la solution stationnaire de KdV obtenue en (\ref{A68}), qui est la
+perturbation $U^{(1)}\equiv n^{(1)}$, $\Phi^{(1)}$ ou $v^{(1)},$ s'\'{e}crit
+dans le r\'{e}f\'{e}rentiel du laboratoire ($\mathcal{R}_{L})$ de la fa\c{c}on
+suivante
+\begin{equation}
+U^{(1)}(x,t)=3c_{M}\sec^{2}\left(  (c_{M}/4b)^{1/2}\varepsilon^{1/2}%
+(x-Mt)\right) \label{A72}%
+\end{equation}
+\begin{equation}
+\Rightarrow\overline{\underline{\frac{^{{}}}{{}}U(x,t)\equiv\varepsilon
+U^{(1)}(x,t)=3\delta M\sec^{2}\left(  (\delta M/4b)^{1/2}(x-Mt)\right)
+,\frac{^{{}}}{{}}}}\label{A73}%
+\end{equation}
+et, pour des ondes acoustiques ioniques ($b=1/2)$, on obtient
+\begin{equation}
+\overline{\underline{U(x,t)=U(s)=3\ \delta M\sec^{2}\left(  (\delta
+M/2)^{1/2}(x-Mt)\right)  ,\qquad s=\varepsilon^{1/2}(x-Mt),\qquad b=\frac
+{1}{2}.}}\label{A74}%
+\end{equation}
+Cette solution stationnaire est appel\'{e}e onde (ou impulsion) solitaire ou
+encore soliton. Le soliton se propage le long de $s$ (ou de $x$) avec la
+vitesse $v=M$ (i.e., $v_{i}=Mc_{s}$) par rapport \`{a} ($\mathcal{R}_{L}),$
+sans aucune modification de sa forme : c'est une structure stable; il est
+immobile dans le r\'{e}f\'{e}rentiel ($\mathcal{R}_{S})$ en mouvement avec la
+vitesse $M$ par rapport \`{a} ($\mathcal{R}_{L})$. Puisque $M\gtrsim1$ (voir
+(\ref{A71})-(\ref{AA71}) et (\ref{A72})), le soliton acoustique ionique est
+une structure non-lin\'{e}aire stable et supersonique se propageant avec une
+vitesse l\'{e}g\`{e}rement sup\'{e}rieure \`{a} la vitesse acoustique ionique,
+$v_{i}=Mc_{s}\gtrsim c_{s}$. La img/figure 3 montre la forme d'un soliton dans le
+r\'{e}f\'{e}rentiel ($\mathcal{R}_{S})$ : la perturbation $U(s)$ montre un
+profil sym\'{e}trique (fonction paire) laissant le plasma ambiant non
+perturb\'{e} \`{a} la fois avant et apr\`{e}s le passage du front du soliton;
+en effet, la perturbation $U(s)$ s'annule pour $\left|  s\right|
+\rightarrow\pm\infty;$ $U(s)$ atteint son maximum en $s=0;$ l'amplitude du
+soliton est donc $U_{0}\equiv U(s=0)=3\ \delta M$ (img/figure 3).
+
+\begin{center}%
+%TCIMACRO{\FRAME{dtbpFU}{4.4858in}{2.1958in}{0pt}{\Qcb{\QTR{bf}{Figure
+%3.}\QTR{small}{\ Soliton acoustique ionique dans le r\'{e}f\'{e}rentiel
+%}$(R_{S})$\QTR{small}{\ en mouvement avec la vitesse }$Mc_{s}$%
+%\QTR{small}{\ par rapport \`{a} }$(R_{L})$\QTR{small}{.}}}{}{img/fig2.tif}%
+%{\special{ language "Scientific Word";  type "GRAPHIC";  display "USEDEF";
+%valid_file "F";  width 4.4858in;  height 2.1958in;  depth 0pt;
+%original-width 2.6316in;  original-height 0.6754in;  cropleft "0";
+%croptop "1";  cropright "1";  cropbottom "0";
+%filename 'img/fig2.tif';file-properties "XNPEU";}}}%
+%BeginExpansion
+\begin{center}
+\includegraphics[
+natheight=0.675400in,
+natwidth=2.631600in,
+height=2.1958in,
+width=4.4858in
+]%
+{img/fig2.tif}%
+\\
+\textbf{Figure 3.}{\protect\small \ Soliton acoustique ionique dans le
+r\'{e}f\'{e}rentiel }$(R_{S})${\protect\small \ en mouvement avec la vitesse
+}$Mc_{s}${\protect\small \ par rapport \`{a} }$(R_{L})${\protect\small .}%
+\end{center}
+%EndExpansion
+
+\end{center}
+
+Puisque $U_{0}=3\ \delta M=3(M-1),$ il s'en suit qu'un soliton plus rapide a
+une amplitude plus grande qu'un soliton plus lent. D'autre part on peut
+d\'{e}finir la largeur caract\'{e}ristique du soliton (\ref{A73}) par\
+\begin{equation}
+\Delta s\propto\sqrt{\frac{4b\varepsilon}{\delta M}}=\sqrt{\frac
+{12b\varepsilon}{U_{0}}},\label{A76}%
+\end{equation}
+et, par cons\'{e}quent, le soliton est d'autant plus large qu'il est lent et
+de faible amplitude et inversement.
+
+Puisque l'\'{e}quation v\'{e}rifi\'{e}e par le soliton peut s'\'{e}crire sous
+la forme d'une loi de conservation
+\begin{equation}
+\frac{\partial}{\partial\tau}U+\frac{\partial}{\partial\xi}\left(
+b\frac{\partial^{2}U}{\partial\xi^{2}}+\frac{U^{2}}{2}\right)  =0,\label{A78}%
+\end{equation}
+et que $U(\xi,\tau)$,$\frac{\partial^{n}U}{\partial\xi^{n}}(\xi,\tau
+)\rightarrow0$ pour $\xi\rightarrow\pm\infty$, on obtient que la surface
+balay\'{e}e par le soliton est un invariant
+\begin{equation}
+\frac{\partial}{\partial\tau}\underset{-\infty}{\overset{\infty}{\int}}%
+U(\xi,\tau)d\xi=-\left(  b\frac{\partial^{2}U}{\partial\xi^{2}}+\frac{U^{2}%
+}{2}\right)  _{-\infty}^{\infty}\Rightarrow\frac{\partial}{\partial\tau
+}\underset{-\infty}{\overset{\infty}{\int}}U(\xi,\tau)d\xi=0,\label{A80}%
+\end{equation}
+r\'{e}sultat que nous avions d\'{e}j\`{a} \'{e}voqu\'{e} au paragraphe
+pr\'{e}c\'{e}dent. Ainsi, le soliton est une structure stable : $U(\xi,\tau)$
+subit des distortions par rapport \`{a} son profil initial telles que la
+surface totale (\ref{A80}) (c'est-\`{a}-dire la quantit\'{e} de mouvement
+totale) reste constante.
+
+Le nombre et les caract\'{e}ristiques de l'ensemble des solitons solutions de
+l'\'{e}quation KdV d\'{e}pendent principalement des conditions initiales
+(n\'{e}cessaires pour r\'{e}soudre compl\`{e}tement l'\'{e}quation
+diff\'{e}rentielle KdV), c'est-\`{a}-dire de la nature et des
+propri\'{e}t\'{e}s de l'impulsion appliqu\'{e}e en $t=0,$ comme nous l'avons
+vu plus haut (img/figure 2). Des simulations num\'{e}riques ont montr\'{e} qu'une
+perturbation sinuso\"{\i}dale initiale g\'{e}n\`{e}re un train de solitons de
+vitesses diff\'{e}rentes (img/figure 2a); ceux qui ont les vitesses les plus
+grandes ont les plus fortes amplitudes et sont les plus \'{e}troits, et inversement.
+
+Puisque les solitons les plus rapides du train vont rattraper les solitons les
+plus lents, on peut s'attendre \`{a} ce qu'ils interagissent entre eux. Or les
+calculs th\'{e}oriques et les simulations num\'{e}riques ont montr\'{e} que
+rien de tel ne survient. Les solitons ne subissent quasiment aucune
+interaction due \`{a} leurs collisions mutuelles. Apr\`{e}s leur collision,
+deux solitons continuent leur propagation en conservant leur forme, comme le
+montre la img/figure 4 o\`{u} un soliton de vitesse $M_{2}c_{s}$, plus rapide,
+d\'{e}passe un soliton de vitesse $M_{1}c_{s}$, plus lent, sans interagir avec
+lui. Cette propri\'{e}t\'{e} remarquable est caract\'{e}ristique des solitons.
+Dans la cha\^{\i}ne qu'ils forment quand $\tau\rightarrow\infty$, les solitons
+se propagent dans un ordre bien d\'{e}termin\'{e}, celui poss\'{e}dant la plus
+faible amplitude (et la largeur la plus grande) \'{e}tant le plus lent et
+celui poss\'{e}dant la plus grande amplitude (et la plus petite largeur)
+\'{e}tant le plus rapide (voir la img/figure 2a).
+
+\begin{center}%
+%TCIMACRO{\FRAME{dtbpFU}{5.9162in}{1.7123in}{0pt}{\Qcb{\QTR{bf}{Figure 4.}
+%\QTR{small}{Collision entre deux solitons : \`{a} gauche, le soliton le plus
+%rapide (le plus \'{e}troit) entre en collision avec le soliton le plus lent et
+%le d\'{e}passe.}}}{}{img/fig3.tif}{\special{ language "Scientific Word";
+%type "GRAPHIC";  display "USEDEF";  valid_file "F";  width 5.9162in;
+%height 1.7123in;  depth 0pt;  original-width 6.4083in;
+%original-height 3.749in;  cropleft "0";  croptop "1";  cropright "1";
+%cropbottom "0";  filename 'img/fig3.tif';file-properties "XNPEU";}}}%
+%BeginExpansion
+\begin{center}
+\includegraphics[
+natheight=3.749000in,
+natwidth=6.408300in,
+height=1.7123in,
+width=5.9162in
+]%
+{img/fig3.tif}%
+\\
+\textbf{Figure 4.} {\protect\small Collision entre deux solitons : \`{a}
+gauche, le soliton le plus rapide (le plus \'{e}troit) entre en collision avec
+le soliton le plus lent et le d\'{e}passe.}%
+\end{center}
+%EndExpansion
+
+\end{center}
+
+\subsection{Le potentiel de Sagdeev}
+
+Par analogie avec l'\'{e}quation de Newton \`{a} une dimension incluant une
+force \'{e}lectrostatique $F_{el}(x)$
+\begin{equation}
+m\ddot{x}=F_{el}(x)\propto-\frac{dV}{dx},\label{A81}%
+\end{equation}
+o\`{u} $V$ est un potentiel, (\ref{A61}) peut s'\'{e}crire sous la forme
+\begin{equation}
+b\frac{d^{2}U}{ds^{2}}=c_{M}U-\frac{U^{2}}{2}\equiv-\frac{dV_{S}}%
+{dU},\label{A82}%
+\end{equation}
+o\`{u} le pseudo-potentiel $V_{S}$ est appel\'{e} potentiel de Sagdeev; pour
+une pseudo-particule en mouvement dans le potentiel de Sagdeev, les variables
+$s$ et $U$ jouent le r\^{o}le du temps et de l'espace, respectivement. Le
+potentiel $V_{S}(U)$ s'obtient en int\'{e}grant (\ref{A82})
+\begin{equation}
+V_{S}(U)=-c_{M}\frac{U^{2}}{2}+\frac{U^{3}}{6}.\label{A83}%
+\end{equation}
+Le pseudo-potentiel $V_{S}(U)$ est repr\'{e}sent\'{e} sur la img/figure 5a ainsi
+que la pseudo-trajectoire d'un soliton; le soliton est r\'{e}fl\'{e}chi en
+$U=U_{0}$ (voir en correspondance la img/figure 5b montrant la structure du
+soliton); en effet, consid\'{e}rant (\ref{A68}) et puisque$\ \sec x<1$
+$\forall x,$ l'amplitude du soliton v\'{e}rifie $U(=U^{(1)})<3c_{M}$ ou encore
+$U(=\varepsilon U^{(1)})<3\delta M$ (\ref{A71}).
+
+\begin{center}%
+%TCIMACRO{\FRAME{dtbpFU}{6.026in}{2.6152in}{0pt}{\Qcb{\QTR{bf}{Figure 5.}
+%\QTR{small}{(a) Potentiel de Sagdeev }$V_{S}(U)$\QTR{small}{\ et (b) profil
+%}$U(s)$\QTR{small}{\ correspondant du soliton.}}}{}{img/fig5.tif}%
+%{\special{ language "Scientific Word";  type "GRAPHIC";  display "USEDEF";
+%valid_file "F";  width 6.026in;  height 2.6152in;  depth 0pt;
+%original-width 7.7626in;  original-height 3.8156in;  cropleft "0";
+%croptop "1";  cropright "1";  cropbottom "0";
+%filename 'img/fig5.tif';file-properties "XNPEU";}}}%
+%BeginExpansion
+\begin{center}
+\includegraphics[
+natheight=3.815600in,
+natwidth=7.762600in,
+height=2.6152in,
+width=6.026in
+]%
+{img/fig5.tif}%
+\\
+\textbf{Figure 5.} {\protect\small (a) Potentiel de Sagdeev }$V_{S}%
+(U)${\protect\small \ et (b) profil }$U(s)${\protect\small \ correspondant du
+soliton.}%
+\end{center}
+%EndExpansion
+
+\end{center}
+
+\subsection{Conditions d'existence du soliton acoustique ionique}
+
+Montrons que le soliton acoustique ionique n'existe que pour un nombre de Mach
+v\'{e}rifiant $1<M\lesssim1.6$.
+
+Consid\'{e}rons les \'{e}quations (\ref{A28})-(\ref{A30})
+\begin{equation}
+\frac{\partial^{2}\Phi}{\partial x^{2}}=e^{\Phi}-n,\qquad\frac{\partial
+n}{\partial t}+\frac{\partial(nv)}{\partial x}=0,\qquad\left(  \frac{\partial
+v}{\partial t}+v\frac{\partial v}{\partial x}\right)  =-\frac{\partial\Phi
+}{\partial x},\label{A90}%
+\end{equation}
+o\`{u} l'on fait le changement de variable suivant pour passer du
+r\'{e}f\'{e}rentiel du laboratoire au r\'{e}f\'{e}rentiel se d\'{e}pla\c{c}ant
+\`{a} la vitesse $M$ (voir aussi (\ref{A70}) o\`{u} la normalisation est
+diff\'{e}rente d'un facteur $\varepsilon^{1/2}$)
+\begin{equation}
+s=x-Mt,\qquad\frac{\partial}{\partial x}\leftrightarrow\frac{d}{ds}%
+,\qquad\frac{\partial}{\partial t}\leftrightarrow-M\frac{d}{ds},\label{A91}%
+\end{equation}
+par analogie avec (\ref{A53}) et (\ref{A57}). On obtient alors les relations
+\begin{equation}
+(v-M)\frac{dv}{ds}=-\frac{d\Phi}{ds}\Rightarrow-\Phi=\frac{v^{2}}%
+{2}-Mv+K\Rightarrow v=M\pm\sqrt{M^{2}-2(K+\Phi)},\label{A92}%
+\end{equation}%
+\begin{equation}
+-M\frac{dn}{ds}+\frac{d(nv)}{ds}=0\Rightarrow(v-M)\frac{dn}{ds}=-n\frac
+{dv}{ds}\Rightarrow\frac{dn}{n}=\frac{dv}{M-v}\Rightarrow n(v-M)=K^{\prime
+},\label{A93}%
+\end{equation}
+o\`{u} $K$\ et $K^{\prime}$\ sont des constantes. Puisque les perturbations
+sont localis\'{e}es, le plasma n'est pas perturb\'{e} en $s\rightarrow
+\pm\infty$%
+\begin{equation}
+s\rightarrow\pm\infty\Rightarrow\Phi\rightarrow0,\qquad\frac{d\Phi}%
+{ds}\rightarrow0,\qquad v\rightarrow0\ (v_{i}\rightarrow0),\qquad
+n\rightarrow1\ (n_{i}\rightarrow n_{0}).\label{AA94}%
+\end{equation}
+Ces conditions aux limites montrent que $K=0$ et $K^{\prime}=-M$ dans
+(\ref{A92})-(\ref{A93}); par cons\'{e}quent
+\begin{equation}
+n=\frac{M}{M-v},\qquad v=M-\sqrt{M^{2}-2\Phi},\label{AB94}%
+\end{equation}
+le signe $-$ devant la racine carr\'{e}e dans (\ref{AB94}) \'{e}tant
+d\'{e}termin\'{e} par les conditions aux limites $s\rightarrow\pm\infty.$
+D'autre part, en int\'{e}grant l'\'{e}quation de Poisson dans (\ref{A90}) il
+vient
+\begin{equation}
+\int\frac{d\Phi}{ds}\frac{d^{2}\Phi}{ds^{2}}ds=\int e^{\Phi}d\Phi-\int
+nd\Phi\Rightarrow\frac{1}{2}\left(  \frac{d\Phi}{ds}\right)  ^{2}=e^{\Phi
+}+K^{\prime\prime}-\int nd\Phi,\qquad K^{\prime\prime}=\mathrm{const}%
+,\label{A95}%
+\end{equation}
+et en utilisant (\ref{A92}) et (\ref{AB94}), on obtient
+\begin{equation}
+\frac{1}{2}\left(  \frac{d\Phi}{ds}\right)  ^{2}=e^{\Phi}+K^{\prime\prime
+}+\int\frac{M}{M-v}(v-M)dv=e^{\Phi}+K^{\prime\prime}-Mv\label{AA95}%
+\end{equation}%
+\begin{equation}
+\Rightarrow\frac{1}{2}\left(  \frac{d\Phi}{ds}\right)  ^{2}=e^{\Phi
+}-1-Mv,\label{AB95}%
+\end{equation}
+o\`{u} l'on a utilis\'{e} (\ref{AA94}) pour d\'{e}terminer la constante
+$K^{\prime\prime}$; finalement, en tenant compte de (\ref{AB94}), (\ref{AB95})
+s'\'{e}crit
+\begin{equation}
+\overline{\underline{\frac{1}{2}\left(  \frac{d\Phi}{ds}\right)  ^{2}=e^{\Phi
+}-1+M(\sqrt{M^{2}-2\Phi}-M)\equiv-V_{S}(\Phi)}},\label{A98}%
+\end{equation}
+o\`{u} $V_{S}(\Phi)$ est le potentiel de Sagdeev. La d\'{e}riv\'{e}e
+$\frac{d\Phi}{ds}$ s'annule pour le maximum $\Phi_{0}$ de $\Phi$, qui est
+l'amplitude du soliton; par cons\'{e}quent $V_{S}(\Phi_{0})=0,$ ce qui
+entra\^{\i}ne que
+\begin{equation}
+M(M^{2}-2\Phi_{0})^{1/2}=(M^{2}+1)-e^{\Phi_{0}}.\label{A99}%
+\end{equation}
+En \'{e}levant (\ref{A99}) au carr\'{e}, il vient
+\begin{equation}
+-M^{2}(2\Phi_{0}+2-2e^{\Phi_{0}})=e^{2\Phi_{0}}-2e^{\Phi_{0}}+1\Rightarrow
+M^{2}=\frac{(e^{\Phi_{0}}-1)^{2}}{2(e^{\Phi_{0}}-1-\Phi_{0})}.\label{A100}%
+\end{equation}
+D'autre part, le terme img/figurant sous la racine carr\'{e}e dans (\ref{A98})
+doit \^{e}tre positif, et par cons\'{e}quent la condition suivante est
+n\'{e}cessaire
+\begin{equation}
+M^{2}\geq2\Phi,\quad\forall\Phi\Rightarrow M^{2}\geq2\Phi_{0}.\label{A101}%
+\end{equation}
+En injectant la condition seuil $M^{2}=2\Phi_{0}$ dans (\ref{A100}), une
+r\'{e}solution num\'{e}rique conduit \`{a}
+\begin{equation}
+2\Phi_{0}\leq\frac{(e^{\Phi_{0}}-1)^{2}}{2(e^{\Phi_{0}}-1-\Phi_{0}%
+)}\Rightarrow\Phi_{0}<(\Phi_{0})_{\max}\simeq1.3.\label{AA101}%
+\end{equation}
+La valeur correspondante du nombre de Mach s'obtient alors par la condition
+seuil
+\begin{equation}
+M^{2}=2(\Phi_{0})_{\max}\Rightarrow M\simeq1.6.\label{A102}%
+\end{equation}
+Puisqu'un soliton d'amplitude plus faible se d\'{e}place avec une vitesse plus
+faible qu'un soliton d'amplitude plus \'{e}lev\'{e}e, on obtient finalement la
+condition d'existence du soliton acoustique ionique sous la forme
+\begin{equation}
+\underline{\overline{\frac{^{{}}}{{}}\Phi_{0}<(\Phi_{0})_{\max}\simeq
+1.3\Rightarrow M<M_{\max}\simeq1.6,\frac{^{{}}}{{}}}}\label{AB102}%
+\end{equation}
+o\`{u} $c_{s}M_{\max}$ est la vitesse maximale possible du soliton$.$
+
+D'autre part, puisque $\left(  \frac{d\Phi}{ds}\right)  ^{2}>0$, (\ref{A98})
+implique que
+\begin{equation}
+e^{\Phi}-1+M(\sqrt{M^{2}-2\Phi}-M)>0.\label{A103}%
+\end{equation}
+En d\'{e}veloppant (\ref{A103}) jusqu'au second ordre en $\Phi\ll1$ (on
+rappelle qu'on consid\`{e}re des perturbations faibles, les solitons \'{e}tant
+suppos\'{e}s de faible amplitude), on obtient
+\begin{equation}
+1+\Phi+\frac{\Phi^{2}}{2}-1+M(M(1-\frac{2\Phi}{M^{2}})^{1/2}-M)=\Phi
++\frac{\Phi^{2}}{2}+M^{2}(1-1-\frac{\Phi}{M^{2}}-\frac{1}{8}\frac{4\Phi^{2}%
+}{M^{4}}+...)\simeq\frac{\Phi^{2}}{2}-\frac{\Phi^{2}}{2M^{2}}>0\Rightarrow
+M>1,\label{A104}%
+\end{equation}
+montrant que le soliton est supersonique.
+
+Finalement, en combinant (\ref{AB102}) et (\ref{A104}), le soliton acoustique
+ionique n'existe que si son nombre de Mach $M$ v\'{e}rifie
+\begin{equation}
+\overline{\underline{\frac{^{{}}}{{}}1<M\lesssim1.6.\frac{^{{}}}{{}}}%
+}\label{A105}%
+\end{equation}
+On verra plus loin que cette condition est la m\^{e}me dans le cas des ondes
+de choc acoustiques ioniques (voir le paragraphe suivant) puisque les
+\'{e}quations KdV et Burger-KdV (cette derni\`{e}re d\'{e}crivant les ondes de
+choc non collisionnelles) ont le m\^{e}me potentiel de Sagdeev. En effet, la
+relation (\ref{A105}) r\'{e}sulte de la forme du potentiel de Sagdeev et non
+de l'\'{e}quation diff\'{e}rentielle non-lin\'{e}aire consid\'{e}r\'{e}e.
+
+Ainsi, on a finalement montr\'{e} qu'il existe des structures
+non-lin\'{e}aires qui peuvent se propager sans d\'{e}formation, \`{a} une
+vitesse l\'{e}g\`{e}rement sup\'{e}rieure \`{a} la vitesse acoustique
+ionique\ (structure supersonique), dans un plasma o\`{u} les ions sont froids
+et les \'{e}lectrons chauds et isothermes : ce sont des solitons acoustiques ioniques.%
+
+%TCIMACRO{\TeXButton{newpage}{\newpage}}%
+%BeginExpansion
+\newpage
+%EndExpansion
+
+
+\section{L'ONDE\ DE\ CHOC\ ACOUSTIQUE\ IONIQUE}
+
+\subsection{L'onde de choc non collisionnelle}
+
+On a vu que le soliton est une onde non-lin\'{e}aire associ\'{e}e \`{a} des
+perturbations localis\'{e}es et sym\'{e}triques qui n'affectent pas le plasma
+pour $s\rightarrow\pm\infty.$ Celui-ci reste en \'{e}quilibre et identique en
+amont et en aval du front du soliton. Supposons \`{a} pr\'{e}sent qu'une
+partie des ions du plasma ambiant soient r\'{e}fl\'{e}chis par la barri\`{e}re
+de potentiel du soliton (il suffit pour cela que ces ions aient une
+\'{e}nergie totale inf\'{e}rieure \`{a} la barri\`{e}re de potentiel);
+apr\`{e}s r\'{e}flection, ces ions rebroussent chemin, pouvant introduire une
+dissym\'{e}trie dans le plasma et provoquer une dissipation\footnote{Des
+processus turbulents peuvent \'{e}galement \^{e}tre responsables de la
+dissipation.}.\ On peut d\'{e}crire ce type de processus analytiquement en
+introduisant un terme dissipatif dans l'\'{e}quation KdV : on obtient alors
+l'\'{e}quation dite de Burger-KdV, dont les solutions stationnaires sont des
+ondes de choc non collisionnelles. L'\'{e}tat du plasma en amont d'une onde de
+choc est diff\'{e}rent de son \'{e}tat en aval de l'onde; celle-ci permet de
+connecter entre eux le plasma non perturb\'{e} en amont et le plasma
+perturb\'{e} par des oscillations en aval. Ainsi, une onde de choc peut
+appara\^{\i}tre dans un plasma si pour une raison quelconque une
+dissym\'{e}trie des param\`{e}tres physiques appara\^{\i}t.
+
+Dans un gaz neutre, l'onde de choc non collisionnelle ne peut exister, car ce
+sont les collisions entre les mol\'{e}cules qui assurent la transmission de la
+quantit\'{e} de mouvement et la propagation de l'onde acoustique : le
+ph\'{e}nom\`{e}ne de viscosit\'{e} mol\'{e}culaire (collisions) entre en
+comp\'{e}tition avec l'effet de raidissement du front de l'onde et emp\^{e}che
+celle-ci de s'effondrer. Dans un plasma non collisionnel par contre, le
+transfert de la quantit\'{e} de mouvement est assur\'{e} par des ondes
+engendr\'{e}es par les perturbations de courant et de densit\'{e} de charge :
+l'existence d'ondes de choc non collisionnelles est par cons\'{e}quent possible.
+
+\subsection{R\^{o}le de la dissipation}
+
+Nous nous limiterons ci-apr\`{e}s, comme pour les solitons, au cas des ondes
+de chocs acoustiques ioniques. Examinons tout d'abord la balance entre
+dissipation et non-lin\'{e}arit\'{e} dans l'\'{e}quation de Burger
+(\ref{A12}). Celle-ci comprend un terme de dissipation $\alpha\frac
+{\partial^{2}U}{\partial\xi^{2}}$ qui tend \`{a} compenser l'action du terme
+non-lin\'{e}aire $U\frac{\partial U}{\partial\xi}$: ainsi, l'\'{e}volution de
+l'onde ne se limite pas au raidissement du front et \`{a} son
+effondrement.\footnote{La fa\c{c}on la plus simple de voir pourquoi le terme
+$\alpha\frac{\partial^{2}U}{\partial\xi^{2}}$ traduit une dissipation est de
+lin\'{e}ariser l'\'{e}quation de Burger (on n\'{e}glige le terme en $U^{2}$),
+de poser $U\propto\exp(i\omega\tau-ik\xi)$ et de calculer l'\'{e}quation de
+dispersion
+\[
+\frac{\partial U}{\partial\tau}+U\frac{\partial U}{\partial\xi}-\alpha
+\frac{\partial^{2}U}{\partial\xi^{2}}=0\Rightarrow i\omega U+\alpha
+k^{2}U\simeq0\Rightarrow\omega\simeq i\alpha k^{2}.
+\]
+Ainsi l'on obtient $U\propto\exp(i\operatorname{Re}(\omega)\tau)\exp(-\alpha
+k^{2}\tau)\exp(-ik\xi)$, le terme $\exp(-\alpha k^{2}\tau)$ montrant
+l'amortissement car $\alpha>0$ et par cons\'{e}quent la dissipation.}
+
+Comme dans le cas des solitons, cherchons des ondes stationnaires solutions de
+l'\'{e}quation de Burger (\ref{A12}). En utilisant la variable $s=\xi
+-c_{M}\tau$ (voir \'{e}quations (\ref{A53})-(\ref{A61})), on peut mettre
+(\ref{A12}) sous la forme
+\begin{equation}
+\frac{\partial U}{\partial\tau}+U\frac{\partial U}{\partial\xi}-\alpha
+\frac{\partial^{2}U}{\partial\xi^{2}}=0\Rightarrow-c_{M}\frac{dU}{ds}%
++U\frac{dU}{ds}-\alpha\frac{d^{2}U}{ds^{2}}=0.\label{A106}%
+\end{equation}
+En int\'{e}grant (\ref{A106}) on obtient
+\begin{equation}
+-c_{M}\int\frac{dU}{ds}ds+\frac{1}{2}\int\frac{dU^{2}}{ds}ds-\alpha\int%
+\frac{d}{ds}\left(  \frac{dU}{ds}\right)  ds=-c_{M}U+\frac{U^{2}}{2}%
+-\alpha\frac{dU}{ds}=K.\label{A107}%
+\end{equation}
+Rappelons que le choc \'{e}tant une structure dissym\'{e}trique qui laisse le
+plasma non perturb\'{e} en amont, les conditions aux limites (\ref{AA94}) sont
+encore applicables pour $s\rightarrow+\infty$ (mais pas pour $s\rightarrow
+-\infty$). Consid\'{e}rant la famille de solutions pour $K=0$, il s'en suit
+que
+\begin{equation}
+\alpha\frac{dU}{ds}=\frac{U}{2}(U-2c_{M})\Rightarrow\frac{2\alpha
+dU}{U(U-2c_{M})}=ds\Rightarrow2\alpha\int\frac{dU}{(U-c_{M})^{2}-c_{M}^{2}%
+}=2\alpha\int\frac{dy}{y^{2}-c_{M}^{2}}=s+K^{\prime},\label{A108}%
+\end{equation}
+o\`{u} $K^{\prime}$ est une constante et o\`{u} l'on a pos\'{e} $y=U-c_{M}$.
+Finalement (on rappelle que $\alpha>0$ et $c_{M}>0$), on obtient
+\begin{equation}
+-\frac{2\alpha}{c_{M}}\tanh^{-1}\left(  \frac{y}{c_{M}}\right)  =s+K^{\prime
+}\Rightarrow\frac{y}{c_{M}}=\tanh\left[  -\frac{c_{M}}{2\alpha}(s+K^{\prime
+})\right]  \Rightarrow U(s)=c_{M}(1-\tanh\left[  \frac{c_{M}}{2\alpha
+}(s+K^{\prime})\right]  ),\label{A109}%
+\end{equation}
+et, par cons\'{e}quent, en choisissant des conditions initiales correspondant
+\`{a} $K^{\prime}=0$, on obtient une solution de l'\'{e}quation de Burger sous
+la forme
+\begin{equation}
+U(s)\equiv U^{(1)}(s)=c_{M}(1-\tanh\left(  \frac{c_{M}s}{2\alpha}\right)
+).\label{A110}%
+\end{equation}
+En utilisant les coordonn\'{e}es $x$ et $t$ dans le r\'{e}f\'{e}rentiel du
+laboratoire on a
+\begin{equation}
+\underline{\overline{U(x,t)=\varepsilon U^{(1)}(s)=\delta M\left[
+1-\tanh\frac{\delta M}{2\alpha\varepsilon^{1/2}}(x-Mt)\right]  ,\qquad
+s=\varepsilon^{1/2}(x-Mt).}}\label{A111}%
+\end{equation}
+La variation de $U(s)$ dans le r\'{e}f\'{e}rentiel ($\mathcal{R}_{S}$)\ en
+mouvement avec le choc est repr\'{e}sent\'{e}e sur la img/figure 8$.$ La solution
+stationnaire de l'\'{e}quation de Burger est une rampe de choc qui se propage
+avec le nombre de Mach $M$ le long de $x$ (i.e., \`{a} la vitesse $Mc_{s}$ par
+rapport \`{a} ($\mathcal{R}_{L}$)) : le choc est une structure supersonique
+tout comme le soliton ($M>1$). La dissipation, qui contrecarre la
+non-lin\'{e}arit\'{e}, emp\^{e}che finalement l'onde de s'effondrer par suite
+du raidissement du front et permet ainsi la formation de la rampe du choc. La
+hauteur de la rampe est $2\delta M$; sa largeur $\Delta s$ inversement
+proportionnelle \`{a} $\delta M$, est obtenue en calculant la pente de $U(s)$
+en $s=0$%
+\begin{equation}
+U(s)=\delta M\left[  1-\tanh\frac{\delta M}{2\alpha\varepsilon^{1/2}}s\right]
+\Rightarrow\left(  \frac{dU}{ds}\right)  _{s=0}=-\delta M\left(  \frac{\delta
+M}{2\alpha\varepsilon^{1/2}}\right)  \left(  \frac{1}{\cosh^{2}\frac{\delta
+M}{2\alpha\varepsilon^{1/2}}s}\right)  _{s=0}\label{A112}%
+\end{equation}%
+\begin{equation}
+\Rightarrow\frac{\Delta U}{\left\vert \Delta s\right\vert }=\frac{(\delta
+M)^{2}}{2\alpha\varepsilon^{1/2}}\Rightarrow\left\vert \Delta s\right\vert
+=2\delta M\frac{2\alpha\varepsilon^{1/2}}{(\delta M)^{2}}=4\varepsilon
+^{1/2}\frac{\alpha}{\delta M}.\label{AA112}%
+\end{equation}
+Plus la dissipation est forte (plus $\alpha$ est grand) et plus la rampe est
+large. Lorsque la dissipation dispara\^{\i}t ($\alpha\rightarrow0$), la rampe
+tend \`{a} devenir verticale et sa largeur est quasi-nulle : dans ce cas la
+non-lin\'{e}arit\'{e} n'est quasiment plus compens\'{e}e par la dissipation et
+le raidissement du front est l'effet dominant.
+
+Dans chaque zone du choc, la vitesse des ions est diff\'{e}rente (il en est de
+m\^{e}me des perturbations de densit\'{e} et de potentiel). A la travers\'{e}e
+de la rampe le fluide ionique est acc\'{e}l\'{e}r\'{e} par l'onde de choc.
+
+\begin{center}%
+%TCIMACRO{\FRAME{dtbpFU}{4.3561in}{1.9873in}{0pt}{\Qcb{\QTR{bf}{Figure 8.}
+%\QTR{small}{Solution de l'\'{e}quation de Burger : onde de choc non
+%collisionnelle (cas o\`{u} le terme de dispersion n'est pas
+%consid\'{e}r\'{e}).}}}{}{img/fig7.tif}{\special{ language "Scientific Word";
+%type "GRAPHIC";  display "USEDEF";  valid_file "F";  width 4.3561in;
+%height 1.9873in;  depth 0pt;  original-width 4.8732in;
+%original-height 2.6135in;  cropleft "0";  croptop "1";  cropright "1";
+%cropbottom "0";  filename 'img/fig7.tif';file-properties "XNPEU";}}}%
+%BeginExpansion
+\begin{center}
+\includegraphics[
+natheight=2.613500in,
+natwidth=4.873200in,
+height=1.9873in,
+width=4.3561in
+]%
+{img/fig7.tif}%
+\\
+\textbf{Figure 8.} {\protect\small Solution de l'\'{e}quation de Burger : onde
+de choc non collisionnelle (cas o\`{u} le terme de dispersion n'est pas
+consid\'{e}r\'{e}).}%
+\end{center}
+%EndExpansion
+
+\end{center}
+
+\subsection{Solutions de l'\'{e}quation de Burger-KdV}
+
+Ajoutons \`{a} pr\'{e}sent le terme dispersif $b\frac{\partial^{3}U}%
+{\partial\xi^{3}}$ dans l'\'{e}quation de Burger
+\begin{equation}
+\frac{\partial U}{\partial\tau}+U\frac{\partial U}{\partial\xi}+b\frac
+{\partial^{3}U}{\partial\xi^{3}}-\alpha\frac{\partial^{2}U}{\partial\xi^{2}%
+}=0,\label{A113}%
+\end{equation}
+(notons que cela revient au m\^{e}me d'ajouter le terme dissipatif
+$-\alpha\frac{\partial^{2}U}{\partial\xi^{2}}$ dans l'\'{e}quation KdV),
+formant ainsi l'\'{e}quation dite de Burger-KdV\footnote{Le terme d\^{u} \`{a}
+l'amortissement Landau lin\'{e}aire s'exprimerait pour des ondes acoustiques
+ioniques sous la forme $\eta\mathcal{P}\left(  \int_{-\infty}^{\infty}%
+\frac{\partial U(\xi^{\prime})}{\partial\xi^{\prime}}\frac{d\xi^{\prime}}%
+{\xi-\xi^{\prime}}\right)  $ ($\eta>0),$ o\`{u} $\mathcal{P}$ d\'{e}signe la
+valeur principale. Bien que ce terme corresponde \`{a} une v\'{e}ritable
+dissipation, son introduction dans l'\'{e}quation de Burger \`{a} la place du
+terme $-\alpha\frac{\partial^{2}U}{\partial\xi^{2}}$ ne donne pas lieu \`{a}
+des solutions de type \textquotedblright onde de choc\textquotedblright, car
+ce terme n'apporte pas un amortissement en $k^{2}$ mais en $\left\vert
+k\right\vert .$}. Cherchons des solutions stationnaires de (\ref{A113}) de la
+m\^{e}me fa\c{c}on que pr\'{e}c\'{e}demment (voir (\ref{A53})-(\ref{A61})); on
+obtient alors
+\begin{equation}
+-c_{M}\frac{dU}{ds}+U\frac{dU}{ds}+b\frac{d^{3}U}{ds^{3}}-\alpha\frac{d^{2}%
+U}{ds^{2}}=0\label{A114}%
+\end{equation}%
+\begin{equation}
+\Rightarrow-c_{M}\int\frac{dU}{ds}ds+\frac{1}{2}\int\frac{d(U^{2})}%
+{ds}ds+b\int\frac{d}{ds}\left(  \frac{d^{2}U}{ds^{2}}\right)  ds-\alpha
+\int\frac{d}{ds}\left(  \frac{dU}{ds}\right)  ds=\mathrm{const}\label{A115}%
+\end{equation}%
+\begin{equation}
+\Rightarrow-c_{M}U+\frac{U^{2}}{2}+b\frac{d^{2}U}{ds^{2}}-\alpha\frac{dU}%
+{ds}=\mathrm{const}=K=0.\label{A116}%
+\end{equation}
+Par analogie avec l'\'{e}quation de Newton \`{a} une dimension incluant une
+force \'{e}lectrostatique $F_{el}(x)$ et une force de friction $F_{f}(x)$
+\begin{equation}
+m\ddot{x}=F_{el}(x)+F_{f}(x)\propto-\frac{\partial V_{S}}{\partial x}%
++\alpha\dot{x},\label{A117}%
+\end{equation}
+(\ref{A116}) se met sous la forme
+\begin{equation}
+b\frac{d^{2}U}{ds^{2}}-\alpha\frac{dU}{ds}=c_{M}U-\frac{U^{2}}{2}\equiv
+-\frac{\partial V_{S}}{\partial U},\label{A118}%
+\end{equation}
+o\`{u} $V_{S}$ est le potentiel de Sagdeev, identique \`{a} celui obtenu
+pr\'{e}c\'{e}demment pour les solitons (voir (\ref{A82})-(\ref{A83})). Il ne
+s'agit pas ici de r\'{e}soudre analytiquement l'\'{e}quation (\ref{A116}) mais
+seulement de d\'{e}crire le sens physique des solutions, qui, comme on peut le
+pr\'{e}voir, combinent des solutions des \'{e}quations de Burger et de
+Korteweg-de Vries, c'est-\`{a}-dire des solutions du type rampe de choc et soliton.
+
+Analysons tout d'abord le mouvement d'une pseudo-particule dans le potentiel
+de Sagdeev associ\'{e} \`{a} un soliton (voir img/figure 5a). Partant de
+$U\simeq0$, la pseudo-particule voit sa vitesse augmenter jusqu'\`{a} ce
+qu'elle soit r\'{e}fl\'{e}chie lorsque $U=U_{0}=3\delta M$; puis
+la\ pseudo-particule rebrousse chemin, sa vitesse d\'{e}croissant jusqu'\`{a}
+z\'{e}ro; elle ne subira aucune autre r\'{e}flection. Ce mouvement dans le
+potentiel de Sagdeev correspond \`{a} un soliton, comme le montre la
+correspondance entre les img/figures 5a et 5b. Dans le cas de l'\'{e}quation de
+Burger-KdV (o\`{u} l'on est en pr\'{e}sence d'un effet suppl\'{e}mentaire de
+dissipation), la pseudo-particule se meut dans le m\^{e}me potentiel de
+Sagdeev, mais elle n'a pas le m\^{e}me comportement. En effet, soit une
+pseudo-particule situ\'{e}e en $U=U_{C}$ (voir la img/figure 9a repr\'{e}sentant
+la variation du potentiel de Sagdeev $V_{S}(U)$). En pr\'{e}sence de
+dissipation mais sans dispersion (\'{e}quation de Burger), la particule tombe
+dans le puits de potentiel vers sa position d'\'{e}quilibre, se stabilisant au
+point A d'\'{e}nergie minimale quand $\tau\rightarrow\infty.$ Si la dispersion
+s'ajoute \`{a} la dissipation, la particule rejoint son point d'\'{e}quilibre
+apr\`{e}s avoir effectu\'{e} plusieurs oscillations dans le puits (img/figure 9a).
+La variation correspondante de $U(s)$ en fonction de $s$ dans le rep\`{e}re en
+mouvement avec le choc (img/figure 9b) combine alors une rampe caract\'{e}ristique
+d'un choc avec des oscillations associ\'{e}es \`{a} la dispersion,
+correspondant aux oscillations de la pseudo-particule dans le puits; $U(s)$
+oscille autour de la vitesse $U_{A}=2\delta M$ avec un maximum $U_{B}$ au
+point B (comparer aussi avec la img/figure 8 qui correspond au cas o\`{u} la
+dispersion est tr\`{e}s faible ($b\rightarrow0$)). Notons que le choc
+repr\'{e}sent\'{e} sur la img/figure 9b se d\'{e}place vers la droite si on le
+consid\`{e}re dans le r\'{e}f\'{e}rentiel du laboratoire, la r\'{e}gion
+d\'{e}finie comme l'amont \'{e}tant la premi\`{e}re rencontr\'{e}e par le choc
+dans son d\'{e}placement.
+
+\begin{center}%
+%TCIMACRO{\FRAME{dtbpFU}{5.5798in}{3.3079in}{0pt}{\Qcb{\QTR{bf}{Figure 9.}
+%\QTR{small}{(a) Potentiel de Sagdeev }$V_{S}(U)$\QTR{small}{\ et (b) profil
+%}$U(s)$\QTR{small}{\ correspondant de l'onde de choc non collisionnelle.}}}%
+%{}{img/fig9new.tif}{\special{ language "Scientific Word";  type "GRAPHIC";
+%maintain-aspect-ratio TRUE;  display "USEDEF";  valid_file "F";
+%width 5.5798in;  height 3.3079in;  depth 0pt;  original-width 18.4274in;
+%original-height 10.8958in;  cropleft "0";  croptop "1";  cropright "1";
+%cropbottom "0";  filename 'img/fig9new.tif';file-properties "XNPEU";}}}%
+%BeginExpansion
+\begin{center}
+\includegraphics[
+natheight=10.895800in,
+natwidth=18.427401in,
+height=3.3079in,
+width=5.5798in
+]%
+{img/fig9new.tif}%
+\\
+\textbf{Figure 9.} {\protect\small (a) Potentiel de Sagdeev }$V_{S}%
+(U)${\protect\small \ et (b) profil }$U(s)${\protect\small \ correspondant de
+l'onde de choc non collisionnelle.}%
+\end{center}
+%EndExpansion
+
+\end{center}
+
+\section{MISE\ EN\ EVIDENCE\ EXPERIMENTALE}
+
+\subsection{Observations de solitons}
+
+Diff\'{e}rents types de solitons ont \'{e}t\'{e} observ\'{e}s en laboratoire
+et dans la magn\'{e}tosph\`{e}re terrestre. Dans le premier exemple que nous
+pr\'{e}sentons ici\footnote{{\small H.\ Ikezi, R.J. Taylor and D.R. Baker,
+Formation and interaction of ion-acoustic solitons, \textit{Phys. Rev. Lett}.,
+25, 11, 1970.}}, la formation de solitons acoustiques ioniques et leur
+interaction ont \'{e}t\'{e} \'{e}tudi\'{e}es dans un caisson \`{a} plasma
+appel\'{e} ''\textit{machine \`{a} double plasma}'' (densit\'{e} $n_{e}\simeq
+$10$^{9}\ $cm$^{-3}$, temp\'{e}ratures $T_{e}\simeq$1.5-3 eV et $T_{i}\simeq
+$0.2 eV). Dans ce type de machine, deux plasmas produits par deux
+d\'{e}charges ind\'{e}pendantes sont s\'{e}par\'{e}s par une grille
+polaris\'{e}e n\'{e}gativement qui emp\^{e}che les \'{e}lectrons de passer
+d'un plasma \`{a} l'autre; l'application puls\'{e}e de diff\'{e}rences de
+potentiel entre les deux plasmas permet l'excitation d'ondes\footnote{Ondes de
+compression dans un des plasmas et ondes de rar\'{e}faction dans l'autre.}.
+Lorsque les deux solitons se d\'{e}placent dans le m\^{e}me sens avec des
+vitesses diff\'{e}rentes (img/figure 6a), le soliton le plus rapide (le plus
+\'{e}troit et le plus haut) finit par d\'{e}passer le plus lent (chaque trace
+sur la img/figure 6a est s\'{e}par\'{e}e de la suivante par un intervalle de
+10$\mu s$, la trace sup\'{e}rieure correspondant au temps initial): en effet,
+au temps final, le soliton le plus rapide n'est en plus en queue comme en
+$t=0$ mais en t\^{e}te. La collision entre les solitons s'est effectu\'{e}e
+sans que ceux-ci ne subissent d'alt\'{e}ration autre que celle de
+l'amortissement lin\'{e}aire de Landau, tr\`{e}s visible sur la img/figure 6a
+(comparer les amplitudes des solitons aux temps initial et final). D'autre
+part, dans la m\^{e}me exp\'{e}rience, la collision entre deux solitons de
+vitesses \'{e}gales mais de sens oppos\'{e}s a\ \'{e}t\'{e} \'{e}tudi\'{e}e
+(img/figure 6b): de m\^{e}me que pour le cas pr\'{e}c\'{e}dent, ils ne sont pas
+affect\'{e}s par la collision (notons que pour les mesures de la img/figure 6b,
+l'effet Landau est n\'{e}gligeable). On remarque que les deux solitons se
+superposent lin\'{e}airement lors de leur croisement (interaction de type
+lin\'{e}aire), contrairement au premier cas (img/figure 6a) o\`{u} les deux
+solitons restent toujours s\'{e}par\'{e}s (interaction de type non-lin\'{e}aire).
+
+\begin{center}%
+%TCIMACRO{\FRAME{dtbpFU}{3.6512in}{3.7075in}{0pt}{\Qcb{\QTR{bf}{Figure 6.}
+%\QTR{small}{Collision entre deux solitons (a) qui se propagent dans le
+%m\^{e}me sens et (b) dans des directions oppos\'{e}es (en }$t=0$%
+%\QTR{small}{\ (voir les courbes sup\'{e}rieures), chaque soliton est
+%rep\'{e}r\'{e} par une fl\`{e}che indiquant sa vitesse) : perturbation de la
+%densit\'{e} \'{e}lectronique (en unit\'{e}s arbitraires) en fonction de la
+%distance (en cm), pour diff\'{e}rents instants de temps (s\'{e}par\'{e}s de
+%10}$\mu s$ \QTR{small}{dans la img/figure 6a et indiqu\'{e}s sur la img/figure
+%6b)}$.$\QTR{small}{\ La longueur de Debye est de l'ordre de }$\lambda
+%_{D}\simeq2\ 10^{-2}$\QTR{small}{cm}$.$}}{}{img/fig6.tif}%
+%{\special{ language "Scientific Word";  type "GRAPHIC";
+%maintain-aspect-ratio TRUE;  display "USEDEF";  valid_file "F";
+%width 3.6512in;  height 3.7075in;  depth 0pt;  original-width 3.6357in;
+%original-height 3.6927in;  cropleft "0";  croptop "1";  cropright "1.0003";
+%cropbottom "0";  filename 'img/fig6.tif';file-properties "XNPEU";}}}%
+%BeginExpansion
+\begin{center}
+\includegraphics[
+trim=0.000000in 0.000000in -0.001091in 0.000000in,
+natheight=3.692700in,
+natwidth=3.635700in,
+height=3.7075in,
+width=3.6512in
+]%
+{img/fig6.tif}%
+\\
+\textbf{Figure 6.} {\protect\small Collision entre deux solitons (a) qui se
+propagent dans le m\^{e}me sens et (b) dans des directions oppos\'{e}es (en
+}$t=0${\protect\small \ (voir les courbes sup\'{e}rieures), chaque soliton est
+rep\'{e}r\'{e} par une fl\`{e}che indiquant sa vitesse) : perturbation de la
+densit\'{e} \'{e}lectronique (en unit\'{e}s arbitraires) en fonction de la
+distance (en cm), pour diff\'{e}rents instants de temps (s\'{e}par\'{e}s de
+10}$\mu s$ {\protect\small dans la img/figure 6a et indiqu\'{e}s sur la img/figure
+6b)}$.${\protect\small \ La longueur de Debye est de l'ordre de }$\lambda
+_{D}\simeq2\ 10^{-2}${\protect\small cm}$.$%
+\end{center}
+%EndExpansion
+
+\end{center}
+
+Dans la m\^{e}me exp\'{e}rience, apr\`{e}s avoir v\'{e}rifi\'{e}
+l'\'{e}quation de dispersion lin\'{e}aire des ondes acoustiques ioniques se
+propageant dans un plasma non magn\'{e}tis\'{e}, on a augment\'{e} l'amplitude
+de l'impulsion initiale permettant d'exciter les ondes pour faire
+appara\^{\i}tre des effets non-lin\'{e}aires. La img/figure 7 montre, dans le
+r\'{e}f\'{e}rentiel se d\'{e}pla\c{c}ant avec la vitesse acoustique ionique,
+l'excitation d'une impulsion initiale (courbe sup\'{e}rieure repr\'{e}sentant
+le potentiel appliqu\'{e} en $t=0$) ainsi que son \'{e}volution au cours du
+temps pour diff\'{e}rentes positions dans le plasma (courbes inf\'{e}rieures
+repr\'{e}sentant la variation temporelle de la perturbation de densit\'{e}
+normalis\'{e}e pour diff\'{e}rentes distances par rapport \`{a} la grille
+interfa\c{c}ant les deux plasmas). L'exp\'{e}rience montre des r\'{e}sultats
+similaires \`{a} ceux obtenus lors de la r\'{e}solution num\'{e}rique de
+l'\'{e}quation KdV (comparer avec la img/figure 2) : apr\`{e}s le raidissement du
+front, une structure oscillante se d\'{e}veloppe et, finalement, un train de
+solitons appara\^{\i}t.%
+
+%TCIMACRO{\FRAME{dtbpFU}{4.2324in}{4.3033in}{0pt}{\Qcb{\QTR{bf}{Figure 7.}
+%\QTR{small}{Variation de la perturbation de la densit\'{e} \'{e}lectronique
+%normalis\'{e}e en fonction du temps (5 }$\mu s$\QTR{small}{\ par division)
+%pour diff\'{e}rentes distances (en cm) par rapport \`{a} la grille
+%interfa\c{c}ant les deux plasmas. L'impulsion excitatrice (appliqu\'{e}e en
+%}$\tau=0,$\QTR{small}{\ de l'ordre de 1V) est la courbe sup\'{e}rieure.}}}%
+%{}{img/fig7new.tif}{\special{ language "Scientific Word";  type "GRAPHIC";
+%display "USEDEF";  valid_file "F";  width 4.2324in;  height 4.3033in;
+%depth 0pt;  original-width 5.521in;  original-height 6.1462in;  cropleft "0";
+%croptop "1";  cropright "1";  cropbottom "0";
+%filename 'img/fig7new.tif';file-properties "XNPEU";}}}%
+%BeginExpansion
+\begin{center}
+\includegraphics[
+natheight=6.146200in,
+natwidth=5.521000in,
+height=4.3033in,
+width=4.2324in
+]%
+{img/fig7new.tif}%
+\\
+\textbf{Figure 7.} {\protect\small Variation de la perturbation de la
+densit\'{e} \'{e}lectronique normalis\'{e}e en fonction du temps (5 }$\mu
+s${\protect\small \ par division) pour diff\'{e}rentes distances (en cm) par
+rapport \`{a} la grille interfa\c{c}ant les deux plasmas. L'impulsion
+excitatrice (appliqu\'{e}e en }$\tau=0,${\protect\small \ de l'ordre de 1V)
+est la courbe sup\'{e}rieure.}%
+\end{center}
+%EndExpansion
+
+
+\subsection{Observations d'ondes de chocs non collisionnelles}
+
+Dans la m\^{e}me exp\'{e}rience de laboratoire que celle mentionn\'{e}e au
+paragraphe pr\'{e}c\'{e}dent (machine \`{a} double plasma), une impulsion
+(rampe de potentiel) est g\'{e}n\'{e}r\'{e}e \`{a} l'instant initial dans un
+plasma dont le profil de densit\'{e} spatial pr\'{e}sente un
+gradient\footnote{R.J. Taylor, D.R. Baker and H. Ikezi, Observation of
+collisionless electrostatic shocks, \textit{Phys. Rev. Lett}., 24, 206, 1970.}
+(situ\'{e} \`{a} la position de la grille, c'est-\`{a}-dire \`{a} l'interface
+des deux plasmas). L'\'{e}volution temporelle de la r\'{e}ponse du plasma
+\`{a} cette excitation montre la propagation d'une onde de choc acoustique
+ionique se d\'{e}pla\c{c}ant vers la droite de la img/figure 10; celle-ci
+repr\'{e}sente la variation de la densit\'{e} du plasma en fonction de la
+distance \`{a} la grille pour diff\'{e}rents instants $t$ et diff\'{e}rentes
+temp\'{e}ratures $T_{e}.$ On observe un flux d'ions r\'{e}fl\'{e}chis par le
+front du choc; celui-ci est responsable de la dissipation (notons que ce flux
+est d'autant plus important que $T_{e}$ est plus faible).%
+
+%TCIMACRO{\FRAME{dtbpFU}{3.813in}{5.2745in}{0pt}{\Qcb{\QTR{bf}{Figure 10.
+%}\QTR{small}{Variation de la densit\'{e} \'{e}lectronique du plasma en
+%fonction de la distance \`{a} la grille pour diff\'{e}rents instants de temps
+%}$\tau=$\QTR{small}{12, 24, 36, 48, 72 }$\mu s$\QTR{small}{; (a) }$T_{e}%
+%=1.5$\QTR{small}{\ eV et (b) }$T_{e}=3$\QTR{small}{\ eV (}$T_{i}%
+%=0.2$\QTR{small}{\ eV, }$n_{0}=10^{9}$\QTR{small}{cm}$^{-3}$\QTR{small}{\ est
+%la densit\'{e} du plasma non perturb\'{e}). Le flux des ions est indiqu\'{e}
+%par des fl\`{e}ches verticales (\textquotedblright streaming
+%ions\textquotedblright). Une \'{e}chelle repr\'{e}sentant 30}$\lambda_{D}%
+%$\QTR{small}{\ est repr\'{e}sent\'{e}e sur la img/figure.}}}{}{img/fig10new.tif}%
+%{\special{ language "Scientific Word";  type "GRAPHIC";  display "USEDEF";
+%valid_file "F";  width 3.813in;  height 5.2745in;  depth 0pt;
+%original-width 3.749in;  original-height 5.5685in;  cropleft "0";
+%croptop "1";  cropright "1";  cropbottom "0";
+%filename 'img/fig10new.tif';file-properties "XNPEU";}}}%
+%BeginExpansion
+\begin{center}
+\includegraphics[
+natheight=5.568500in,
+natwidth=3.749000in,
+height=5.2745in,
+width=3.813in
+]%
+{img/fig10new.tif}%
+\\
+\textbf{Figure 10. }{\protect\small Variation de la densit\'{e}
+\'{e}lectronique du plasma en fonction de la distance \`{a} la grille pour
+diff\'{e}rents instants de temps }$\tau=${\protect\small 12, 24, 36, 48, 72
+}$\mu s${\protect\small ; (a) }$T_{e}=1.5${\protect\small \ eV et (b) }%
+$T_{e}=3${\protect\small \ eV (}$T_{i}=0.2${\protect\small \ eV, }%
+$n_{0}=10^{9}${\protect\small cm}$^{-3}${\protect\small \ est la densit\'{e}
+du plasma non perturb\'{e}). Le flux des ions est indiqu\'{e} par des
+fl\`{e}ches verticales (\textquotedblright streaming ions\textquotedblright).
+Une \'{e}chelle repr\'{e}sentant 30}$\lambda_{D}${\protect\small \ est
+repr\'{e}sent\'{e}e sur la img/figure.}%
+\end{center}
+%EndExpansion
+
+
+D'autre part, des ondes de choc non collisionnelles ont \'{e}t\'{e} maintes
+fois observ\'{e}es in-situ par des sondes et des satellites au voisinage de la
+Terre et des autres plan\`{e}tes. Ces ondes de choc sont produites dans les
+zones o\`{u} le vent solaire rencontre le champ magn\'{e}tique de la
+plan\`{e}te. Par exemple, les sondes Voyager ont d\'{e}tect\'{e} des ondes
+acoustiques ioniques engendr\'{e}es par les ions r\'{e}fl\'{e}chis par l'onde
+de choc de Jupiter; la img/figure 11 montre la variation du champ magn\'{e}tique
+des ondes en fonction du temps, enregistr\'{e} par la sonde lors de sa
+travers\'{e}e de l'onde de choc (le vent solaire s'\'{e}coule de la gauche
+vers la droite sur la img/figure). Sur le spectrogramme de la img/figure 11 o\`{u} la
+fr\'{e}quence est repr\'{e}sent\'{e}e en fonction du temps, on observe dans le
+domaine des tr\`{e}s basses fr\'{e}quences les ondes acoustiques ioniques
+excit\'{e}es. Les ondes de plus haute fr\'{e}quence visibles sur le
+spectrogramme sont dues \`{a} des \'{e}lectrons chauff\'{e}s par les ondes de choc.%
+
+%TCIMACRO{\FRAME{dtbpFU}{6.3702in}{2.5425in}{0pt}{\Qcb{\QTR{bf}{Figure 11.}
+%\QTR{small}{Variation en fonction du temps du champ magn\'{e}tique (en
+%Gauss}$\times$\QTR{small}{10}$^{-5}$\QTR{small}{) des ondes (courbe
+%sup\'{e}rieure) et des fr\'{e}quences (en kHz) observ\'{e}es (image
+%inf\'{e}rieure) lors de la travers\'{e}e par la sonde Voyager de l'onde de
+%choc de Jupiter.}}}{}{img/fig11.tif}{\special{ language "Scientific Word";
+%type "GRAPHIC";  maintain-aspect-ratio TRUE;  display "USEDEF";
+%valid_file "F";  width 6.3702in;  height 2.5425in;  depth 0pt;
+%original-width 4.8265in;  original-height 1.9095in;  cropleft "0";
+%croptop "1";  cropright "1";  cropbottom "0";
+%filename 'img/fig11.tif';file-properties "XNPEU";}}}%
+%BeginExpansion
+\begin{center}
+\includegraphics[
+natheight=1.909500in,
+natwidth=4.826500in,
+height=2.5425in,
+width=6.3702in
+]%
+{img/fig11.tif}%
+\\
+\textbf{Figure 11.} {\protect\small Variation en fonction du temps du champ
+magn\'{e}tique (en Gauss}$\times${\protect\small 10}$^{-5}${\protect\small )
+des ondes (courbe sup\'{e}rieure) et des fr\'{e}quences (en kHz) observ\'{e}es
+(image inf\'{e}rieure) lors de la travers\'{e}e par la sonde Voyager de l'onde
+de choc de Jupiter.}%
+\end{center}
+%EndExpansion
+
+
+
+\end{document}

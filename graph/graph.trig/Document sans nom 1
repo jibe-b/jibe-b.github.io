@@ -1,0 +1,40 @@
+@prefix pso: <http://jibe-b.github.io/ontology/pso/> .
+@prefix sci: <http://jibe-b.github.io/ontology/> .
+@prefix mo: <http://jibe-b.github.io/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/02/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix sof: <http://sans-ontologie-fixe/> .
+
+#MAIN GRAPH
+
+#Historiquement, Drude et Lorentz proposèrent un modèle de conduction basé sur la cinétique classique de gaz parfaite: les électrons de vajlente ront ddétachés des atomet et circulent
+#librement entre les ions positihst immobiles sur leur site cristllin.
+
+# La @"théorie des bandes" permet d'§interpréter les expériences d'¤"effetHall".
+
+r:Théorie_Des_Bandes sci:décrit r:Effet_Hall
+                        ,       r:Réflexivité_Des_Métaux .
+                        
+r:Théorème_De_Bloch sci:hasFundationalHypothesis r:Approximation_De_Champ_Moyen
+                    ,                            r:Approximation_Adiabatique .
+                    
+r:Theorème_De_Bloch rdf:comment "le contexte du théorème de Bloch est équivelant à un problème d'électrons indépendants dans un potentiel périodique" .
+
+
+# Complément au texte
+
+r:Effet_Hall rdf:type pso:Phenomenon .
+
+r:Theorème_De_Bloch a sci:Theorem .
+
+r:Approximation_Adiabatique a sci:Hypothesis .
+
+r:Approxmation_De_Champ_Moyen a sci:Hypothesis .
+
+
+#GRAPH
+
+
+r:Effet_Hall {sof:s sof:p sof:o .}

@@ -1,0 +1,1404 @@
+Prefix: : <http://www.w3.org/2002/07/owl#>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+
+Ontology: <http://jibe-b.github.io/ontology/pso/>
+
+
+Annotations: 
+    <http://purl.org/dc/elements/1.1/creator> "jibe-b"^^xsd:string,
+    <http://purl.org/dc/elements/1.1/date> "Dec 9, 2014 7:41:56 AM"^^xsd:dateTime,
+    rdfs:comment "Ontology for the description of Physical Sciences."^^xsd:string,
+    <http://purl.org/dc/terms/license> <http://creativecommons.org/licences/by/4.0/>,
+    <http://purl.org/dc/elements/1.1/date> "Jan 15, 2015 1:44:37 PM"^^xsd:dateTime
+
+AnnotationProperty: <http://purl.org/dc/elements/1.1/creator>
+
+    
+AnnotationProperty: <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl>
+
+    
+AnnotationProperty: <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg>
+
+    
+AnnotationProperty: <http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg>
+
+    
+AnnotationProperty: <http://purl.org/dc/elements/1.1/date>
+
+    
+AnnotationProperty: <http://purl.org/dc/terms/source>
+
+    
+AnnotationProperty: <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg>
+
+    
+AnnotationProperty: <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl>
+
+    
+AnnotationProperty: rdfs:label
+
+    
+AnnotationProperty: rdfs:comment
+
+    
+AnnotationProperty: <http://purl.org/dc/terms/license>
+
+    
+AnnotationProperty: <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg>
+
+    
+Datatype: xsd:double
+
+    
+Datatype: xsd:boolean
+
+    
+Datatype: rdf:PlainLiteral
+
+    
+ObjectProperty: <http://jibe-bgithub.io/ontology/pso/describedBy>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "describedBy",
+        rdfs:label "describedBy",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "describedBied",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "describedBies"
+    
+    Domain: 
+        <http://jibe-bgithub.io/ontology/pso/Phenomenon>
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    
+ObjectProperty: <http://jibe-b.github.io/ontology/pso/inState>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "inStated",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "inState",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "inStates"
+    
+    Domain: 
+        <http://jibe-bgithub.io/ontology/pso/Object>
+    
+    Range: 
+        <http://jibe-b.github.io/ontology/pso/State>
+    
+    Characteristics: 
+        Asymmetric
+    
+    
+ObjectProperty: <http://jibe-b.github.io/ontology/pso/ComponentBound>
+
+    Annotations: 
+        rdfs:comment "what is involved in the structure of the object (strong, weak interaction, Van Der Walls…)",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "ComponentBounds",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "ComponentBound",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "ComponentBounded"
+    
+    
+ObjectProperty: <http://jibe-bgithub.io/ontology/pso/governEvolutionOfQuantity>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "governEvolutionOfQuantitied",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "governEvolutionOfQuantities",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "governEvolutionOfQuantity",
+        rdfs:label "governEvolutionOfQuantity"
+    
+    Range: 
+        <http://jibe-bgithub.io/ontology/pso/Quantity>
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    
+ObjectProperty: <http://jibe-b.github.io/ontology/pso/hasPhysicalHypothesis>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "hasPhysicalHypothesis",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "hasPhysicalHypothesises",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "hasPhysicalHypothesised"
+    
+    
+ObjectProperty: <http://jibe-b.github.io/ontology/pso/hasComponent>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "hasComponented",
+        rdfs:comment "Intended to be used in a RDF bag, so that each component can be associated to its proportion.",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "hasComponents",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "hasComponent"
+    
+    Domain: 
+        <http://jibe-bgithub.io/ontology/pso/Object>
+    
+    Range: 
+        <http://jibe-bgithub.io/ontology/pso/Object>
+    
+    
+ObjectProperty: <http://jibe-b.github.io/ontology/pso/ComponentsProportions>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "ComponentProportionsed",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "ComponentProportionses",
+        rdfs:comment "proportions of components in an object. Intended to be used in a bag, so that each component's proportion is associated to the component's name.",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "ComponentProportions"
+    
+    
+ObjectProperty: <http://jibe-bgithub.io/ontology/pso/hasLawProperty>
+
+    Annotations: 
+        rdfs:label "hasLawProperty",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "hasLawPropertied",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "hasLawProperties",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "hasLawProperty"
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    
+ObjectProperty: <http://jibe-bgithub.io/ontology/pso/involve>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "involve",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "involves",
+        rdfs:label "involve",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "involved"
+    
+    Domain: 
+        <http://jibe-bgithub.io/ontology/pso/Phenomenon>
+    
+    Range: 
+        <http://jibe-bgithub.io/ontology/pso/Object>
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    
+ObjectProperty: <http://jibe-bgithub.io/ontology/pso/characterizeObject>
+
+    Annotations: 
+        rdfs:label "characterizeObject",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "characterizeObjects",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "characterizeObject",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "characterizeObjected"
+    
+    Range: 
+        <http://jibe-bgithub.io/ontology/pso/Object>
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    
+ObjectProperty: <http://jibe-bgithub.io/ontology/pso/governPhenomenonStateOf>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "governPhenomenonStateOf",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "governPhenomenonStateOfs",
+        rdfs:label "governPhenomenonStateOf",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "governPhenomenonStateOfed"
+    
+    Range: 
+        <http://jibe-bgithub.io/ontology/pso/Phenomenon>
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    
+ObjectProperty: <http://jibe-b.github.io/ontology/pso/inPhysicalState>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "inPhysicalState",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "inPhysicalStates",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "inPhysicalStated"
+    
+    Domain: 
+        <http://jibe-bgithub.io/ontology/pso/Object>
+    
+    Range: 
+        <http://jibe-b.github.io/ontology/pso/PhysicalState>
+    
+    Characteristics: 
+        Asymmetric
+    
+    SubPropertyOf: 
+        <http://jibe-b.github.io/ontology/pso/inState>
+    
+    
+ObjectProperty: owl:topObjectProperty
+
+    
+ObjectProperty: <http://jibe-bgithub.io/ontology/pso/hasObjectProperty>
+
+    Annotations: 
+        rdfs:label "hasObjectProperty",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "hasObjectProperty",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "hasObjectProperties",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "hasObjectPropertied"
+    
+    Domain: 
+        <http://jibe-bgithub.io/ontology/pso/Object>
+    
+    Range: 
+        <http://jibe-b.github.io/ontology/pso/ObjectProperty>
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    
+ObjectProperty: <http://jibe-b.github.io/ontology/pso/hasPhysicalQuantity>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "hasPhysicalQuantitied",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "hasPhysicalQuantity",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "hasPhysicalQuantities"
+    
+    
+ObjectProperty: <http://jibe-bgithub.io/ontology/pso/hasPhenomenonProperty>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "hasPhenomenonProperty",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "hasPhenomenonProperties",
+        rdfs:label "hasPhenomenonProperty",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "hasPhenomenonPropertied"
+    
+    Domain: 
+        <http://jibe-bgithub.io/ontology/pso/Phenomenon>
+    
+    Range: 
+        <http://jibe-bgithub.io/ontology/pso/PhenomenonProperty>
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    
+ObjectProperty: <http://jibe-b.github.io/ontology/pso/hasQuanticNumber>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "hasQuanticNumbered",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "hasQuanticNumbers",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "hasQuanticNumber"
+    
+    SubPropertyOf: 
+        <http://jibe-b.github.io/ontology/pso/hasPhysicalQuantity>
+    
+    
+ObjectProperty: <http://jibe-bgithub.io/ontology/pso/involvedIn>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "involvedIned",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "involvedIn",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "involvedIns",
+        rdfs:label "involvedIn"
+    
+    Domain: 
+        <http://jibe-bgithub.io/ontology/pso/Object>
+    
+    Range: 
+        <http://jibe-bgithub.io/ontology/pso/Phenomenon>
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    
+ObjectProperty: <http://jibe-bgithub.io/ontology/pso/hasQuantityProperty>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "hasQuantityProperties",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "hasQuantityPropertied",
+        rdfs:label "hasQuantityProperty",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "hasQuantityProperty"
+    
+    Domain: 
+        <http://jibe-bgithub.io/ontology/pso/Quantity>
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    
+ObjectProperty: <http://jibe-b.github.io/ontology/pso/hasTheoryElementProperty>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "hasTheoryElementProperty",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "hasTheoryElementProperties",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "hasTheoryElementPropertied"
+    
+    
+ObjectProperty: <http://jibe-b.github.io/ontology/pso/involvePhysicalQuantity>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "involvePhysicalQuantities",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "involvePhysicalQuantitied",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "involvePhysicalQuantity",
+        rdfs:comment "an equation involves a Physical Quantity"
+    
+    
+ObjectProperty: <http://jibe-bgithub.io/ontology/pso/hasQuantity>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "hasQuantities",
+        rdfs:label "hasQuantity",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "hasQuantitied",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "hasQuantity"
+    
+    Domain: 
+        <http://jibe-bgithub.io/ontology/pso/Object>
+    
+    Range: 
+        <http://jibe-bgithub.io/ontology/pso/Quantity>
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    
+ObjectProperty: <http://jibe-b.github.io/ontology/pso/intensiveExtensiveProperty>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "intensiveExtensiveProperties",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "intensiveExtensivePropertied",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "intensiveExtensiveProperty"
+    
+    Domain: 
+        <http://jibe-bgithub.io/ontology/pso/Quantity>
+    
+    
+ObjectProperty: <http://jibe-bgithub.io/ontology/pso/quantityEvolutionGovernedBy>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "quantityEvolutionGovernedBy",
+        rdfs:label "quantityEvolutionGovernedBy",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "quantityEvolutionGovernedBies",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "quantityEvolutionGovernedBied"
+    
+    Domain: 
+        <http://jibe-bgithub.io/ontology/pso/Quantity>
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    
+ObjectProperty: <http://jibe-bgithub.io/ontology/pso/associatedTo>
+
+    Annotations: 
+        rdfs:label "associatedTo",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "associatedTo",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "associatedToed",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "associatedToes"
+    
+    Domain: 
+        <http://jibe-bgithub.io/ontology/pso/Quantity>
+    
+    Range: 
+        <http://jibe-bgithub.io/ontology/pso/Object>
+    
+    SubPropertyOf: 
+        owl:topObjectProperty
+    
+    
+ObjectProperty: <http://jibe-b.github.io/ontology/pso/ComponentsQuantity>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "ComponentsNumbersed",
+        rdfs:comment "Intended to be used in a RDF bag, so that each component can be associated to its quantity.",
+        rdfs:comment "Not to be mistaken with PhysicalQuantity class",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "ComponentsNumbers",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "ComponentsNumberses"
+    
+    
+ObjectProperty: <http://jibe-b.github.io/ontology/pso/hasDimension>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "hasDimensions",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "hasDimensioned",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "hasDimension"
+    
+    
+DataProperty: <http://jibe-b.github.io/ontology/pso/isLinear>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "isLinears",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "isLineared",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "isLinear"
+    
+    Domain: 
+        <http://jibe-b.github.io/ontology/pso/isLinear> only xsd:boolean
+    
+    Characteristics: 
+        Functional
+    
+    
+DataProperty: <http://jibe-b.github.io/ontology/pso/hasValueHighBorder>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "hasValueHighBorders",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "hasValueHighBordered",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "hasValueHighBorder",
+        rdfs:comment "…b]"
+    
+    
+DataProperty: <http://jibe-b.github.io/ontology/pso/hasSpin>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "hasSpin",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "hasSpins",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "hasSpined",
+        rdfs:comment "specification of hasValue. When hasValue hasDomain Spin, PropertyChain determines the value of hasSpin"
+    
+    Domain: 
+        <http://jibe-bgithub.io/ontology/pso/Object>
+    
+    Range: 
+        xsd:double
+    
+    SubPropertyOf: 
+        <http://jibe-b.github.io/ontology/pso/hasValue>
+    
+    
+DataProperty: <http://jibe-b.github.io/ontology/pso/hasValue>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "hasValues",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "hasValued",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "hasValue"
+    
+    
+DataProperty: <http://jibe-b.github.io/ontology/pso/hasValueLowBorder>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg> "hasValueLowBorders",
+        rdfs:comment "[a…",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg> "hasValueLowBordered",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl> "hasValueLowBorder"
+    
+    
+Class: <http://jibe-bgithub.io/ontology/pso/QuanticObject>
+
+    Annotations: 
+        rdfs:label "QuanticObject",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "QuanticObject",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "QuanticObjects",
+        rdfs:comment "Object, which behaviour are quantic."@en
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/Object>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/ElementaryBoson>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "ElementaryBosons",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "ElementaryBoson",
+        rdfs:comment "other name: GaugeBoson"@en
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/MatterParticle>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/orWavePhenomenon>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "orWavePhenomenons",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "orWavePhenomenon"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/RelativisticPhenomenon>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Position>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Positions",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Position"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/PositionQuantity>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Photon>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Photons",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Photon"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/ElementaryBoson>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/ClassicalObject>
+
+    Annotations: 
+        rdfs:comment "Objects which quantic behaviour is hidden by the high number of elements."@en,
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "ClassicalObject",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "ClassicalObjects"
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/Object>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Acceleration>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Acceleration",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Accelerations"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/SecondDerivativePositionQuantity>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Speed>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Speed",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Speeds"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/FirstDerivativePositionQuantity>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/StateOfFreedom>
+
+    Annotations: 
+        rdfs:comment "depends of the number of levels of freedom",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "StateOfFreedoms",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "StateOfFreedom"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/State>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/WeakInteraction>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "WeakInteraction",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "WeakInteractions"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/FundamentalInteraction>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/FundamentalInteraction>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "FundamentalInteractions",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "FundamentalInteraction"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/Force>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Atom>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "atoms",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "atom"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/KnownNumberOfElementObject>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/SecondDerivativePositionQuantity>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "SecondDerivativePositionQuantities",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "SecondDerivativePositionQuantity"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/PositionQuantity>
+    
+    
+Class: <http://jibe-bgithub.io/ontology/pso/ClassicalPhenomenon>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "ClassicalPhenomenon",
+        rdfs:label "ClassicalPhenomenon",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "ClassicalPhenomenons"
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/Phenomenon>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Meson>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Mesons",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Meson"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/Hadron>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/ElectricCharge>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "ElectricCharges",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "ElectricCharge"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/Charge>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/ElementaryFermion>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "ElementaryFermions",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "ElementaryFermion"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/MatterParticle>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/LawProperty>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "LawProperties",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "LawProperty"
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/PhenomenonProperty>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Wave>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Waves",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Wave"
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/FieldObject>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Molecule>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "molecule",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "molecules"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/KnownNumberOfElementObject>
+    
+    
+Class: owl:Thing
+
+    
+Class: <http://jibe-b.github.io/ontology/pso/Force>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Force",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Forces"
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/FieldObject>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/PositionQuantity>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "PositionQuantities",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "PositionQuantity"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/ObjectPhysicalQuantity>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/LinearityProperty>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "LinearityProperty",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "LinearityProperties"
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/PhenomenonProperty>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Time>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Time",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Times"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/ObjectPhysicalQuantity>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Quark>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Quarks",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Quark"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/ElementaryFermion>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/AntiMatterParticle>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "AntiMatterParticles",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "AntiMatterParticle"
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/ElementaryParticle>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Lepton>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Lepton",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Leptons"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/ElementaryFermion>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/AbstractObject>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "AbstractObject",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "AbstractObjects",
+        rdfs:comment "defined by the variation of a physical quantity, but only accessible by abstraction and by calculation.
+
+Exemple: surface de Fermi."@en
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/Object>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Reversibility>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Ireversibles",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Ireversible",
+        rdfs:comment "only for laws or generally for Phenomenon?"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/LawProperty>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Agregate>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "agregates",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "agregate"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/KnownNumberOfElementObject>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/MicroscopicalObject>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "MicroscopicalObject",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "MicroscopicalObjects"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/ClassicalObject>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/State>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "States",
+        rdfs:comment "The state of an object depends on the value of its several Physical Quantities.",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "State"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/ObjectProperty>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/KnownNumberOfElementObject>
+
+    Annotations: 
+        rdfs:comment "Object which has a known number of elements. Obviously atoms, molecules, but agregates too, which have properties that depend on the number of atoms or molecules inside."@en,
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "KnownNumberOfElementObject",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "KnownNumberOfElementObjects"
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/NonElementaryObject>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/MacroscopicalObject>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "MacroscopicalObject",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "MacroscopicalObjects"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/ClassicalObject>,
+        <http://jibe-bgithub.io/ontology/pso/hasObjectProperty> some <http://jibe-bgithub.io/ontology/pso/Property>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/UnknownNumberOfComponentsElement>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "UnknownNumberOfComponentsElements",
+        rdfs:comment "Object for which the number of elements is unknown, in opposition to atoms or agregates, for which the number of atoms is known."@en,
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "UnknownNumberOfComponentsElement"
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/NonElementaryObject>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/PotentialEnergy>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "PotentialEnergies",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "PotentialEnergy"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/Energy>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Nanoparticle>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "nanoparticles",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "nanoparticle"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/UnknownNumberOfComponentsElement>
+    
+    
+Class: <http://jibe-bgithub.io/ontology/pso/ElementaryParticle>
+
+    Annotations: 
+        rdfs:comment "divided between Matter and anti matter.
+
+Non elementary particles are not divided between matter and anti matter. But they inherit of the matter-anti-matter property of the elementary particles that are components fo this non-elementary particle."@en,
+        rdfs:label "ElementaryParticle",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "ElementaryParticles",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "ElementaryParticle"
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/QuanticObject>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/MesoscopicalObject>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "MesoscopicalObject",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "MesoscopicalObjects"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/ClassicalObject>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/InternalEnergy>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "InternalEnergies",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "InternalEnergy"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/Energy>
+    
+    
+Class: <http://jibe-bgithub.io/ontology/pso/FieldObject>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "FieldObjects",
+        rdfs:label "FieldObject",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "FieldObject"
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/Object>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Baryon>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Baryons",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Baryon"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/Hadron>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Solid>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Solid",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Solids"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/MacroscopicalObject>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/GravitationalInteraction>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "GravitationalInteraction",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "GravitationalInteractions"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/FundamentalInteraction>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/ColorCharge>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "ColorCharge",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "ColorCharges"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/Charge>
+    
+    
+Class: <http://jibe-bgithub.io/ontology/pso/QuanticPhenomenon>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "QuanticPhenomenons",
+        rdfs:label "QuanticPhenomenon",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "QuanticPhenomenon"
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/Phenomenon>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Gluon>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Gluon",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Gluons"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/ElementaryBoson>
+    
+    
+Class: <http://jibe-bgithub.io/ontology/pso/QuanticNumber>
+
+    Annotations: 
+        rdfs:label "QuanticNumber",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "QuanticNumbers",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "QuanticNumber"
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/Quantity>
+    
+    
+Class: <http://jibe-bgithub.io/ontology/pso/NonElementaryObject>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "NonElementaryObject",
+        rdfs:label "NonElementaryObject",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "NonElementaryObjects"
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/QuanticObject>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/CosmicalObject>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "CosmicObjects",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "CosmicObject"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/ClassicalObject>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Charge>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Charge",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Charges"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/ObjectPhysicalQuantity>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/ObjectProperty>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "ObjectProperties",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "ObjectProperty"
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/Property>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/KineticEnergy>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "KineticEnergy",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "KineticEnergies"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/Energy>
+    
+    
+Class: <http://jibe-bgithub.io/ontology/pso/Phenomenon>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Phenomena",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Phenomenon",
+        rdfs:comment "Phenomenon is a class that has subclasses corresponding to each of the Theory classes.
+
+Individuals instantiated as Phenomenon must be instances of the different Phenomenon classes that correspond to the theoies needed to descripe them.
+
+Another approach would be to classify these phenomenon with respect to their properties.
+
+This means they would only be linked to theories with a property such as \"described by theory\""@en,
+        rdfs:label "Phenomenon"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <http://jibe-bgithub.io/ontology/pso/PhenomenonProperty>
+
+    Annotations: 
+        rdfs:label "PhenomenonProperty",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "PhenomenonProperties",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "PhenomenonProperty"
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/Property>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/StrongInteraction>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "StrongInteraction",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "StrongInteractions"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/FundamentalInteraction>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/ElectromagneticInteraction>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "ElectromagniticInteractions",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "ElectromagniticInteraction"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/FundamentalInteraction>
+    
+    
+Class: <http://jibe-bgithub.io/ontology/pso/Property>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Property",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Properties",
+        rdfs:label "Property"
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Nucleus>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "nucleus",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "nucleuses"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/KnownNumberOfElementObject>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/MatterParticle>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "MatterParticle",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "MatterParticles"
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/ElementaryParticle>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Energy>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Energies",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Energy"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/ObjectPhysicalQuantity>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Impulse>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Impulse",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Impulses"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/FirstDerivativePositionQuantity>
+    
+    
+Class: <http://jibe-bgithub.io/ontology/pso/Object>
+
+    Annotations: 
+        rdfs:comment "a Physical Object has only one property: its existence."@en,
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Object",
+        rdfs:label "Object",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Objects",
+        rdfs:comment "An object is caracterised by the variation of at least one physical quantity. The variation of this physical quantity defines the borders of this object."@en
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/hasObjectProperty> some <http://jibe-b.github.io/ontology/pso/ObjectProperty>,
+        owl:Thing,
+        <http://jibe-bgithub.io/ontology/pso/hasQuantity> some <http://jibe-bgithub.io/ontology/pso/Quantity>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/PhysicalState>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "PhysicalState",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "PhysicalStates"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/State>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Universe>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Universes",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Universe"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/CosmicalObject>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/orLinearPhenomenon>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "orLinearPhenomenon",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "orLinearPhenomenons"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/RelativisticPhenomenon>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Action>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Action",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Actions"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/ObjectPhysicalQuantity>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/RelativisticPhenomenon>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "RelativisticPhenomenons",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "RelativisticPhenomenon"
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/Phenomenon>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/FirstDerivativePositionQuantity>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "FirstDerivativePositionQuantities",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "FirstDerivativePositionQuantity"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/PositionQuantity>
+    
+    
+Class: <http://jibe-bgithub.io/ontology/pso/Quantity>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Quantity",
+        rdfs:label "Quantity",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Quantities"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/ObjectProperty>
+    
+    
+Class: <http://jibe-bgithub.io/ontology/pso/MacroscopicalObject>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "MacroscopicalObjects",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "MacroscopicalObject",
+        rdfs:label "MacroscopicalObject"
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/Property>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/Hadron>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "Hadrons",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "Hadron"
+    
+    SubClassOf: 
+        <http://jibe-b.github.io/ontology/pso/KnownNumberOfElementObject>
+    
+    
+Class: <http://jibe-b.github.io/ontology/pso/ObjectPhysicalQuantity>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl> "PhysicalQuantities",
+        <http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg> "PhysicalQuantity"
+    
+    SubClassOf: 
+        <http://jibe-bgithub.io/ontology/pso/Quantity>
+    
+    
+Individual: <http://jibe-b.github.io/ontology/pso/RelativisticQuantumMechanics>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg> "RelativisticQuantumMechanics"
+    
+    
+Individual: <http://jibe-b.github.io/ontology/pso/Weak_Interaction>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg> "Weak_Interaction"
+    
+    Types: 
+        <http://jibe-b.github.io/ontology/pso/WeakInteraction>
+    
+    
+Individual: <http://jibe-b.github.io/ontology/pso/ClassicalMechanics>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg> "ClassicalMechanics"
+    
+    
+Individual: <http://jibe-b.github.io/ontology/pso/QuanticHypothesis>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg> "QuanticHypothesis"
+    
+    
+Individual: <http://jibe-b.github.io/ontology/pso/NonRelativisticHypothesis>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg> "NonRelativisticHypothesis"
+    
+    
+Individual: <http://jibe-b.github.io/ontology/pso/TotalFreedom>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg> "TotalFreedom"
+    
+    Types: 
+        <http://jibe-b.github.io/ontology/pso/StateOfFreedom>
+    
+    
+Individual: <http://jibe-b.github.io/ontology/pso/RelativistHypothesis>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg> "RelativistHypothesis"
+    
+    
+Individual: <http://jibe-b.github.io/ontology/pso/QuantumMechanics>
+
+    Annotations: 
+        rdfs:comment "non relativistic quantic theory"@en,
+        <http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg> "QuantumMechanics"
+    
+    
+Individual: <http://jibe-b.github.io/resource/Gravitational_Interaction>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg> "Gravitational_Interaction"
+    
+    Types: 
+        <http://jibe-b.github.io/ontology/pso/GravitationalInteraction>
+    
+    
+Individual: <http://jibe-b.github.io/resource/GazeousState>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg> "GazeousState"
+    
+    Types: 
+        <http://jibe-b.github.io/ontology/pso/PhysicalState>
+    
+    
+Individual: <http://jibe-b.github.io/ontology/pso/ClassicHypothesis>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg> "ClassicHypothesis"
+    
+    
+Individual: <http://jibe-b.github.io/resource/Solid>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg> "Solid"
+    
+    Types: 
+        <http://jibe-b.github.io/ontology/pso/Solid>
+    
+    Facts:  
+     <http://jibe-b.github.io/ontology/pso/inPhysicalState>  <http://jibe-b.github.io/resource/SolidState>
+    
+    
+Individual: <http://jibe-b.github.io/ontology/pso/EinsteinRelativity>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg> "EinsteinRelativity"
+    
+    
+Individual: <http://jibe-b.github.io/ontology/pso/Schrödinger's_Equation>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg> "s_Equation"
+    
+    
+Individual: <http://jibe-b.github.io/resource/LiquidState>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg> "LiquidState"
+    
+    Types: 
+        <http://jibe-b.github.io/ontology/pso/PhysicalState>
+    
+    
+Individual: <http://jibe-b.github.io/resource/Electromagnetic_Interaction>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg> "Electromagnetic_Interaction"
+    
+    Types: 
+        <http://jibe-b.github.io/ontology/pso/ElectromagneticInteraction>
+    
+    
+Individual: <http://jibe-b.github.io/ontology/pso/StandardModel>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg> "StandardModel"
+    
+    
+Individual: <http://jibe-b.github.io/ontology/pso/QuanticandClassicTheory>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg> "QuanticandClassicTheory"
+    
+    
+Individual: <http://jibe-b.github.io/resource/Strong_Interaction>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg> "Strong_Interaction"
+    
+    Types: 
+        <http://jibe-b.github.io/ontology/pso/StrongInteraction>
+    
+    
+Individual: <http://jibe-b.github.io/resource/SolidState>
+
+    Annotations: 
+        <http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg> "SolidState"
+    
+    Types: 
+        <http://jibe-b.github.io/ontology/pso/PhysicalState>
+    
+    
+DifferentIndividuals: 
+    <http://jibe-b.github.io/ontology/pso/ClassicHypothesis>, <http://jibe-b.github.io/ontology/pso/QuanticHypothesis>, <http://jibe-b.github.io/ontology/pso/RelativistHypothesis>
+
+DifferentIndividuals: 
+    <http://jibe-b.github.io/resource/GazeousState>, <http://jibe-b.github.io/resource/LiquidState>, <http://jibe-b.github.io/resource/SolidState>
+

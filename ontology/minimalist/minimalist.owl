@@ -11,6 +11,21 @@
 
 #################################################################
 #
+#    Annotation properties
+#
+#################################################################
+
+
+###  http://jibe-b.github.io/ontology/sci/source
+
+<http://jibe-b.github.io/ontology/sci/source> rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
 #    Object Properties
 #
 #################################################################
@@ -124,6 +139,15 @@
                                ] ;
            
            rdfs:subClassOf :Caracter .
+[ rdf:type owl:Axiom ;
+  <http://jibe-b.github.io/ontology/sci/source> "source1" ;
+  owl:annotatedSource :Caracter1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedTarget [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasCaracter1 ;
+                        owl:hasValue "true"^^xsd:boolean
+                      ]
+] .
 
 
 
@@ -155,6 +179,27 @@
                              ] ;
          
          rdfs:subClassOf :Entity .
+[ rdf:type owl:Axiom ;
+  <http://jibe-b.github.io/ontology/sci/source> "source1" ;
+  owl:annotatedSource :Entity1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedTarget [ rdf:type owl:Class ;
+                        owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasRelation1 ;
+                                               owl:onClass :Entity1 ;
+                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasCaracter1 ;
+                                               owl:hasValue "true"^^xsd:boolean
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasQuantity1 ;
+                                               owl:hasValue "true"^^xsd:boolean
+                                             ]
+                                           )
+                      ]
+] .
 
 
 
@@ -182,6 +227,15 @@
                                ] ;
            
            rdfs:subClassOf :Quantity .
+[ rdf:type owl:Axiom ;
+  <http://jibe-b.github.io/ontology/sci/source> "source1" ;
+  owl:annotatedSource :Quantity1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedTarget [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasQuantity1 ;
+                        owl:someValuesFrom xsd:float
+                      ]
+] .
 
 
 
@@ -203,6 +257,15 @@
                                ] ;
            
            rdfs:subClassOf :Relation .
+[ rdf:type owl:Axiom ;
+  <http://jibe-b.github.io/ontology/sci/source> "source1" ;
+  owl:annotatedSource :Relation1 ;
+  owl:annotatedProperty owl:equivalentClass ;
+  owl:annotatedTarget [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasRelation1 ;
+                        owl:hasSelf "true"^^xsd:boolean
+                      ]
+] .
 
 
 

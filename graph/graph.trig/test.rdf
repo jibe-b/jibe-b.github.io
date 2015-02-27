@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:pso="http://jibe-b.github.io/ontology/pso/" xmlns:r="http://jibe-b.github.io/resource/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/02/rdf-schema#" xmlns:sci="http://jibe-b.github.io/ontology/" xmlns:sof="http://sans-ontologie-fixe/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <rdf:Description rdf:about="http://jibe-b.github.io/resource/Théorie_Des_Bandes">
+    <sci:décrit rdf:resource="http://jibe-b.github.io/resource/Effet_Hall"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jibe-b.github.io/resource/Théorie_Des_Bandes">
+    <sci:décrit rdf:resource="http://jibe-b.github.io/resource/Réflexivité_Des_Métaux"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jibe-b.github.io/resource/Théorème_De_Bloch">
+    <sci:hasFundationalHypothesis rdf:resource="http://jibe-b.github.io/resource/Approximation_De_Champ_Moyen"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jibe-b.github.io/resource/Théorème_De_Bloch">
+    <sci:hasFundationalHypothesis rdf:resource="http://jibe-b.github.io/resource/Approximation_Adiabatique"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jibe-b.github.io/resource/Theorème_De_Bloch">
+    <rdfs:comment>le contexte du théorème de Bloch est équivelant à un problème d'électrons indépendants dans un potentiel périodique</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jibe-b.github.io/resource/Effet_Hall">
+    <rdf:type rdf:resource="http://jibe-b.github.io/ontology/pso/Phenomenon"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jibe-b.github.io/resource/Theorème_De_Bloch">
+    <rdf:type rdf:resource="http://jibe-b.github.io/ontology/Theorem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jibe-b.github.io/resource/Approximation_Adiabatique">
+    <rdf:type rdf:resource="http://jibe-b.github.io/ontology/Hypothesis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://jibe-b.github.io/resource/Approxmation_De_Champ_Moyen">
+    <rdf:type rdf:resource="http://jibe-b.github.io/ontology/Hypothesis"/>
+  </rdf:Description>
+</rdf:RDF>
