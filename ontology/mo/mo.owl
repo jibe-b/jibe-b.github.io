@@ -44,9 +44,6 @@
         <Class IRI="/IntegerNumber"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/MathematicalObject"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/NaturalInteger"/>
     </Declaration>
     <Declaration>
@@ -95,28 +92,12 @@
         <Class IRI="/Operator"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/Distribution"/>
-        <Class IRI="/MathematicalObject"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Function"/>
-        <Class IRI="/MathematicalObject"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="/IntegerNumber"/>
         <Class IRI="/Number"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/NaturalInteger"/>
         <Class IRI="/Number"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Number"/>
-        <Class IRI="/MathematicalObject"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Operator"/>
-        <Class IRI="/MathematicalObject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/PartialDerivationOperator"/>
@@ -134,10 +115,6 @@
         <Class IRI="/TotalDerivationOperator"/>
         <Class IRI="/DerivationOperator"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Variable"/>
-        <Class IRI="/MathematicalObject"/>
-    </SubClassOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/hasDerivative"/>
         <ObjectProperty IRI="/New"/>
@@ -150,6 +127,26 @@
         <ObjectProperty IRI="/hasDerivative"/>
         <ObjectProperty IRI="/isDerivativeOf"/>
     </InverseObjectProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/ComplexNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComplexNumbers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/ComplexNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ComplexNumber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/DecimalNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DecimalNumbers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/DecimalNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DecimalNumber</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>/DerivationOperator</IRI>
@@ -196,6 +193,16 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">Integer</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/NaturalInteger</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NaturalIntegers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/NaturalInteger</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NaturalInteger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
         <IRI>/New</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">New</Literal>
@@ -232,6 +239,26 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/PartialDerivationOperator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PartialDerivationOperators</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/PartialDerivationOperator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PartialDerivationOperator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/RationalNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RationalNumbers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/RationalNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RationalNumber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>/RealNumber</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">NombreRéel</Literal>
     </AnnotationAssertion>
@@ -239,6 +266,16 @@
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>/RealNumber</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">NombreRéel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>/TotalDerivationOperator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TotalDerivationOperators</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>/TotalDerivationOperator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TotalDerivationOperator</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>

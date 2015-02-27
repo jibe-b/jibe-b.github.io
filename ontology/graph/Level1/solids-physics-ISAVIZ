@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<isv:project xmlns:isv="http://www.w3.org/2001/10/IsaViz" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <isv:baseURI value="http://jibe-b.github.io/resource/"/>
+    <isv:nsBindings>
+        <isv:nsBinding dispPrefix="true" prefix="mo" uri="http://jibe-b.github.io/ontology/mo/"/>
+        <isv:nsBinding dispPrefix="true" prefix="pso" uri="http://jibe-b.github.io/ontology/pso/"/>
+        <isv:nsBinding dispPrefix="true" prefix="sci" uri="http://jibe-b.github.io/ontology/sci/"/>
+        <isv:nsBinding dispPrefix="true" prefix="rdf" uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:nsBinding dispPrefix="true" prefix="rdfs" uri="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:nsBinding dispPrefix="true" prefix="gss" uri="http://www.w3.org/2001/11/IsaViz/graphstylesheets#"/>
+        <isv:nsBinding dispPrefix="true" prefix="xsd" uri="http://www.w3.org/2001/XMLSchema#"/>
+        <isv:nsBinding dispPrefix="true" prefix="sof" uri="sans ontologie fixe"/>
+    </isv:nsBindings>
+    <isv:propertyTypes>
+        <isv:propertyType
+            name="_??   (Membership property auto-numbering: _1, _2, ...)" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="object" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="predicate" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="subject" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="type" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="value" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="comment" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="domain" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="isDefinedBy" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="label" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="range" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="seeAlso" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="subClassOf" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="subPropertyOf" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="a pour sous-modèle" ns="sans ontologie fixe"/>
+        <isv:propertyType name="permet d'interprter le phénomène" ns="sans ontologie fixe"/>
+        <isv:propertyType name="résultats contenus dans le Named Graph" ns="sans ontologie fixe"/>
+        <isv:propertyType name="traite de" ns="sans ontologie fixe"/>
+    </isv:propertyTypes>
+    <isv:colorTable>
+        <isv:color b="115" g="191" r="115"/>
+        <isv:color b="66" g="105" r="66"/>
+        <isv:color b="206" g="89" r="90"/>
+        <isv:color b="206" g="89" r="90"/>
+        <isv:color b="123" g="223" r="255"/>
+        <isv:color b="66" g="117" r="132"/>
+    </isv:colorTable>
+    <isv:fontTable>
+        <isv:font desc="Dialog Plain 10"/>
+    </isv:fontTable>
+    <isv:bookmarks/>
+    <isv:resources>
+        <isv:iresource display="true" fill="0" h="18" id="0" shape="0"
+            stroke="1" w="136" x="-13" y="-162">
+            <isv:URIorID x="-126" y="-164">
+                <isv:uri>r:Modèle_Des_Liaisons_Fortes_Du_Type_LCAO</isv:uri>
+            </isv:URIorID>
+        </isv:iresource>
+        <isv:iresource display="true" fill="0" h="18" id="1" shape="0"
+            stroke="1" w="64" x="-296" y="2">
+            <isv:URIorID x="-349" y="-1">
+                <isv:uri>r:Theorie_Des_Bandes</isv:uri>
+            </isv:URIorID>
+        </isv:iresource>
+        <isv:iresource display="true" fill="0" h="18" id="2" shape="0"
+            stroke="1" w="109" x="-185" y="-251">
+            <isv:URIorID x="-275" y="-253">
+                <isv:uri>r:Modèle_Des_Électrons_Quasi-Libres</isv:uri>
+            </isv:URIorID>
+        </isv:iresource>
+        <isv:iresource display="true" fill="0" h="18" id="3" shape="0"
+            stroke="1" w="104" x="-292" y="-124">
+            <isv:URIorID x="-378" y="-126">
+                <isv:uri>r:NamedGraphTheorie_Des_Bandes</isv:uri>
+            </isv:URIorID>
+        </isv:iresource>
+        <isv:iresource display="true" fill="0" h="18" id="4" shape="0"
+            stroke="1" w="50" x="-438" y="-69">
+            <isv:URIorID x="-480" y="-72">
+                <isv:uri>sci:PhysicsTheory</isv:uri>
+            </isv:URIorID>
+        </isv:iresource>
+        <isv:iresource display="true" fill="0" h="18" id="5" shape="0"
+            stroke="1" w="72" x="27" y="-41">
+            <isv:URIorID x="-33" y="-43">
+                <isv:uri>r:Reflixivite_Des_Metaux</isv:uri>
+            </isv:URIorID>
+        </isv:iresource>
+        <isv:iresource display="true" fill="0" h="18" id="6" shape="0"
+            stroke="1" w="64" x="-52" y="128">
+            <isv:URIorID x="-105" y="126">
+                <isv:uri>r:Theoreme_De_Bloch</isv:uri>
+            </isv:URIorID>
+        </isv:iresource>
+        <isv:iresource display="true" fill="0" h="18" id="7" shape="0"
+            stroke="1" w="33" x="-11" y="12">
+            <isv:URIorID x="-38" y="10">
+                <isv:uri>r:Effet_Hall</isv:uri>
+            </isv:URIorID>
+        </isv:iresource>
+    </isv:resources>
+    <isv:literals>
+        <isv:iliteral display="true" dtURI="string" fill="4" h="18"
+            id="8" shape="1" stroke="5" w="103" x="-399" y="101">
+            <isv:value x="-493" y="99">- thm de Bloch
+- zone de Brillouin
+- structures de bandes
+- approximation des liaisons fortes
+- approximation des électrons quasi-libres</isv:value>
+        </isv:iliteral>
+    </isv:literals>
+    <isv:properties>
+        <isv:iproperty display="true" ob="6" sb="1" stroke="2">
+            <isv:uri x="-137" y="65">
+                <isv:namespace>sans ontologie fixe</isv:namespace>
+                <isv:localname>traite de</isv:localname>
+            </isv:uri>
+            <isv:path d="M-265 -18L-83 -112"/>
+            <isv:head or="-1.094049" w="5" x="-83" y="112"/>
+        </isv:iproperty>
+        <isv:iproperty display="true" ob="3" sb="1" stroke="2">
+            <isv:uri x="-257" y="-61">
+                <isv:namespace>sans ontologie fixe</isv:namespace>
+                <isv:localname>résultats contenus dans le Named Graph</isv:localname>
+            </isv:uri>
+            <isv:path d="M-295 16L-292 106"/>
+            <isv:head or="-3.1082716" w="5" x="-292" y="-106"/>
+        </isv:iproperty>
+        <isv:iproperty display="true" ob="8" sb="1" stroke="2">
+            <isv:uri x="-347" y="51">
+                <isv:namespace>http://www.w3.org/2000/01/rdf-schema#</isv:namespace>
+                <isv:localname>comment</isv:localname>
+            </isv:uri>
+            <isv:path d="M-314 -19L-380 -83"/>
+            <isv:head or="0.80078155" w="5" x="-380" y="83"/>
+        </isv:iproperty>
+        <isv:iproperty display="true" ob="4" sb="1" stroke="2">
+            <isv:uri x="-368" y="-34">
+                <isv:namespace>http://www.w3.org/2000/01/rdf-schema#</isv:namespace>
+                <isv:localname>comment</isv:localname>
+            </isv:uri>
+            <isv:path d="M-328 14L-408 54"/>
+            <isv:head or="2.0344439" w="5" x="-408" y="-54"/>
+        </isv:iproperty>
+        <isv:iproperty display="true" ob="0" sb="1" stroke="2">
+            <isv:uri x="-156" y="-79">
+                <isv:namespace>sans ontologie fixe</isv:namespace>
+                <isv:localname>a pour sous-modèle</isv:localname>
+            </isv:uri>
+            <isv:path d="M-268 14L-44 144"/>
+            <isv:head or="-2.0966473" w="5" x="-44" y="-144"/>
+        </isv:iproperty>
+        <isv:iproperty display="true" ob="2" sb="1" stroke="2">
+            <isv:uri x="-284" y="-184">
+                <isv:namespace>sans ontologie fixe</isv:namespace>
+                <isv:localname>a pour sous-modèle</isv:localname>
+            </isv:uri>
+            <isv:path d="M-288 16L-193 233"/>
+            <isv:head or="-2.7289405" w="5" x="-193" y="-233"/>
+        </isv:iproperty>
+        <isv:iproperty display="true" ob="7" sb="1" stroke="2">
+            <isv:uri x="-219" y="2">
+                <isv:namespace>sans ontologie fixe</isv:namespace>
+                <isv:localname>permet d'interprter le phénomène</isv:localname>
+            </isv:uri>
+            <isv:path d="M-232 -4L-44 -11"/>
+            <isv:head or="-1.5335795" w="5" x="-44" y="11"/>
+        </isv:iproperty>
+        <isv:iproperty display="true" ob="5" sb="1" stroke="2">
+            <isv:uri x="-137" y="-19">
+                <isv:namespace>sans ontologie fixe</isv:namespace>
+                <isv:localname>permet d'interprter le phénomène</isv:localname>
+            </isv:uri>
+            <isv:path d="M-238 6L-37 33"/>
+            <isv:head or="-1.7043253" w="5" x="-37" y="-33"/>
+        </isv:iproperty>
+    </isv:properties>
+</isv:project>

@@ -1,0 +1,211 @@
+@prefix : <http://jibe-b.github.io/ontology/minimalist/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://jibe-b.github.io/ontology/minimalist/> .
+
+<http://jibe-b.github.io/ontology/minimalist/> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://jibe-b.github.io/ontology/minimalist/hasRelation
+
+:hasRelation rdf:type owl:AsymmetricProperty ,
+                      owl:IrreflexiveProperty ,
+                      owl:ObjectProperty ;
+             
+             rdfs:domain :Entity ;
+             
+             rdfs:range :Relation .
+
+
+
+###  http://jibe-b.github.io/ontology/minimalist/hasRelation1
+
+:hasRelation1 rdf:type owl:AsymmetricProperty ,
+                       owl:IrreflexiveProperty ,
+                       owl:ObjectProperty ;
+              
+              rdfs:domain :Entity ;
+              
+              rdfs:range :Entity ;
+              
+              rdfs:subPropertyOf :hasRelation .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://jibe-b.github.io/ontology/minimalist/hasCaracter
+
+:hasCaracter rdf:type owl:DatatypeProperty ;
+             
+             rdfs:domain :Entity ;
+             
+             rdfs:range xsd:boolean .
+
+
+
+###  http://jibe-b.github.io/ontology/minimalist/hasCaracter1
+
+:hasCaracter1 rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              
+              rdfs:domain :Entity ;
+              
+              rdfs:subPropertyOf :hasCaracter ;
+              
+              rdfs:range xsd:boolean .
+
+
+
+###  http://jibe-b.github.io/ontology/minimalist/hasQuantity
+
+:hasQuantity rdf:type owl:DatatypeProperty ;
+             
+             rdfs:domain :Entity ;
+             
+             rdfs:range xsd:float .
+
+
+
+###  http://jibe-b.github.io/ontology/minimalist/hasQuantity1
+
+:hasQuantity1 rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              
+              rdfs:domain :Entity ;
+              
+              rdfs:subPropertyOf :hasQuantity ;
+              
+              rdfs:range xsd:float .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://jibe-b.github.io/ontology/minimalist/Caracter
+
+:Caracter rdf:type owl:Class ;
+          
+          rdfs:subClassOf :Property .
+
+
+
+###  http://jibe-b.github.io/ontology/minimalist/Caracter1
+
+:Caracter1 rdf:type owl:Class ;
+           
+           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasCaracter1 ;
+                                 owl:hasValue "true"^^xsd:boolean
+                               ] ;
+           
+           rdfs:subClassOf :Caracter .
+
+
+
+###  http://jibe-b.github.io/ontology/minimalist/Entity
+
+:Entity rdf:type owl:Class .
+
+
+
+###  http://jibe-b.github.io/ontology/minimalist/Entity1
+
+:Entity1 rdf:type owl:Class ;
+         
+         owl:equivalentClass [ rdf:type owl:Class ;
+                               owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :hasRelation1 ;
+                                                      owl:onClass :Entity1 ;
+                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :hasCaracter1 ;
+                                                      owl:hasValue "true"^^xsd:boolean
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :hasQuantity1 ;
+                                                      owl:hasValue "true"^^xsd:boolean
+                                                    ]
+                                                  )
+                             ] ;
+         
+         rdfs:subClassOf :Entity .
+
+
+
+###  http://jibe-b.github.io/ontology/minimalist/Property
+
+:Property rdf:type owl:Class .
+
+
+
+###  http://jibe-b.github.io/ontology/minimalist/Quantity
+
+:Quantity rdf:type owl:Class ;
+          
+          rdfs:subClassOf :Property .
+
+
+
+###  http://jibe-b.github.io/ontology/minimalist/Quantity1
+
+:Quantity1 rdf:type owl:Class ;
+           
+           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasQuantity1 ;
+                                 owl:someValuesFrom xsd:float
+                               ] ;
+           
+           rdfs:subClassOf :Quantity .
+
+
+
+###  http://jibe-b.github.io/ontology/minimalist/Relation
+
+:Relation rdf:type owl:Class ;
+          
+          rdfs:subClassOf :Property .
+
+
+
+###  http://jibe-b.github.io/ontology/minimalist/Relation1
+
+:Relation1 rdf:type owl:Class ;
+           
+           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasRelation1 ;
+                                 owl:hasSelf "true"^^xsd:boolean
+                               ] ;
+           
+           rdfs:subClassOf :Relation .
+
+
+
+
+###  Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net
+

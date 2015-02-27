@@ -1,0 +1,568 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://vue.tufts.edu/ontology/vue.rdfs#" > 
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e287f00010113eb5aab2ddedb4d">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>author</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2c7f00010113eb5aabf2c1512e">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>super-symétrie</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e237f00010113eb5aab0d50aa59">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>physique des plasmas</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e337f00010113eb5aab5490c268">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>instance</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e337f00010113eb5aab1fee9670">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>class</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e347f00010113eb5aabf960a990">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>découvreur</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e207f00010113eb5aab17920464">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>Equation de Schroedinger</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2c7f00010113eb5aabce8d9e16">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>violation de symétrie</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2a7f00010113eb5aab4b9c4dcd">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>opérateur conjugaison de charge</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2f7f00010113eb5aabd8f3232b">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>atom</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e317f00010113eb5aabbb3445ce">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>état physique</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aabc532188d">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>étoile</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e257f00010113eb5aab52d45184">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>interaction fondamentale</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e217f00010113eb5aabf6bf8b25">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>Pauli</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e217f00010113eb5aab31d595e5">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>author</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e357f00010113eb5aab1dfa02e3">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>isolant</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2e7f00010113eb5aab0a079e2f">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>distribution de Fermi-Dirac</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e317f00010113eb5aab0549887b">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>aggrégat</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e307f00010113eb5aabf16efba2">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>muon électronique</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e317f00010113eb5aabe508face">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>molécule hétéro-nucléaire</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e357f00010113eb5aabd02581a5">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>semi-conducteur</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e287f00010113eb5aab1b35b95f">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>ITER</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e1e7f00010113eb5aab7695d4f4">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>valeur</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e207f00010113eb5aab1ebfb528">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>Equation de Dirac</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e217f00010113eb5aab343c48fd">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>Dirac</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e297f00010113eb5aab611becee">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>matière </j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e357f00010113eb5aab532fff7d">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>bande de valence</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2b7f00010113eb5aab8d97c1e6">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>nombre baryonique</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e297f00010113eb5aab10139132">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>quark</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e257f00010113eb5aab0d61cb54">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>interaction forte</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e227f00010113eb5aab4763b29a">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>uthor</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2b7f00010113eb5aab15b7c3a5">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>hadron</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e307f00010113eb5aabb8d1df67">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>molécule</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e267f00010113eb5aab64636495">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>gravitation</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2a7f00010113eb5aabe0e22ede">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>a</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e267f00010113eb5aabf6f9beb7">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>interaction faible</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e327f00010113eb5aab18aa7ac5">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>état quantique</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e1d7f00010113eb5aab3a2cf746">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>incertitude</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2e7f00010113eb5aabfa825505">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>distribution de Bose-Einstein</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e1b7f00010113eb5aaba2c28077">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>Soleil</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e297f00010113eb5aab53cdb380">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>énergie noire</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2e7f00010113eb5aabd02ebae4">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>neutron</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e287f00010113eb5aabd3d45bc8">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>a</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2a7f00010113eb5aab485a4b73">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>a</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2d7f00010113eb5aabd18c912d">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>fermion</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e197f00010113eb5aabc9acd5bc">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>relativité générale</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e297f00010113eb5aab0b4a9e59">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>anti-matière</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2b7f00010113eb5aab5021d394">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>B</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e277f00010113eb5aab35fc3238">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>Lois de Maxwell</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e1c7f00010113eb5aabed33106a">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>matrice de Lorentz</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e1e7f00010113eb5aabf38e359b">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>instrument de mesure</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e1f7f00010113eb5aabc8ea7ba6">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>échelle</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e1c7f00010113eb5aab3c9a49f8">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>gaussienne</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e307f00010113eb5aabda1ae580">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>électron</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e237f00010113eb5aab48538281">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>particle in cell</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e247f00010113eb5aab9e0d2cf8">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>dimension</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e197f00010113eb5aabdd580538">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>satellite Planck</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e257f00010113eb5aabd9b12e49">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>possède</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2a7f00010113eb5aab8d9d7f77">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>théorème</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2d7f00010113eb5aab886f153f">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>proton</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e237f00010113eb5aaba54cff58">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>pulsation plasma</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e287f00010113eb5aab7729392a">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>théorie</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2d7f00010113eb5aab4bec6c12">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>gluon</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2d7f00010113eb5aab99ea3bf6">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>boson</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e257f00010113eb5aab25196b8c">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>associé à</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e317f00010113eb5aab2e6a8c66">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>molécule homo-nucléaire</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e227f00010113eb5aab22a77a64">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>a</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e327f00010113eb5aab0a8b4243">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>liquide</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e207f00010113eb5aab65d0db97">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>ensemble canonique</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2b7f00010113eb5aab6d307dd9">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>méson</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e287f00010113eb5aabd83c7b7f">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>particule élémentaire</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e307f00010113eb5aabfcc1ccd1">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>muon</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2c7f00010113eb5aab05f07663">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>nombre quantique</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e237f00010113eb5aabbb827beb">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>simulation</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e1e7f00010113eb5aab61c883e9">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>capteur</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e347f00010113eb5aab620a03fb">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>expression : / r^12</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e227f00010113eb5aab54e54be1">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>physique théorique</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2e7f00010113eb5aabf22db2aa">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>fonction</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e297f00010113eb5aab92b58c80">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>matière noire</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2f7f00010113eb5aabd79f0d5d">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>noyau</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2f7f00010113eb5aab43b79583">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>pion</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e357f00010113eb5aab756cdc39">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>bande de conduction</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e347f00010113eb5aab49208a3f">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>niveau de Fermi</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e1a7f00010113eb5aab2d8e3489">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>relativité restreinte</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e337f00010113eb5aabd76b963f">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>à définir:
+    
+    
+      couleur par thématique = ontologie, p.ex. PSO, SCI, instruments, naths</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e1f7f00010113eb5aabc08d4892">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>lois d'échelle</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e327f00010113eb5aab551f266b">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>fluide</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e337f00010113eb5aab9046473f">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>force de Van der Walls</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e1d7f00010113eb5aab6c3a1279">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>variance</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e327f00010113eb5aab4f8f6974">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>solide</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e277f00010113eb5aab533dda80">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>Maxwell</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e257f00010113eb5aab99847000">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>invariant de Lorentz</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e1d7f00010113eb5aab8674a0e6">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>unité</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e327f00010113eb5aabcde4fbdd">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>discret</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e207f00010113eb5aab20da897b">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>ensemble microcanonique</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e247f00010113eb5aab8fc17fde">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>est associé à some</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2a7f00010113eb5aab3ba05780">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>subClassOf</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e307f00010113eb5aabb9e0ea2b">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>lepton</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e197f00010113eb5aabdf598ee5">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>cosmologie</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e347f00010113eb5aab87fe5885">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>del</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e357f00010113eb5aabd31fde20">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>théorie des bandes</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e217f00010113eb5aab7403a84b">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>foaf:Person</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e257f00010113eb5aab584b2288">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>force de frottement</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e277f00010113eb5aab546df937">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>Gauss</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2a7f00010113eb5aab7e082908">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>proposition-Knowledge</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181">
+    <j.0:label>Nouvelle Carte</j.0:label>
+    <j.0:author>jibe</j.0:author>
+    <j.0:id>0</j.0:id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e277f00010113eb5aaba01728f0">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>a</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2c7f00010113eb5aabf00a9b3a">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>symétrie</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e297f00010113eb5aabe7151434">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>anti-quark</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e277f00010113eb5aab3fb89e9e">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>author</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e1c7f00010113eb5aaba5ea4ec6">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>Lorentzienne</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e337f00010113eb5aab459e0414">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>continu</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2a7f00010113eb5aab7a9f6059">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>a</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e1a7f00010113eb5aabbb38821f">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>Big Bang Scenario</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e347f00010113eb5aab51f5cde2">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>van der Walls</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e207f00010113eb5aab5e945a73">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>Principe de Pauli</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e327f00010113eb5aab06150ba0">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>plasma</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e317f00010113eb5aab146c15cc">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>solide</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e217f00010113eb5aabab88fb81">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>a</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e1d7f00010113eb5aab95dd392e">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>écart-type</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e277f00010113eb5aabe1bfe5cd">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>théorème de Gauss pour la gravitation</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e267f00010113eb5aabd0ea3bb3">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>force électromagnétique</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e1c7f00010113eb5aabfdd29e66">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>relavité générale</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e357f00010113eb5aabcfff87a1">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>métal</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2e7f00010113eb5aab6e4861e8">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>distribution</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e237f00010113eb5aab1dbdea8a">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>synchrotron</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e347f00010113eb5aab95669132">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>conducteur</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e297f00010113eb5aab469ca2e8">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>théorème CPT</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e247f00010113eb5aaba7d92786">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>possède</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e287f00010113eb5aab7e4efee2">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>corde</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2f7f00010113eb5aaba027def2">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>nucléon</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e2b7f00010113eb5aab3c9bd846">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>baryon</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e1f7f00010113eb5aabb39734a7">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>fonction de partition</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e1e7f00010113eb5aab6f50b1a4">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>grandeur physique</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e1a7f00010113eb5aabcfe01d5e">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>expansion</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e227f00010113eb5aab6a258b0b">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>physique expérimentale</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e197f00010113eb5aab4eebd395">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>constante d'Einstein</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e327f00010113eb5aab01bacc6f">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>gaz</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e247f00010113eb5aabd1e55c6a">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>possède unique</j.0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vue.tufts.edu/rdf/resource/0d542e267f00010113eb5aabd528dd15">
+    <j.0:child rdf:resource="http://vue.tufts.edu/rdf/resource/0d542e187f00010113eb5aab61681181"/>
+    <j.0:label>théorème de Gauss</j.0:label>
+  </rdf:Description>
+</rdf:RDF>

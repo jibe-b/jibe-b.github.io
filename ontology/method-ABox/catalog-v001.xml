@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/2002/07/owl#" uri="file:/home/www-factory/project/method/method.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1424097418107" name="http://www.semanticweb.org/jibe/ontologies/2015/1/untitled-ontology-127" uri="method-ABox.owl"/>
+    </group>
+</catalog>

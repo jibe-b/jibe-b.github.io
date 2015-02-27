@@ -21,6 +21,7 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="sci-ps" IRI="http://jibe-b.github.io/ontology/sci-ps/"/>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <Literal datatypeIRI="&xsd;string">jibe-b</Literal>
@@ -93,6 +94,9 @@
         <Class IRI="CosmicalObject"/>
     </Declaration>
     <Declaration>
+        <Class IRI="CouplageResonnantATroisOndes"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="DensityQuantity"/>
     </Declaration>
     <Declaration>
@@ -135,6 +139,9 @@
         <Class IRI="FirstDerivativePositionQuantity"/>
     </Declaration>
     <Declaration>
+        <Class IRI="FluidState"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Force"/>
     </Declaration>
     <Declaration>
@@ -151,6 +158,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="GravitationalInteraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GravitationnalMass"/>
     </Declaration>
     <Declaration>
         <Class IRI="Hadron"/>
@@ -183,6 +193,9 @@
         <Class IRI="Impulse"/>
     </Declaration>
     <Declaration>
+        <Class IRI="InertialMass"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="InternalEnergy"/>
     </Declaration>
     <Declaration>
@@ -202,6 +215,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="LeptonicNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LinearPhenomenon"/>
     </Declaration>
     <Declaration>
         <Class IRI="LinearityProperty"/>
@@ -255,6 +271,21 @@
         <Class IRI="Neutron"/>
     </Declaration>
     <Declaration>
+        <Class IRI="NonCollisionnalChockWave"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NonFundamentalForce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NonLinearPhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NonLinearWave"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NonLinearWaveCoupling"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Nucleus"/>
     </Declaration>
     <Declaration>
@@ -264,13 +295,16 @@
         <Class IRI="ObjectProperty"/>
     </Declaration>
     <Declaration>
+        <Class IRI="PhaseTransition"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Photon"/>
     </Declaration>
     <Declaration>
         <Class IRI="PhysicalState"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PlasmasState"/>
+        <Class IRI="PlasmaState"/>
     </Declaration>
     <Declaration>
         <Class IRI="Position"/>
@@ -285,7 +319,13 @@
         <Class IRI="Proton"/>
     </Declaration>
     <Declaration>
+        <Class IRI="QuanticNumberSet"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Quark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="RaidissementDuFrontDOnde"/>
     </Declaration>
     <Declaration>
         <Class IRI="RelativisticPhenomenon"/>
@@ -300,7 +340,13 @@
         <Class IRI="Solid"/>
     </Declaration>
     <Declaration>
+        <Class IRI="SolidLiquidPhaseTransition"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="SolidState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Soliton"/>
     </Declaration>
     <Declaration>
         <Class IRI="Speed"/>
@@ -330,6 +376,9 @@
         <Class IRI="TauicNeutrino"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Tension"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Time"/>
     </Declaration>
     <Declaration>
@@ -354,16 +403,25 @@
         <Class IRI="Wave"/>
     </Declaration>
     <Declaration>
+        <Class IRI="WaveBreakdown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WavePhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WavePropagation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="WeakInteraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Wheight"/>
     </Declaration>
     <Declaration>
         <Class IRI="orLinearPhenomenon"/>
     </Declaration>
     <Declaration>
         <Class IRI="orWavePhenomenon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="test"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/ClassicalPhenomenon"/>
@@ -381,16 +439,16 @@
         <Class IRI="http://jibe-bgithub.io/ontology/pso/NonElementaryObject"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/PhenomenonProperty"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Property"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalPhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalProperty"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticNumber"/>
@@ -420,6 +478,12 @@
         <ObjectProperty IRI="hasDimension"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasFinalState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasInitialState"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasPart"/>
     </Declaration>
     <Declaration>
@@ -435,6 +499,9 @@
         <ObjectProperty IRI="hasTheoryElementProperty"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="inFreedomState"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="inPhysicalState"/>
     </Declaration>
     <Declaration>
@@ -448,6 +515,18 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="phaseTransitionObjectProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="topPhysicalObjectPropertyObjectProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="topPhysicalPhenomenonObjectProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="topPhysicalPropertyObjectProperty"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/associatedTo"/>
@@ -489,10 +568,19 @@
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/quantityEvolutionGovernedBy"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="PhysicalObjectCaracter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="glassPhase"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="hasBaryonicNumber"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="hasCharge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasDependanceCaracter"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="hasElectricalCharge"/>
@@ -501,16 +589,46 @@
         <DataProperty IRI="hasElectronicLeptonicNumber"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="hasElementaryCaracter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasFreedomStateCaracter"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="hasLeptonicNumber"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="hasMass"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="hasMatterCaracter"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="hasMuonicLeptonicNumber"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="hasQuantityValue"/>
+        <DataProperty IRI="hasObjectQuantityValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasPhysicalPhenomenonCaracter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasPhysicalPhenomenonQuantityValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasPhysicalQuantityValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasPhysicalStateCaracter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasQuanticNumberValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasQuantityCaracter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasSavor"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="hasSavorCharge"/>
@@ -525,10 +643,67 @@
         <DataProperty IRI="hasTrueFalseValue"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="isLinear"/>
+        <DataProperty IRI="inFluidState"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Boson1"/>
+        <DataProperty IRI="inGazState"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="inLiquidState"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="inPlasmaState"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="inSolidState"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="inVitreousState"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isClassical_Phenomenon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isExtensive"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isFree"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isIndependant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isIntensive"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isLinear_Object"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isLinear_Phenomenon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="topPhysicalObjectDataProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="topPhysicalPhenomenonDataProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="topPropertyDataProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="topQuantityObjectProperty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ObjPro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Quantity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="RaidissementDuFrontDOnde"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://jibe-b.github.io/ontology/sci/AxiomType"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
@@ -565,6 +740,20 @@
         </ObjectUnionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://jibe-b.github.io/ontology/sci/AxiomType"/>
+            <IRI>http://jibe-b.github.io/ontology/sci/DefinitionAxiom</IRI>
+        </Annotation>
+        <Class IRI="AntiMatterParticle"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://jibe-bgithub.io/ontology/pso/ElementaryParticle"/>
+            <DataHasValue>
+                <DataProperty IRI="hasMatterCaracter"/>
+                <Literal datatypeIRI="&xsd;boolean">false</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="Atom"/>
         <ObjectIntersectionOf>
             <Class IRI="AtomicOrMolecularEntity"/>
@@ -598,15 +787,17 @@
         </DataExactCardinality>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://jibe-b.github.io/ontology/sci/AxiomType"/>
+            <IRI>http://jibe-b.github.io/ontology/sci/DefinitionAxiom</IRI>
+        </Annotation>
         <Class IRI="ChargedLepton"/>
         <ObjectIntersectionOf>
             <Class IRI="Lepton"/>
-            <DataExactCardinality cardinality="1">
+            <DataHasValue>
                 <DataProperty IRI="hasElectricalCharge"/>
-                <DataOneOf>
-                    <Literal datatypeIRI="&xsd;decimal">-1.6</Literal>
-                </DataOneOf>
-            </DataExactCardinality>
+                <Literal datatypeIRI="&xsd;decimal">-1.6e-19</Literal>
+            </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -630,51 +821,76 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://jibe-b.github.io/ontology/sci/AxiomType"/>
+            <IRI>http://jibe-b.github.io/ontology/sci/DefinitionAxiom</IRI>
+        </Annotation>
         <Class IRI="Electron"/>
-        <ObjectIntersectionOf>
-            <Class IRI="ChargedLepton"/>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="hasElectronicLeptonicNumber"/>
-                <DataOneOf>
-                    <Literal datatypeIRI="&xsd;integer">1</Literal>
-                </DataOneOf>
-            </DataExactCardinality>
-        </ObjectIntersectionOf>
+        <DataHasValue>
+            <DataProperty IRI="hasElectronicLeptonicNumber"/>
+            <Literal datatypeIRI="&xsd;integer">1</Literal>
+        </DataHasValue>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://jibe-b.github.io/ontology/sci/AxiomType"/>
+            <IRI>http://jibe-b.github.io/ontology/sci/DefinitionAxiom</IRI>
+        </Annotation>
         <Class IRI="ElectronicNeutrino"/>
         <ObjectIntersectionOf>
             <Class IRI="NeutralLepton"/>
-            <DataAllValuesFrom>
+            <DataHasValue>
                 <DataProperty IRI="hasElectronicLeptonicNumber"/>
-                <DataOneOf>
-                    <Literal datatypeIRI="&xsd;integer">1</Literal>
-                </DataOneOf>
-            </DataAllValuesFrom>
+                <Literal datatypeIRI="&xsd;integer">1</Literal>
+            </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://jibe-b.github.io/ontology/sci/AxiomType"/>
+            <IRI>http://jibe-b.github.io/ontology/sci/DefinitionAxiom</IRI>
+        </Annotation>
         <Class IRI="ElementaryBoson"/>
         <ObjectIntersectionOf>
             <Class IRI="MatterParticle"/>
-            <DataExactCardinality cardinality="1">
+            <DataHasValue>
                 <DataProperty IRI="hasSpin"/>
-                <DataOneOf>
-                    <Literal datatypeIRI="&xsd;integer">1</Literal>
-                </DataOneOf>
-            </DataExactCardinality>
+                <Literal datatypeIRI="&xsd;integer">1</Literal>
+            </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://jibe-b.github.io/ontology/sci/AxiomType"/>
+            <IRI>http://jibe-b.github.io/ontology/sci/DefinitionAxiom</IRI>
+        </Annotation>
         <Class IRI="ElementaryFermion"/>
         <ObjectIntersectionOf>
             <Class IRI="MatterParticle"/>
-            <DataExactCardinality cardinality="1">
+            <DataHasValue>
                 <DataProperty IRI="hasSpin"/>
-                <DataOneOf>
-                    <Literal datatypeIRI="&xsd;decimal">0.5</Literal>
-                </DataOneOf>
-            </DataExactCardinality>
+                <Literal datatypeIRI="&xsd;decimal">0.5</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="GazeousState"/>
+        <ObjectIntersectionOf>
+            <Class IRI="FluidState"/>
+            <DataHasValue>
+                <DataProperty IRI="inGazState"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="GlassPhase"/>
+        <ObjectIntersectionOf>
+            <Class IRI="PhysicalState"/>
+            <DataHasValue>
+                <DataProperty IRI="glassPhase"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -780,22 +996,41 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://jibe-b.github.io/ontology/sci/AxiomType"/>
+            <IRI>http://jibe-b.github.io/ontology/sci/DefinitionAxiom</IRI>
+        </Annotation>
         <Class IRI="Lepton"/>
         <ObjectIntersectionOf>
             <Class IRI="ElementaryFermion"/>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="hasElectricalCharge"/>
-                <DataOneOf>
-                    <Literal datatypeIRI="&xsd;decimal">-1.6</Literal>
-                    <Literal datatypeIRI="&xsd;integer">0</Literal>
-                </DataOneOf>
-            </DataExactCardinality>
-            <DataExactCardinality cardinality="1">
+            <DataHasValue>
                 <DataProperty IRI="hasLeptonicNumber"/>
-                <DataOneOf>
-                    <Literal datatypeIRI="&xsd;integer">1</Literal>
-                </DataOneOf>
-            </DataExactCardinality>
+                <Literal datatypeIRI="&xsd;integer">1</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="LiquidState"/>
+        <ObjectIntersectionOf>
+            <Class IRI="FluidState"/>
+            <DataHasValue>
+                <DataProperty IRI="inLiquidState"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+            <IRI>http://jibe-b.github.io/ontology/sci/DefinitionAxiom</IRI>
+        </Annotation>
+        <Class IRI="MatterParticle"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://jibe-bgithub.io/ontology/pso/ElementaryParticle"/>
+            <DataHasValue>
+                <DataProperty IRI="hasMatterCaracter"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -828,39 +1063,45 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://jibe-b.github.io/ontology/sci/AxiomType"/>
+            <IRI>http://jibe-b.github.io/ontology/sci/DefinitionAxiom</IRI>
+        </Annotation>
         <Class IRI="Muon"/>
         <ObjectIntersectionOf>
             <Class IRI="ChargedLepton"/>
-            <DataExactCardinality cardinality="1">
+            <DataHasValue>
                 <DataProperty IRI="hasMuonicLeptonicNumber"/>
-                <DataOneOf>
-                    <Literal datatypeIRI="&xsd;integer">1</Literal>
-                </DataOneOf>
-            </DataExactCardinality>
+                <Literal datatypeIRI="&xsd;integer">1</Literal>
+            </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://jibe-b.github.io/ontology/sci/AxiomType"/>
+            <IRI>http://jibe-b.github.io/ontology/sci/DefinitionAxiom</IRI>
+        </Annotation>
         <Class IRI="MuonicNeutrino"/>
         <ObjectIntersectionOf>
             <Class IRI="NeutralLepton"/>
-            <DataAllValuesFrom>
+            <DataHasValue>
                 <DataProperty IRI="hasMuonicLeptonicNumber"/>
-                <DataOneOf>
-                    <Literal datatypeIRI="&xsd;integer">1</Literal>
-                </DataOneOf>
-            </DataAllValuesFrom>
+                <Literal datatypeIRI="&xsd;integer">1</Literal>
+            </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://jibe-b.github.io/ontology/sci/AxiomType"/>
+            <IRI>http://jibe-b.github.io/ontology/sci/DefinitionAxiom</IRI>
+        </Annotation>
         <Class IRI="NeutralLepton"/>
         <ObjectIntersectionOf>
             <Class IRI="Lepton"/>
-            <DataAllValuesFrom>
+            <DataHasValue>
                 <DataProperty IRI="hasElectricalCharge"/>
-                <DataOneOf>
-                    <Literal datatypeIRI="&xsd;integer">0</Literal>
-                </DataOneOf>
-            </DataAllValuesFrom>
+                <Literal datatypeIRI="&xsd;integer">0</Literal>
+            </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -878,39 +1119,61 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="PlasmaState"/>
+        <ObjectIntersectionOf>
+            <Class IRI="PhysicalState"/>
+            <DataHasValue>
+                <DataProperty IRI="inPlasmaState"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="Quark"/>
         <ObjectIntersectionOf>
             <Class IRI="ElementaryFermion"/>
-            <DataExactCardinality cardinality="1">
+            <DataHasValue>
                 <DataProperty IRI="hasElectricalCharge"/>
-                <DataOneOf>
-                    <Literal datatypeIRI="&rdf;PlainLiteral">-1/3</Literal>
-                </DataOneOf>
-            </DataExactCardinality>
+                <Literal datatypeIRI="http://www.w3.org/2002/07/owl#rational">-1/3</Literal>
+            </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="SolidState"/>
+        <ObjectIntersectionOf>
+            <Class IRI="PhysicalState"/>
+            <DataHasValue>
+                <DataProperty IRI="inSolidState"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://jibe-b.github.io/ontology/sci/AxiomType"/>
+            <IRI>http://jibe-b.github.io/ontology/sci/DefinitionAxiom</IRI>
+        </Annotation>
         <Class IRI="Tau"/>
         <ObjectIntersectionOf>
             <Class IRI="ChargedLepton"/>
-            <DataExactCardinality cardinality="1">
+            <DataHasValue>
                 <DataProperty IRI="hasTauicLeptonicNumber"/>
-                <DataOneOf>
-                    <Literal datatypeIRI="&xsd;integer">1</Literal>
-                </DataOneOf>
-            </DataExactCardinality>
+                <Literal datatypeIRI="&xsd;integer">1</Literal>
+            </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://jibe-b.github.io/ontology/sci/AxiomType"/>
+            <IRI>http://jibe-b.github.io/ontology/sci/DefinitionAxiom</IRI>
+        </Annotation>
         <Class IRI="TauicNeutrino"/>
         <ObjectIntersectionOf>
             <Class IRI="NeutralLepton"/>
-            <DataAllValuesFrom>
+            <DataHasValue>
                 <DataProperty IRI="hasTauicLeptonicNumber"/>
-                <DataOneOf>
-                    <Literal datatypeIRI="&xsd;integer">1</Literal>
-                </DataOneOf>
-            </DataAllValuesFrom>
+                <Literal datatypeIRI="&xsd;integer">1</Literal>
+            </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -934,21 +1197,35 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="test"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/ElementaryParticle"/>
         <ObjectIntersectionOf>
-            <ObjectExactCardinality cardinality="1">
-                <ObjectProperty IRI="hasPart"/>
-                <Class IRI="Electron"/>
-            </ObjectExactCardinality>
-            <ObjectExactCardinality cardinality="1">
-                <ObjectProperty IRI="hasPart"/>
-                <Class IRI="HydrogenNucleus"/>
-            </ObjectExactCardinality>
+            <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticObject"/>
+            <DataHasValue>
+                <DataProperty IRI="hasElementaryCaracter"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/NonElementaryObject"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticObject"/>
+            <DataHasValue>
+                <DataProperty IRI="hasElementaryCaracter"/>
+                <Literal datatypeIRI="&xsd;boolean">false</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticNumber"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="hasSpin"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="AbstractObject"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Acceleration"/>
@@ -961,10 +1238,6 @@
     <SubClassOf>
         <Class IRI="Agregate"/>
         <Class IRI="KnownNumberOfElementObject"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="AntiMatterParticle"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/ElementaryParticle"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Atom"/>
@@ -996,7 +1269,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ClassicalObject"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ColorCharge"/>
@@ -1005,6 +1278,10 @@
     <SubClassOf>
         <Class IRI="CosmicalObject"/>
         <Class IRI="ClassicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CouplageResonnantATroisOndes"/>
+        <Class IRI="NonLinearWaveCoupling"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="DensityQuantity"/>
@@ -1031,16 +1308,16 @@
         <Class IRI="FundamentalInteraction"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Electron"/>
+        <Class IRI="ChargedLepton"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="ElectronicLeptonicNumber"/>
         <Class IRI="LeptonicNumber"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ElectronicNeutrino"/>
         <Class IRI="NeutralLepton"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="ElementaryBoson"/>
-        <Class IRI="MatterParticle"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Energy"/>
@@ -1051,6 +1328,10 @@
         <Class IRI="PositionQuantity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="FluidState"/>
+        <Class IRI="PhysicalState"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Force"/>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/FieldObject"/>
     </SubClassOf>
@@ -1059,20 +1340,16 @@
         <Class IRI="Force"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="GazeousState"/>
-        <Class IRI="PhysicalState"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="GlassPhase"/>
-        <Class IRI="PhysicalState"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Gluon"/>
         <Class IRI="ElementaryBoson"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GravitationalInteraction"/>
         <Class IRI="FundamentalInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GravitationnalMass"/>
+        <Class IRI="Mass"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Hadron"/>
@@ -1085,6 +1362,10 @@
     <SubClassOf>
         <Class IRI="Impulse"/>
         <Class IRI="FirstDerivativePositionQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InertialMass"/>
+        <Class IRI="Mass"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="InternalEnergy"/>
@@ -1115,12 +1396,12 @@
         <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticNumber"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="LinearityProperty"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhenomenonProperty"/>
+        <Class IRI="LinearPhenomenon"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/ClassicalPhenomenon"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="LiquidState"/>
-        <Class IRI="PhysicalState"/>
+        <Class IRI="LinearityProperty"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhenomenonProperty"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="MacroscopicalObject"/>
@@ -1130,7 +1411,7 @@
         <Class IRI="MacroscopicalObject"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasObjectProperty"/>
-            <Class IRI="http://jibe-bgithub.io/ontology/pso/Property"/>
+            <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalProperty"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1140,10 +1421,6 @@
     <SubClassOf>
         <Class IRI="MassDensity"/>
         <Class IRI="DensityQuantity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="MatterParticle"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/ElementaryParticle"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Meson"/>
@@ -1186,12 +1463,36 @@
         <Class IRI="Baryon"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="NonCollisionnalChockWave"/>
+        <Class IRI="NonLinearWave"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NonFundamentalForce"/>
+        <Class IRI="Force"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NonLinearPhenomenon"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/ClassicalPhenomenon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NonLinearWave"/>
+        <Class IRI="Wave"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NonLinearWaveCoupling"/>
+        <Class IRI="NonLinearPhenomenon"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="ObjectPhysicalQuantity"/>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/Quantity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ObjectProperty"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Property"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PhaseTransition"/>
+        <Class IRI="LinearPhenomenon"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Photon"/>
@@ -1200,10 +1501,6 @@
     <SubClassOf>
         <Class IRI="PhysicalState"/>
         <Class IRI="State"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="PlasmasState"/>
-        <Class IRI="PhysicalState"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Position"/>
@@ -1222,8 +1519,16 @@
         <Class IRI="Baryon"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="QuanticNumberSet"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticNumber"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="RaidissementDuFrontDOnde"/>
+        <Class IRI="WavePhenomenon"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="RelativisticPhenomenon"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalPhenomenon"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Reversibility"/>
@@ -1238,8 +1543,12 @@
         <Class IRI="MacroscopicalObject"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="SolidState"/>
-        <Class IRI="PhysicalState"/>
+        <Class IRI="SolidLiquidPhaseTransition"/>
+        <Class IRI="PhaseTransition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Soliton"/>
+        <Class IRI="NonLinearWave"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Speed"/>
@@ -1274,6 +1583,10 @@
         <Class IRI="NeutralLepton"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Tension"/>
+        <Class IRI="NonFundamentalForce"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Time"/>
         <Class IRI="ObjectPhysicalQuantity"/>
     </SubClassOf>
@@ -1302,8 +1615,24 @@
         <Class IRI="http://jibe-bgithub.io/ontology/pso/FieldObject"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="WaveBreakdown"/>
+        <Class IRI="WavePhenomenon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WavePhenomenon"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/ClassicalPhenomenon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WavePropagation"/>
+        <Class IRI="WavePhenomenon"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="WeakInteraction"/>
         <Class IRI="FundamentalInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Wheight"/>
+        <Class IRI="NonFundamentalForce"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="orLinearPhenomenon"/>
@@ -1315,49 +1644,41 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/ClassicalPhenomenon"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/ElementaryParticle"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticObject"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalPhenomenon"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/FieldObject"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/MacroscopicalObject"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Property"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalProperty"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/NonElementaryObject"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticObject"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhenomenonProperty"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalProperty"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasObjectProperty"/>
             <Class IRI="ObjectProperty"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasQuantity"/>
             <Class IRI="http://jibe-bgithub.io/ontology/pso/Quantity"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalPhenomenon"/>
         <Class abbreviatedIRI="owl:Thing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhenomenonProperty"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Property"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticNumber"/>
@@ -1365,27 +1686,73 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticObject"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/QuanticPhenomenon"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalPhenomenon"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://jibe-bgithub.io/ontology/pso/Quantity"/>
         <Class IRI="ObjectProperty"/>
     </SubClassOf>
     <ClassAssertion>
-        <Class abbreviatedIRI="owl:Thing"/>
-        <NamedIndividual IRI="Boson1"/>
+        <Class IRI="ObjectProperty"/>
+        <NamedIndividual IRI="ObjPro"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Quantity"/>
+        <NamedIndividual IRI="Quantity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="RaidissementDuFrontDOnde"/>
+        <NamedIndividual IRI="RaidissementDuFrontDOnde"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="isClassical_Phenomenon"/>
+        <NamedIndividual IRI="RaidissementDuFrontDOnde"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="isLinear_Phenomenon"/>
+        <NamedIndividual IRI="RaidissementDuFrontDOnde"/>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFinalState"/>
+        <ObjectProperty IRI="phaseTransitionObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasInitialState"/>
+        <ObjectProperty IRI="phaseTransitionObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasPart"/>
+        <ObjectProperty IRI="topPhysicalObjectPropertyObjectProperty"/>
+    </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasQuanticNumber"/>
         <ObjectProperty IRI="hasPhysicalQuantity"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="inFreedomState"/>
+        <ObjectProperty IRI="inState"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="inPhysicalState"/>
         <ObjectProperty IRI="inState"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="inState"/>
+        <ObjectProperty IRI="topPhysicalObjectPropertyObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isPartOf"/>
+        <ObjectProperty IRI="topPhysicalObjectPropertyObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="phaseTransitionObjectProperty"/>
+        <ObjectProperty IRI="topPhysicalPhenomenonObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/associatedTo"/>
@@ -1451,15 +1818,15 @@
     </AsymmetricObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasComponent"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="inPhysicalState"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="inState"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="intensiveExtensiveProperty"/>
@@ -1471,19 +1838,19 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/describedBy"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalPhenomenon"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasObjectProperty"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasPhenomenonProperty"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalPhenomenon"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasQuantity"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasQuantityProperty"/>
@@ -1491,11 +1858,11 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/involve"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalPhenomenon"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/involvedIn"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/quantityEvolutionGovernedBy"/>
@@ -1503,7 +1870,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasComponent"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="inPhysicalState"/>
@@ -1515,11 +1882,11 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/associatedTo"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/characterizeObject"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/governEvolutionOfQuantity"/>
@@ -1527,7 +1894,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/governPhenomenonStateOf"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalPhenomenon"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/hasObjectProperty"/>
@@ -1543,19 +1910,35 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/involve"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Object"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://jibe-bgithub.io/ontology/pso/involvedIn"/>
-        <Class IRI="http://jibe-bgithub.io/ontology/pso/Phenomenon"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalPhenomenon"/>
     </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="hasFinalState"/>
+        <ObjectProperty IRI="hasInitialState"/>
+    </DisjointObjectProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="PhysicalObjectCaracter"/>
+        <DataProperty IRI="topPhysicalObjectDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="glassPhase"/>
+        <DataProperty IRI="inVitreousState"/>
+    </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="hasBaryonicNumber"/>
-        <DataProperty IRI="hasQuantityValue"/>
+        <DataProperty IRI="hasQuanticNumberValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="hasCharge"/>
-        <DataProperty IRI="hasQuantityValue"/>
+        <DataProperty IRI="hasPhysicalQuantityValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasDependanceCaracter"/>
+        <DataProperty IRI="PhysicalObjectCaracter"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="hasElectricalCharge"/>
@@ -1563,23 +1946,63 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="hasElectronicLeptonicNumber"/>
-        <DataProperty IRI="hasQuantityValue"/>
+        <DataProperty IRI="hasLeptonicNumber"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasElementaryCaracter"/>
+        <DataProperty IRI="PhysicalObjectCaracter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasFreedomStateCaracter"/>
+        <DataProperty IRI="PhysicalObjectCaracter"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="hasLeptonicNumber"/>
-        <DataProperty IRI="hasElectronicLeptonicNumber"/>
+        <DataProperty IRI="hasQuanticNumberValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="hasMass"/>
-        <DataProperty IRI="hasQuantityValue"/>
+        <DataProperty IRI="hasPhysicalQuantityValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasMatterCaracter"/>
+        <DataProperty IRI="PhysicalObjectCaracter"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="hasMuonicLeptonicNumber"/>
-        <DataProperty IRI="hasElectronicLeptonicNumber"/>
+        <DataProperty IRI="hasLeptonicNumber"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="hasQuantityValue"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <DataProperty IRI="hasObjectQuantityValue"/>
+        <DataProperty IRI="topPhysicalObjectDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasPhysicalPhenomenonCaracter"/>
+        <DataProperty IRI="topPhysicalPhenomenonDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasPhysicalPhenomenonQuantityValue"/>
+        <DataProperty IRI="topPhysicalPhenomenonDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasPhysicalQuantityValue"/>
+        <DataProperty IRI="hasObjectQuantityValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasPhysicalStateCaracter"/>
+        <DataProperty IRI="PhysicalObjectCaracter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasQuanticNumberValue"/>
+        <DataProperty IRI="hasObjectQuantityValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasQuantityCaracter"/>
+        <DataProperty IRI="topQuantityObjectProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasSavor"/>
+        <DataProperty IRI="hasQuanticNumberValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="hasSavorCharge"/>
@@ -1587,28 +2010,221 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="hasSpin"/>
-        <DataProperty IRI="hasQuantityValue"/>
+        <DataProperty IRI="hasQuanticNumberValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="hasTauicLeptonicNumber"/>
-        <DataProperty IRI="hasElectronicLeptonicNumber"/>
+        <DataProperty IRI="hasLeptonicNumber"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="inFluidState"/>
+        <DataProperty IRI="hasPhysicalStateCaracter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="inGazState"/>
+        <DataProperty IRI="inFluidState"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="inLiquidState"/>
+        <DataProperty IRI="inFluidState"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="inPlasmaState"/>
+        <DataProperty IRI="hasPhysicalStateCaracter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="inSolidState"/>
+        <DataProperty IRI="hasPhysicalStateCaracter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="inVitreousState"/>
+        <DataProperty IRI="hasPhysicalStateCaracter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="isClassical_Phenomenon"/>
+        <DataProperty IRI="hasPhysicalPhenomenonCaracter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="isExtensive"/>
+        <DataProperty IRI="hasQuantityCaracter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="isFree"/>
+        <DataProperty IRI="hasFreedomStateCaracter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="isIndependant"/>
+        <DataProperty IRI="hasDependanceCaracter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="isIntensive"/>
+        <DataProperty IRI="hasQuantityCaracter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="isLinear_Object"/>
+        <DataProperty IRI="PhysicalObjectCaracter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="isLinear_Phenomenon"/>
+        <DataProperty IRI="hasPhysicalPhenomenonCaracter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="topPhysicalObjectDataProperty"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="topQuantityObjectProperty"/>
+        <DataProperty IRI="topPropertyDataProperty"/>
     </SubDataPropertyOf>
     <FunctionalDataProperty>
-        <DataProperty IRI="isLinear"/>
+        <DataProperty IRI="hasLeptonicNumber"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="hasMuonicLeptonicNumber"/>
     </FunctionalDataProperty>
     <DataPropertyDomain>
-        <DataProperty IRI="isLinear"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="isLinear"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
+        <DataProperty IRI="hasSpin"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isExtensive"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Quantity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isIntensive"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/Quantity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="topPhysicalObjectDataProperty"/>
+        <Class IRI="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
     </DataPropertyDomain>
     <DataPropertyRange>
-        <DataProperty IRI="hasQuantityValue"/>
+        <DataProperty IRI="PhysicalObjectCaracter"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasBaryonicNumber"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="&xsd;minInclusive">
+                <Literal datatypeIRI="&xsd;integer">0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasElectronicLeptonicNumber"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="&xsd;minInclusive">
+                <Literal datatypeIRI="&xsd;integer">0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasElementaryCaracter"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasLeptonicNumber"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="&xsd;minInclusive">
+                <Literal datatypeIRI="&xsd;integer">0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasMatterCaracter"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasMuonicLeptonicNumber"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="&xsd;minInclusive">
+                <Literal datatypeIRI="&xsd;integer">0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasObjectQuantityValue"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <Datatype abbreviatedIRI="xsd:long"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasPhysicalQuantityValue"/>
         <Datatype abbreviatedIRI="xsd:long"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="hasQuanticNumberValue"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasSavor"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="&xsd;minInclusive">
+                <Literal datatypeIRI="&xsd;integer">0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasSpin"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasTauicLeptonicNumber"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="&xsd;minInclusive">
+                <Literal datatypeIRI="&xsd;integer">0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="hasTrueFalseValue"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="inFluidState"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="inPlasmaState"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="inSolidState"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isExtensive"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isFree"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isIndependant"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isIntensive"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isLinear_Object"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <AnnotationAssertion>
@@ -1707,11 +2323,6 @@ Exemple: surface de Fermi.</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>BaryonicNumber</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">BaryonicNumber</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
-        <IRI>Boson1</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Boson1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -2007,6 +2618,16 @@ Exemple: surface de Fermi.</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>FirstDerivativePositionQuantity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">FirstDerivativePositionQuantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>FluidState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FluidStates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>FluidState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FluidState</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -2415,6 +3036,16 @@ Exemple: surface de Fermi.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>NonFundamentalForce</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NonFundamentalForces</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>NonFundamentalForce</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NonFundamentalForce</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>Nucleus</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">nucleuses</Literal>
     </AnnotationAssertion>
@@ -2422,6 +3053,11 @@ Exemple: surface de Fermi.</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>Nucleus</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">nucleus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>ObjPro</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ObjPro</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -2445,6 +3081,16 @@ Exemple: surface de Fermi.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>PhaseTransition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhaseTransitions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>PhaseTransition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhaseTransition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>Photon</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Photons</Literal>
     </AnnotationAssertion>
@@ -2452,6 +3098,28 @@ Exemple: surface de Fermi.</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>Photon</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Photon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>PhysicalObjectCaracter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CaracterProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>PhysicalObjectCaracter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CaracterProperties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>PhysicalObjectCaracter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CaracterPropertied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PhysicalObjectCaracter</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Consists of all dataproperties that have range booleans, because they are used to determine if an object has a caracter or not.
+
+e.g. If an object is elementary, then it has elementaryCaracter true.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -2465,12 +3133,12 @@ Exemple: surface de Fermi.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>PlasmasState</IRI>
+        <IRI>PlasmaState</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">PlasmasStates</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>PlasmasState</IRI>
+        <IRI>PlasmaState</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">PlasmasState</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -2512,6 +3180,21 @@ Exemple: surface de Fermi.</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>Proton</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Proton</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>QuanticNumberSet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">QuanticNumberSets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>QuanticNumberSet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">QuanticNumberSet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>Quantity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Quantity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -2567,6 +3250,16 @@ Exemple: surface de Fermi.</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>Solid</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Solid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>SolidLiquidPhaseTransition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SolidLiquidPhaseTransitions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>SolidLiquidPhaseTransition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SolidLiquidPhaseTransition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -2680,6 +3373,16 @@ Exemple: surface de Fermi.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Tension</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tensions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Tension</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>Time</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Times</Literal>
     </AnnotationAssertion>
@@ -2764,6 +3467,11 @@ Exemple: surface de Fermi.</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">Wave</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>WaveBreakdown</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Fr: effondrement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>WeakInteraction</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">WeakInteractions</Literal>
@@ -2772,6 +3480,31 @@ Exemple: surface de Fermi.</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
         <IRI>WeakInteraction</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">WeakInteraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>Wheight</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Wheights</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>Wheight</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Wheight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>glassPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">glassPhase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>glassPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">glassPhases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>glassPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">glassPhased</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
@@ -2870,6 +3603,51 @@ Exemple: surface de Fermi.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>hasElementaryCaracter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">elementaryCaracter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>hasElementaryCaracter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">elementaryCaracters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>hasElementaryCaracter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">elementaryCaractered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>hasFinalState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasFinalState</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>hasFinalState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasFinalStates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>hasFinalState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasFinalStated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>hasInitialState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasInitialState</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>hasInitialState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasInitialStates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>hasInitialState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasInitialStated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
         <IRI>hasLeptonicNumber</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">hasLeptonicNumber</Literal>
     </AnnotationAssertion>
@@ -2900,6 +3678,21 @@ Exemple: surface de Fermi.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>hasMatterCaracter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MatterCaracter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>hasMatterCaracter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MatterCaracters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>hasMatterCaracter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MatterCaractered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
         <IRI>hasMuonicLeptonicNumber</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">hasMuonicLeptonicNumber</Literal>
     </AnnotationAssertion>
@@ -2912,6 +3705,33 @@ Exemple: surface de Fermi.</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
         <IRI>hasMuonicLeptonicNumber</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">hasMuonicLeptonicNumbered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>hasObjectQuantityValue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>hasObjectQuantityValue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasValues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>hasObjectQuantityValue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasValued</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasObjectQuantityValue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A DataProperty will be created for each PhysicalQuantity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasObjectQuantityValue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The most wide datatype range is given (long double), so that any value can be considered.
+
+Boolean values are only in PhysicalProperty dataproperties</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
@@ -2944,6 +3764,11 @@ Exemple: surface de Fermi.</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">hasPhysicalHypothesised</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>hasPhysicalHypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
         <IRI>hasPhysicalQuantity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">hasPhysicalQuantity</Literal>
@@ -2957,6 +3782,36 @@ Exemple: surface de Fermi.</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
         <IRI>hasPhysicalQuantity</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">hasPhysicalQuantitied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>hasPhysicalQuantityValue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasPhysicalQuantityValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>hasPhysicalQuantityValue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasPhysicalQuantityValues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>hasPhysicalQuantityValue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasPhysicalQuantityValued</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>hasPhysicalStateCaracter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalStateCaracter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>hasPhysicalStateCaracter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalStateCaracters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>hasPhysicalStateCaracter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalStateCaractered</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
@@ -2975,30 +3830,33 @@ Exemple: surface de Fermi.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
-        <IRI>hasQuantityValue</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">hasValue</Literal>
+        <IRI>hasQuanticNumberValue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasQuanticNumberValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
-        <IRI>hasQuantityValue</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">hasValues</Literal>
+        <IRI>hasQuanticNumberValue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasQuanticNumberValues</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
-        <IRI>hasQuantityValue</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">hasValued</Literal>
+        <IRI>hasQuanticNumberValue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasQuanticNumberValued</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>hasQuantityValue</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A DataProperty will be created for each PhysicalQuantity.</Literal>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>hasSavor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSavor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>hasQuantityValue</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The most wide datatype range is given (long double), so that any value can be considered.
-
-Boolean values are only in PhysicalProperty dataproperties</Literal>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>hasSavor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSavors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>hasSavor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSavored</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
@@ -3029,6 +3887,11 @@ Boolean values are only in PhysicalProperty dataproperties</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
         <IRI>hasSpin</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">hasSpined</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasSpin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Defining a xsd datatype &quot;half integer&quot; would enable to force spins to be either half integer (rational) or integer</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
@@ -3077,6 +3940,66 @@ Boolean values are only in PhysicalProperty dataproperties</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>inFluidState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">fluid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>inFluidState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">fluids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>inFluidState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">fluided</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>inFreedomState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">inFreedomState</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>inFreedomState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">inFreedomStates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>inFreedomState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">inFreedomStated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>inGazState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">inGazState</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>inGazState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">inGazStates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>inGazState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">inGazStated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>inLiquidState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">inLiquidStat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>inLiquidState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">inLiquidStats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>inLiquidState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">inLiquidStated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
         <IRI>inPhysicalState</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">inPhysicalState</Literal>
     </AnnotationAssertion>
@@ -3092,6 +4015,36 @@ Boolean values are only in PhysicalProperty dataproperties</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>inPlasmaState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">plasma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>inPlasmaState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">plasmas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>inPlasmaState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">plasmaed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>inSolidState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">inSolidState</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>inSolidState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">inSolidStates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>inSolidState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">inSolidStated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
         <IRI>inState</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">inState</Literal>
     </AnnotationAssertion>
@@ -3104,6 +4057,21 @@ Boolean values are only in PhysicalProperty dataproperties</Literal>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
         <IRI>inState</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">inStated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>inVitreousState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">vitreousState</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>inVitreousState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">vitreousStates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>inVitreousState</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">vitreousStated</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
@@ -3142,21 +4110,6 @@ Boolean values are only in PhysicalProperty dataproperties</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
-        <IRI>isLinear</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">isLinear</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
-        <IRI>isLinear</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">isLinears</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
-        <IRI>isLinear</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">isLineared</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
         <IRI>isPartOf</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">isPartOf</Literal>
     </AnnotationAssertion>
@@ -3191,14 +4144,34 @@ Boolean values are only in PhysicalProperty dataproperties</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">orWavePhenomenon</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>test</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">tests</Literal>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>phaseTransitionObjectProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">phaseTransitionObjectProperty</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>test</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">test</Literal>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>phaseTransitionObjectProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">phaseTransitionObjectProperties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>phaseTransitionObjectProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">phaseTransitionObjectPropertied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>topPhysicalObjectDataProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalObjectDataProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>topPhysicalObjectDataProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalObjectDataProperties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>topPhysicalObjectDataProperty</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PhysicalObjectDataPropertied</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
@@ -3284,57 +4257,6 @@ Non elementary particles are not divided between matter and anti matter. But the
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>http://jibe-bgithub.io/ontology/pso/Object</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Objects</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>http://jibe-bgithub.io/ontology/pso/Object</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Object</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://jibe-bgithub.io/ontology/pso/Object</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An object is caracterised by the variation of at least one physical quantity. The variation of this physical quantity defines the borders of this object.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://jibe-bgithub.io/ontology/pso/Object</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a Physical Object has only one property: its existence.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://jibe-bgithub.io/ontology/pso/Object</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Object</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>http://jibe-bgithub.io/ontology/pso/Phenomenon</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Phenomena</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>http://jibe-bgithub.io/ontology/pso/Phenomenon</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Phenomenon</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://jibe-bgithub.io/ontology/pso/Phenomenon</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Phenomenon is a class that has subclasses corresponding to each of the Theory classes.
-
-Individuals instantiated as Phenomenon must be instances of the different Phenomenon classes that correspond to the theoies needed to descripe them.
-
-Another approach would be to classify these phenomenon with respect to their properties.
-
-This means they would only be linked to theories with a property such as &quot;described by theory&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://jibe-bgithub.io/ontology/pso/Phenomenon</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Phenomenon</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
         <IRI>http://jibe-bgithub.io/ontology/pso/PhenomenonProperty</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">PhenomenonProperties</Literal>
     </AnnotationAssertion>
@@ -3350,17 +4272,68 @@ This means they would only be linked to theories with a property such as &quot;d
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
-        <IRI>http://jibe-bgithub.io/ontology/pso/Property</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/PhysicalObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Objects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/PhysicalObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/PhysicalObject</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An object is caracterised by the variation of at least one physical quantity. The variation of this physical quantity defines the borders of this object.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/PhysicalObject</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a Physical Object has only one property: its existence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/PhysicalObject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/PhysicalPhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Phenomena</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/PhysicalPhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Phenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/PhysicalPhenomenon</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Phenomenon is a class that has subclasses corresponding to each of the Theory classes.
+
+Individuals instantiated as Phenomenon must be instances of the different Phenomenon classes that correspond to the theoies needed to descripe them.
+
+Another approach would be to classify these phenomenon with respect to their properties.
+
+This means they would only be linked to theories with a property such as &quot;described by theory&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/PhysicalPhenomenon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Phenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://jibe-bgithub.io/ontology/pso/PhysicalProperty</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Properties</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
-        <IRI>http://jibe-bgithub.io/ontology/pso/Property</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/PhysicalProperty</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Property</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://jibe-bgithub.io/ontology/pso/Property</IRI>
+        <IRI>http://jibe-bgithub.io/ontology/pso/PhysicalProperty</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Property</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>

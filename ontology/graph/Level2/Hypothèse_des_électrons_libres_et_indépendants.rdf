@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<isv:project xmlns:isv="http://www.w3.org/2001/10/IsaViz" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <isv:baseURI value="http://jibe-b.github.io/resource/"/>
+    <isv:nsBindings>
+        <isv:nsBinding dispPrefix="true" prefix="pso" uri="http://jibe-b.github.io/ontology/pso"/>
+        <isv:nsBinding dispPrefix="true" prefix="sci" uri="http://jibe-b.github.io/ontology/sci"/>
+        <isv:nsBinding dispPrefix="true" prefix="rdf" uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:nsBinding dispPrefix="true" prefix="rdfs" uri="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:nsBinding dispPrefix="true" prefix="gss" uri="http://www.w3.org/2001/11/IsaViz/graphstylesheets#"/>
+        <isv:nsBinding dispPrefix="true" prefix="xsd" uri="http://www.w3.org/2001/XMLSchema#"/>
+    </isv:nsBindings>
+    <isv:propertyTypes>
+        <isv:propertyType name="inState" ns="http://jibe-b.github.io/ontology/pso"/>
+        <isv:propertyType
+            name="_??   (Membership property auto-numbering: _1, _2, ...)" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="object" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="predicate" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="subject" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="type" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="value" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="comment" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="domain" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="isDefinedBy" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="label" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="range" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="seeAlso" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="subClassOf" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="subPropertyOf" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+    </isv:propertyTypes>
+    <isv:colorTable>
+        <isv:color b="115" g="191" r="115"/>
+        <isv:color b="66" g="105" r="66"/>
+        <isv:color b="206" g="89" r="90"/>
+        <isv:color b="206" g="89" r="90"/>
+        <isv:color b="123" g="223" r="255"/>
+        <isv:color b="66" g="117" r="132"/>
+    </isv:colorTable>
+    <isv:fontTable>
+        <isv:font desc="Dialog Plain 10"/>
+    </isv:fontTable>
+    <isv:bookmarks/>
+    <isv:resources>
+        <isv:iresource display="true" fill="0" h="18" id="0" shape="0"
+            stroke="1" w="52" x="15" y="61">
+            <isv:URIorID x="-28" y="59">
+                <isv:uri>pso:independance</isv:uri>
+            </isv:URIorID>
+        </isv:iresource>
+        <isv:iresource display="true" fill="0" h="18" id="1" shape="0"
+            stroke="1" w="33" x="-272" y="55">
+            <isv:URIorID x="-299" y="53">
+                <isv:uri>db:Electron</isv:uri>
+            </isv:URIorID>
+        </isv:iresource>
+        <isv:iresource display="true" fill="0" h="18" id="2" shape="0"
+            stroke="1" w="44" x="7" y="174">
+            <isv:URIorID x="-29" y="171">
+                <isv:uri>r:totalFreedom</isv:uri>
+            </isv:URIorID>
+        </isv:iresource>
+    </isv:resources>
+    <isv:literals/>
+    <isv:properties>
+        <isv:iproperty display="true" ob="2" sb="1" stroke="2">
+            <isv:uri x="-135" y="113">
+                <isv:namespace>http://jibe-b.github.io/ontology/pso</isv:namespace>
+                <isv:localname>inState</isv:localname>
+            </isv:uri>
+            <isv:path d="M-246 -66L-24 -161"/>
+            <isv:head or="-1.1664484" w="5" x="-24" y="161"/>
+        </isv:iproperty>
+    </isv:properties>
+</isv:project>

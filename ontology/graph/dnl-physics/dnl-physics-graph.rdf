@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:pso="http://jibe-b.github.io/ontology/pso/"
+    xmlns:sof="http://jibe-b.github.io/ontology/sof/"
+    xmlns:sci="http://jibe-b.github.io/ontology/sci/"
+    xmlns:r="http://jibe-b.github.io/resource/"
+    xmlns:gss="http://www.w3.org/2001/11/IsaViz/graphstylesheets#"
+    xmlns:mo="http://jibe-b.github.io/ontology/mo/"
+    xmlns:j.0="http://jibe-b.github.io/ontology/sci/ "
+    xmlns:db="http://dbpedia.org/resource/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:dbo="http://dbpedia.org/ontology/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://jibe-b.github.io/resource/">
+  <pso:PhysicalQuantity rdf:about="Pulsation"/>
+  <pso:Wave rdf:about="Soliton"/>
+  <j.0:Equation rdf:about="Hydrodynamic_Equation"/>
+  <pso:PhysicalQuantity rdf:about="Amplitude"/>
+  <rdf:Description rdf:about="../ontology/pso/PhysicalObject">
+    <pso:hasPhysicalQuantity rdf:resource="../ontology/pso/PhysicalQuantity"/>
+  </rdf:Description>
+  <pso:PhysicalObject rdf:about="../ontology/pso/Wave">
+    <pso:hasPhysicalQuantity rdf:resource="Amplitude"/>
+    <pso:hasPhysicalQuantity rdf:resource="Pulsation"/>
+  </pso:PhysicalObject>
+  <j.0:Equation rdf:about="db:Burgers&apos;_equation"/>
+  <j.0:Equation rdf:about="db:Korteweg–de_Vries_equation"/>
+</rdf:RDF>

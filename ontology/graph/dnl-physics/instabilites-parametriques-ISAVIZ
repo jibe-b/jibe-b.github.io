@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<isv:project xmlns:isv="http://www.w3.org/2001/10/IsaViz" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <isv:baseURI value=""/>
+    <isv:nsBindings>
+        <isv:nsBinding dispPrefix="true" prefix="rdf" uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:nsBinding dispPrefix="true" prefix="rdfs" uri="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:nsBinding dispPrefix="true" prefix="gss" uri="http://www.w3.org/2001/11/IsaViz/graphstylesheets#"/>
+        <isv:nsBinding dispPrefix="true" prefix="xsd" uri="http://www.w3.org/2001/XMLSchema#"/>
+        <isv:nsBinding dispPrefix="false" prefix="no" uri="no ontology linked"/>
+    </isv:nsBindings>
+    <isv:propertyTypes>
+        <isv:propertyType
+            name="_??   (Membership property auto-numbering: _1, _2, ...)" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="object" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="predicate" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="subject" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="type" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="value" ns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <isv:propertyType name="comment" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="domain" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="isDefinedBy" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="label" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="range" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="seeAlso" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="subClassOf" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+        <isv:propertyType name="subPropertyOf" ns="http://www.w3.org/2000/01/rdf-schema#"/>
+    </isv:propertyTypes>
+    <isv:colorTable>
+        <isv:color b="115" g="191" r="115"/>
+        <isv:color b="66" g="105" r="66"/>
+        <isv:color b="206" g="89" r="90"/>
+        <isv:color b="206" g="89" r="90"/>
+        <isv:color b="123" g="223" r="255"/>
+        <isv:color b="66" g="117" r="132"/>
+    </isv:colorTable>
+    <isv:fontTable>
+        <isv:font desc="Dialog Plain 10"/>
+    </isv:fontTable>
+    <isv:bookmarks/>
+    <isv:resources>
+        <isv:iresource display="true" fill="0" h="18" id="0" shape="0"
+            stroke="1" w="73" x="-288" y="116">
+            <isv:URIorID x="-349" y="114">
+                <isv:uri fID="true">#instabilité paramétrique</isv:uri>
+            </isv:URIorID>
+        </isv:iresource>
+        <isv:iresource display="true" fill="0" h="18" id="1" shape="0"
+            stroke="1" w="66" x="257" y="-26">
+            <isv:URIorID x="202" y="-28">
+                <isv:uri>#couplage non-linéaire</isv:uri>
+            </isv:URIorID>
+        </isv:iresource>
+        <isv:iresource display="true" fill="0" h="18" id="2" shape="0"
+            stroke="1" w="74" x="-464" y="-52">
+            <isv:URIorID x="-526" y="-54">
+                <isv:uri>#effet du troisième ordre</isv:uri>
+            </isv:URIorID>
+        </isv:iresource>
+        <isv:iresource display="true" fill="0" h="18" id="3" shape="0"
+            stroke="1" w="68" x="13" y="165">
+            <isv:URIorID x="-43" y="162">
+                <isv:uri fID="true">#force pondéromotrice</isv:uri>
+            </isv:URIorID>
+        </isv:iresource>
+        <isv:iresource display="true" fill="0" h="18" id="4" shape="0"
+            stroke="1" w="41" x="-312" y="-210">
+            <isv:URIorID x="-346" y="-212">
+                <isv:uri>#onde pompe</isv:uri>
+            </isv:URIorID>
+        </isv:iresource>
+    </isv:resources>
+    <isv:literals/>
+    <isv:properties/>
+</isv:project>

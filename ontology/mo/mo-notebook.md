@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+<p><a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a></p>
+<h1 id="math-ontology-notebook">Math Ontology Notebook</h1>
+<p>This notebook is intended to record all the ducisions I make in building this ontoloy.</p>
+<p>Discussion on the ontology building may be enriched by your comments.</p>
+<hr />
+<p>Jibé <a href="https://twitter.com/jibe_jeybee">@jibe_jeybee</a></p>
+<p>All contents on this site are under the <a href="https://creativecommons.org/licenses/by/4.0/">free licence CC-BY</a></p>
+</body>
+</html>
