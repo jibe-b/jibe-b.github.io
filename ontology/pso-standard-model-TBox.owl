@@ -1,0 +1,1060 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY sci "http://jibe-b.github.io/ontology/sci/" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ace_lexicon "http://attempto.ifi.uzh.ch/ace_lexicon#" >
+    <!ENTITY sci-ps "http://jibe-b.github.io/ontology/sci-ps/" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sci="http://jibe-b.github.io/ontology/sci/"
+     xmlns:sci-ps="http://jibe-b.github.io/ontology/sci-ps/"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
+    <Ontology rdf:about="http://jibe-b.github.io/ontology/pso-standard-model-TBox/">
+        <dc:date rdf:datatype="&xsd;dateTime">Dec 9, 2014 7:41:56 AM</dc:date>
+        <dc:date rdf:datatype="&xsd;dateTime">Jan 15, 2015 1:44:37 PM</dc:date>
+        <rdfs:comment rdf:datatype="&xsd;string">Ontology for the description of Physical Sciences.</rdfs:comment>
+        <dc:creator rdf:datatype="&xsd;string">jibe-b</dc:creator>
+        <terms:license rdf:resource="http://creativecommons.org/licences/by/4.0/"/>
+        <imports rdf:resource="http://jibe-b.github.io/ontology/pso/"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl -->
+
+    <AnnotationProperty rdf:about="&ace_lexicon;CN_pl"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg -->
+
+    <AnnotationProperty rdf:about="&ace_lexicon;CN_sg"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg -->
+
+    <AnnotationProperty rdf:about="&ace_lexicon;PN_sg"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl -->
+
+    <AnnotationProperty rdf:about="&ace_lexicon;TV_pl"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg -->
+
+    <AnnotationProperty rdf:about="&ace_lexicon;TV_sg"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg -->
+
+    <AnnotationProperty rdf:about="&ace_lexicon;TV_vbg"/>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/sci/AxiomType -->
+
+    <AnnotationProperty rdf:about="&sci;AxiomType"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <AnnotationProperty rdf:about="&terms;license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <AnnotationProperty rdf:about="&terms;source"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/ComponentBound -->
+
+    <ObjectProperty rdf:about="http://jibe-b.github.io/ontology/pso/ComponentBound">
+        <ace_lexicon:TV_sg>ComponentBounds</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>ComponentBound</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>ComponentBounded</ace_lexicon:TV_vbg>
+        <rdfs:comment>what is involved in the structure of the object (strong, weak interaction, Van Der Walls…)</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/ComponentsProportions -->
+
+    <ObjectProperty rdf:about="http://jibe-b.github.io/ontology/pso/ComponentsProportions">
+        <rdfs:comment>proportions of components in an object. Intended to be used in a bag, so that each component&apos;s proportion is associated to the component&apos;s name.</rdfs:comment>
+        <ace_lexicon:TV_sg>ComponentProportionses</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>ComponentProportionsed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>ComponentProportions</ace_lexicon:TV_pl>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/ComponentsQuantity -->
+
+    <ObjectProperty rdf:about="http://jibe-b.github.io/ontology/pso/ComponentsQuantity">
+        <rdfs:comment>Not to be mistaken with PhysicalQuantity class</rdfs:comment>
+        <ace_lexicon:TV_vbg>ComponentsNumbersed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>ComponentsNumberses</ace_lexicon:TV_sg>
+        <rdfs:comment>Intended to be used in a RDF bag, so that each component can be associated to its quantity.</rdfs:comment>
+        <ace_lexicon:TV_pl>ComponentsNumbers</ace_lexicon:TV_pl>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasComponent -->
+
+    <ObjectProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasComponent">
+        <ace_lexicon:TV_pl>hasComponent</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>hasComponents</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>hasComponented</ace_lexicon:TV_vbg>
+        <rdfs:comment>Intended to be used in a RDF bag, so that each component can be associated to its proportion.</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasDimension -->
+
+    <ObjectProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasDimension">
+        <ace_lexicon:TV_sg>hasDimensions</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>hasDimensioned</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>hasDimension</ace_lexicon:TV_pl>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasFinalState -->
+
+    <ObjectProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasFinalState">
+        <ace_lexicon:TV_pl>hasFinalState</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>hasFinalStates</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>hasFinalStated</ace_lexicon:TV_vbg>
+        <propertyDisjointWith rdf:resource="http://jibe-b.github.io/ontology/pso/hasInitialState"/>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/phaseTransitionObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasInitialState -->
+
+    <ObjectProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasInitialState">
+        <ace_lexicon:TV_pl>hasInitialState</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>hasInitialStated</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasInitialStates</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/phaseTransitionObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasPart -->
+
+    <ObjectProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasPart">
+        <ace_lexicon:TV_vbg>hasParted</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasParts</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>hasPart</ace_lexicon:TV_pl>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/topPhysicalObjectPropertyObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasPhysicalHypothesis -->
+
+    <ObjectProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasPhysicalHypothesis">
+        <ace_lexicon:TV_sg>hasPhysicalHypothesises</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>hasPhysicalHypothesis</ace_lexicon:TV_pl>
+        <deprecated></deprecated>
+        <ace_lexicon:TV_vbg>hasPhysicalHypothesised</ace_lexicon:TV_vbg>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasPhysicalQuantity -->
+
+    <ObjectProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasPhysicalQuantity">
+        <ace_lexicon:TV_vbg>hasPhysicalQuantitied</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasPhysicalQuantities</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>hasPhysicalQuantity</ace_lexicon:TV_pl>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasQuanticNumber -->
+
+    <ObjectProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasQuanticNumber">
+        <ace_lexicon:TV_pl>hasQuanticNumber</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>hasQuanticNumbered</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasQuanticNumbers</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasPhysicalQuantity"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasTheoryElementProperty -->
+
+    <ObjectProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasTheoryElementProperty">
+        <ace_lexicon:TV_sg>hasTheoryElementProperties</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>hasTheoryElementPropertied</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>hasTheoryElementProperty</ace_lexicon:TV_pl>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/inFreedomState -->
+
+    <ObjectProperty rdf:about="http://jibe-b.github.io/ontology/pso/inFreedomState">
+        <ace_lexicon:TV_vbg>inFreedomStated</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>inFreedomState</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>inFreedomStates</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/inState"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/inPhysicalState -->
+
+    <ObjectProperty rdf:about="http://jibe-b.github.io/ontology/pso/inPhysicalState">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <ace_lexicon:TV_vbg>inPhysicalStated</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>inPhysicalState</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>inPhysicalStates</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/inState"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/inState -->
+
+    <ObjectProperty rdf:about="http://jibe-b.github.io/ontology/pso/inState">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <ace_lexicon:TV_pl>inState</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>inStated</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>inStates</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/topPhysicalObjectPropertyObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/intensiveExtensiveProperty -->
+
+    <ObjectProperty rdf:about="http://jibe-b.github.io/ontology/pso/intensiveExtensiveProperty">
+        <ace_lexicon:TV_pl>intensiveExtensiveProperty</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>intensiveExtensiveProperties</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>intensiveExtensivePropertied</ace_lexicon:TV_vbg>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/involvePhysicalQuantity -->
+
+    <ObjectProperty rdf:about="http://jibe-b.github.io/ontology/pso/involvePhysicalQuantity">
+        <ace_lexicon:TV_vbg>involvePhysicalQuantitied</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>involvePhysicalQuantities</ace_lexicon:TV_sg>
+        <rdfs:comment>an equation involves a Physical Quantity</rdfs:comment>
+        <ace_lexicon:TV_pl>involvePhysicalQuantity</ace_lexicon:TV_pl>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/isPartOf -->
+
+    <ObjectProperty rdf:about="http://jibe-b.github.io/ontology/pso/isPartOf">
+        <ace_lexicon:TV_vbg>isPartOfed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>isPartOfs</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>isPartOf</ace_lexicon:TV_pl>
+        <inverseOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasPart"/>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/topPhysicalObjectPropertyObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/phaseTransitionObjectProperty -->
+
+    <ObjectProperty rdf:about="http://jibe-b.github.io/ontology/pso/phaseTransitionObjectProperty">
+        <ace_lexicon:TV_pl>phaseTransitionObjectProperty</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>phaseTransitionObjectPropertied</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>phaseTransitionObjectProperties</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/topPhysicalPhenomenonObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/topPhysicalObjectPropertyObjectProperty -->
+
+    <ObjectProperty rdf:about="http://jibe-b.github.io/ontology/pso/topPhysicalObjectPropertyObjectProperty"/>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/topPhysicalPhenomenonObjectProperty -->
+
+    <ObjectProperty rdf:about="http://jibe-b.github.io/ontology/pso/topPhysicalPhenomenonObjectProperty"/>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/topPhysicalPropertyObjectProperty -->
+
+    <ObjectProperty rdf:about="http://jibe-b.github.io/ontology/pso/topPhysicalPropertyObjectProperty"/>
+    
+
+
+    <!-- http://jibe-bgithub.io/ontology/pso/associatedTo -->
+
+    <ObjectProperty rdf:about="http://jibe-bgithub.io/ontology/pso/associatedTo">
+        <rdfs:label>associatedTo</rdfs:label>
+        <ace_lexicon:TV_vbg>associatedToed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>associatedToes</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>associatedTo</ace_lexicon:TV_pl>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-bgithub.io/ontology/pso/characterizeObject -->
+
+    <ObjectProperty rdf:about="http://jibe-bgithub.io/ontology/pso/characterizeObject">
+        <rdfs:label>characterizeObject</rdfs:label>
+        <ace_lexicon:TV_pl>characterizeObject</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>characterizeObjected</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>characterizeObjects</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-bgithub.io/ontology/pso/describedBy -->
+
+    <ObjectProperty rdf:about="http://jibe-bgithub.io/ontology/pso/describedBy">
+        <rdfs:label>describedBy</rdfs:label>
+        <ace_lexicon:TV_pl>describedBy</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>describedBied</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>describedBies</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-bgithub.io/ontology/pso/governEvolutionOfQuantity -->
+
+    <ObjectProperty rdf:about="http://jibe-bgithub.io/ontology/pso/governEvolutionOfQuantity">
+        <rdfs:label>governEvolutionOfQuantity</rdfs:label>
+        <ace_lexicon:TV_pl>governEvolutionOfQuantity</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>governEvolutionOfQuantitied</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>governEvolutionOfQuantities</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-bgithub.io/ontology/pso/governPhenomenonStateOf -->
+
+    <ObjectProperty rdf:about="http://jibe-bgithub.io/ontology/pso/governPhenomenonStateOf">
+        <rdfs:label>governPhenomenonStateOf</rdfs:label>
+        <ace_lexicon:TV_vbg>governPhenomenonStateOfed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>governPhenomenonStateOfs</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>governPhenomenonStateOf</ace_lexicon:TV_pl>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-bgithub.io/ontology/pso/hasLawProperty -->
+
+    <ObjectProperty rdf:about="http://jibe-bgithub.io/ontology/pso/hasLawProperty">
+        <rdfs:label>hasLawProperty</rdfs:label>
+        <ace_lexicon:TV_vbg>hasLawPropertied</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>hasLawProperty</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>hasLawProperties</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-bgithub.io/ontology/pso/hasObjectProperty -->
+
+    <ObjectProperty rdf:about="http://jibe-bgithub.io/ontology/pso/hasObjectProperty">
+        <rdfs:label>hasObjectProperty</rdfs:label>
+        <ace_lexicon:TV_pl>hasObjectProperty</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>hasObjectPropertied</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasObjectProperties</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-bgithub.io/ontology/pso/hasPhenomenonProperty -->
+
+    <ObjectProperty rdf:about="http://jibe-bgithub.io/ontology/pso/hasPhenomenonProperty">
+        <rdfs:label>hasPhenomenonProperty</rdfs:label>
+        <ace_lexicon:TV_pl>hasPhenomenonProperty</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>hasPhenomenonProperties</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>hasPhenomenonPropertied</ace_lexicon:TV_vbg>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-bgithub.io/ontology/pso/hasQuantity -->
+
+    <ObjectProperty rdf:about="http://jibe-bgithub.io/ontology/pso/hasQuantity">
+        <rdfs:label>hasQuantity</rdfs:label>
+        <ace_lexicon:TV_pl>hasQuantity</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>hasQuantities</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>hasQuantitied</ace_lexicon:TV_vbg>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-bgithub.io/ontology/pso/hasQuantityProperty -->
+
+    <ObjectProperty rdf:about="http://jibe-bgithub.io/ontology/pso/hasQuantityProperty">
+        <rdfs:label>hasQuantityProperty</rdfs:label>
+        <ace_lexicon:TV_vbg>hasQuantityPropertied</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasQuantityProperties</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>hasQuantityProperty</ace_lexicon:TV_pl>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-bgithub.io/ontology/pso/involve -->
+
+    <ObjectProperty rdf:about="http://jibe-bgithub.io/ontology/pso/involve">
+        <rdfs:label>involve</rdfs:label>
+        <ace_lexicon:TV_sg>involves</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>involve</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>involved</ace_lexicon:TV_vbg>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-bgithub.io/ontology/pso/involvedIn -->
+
+    <ObjectProperty rdf:about="http://jibe-bgithub.io/ontology/pso/involvedIn">
+        <rdfs:label>involvedIn</rdfs:label>
+        <ace_lexicon:TV_sg>involvedIns</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>involvedIned</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>involvedIn</ace_lexicon:TV_pl>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://jibe-bgithub.io/ontology/pso/quantityEvolutionGovernedBy -->
+
+    <ObjectProperty rdf:about="http://jibe-bgithub.io/ontology/pso/quantityEvolutionGovernedBy">
+        <rdfs:label>quantityEvolutionGovernedBy</rdfs:label>
+        <ace_lexicon:TV_vbg>quantityEvolutionGovernedBied</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>quantityEvolutionGovernedBy</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>quantityEvolutionGovernedBies</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/PhysicalObjectCaracter -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/PhysicalObjectCaracter">
+        <ace_lexicon:TV_vbg>CaracterPropertied</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>CaracterProperty</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>CaracterProperties</ace_lexicon:TV_sg>
+        <rdfs:comment xml:lang="en">Consists of all dataproperties that have range booleans, because they are used to determine if an object has a caracter or not.
+
+e.g. If an object is elementary, then it has elementaryCaracter true.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/topPhysicalObjectDataProperty"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/glassPhase -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/glassPhase">
+        <ace_lexicon:TV_vbg>glassPhased</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>glassPhase</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>glassPhases</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/inVitreousState"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasBaryonicNumber -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasBaryonicNumber">
+        <ace_lexicon:TV_sg>hasBaryonicNumbers</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>hasBaryonicNumbered</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>hasBaryonicNumber</ace_lexicon:TV_pl>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasQuanticNumberValue"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <onDatatype rdf:resource="&xsd;integer"/>
+                <withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="&xsd;integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                </withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasCharge -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasCharge">
+        <ace_lexicon:TV_pl>hasCharge</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>hasCharges</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>hasCharged</ace_lexicon:TV_vbg>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasPhysicalQuantityValue"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasDependanceCaracter -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasDependanceCaracter">
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/PhysicalObjectCaracter"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasElectricalCharge -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasElectricalCharge">
+        <ace_lexicon:TV_pl>hasElectricalCharge</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>hasElectricalCharged</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasElectricalCharges</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasCharge"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasElectronicLeptonicNumber -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasElectronicLeptonicNumber">
+        <ace_lexicon:TV_vbg>hasElectronicLeptonicNumbered</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>hasElectronicLeptonicNumber</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>hasElectronicLeptonicNumbers</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasLeptonicNumber"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <onDatatype rdf:resource="&xsd;integer"/>
+                <withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="&xsd;integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                </withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasElementaryCaracter -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasElementaryCaracter">
+        <ace_lexicon:TV_sg>elementaryCaracters</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>elementaryCaractered</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>elementaryCaracter</ace_lexicon:TV_pl>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/PhysicalObjectCaracter"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasFreedomStateCaracter -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasFreedomStateCaracter">
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/PhysicalObjectCaracter"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasLeptonicNumber -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasLeptonicNumber">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_pl>hasLeptonicNumber</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>hasLeptonicNumbered</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasLeptonicNumbers</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasQuanticNumberValue"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <onDatatype rdf:resource="&xsd;integer"/>
+                <withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="&xsd;integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                </withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasMass -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasMass">
+        <ace_lexicon:TV_sg>hasMasses</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>hasMassed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>hasMass</ace_lexicon:TV_pl>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasPhysicalQuantityValue"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasMatterCaracter -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasMatterCaracter">
+        <ace_lexicon:TV_sg>MatterCaracters</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>MatterCaractered</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>MatterCaracter</ace_lexicon:TV_pl>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/PhysicalObjectCaracter"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasMuonicLeptonicNumber -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasMuonicLeptonicNumber">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_vbg>hasMuonicLeptonicNumbered</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasMuonicLeptonicNumbers</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>hasMuonicLeptonicNumber</ace_lexicon:TV_pl>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasLeptonicNumber"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <onDatatype rdf:resource="&xsd;integer"/>
+                <withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="&xsd;integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                </withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasObjectQuantityValue -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasObjectQuantityValue">
+        <ace_lexicon:TV_sg>hasValues</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>hasValue</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>hasValued</ace_lexicon:TV_vbg>
+        <rdfs:comment>A DataProperty will be created for each PhysicalQuantity.</rdfs:comment>
+        <rdfs:comment>The most wide datatype range is given (long double), so that any value can be considered.
+
+Boolean values are only in PhysicalProperty dataproperties</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/topPhysicalObjectDataProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&xsd;decimal"/>
+                    <rdf:Description rdf:about="&xsd;integer"/>
+                    <rdf:Description rdf:about="&xsd;long"/>
+                    <rdf:Description rdf:about="&owl;rational"/>
+                </unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasPhysicalPhenomenonCaracter -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasPhysicalPhenomenonCaracter">
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/topPhysicalPhenomenonDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasPhysicalPhenomenonQuantityValue -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasPhysicalPhenomenonQuantityValue">
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/topPhysicalPhenomenonDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasPhysicalQuantityValue -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasPhysicalQuantityValue">
+        <ace_lexicon:TV_vbg>hasPhysicalQuantityValued</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasPhysicalQuantityValues</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>hasPhysicalQuantityValue</ace_lexicon:TV_pl>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasObjectQuantityValue"/>
+        <rdfs:range rdf:resource="&xsd;long"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasPhysicalStateCaracter -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasPhysicalStateCaracter">
+        <ace_lexicon:TV_sg>PhysicalStateCaracters</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>PhysicalStateCaracter</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>PhysicalStateCaractered</ace_lexicon:TV_vbg>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/PhysicalObjectCaracter"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasQuanticNumberValue -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasQuanticNumberValue">
+        <ace_lexicon:TV_sg>hasQuanticNumberValues</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>hasQuanticNumberValued</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>hasQuanticNumberValue</ace_lexicon:TV_pl>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasObjectQuantityValue"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&xsd;integer"/>
+                    <rdf:Description rdf:about="&owl;rational"/>
+                </unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasQuantityCaracter -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasQuantityCaracter">
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/topQuantityObjectProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasSavor -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasSavor">
+        <ace_lexicon:TV_sg>hasSavors</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>hasSavored</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>hasSavor</ace_lexicon:TV_pl>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasQuanticNumberValue"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <onDatatype rdf:resource="&xsd;integer"/>
+                <withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="&xsd;integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                </withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasSavorCharge -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasSavorCharge">
+        <ace_lexicon:TV_pl>hasSavorCharge</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>hasSavorCharged</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasSavorCharges</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasCharge"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasSpin -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasSpin">
+        <ace_lexicon:TV_vbg>hasSpined</ace_lexicon:TV_vbg>
+        <rdfs:comment>Defining a xsd datatype &quot;half integer&quot; would enable to force spins to be either half integer (rational) or integer</rdfs:comment>
+        <ace_lexicon:TV_pl>hasSpin</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>hasSpins</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasQuanticNumberValue"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&xsd;integer"/>
+                    <rdf:Description rdf:about="&owl;rational"/>
+                </unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasTauicLeptonicNumber -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasTauicLeptonicNumber">
+        <ace_lexicon:TV_sg>hasTauicLeptonicNumbers</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>hasTauicLeptonicNumbered</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>hasTauicLeptonicNumber</ace_lexicon:TV_pl>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasLeptonicNumber"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <onDatatype rdf:resource="&xsd;integer"/>
+                <withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="&xsd;integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                </withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasTrueFalseValue -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/hasTrueFalseValue">
+        <ace_lexicon:TV_vbg>hasTrueFalseValued</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>hasTrueFalseValue</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>hasTrueFalseValues</ace_lexicon:TV_sg>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/inFluidState -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/inFluidState">
+        <ace_lexicon:TV_sg>fluids</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>fluid</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>fluided</ace_lexicon:TV_vbg>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasPhysicalStateCaracter"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/inGazState -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/inGazState">
+        <ace_lexicon:TV_pl>inGazState</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>inGazStates</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>inGazStated</ace_lexicon:TV_vbg>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/inFluidState"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/inLiquidState -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/inLiquidState">
+        <ace_lexicon:TV_sg>inLiquidStats</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>inLiquidStated</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>inLiquidStat</ace_lexicon:TV_pl>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/inFluidState"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/inPlasmaState -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/inPlasmaState">
+        <ace_lexicon:TV_pl>plasma</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>plasmas</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>plasmaed</ace_lexicon:TV_vbg>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasPhysicalStateCaracter"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/inSolidState -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/inSolidState">
+        <ace_lexicon:TV_vbg>inSolidStated</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>inSolidState</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>inSolidStates</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasPhysicalStateCaracter"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/inVitreousState -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/inVitreousState">
+        <ace_lexicon:TV_sg>vitreousStates</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>vitreousStated</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>vitreousState</ace_lexicon:TV_pl>
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasPhysicalStateCaracter"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/isClassical_Phenomenon -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/isClassical_Phenomenon">
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasPhysicalPhenomenonCaracter"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/isExtensive -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/isExtensive">
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasQuantityCaracter"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/isFree -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/isFree">
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasFreedomStateCaracter"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/isIndependant -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/isIndependant">
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasDependanceCaracter"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/isIntensive -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/isIntensive">
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasQuantityCaracter"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/isLinear_Object -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/isLinear_Object">
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/PhysicalObjectCaracter"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/isLinear_Phenomenon -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/isLinear_Phenomenon">
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/hasPhysicalPhenomenonCaracter"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/topPhysicalObjectDataProperty -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/topPhysicalObjectDataProperty">
+        <ace_lexicon:TV_pl>PhysicalObjectDataProperty</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>PhysicalObjectDataPropertied</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>PhysicalObjectDataProperties</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/topPhysicalPhenomenonDataProperty -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/topPhysicalPhenomenonDataProperty"/>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/topPropertyDataProperty -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/topPropertyDataProperty"/>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/topQuantityObjectProperty -->
+
+    <DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/pso/topQuantityObjectProperty">
+        <rdfs:subPropertyOf rdf:resource="http://jibe-b.github.io/ontology/pso/topPropertyDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/ObjPro -->
+
+    <NamedIndividual rdf:about="http://jibe-b.github.io/ontology/pso/ObjPro">
+        <ace_lexicon:PN_sg>ObjPro</ace_lexicon:PN_sg>
+    </NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/Quantity -->
+
+    <NamedIndividual rdf:about="http://jibe-b.github.io/ontology/pso/Quantity">
+        <ace_lexicon:PN_sg>Quantity</ace_lexicon:PN_sg>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

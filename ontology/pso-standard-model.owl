@@ -1,0 +1,342 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY pso "http://jibe-b.github.io/ontology/pso/" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ace_lexicon "http://attempto.ifi.uzh.ch/ace_lexicon#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:pso="http://jibe-b.github.io/ontology/pso/"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
+    <Ontology rdf:about="http://jibe-b.github.io/ontology/pso-standard-model/">
+        <imports rdf:resource="http://jibe-b.github.io/ontology/pso-standard-model-TBox/"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl -->
+
+    <AnnotationProperty rdf:about="&ace_lexicon;CN_pl"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg -->
+
+    <AnnotationProperty rdf:about="&ace_lexicon;CN_sg"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg -->
+
+    <AnnotationProperty rdf:about="&ace_lexicon;PN_sg"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl -->
+
+    <AnnotationProperty rdf:about="&ace_lexicon;TV_pl"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg -->
+
+    <AnnotationProperty rdf:about="&ace_lexicon;TV_sg"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg -->
+
+    <AnnotationProperty rdf:about="&ace_lexicon;TV_vbg"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasFinalState -->
+
+    <rdf:Description rdf:about="&pso;hasFinalState">
+        <ace_lexicon:TV_pl>hasFinalState</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>hasFinalStates</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>hasFinalStated</ace_lexicon:TV_vbg>
+    </rdf:Description>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasInitialState -->
+
+    <rdf:Description rdf:about="&pso;hasInitialState">
+        <ace_lexicon:TV_pl>hasInitialState</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>hasInitialStated</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasInitialStates</ace_lexicon:TV_sg>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/ElectromagneticInteraction -->
+
+    <Class rdf:about="&pso;ElectromagneticInteraction"/>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/GazeousState -->
+
+    <Class rdf:about="&pso;GazeousState"/>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/GravitationalInteraction -->
+
+    <Class rdf:about="&pso;GravitationalInteraction"/>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/LiquidState -->
+
+    <Class rdf:about="&pso;LiquidState"/>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/PlasmaState -->
+
+    <Class rdf:about="&pso;PlasmaState"/>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/SolidState -->
+
+    <Class rdf:about="&pso;SolidState"/>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/StrongInteraction -->
+
+    <Class rdf:about="&pso;StrongInteraction"/>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/WeakInteraction -->
+
+    <Class rdf:about="&pso;WeakInteraction"/>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/Wheight -->
+
+    <Class rdf:about="&pso;Wheight"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/ElectromagneticInteraction -->
+
+    <NamedIndividual rdf:about="&pso;ElectromagneticInteraction">
+        <rdf:type rdf:resource="&pso;ElectromagneticInteraction"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/GazeousState -->
+
+    <NamedIndividual rdf:about="&pso;GazeousState">
+        <rdf:type rdf:resource="&pso;GazeousState"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/GravitationalInteraction -->
+
+    <NamedIndividual rdf:about="&pso;GravitationalInteraction">
+        <rdf:type rdf:resource="&pso;GravitationalInteraction"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/LiquidState -->
+
+    <NamedIndividual rdf:about="&pso;LiquidState">
+        <rdf:type rdf:resource="&pso;LiquidState"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/PlasmaState -->
+
+    <NamedIndividual rdf:about="&pso;PlasmaState">
+        <rdf:type rdf:resource="&pso;PlasmaState"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/SolidLiquidPhaseTransition -->
+
+    <NamedIndividual rdf:about="&pso;SolidLiquidPhaseTransition">
+        <pso:hasFinalState rdf:resource="&pso;LiquidState"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/SolidState -->
+
+    <NamedIndividual rdf:about="&pso;SolidState">
+        <rdf:type rdf:resource="&pso;SolidState"/>
+        <pso:hasFinalState rdf:resource="&pso;LiquidState"/>
+        <pso:hasInitialState rdf:resource="&pso;SolidState"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/StrongInteraction -->
+
+    <NamedIndividual rdf:about="&pso;StrongInteraction">
+        <rdf:type rdf:resource="&pso;StrongInteraction"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/WeakInteraction -->
+
+    <NamedIndividual rdf:about="&pso;WeakInteraction">
+        <rdf:type rdf:resource="&pso;WeakInteraction"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/Wheight -->
+
+    <NamedIndividual rdf:about="&pso;Wheight">
+        <rdf:type rdf:resource="&pso;Wheight"/>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&pso;WeakInteraction">
+        <ace_lexicon:PN_sg>WeakInteraction</ace_lexicon:PN_sg>
+        <ace_lexicon:CN_sg>WeakInteraction</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>WeakInteractions</ace_lexicon:CN_pl>
+    </rdf:Description>
+    <rdf:Description rdf:about="&pso;LiquidState">
+        <ace_lexicon:PN_sg>LiquidState</ace_lexicon:PN_sg>
+        <ace_lexicon:CN_pl>LiquidStates</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>LiquidState</ace_lexicon:CN_sg>
+    </rdf:Description>
+    <rdf:Description rdf:about="&pso;Wheight">
+        <ace_lexicon:CN_sg>Wheight</ace_lexicon:CN_sg>
+        <ace_lexicon:PN_sg>Wheight</ace_lexicon:PN_sg>
+        <ace_lexicon:CN_pl>Wheights</ace_lexicon:CN_pl>
+    </rdf:Description>
+    <rdf:Description rdf:about="&pso;ElectromagneticInteraction">
+        <ace_lexicon:PN_sg>ElectromagneticInteraction</ace_lexicon:PN_sg>
+        <ace_lexicon:CN_pl>ElectromagneticInteractions</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>ElectromagneticInteraction</ace_lexicon:CN_sg>
+    </rdf:Description>
+    <rdf:Description rdf:about="&pso;GazeousState">
+        <ace_lexicon:PN_sg>GazeousState</ace_lexicon:PN_sg>
+        <ace_lexicon:CN_sg>GazeousState</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>GazeousStates</ace_lexicon:CN_pl>
+    </rdf:Description>
+    <rdf:Description rdf:about="&pso;StrongInteraction">
+        <ace_lexicon:CN_sg>StrongInteraction</ace_lexicon:CN_sg>
+        <ace_lexicon:PN_sg>StrongInteraction</ace_lexicon:PN_sg>
+        <ace_lexicon:CN_pl>StrongInteractions</ace_lexicon:CN_pl>
+    </rdf:Description>
+    <rdf:Description rdf:about="&pso;GravitationalInteraction">
+        <ace_lexicon:CN_sg>GravitationalInteraction</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>GravitationalInteractions</ace_lexicon:CN_pl>
+        <ace_lexicon:PN_sg>GravitationalInteraction</ace_lexicon:PN_sg>
+    </rdf:Description>
+    <rdf:Description rdf:about="&pso;PlasmaState">
+        <ace_lexicon:CN_sg>PlasmaState</ace_lexicon:CN_sg>
+        <ace_lexicon:PN_sg>PlasmaState</ace_lexicon:PN_sg>
+        <ace_lexicon:CN_pl>PlasmaStates</ace_lexicon:CN_pl>
+    </rdf:Description>
+    <rdf:Description rdf:about="&pso;SolidState">
+        <ace_lexicon:CN_pl>SolidStates</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>SolidState</ace_lexicon:CN_sg>
+        <ace_lexicon:PN_sg>SolidState</ace_lexicon:PN_sg>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&pso;ElectromagneticInteraction"/>
+            <rdf:Description rdf:about="&pso;GravitationalInteraction"/>
+            <rdf:Description rdf:about="&pso;StrongInteraction"/>
+            <rdf:Description rdf:about="&pso;WeakInteraction"/>
+        </distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
