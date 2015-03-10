@@ -1,0 +1,67 @@
+<h1 id="pso---documentation"><em>pso</em> - documentation</h1>
+<h2 id="literal-documentation">Literal documentation</h2>
+<p>This documentation aims to contain the entire ontology file, in the style of the coffescript <source 
+
+http://coffeescript.org/documentation/docs/grammar.html>.</p>
+<p>This page contains both human and machine readible data (RDFa triples). Therefore, if you extract the embedded data,</p>
+<p>you will have the full ontology (using <a href="http://www.w3.org/2012/pyRdfa/#distill_by_input">the w3c RDFq extractor</a> for</p>
+<p>example).</p>
+<h2 id="vocabularies-used-in-pso">Vocabularies used in <em>pso</em></h2>
+<p>The source contains</p>
+<pre><code>
+@prefix gio: &lt;http://jibe-b.github.io/ontology/&gt; .
+@prefix top: &lt;http://jibe-b.github.io/ontology/top/&gt; .
+@prefix pso: &lt;http://jibe-b.github.io/ontology/pso/&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix owl2: &lt;http://www.w3.org/2006/12/owl2#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+</code></pre>
+<script type="text/turtle">
+@prefix gio: <http://jibe-b.github.io/ontology/> .
+@prefix top: <http://jibe-b.github.io/ontology/top/> .
+@prefix pso: <http://jibe-b.github.io/ontology/pso/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix owl2: <http://www.w3.org/2006/12/owl2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Turtle triples
+
+</script>
+<h2 id="upper-ontology">Upper ontology</h2>
+<p><em>pso</em> is based on <em>top</em>, therefore it imports <em>top</em></p>
+<pre><code>gio:pso owl:imports gio:top .</code></pre>
+<script type="text/turtle">
+@prefix gio: <http://jibe-b.github.io/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+gio:pso owl:imports gio:top .
+
+</script>
+<h2 id="documentation">Documentation</h2>
+<p>blabla</p>
+<pre><code>turtle triple</code></pre>
+<script type="text/turtle">
+@prefix gio: <http://jibe-b.github.io/ontology/> .
+@prefix top: <http://jibe-b.github.io/ontology/top/> .
+@prefix pso: <http://jibe-b.github.io/ontology/pso/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix owl2: <http://www.w3.org/2006/12/owl2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Turtle triples
+
+</script>
+<!--Elements of top that have not yet been explained
+
+
+th.ttl (part)
+
+
+-->
+
