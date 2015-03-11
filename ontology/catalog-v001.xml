@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://jibe-b.github.io/ontology/top" uri="top"/>
+    <uri id="Imports Wizard Entry" name="http://jibe-b.github.io/ontology/th-TBox" uri="th-TBox"/>
     <uri id="User Entered Import Resolution" name="http://jibe-b.github.io/ontology/top" uri="top.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/jibe/ontologies/2015/2/untitled-ontology-228" uri="th-TBox.owl"/>
     <uri id="User Entered Import Resolution" name="http://jibe-b.github.io/ontology/th-TBox/" uri="th.owl"/>
     <uri id="User Entered Import Resolution" name="http://jibe-b.github.io/ontology/th-ps/" uri="th-ps.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="http://jibe-b.github.io/ontology/logic" uri="logic.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="http://jibe-b.github.io/ontology/method-ABox/" uri="method-ABox.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="http://jibe-b.github.io/ontology/method/method" uri="method.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="http://jibe-b.github.io/ontology/mo" uri="mo.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="http://jibe-b.github.io/ontology/phy/" uri="archive/phy/phy.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="http://jibe-b.github.io/ontology/pso" uri="pso-ABox.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="http://jibe-b.github.io/ontology/pso/" uri="pso.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="http://jibe-b.github.io/ontology/sci" uri="sci/sci.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="http://jibe-b.github.io/ontology/sci-m" uri="sci-m/sci-m.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="http://jibe-b.github.io/ontology/sci-ps" uri="sci-ps/sci-ps.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="http://jibe-b.github.io/ontology/sci-ps-ABox/" uri="sci-ps-ABox/sci-ps-ABox.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="http://jibe-b.github.io/ontology/tech" uri="tech/tech.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="http://jibe-b.github.io/ontology/th-ps-ABox/" uri="th-ps.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="http://jibe-b.github.io/ontology/th/" uri="th.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="http://jibe-b.github.io/ontology/top/" uri="top.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="http://owl.man.ac.uk/2006/07/sssw/people" uri="prgm.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="http://webprotege.stanford.edu/project/9aEsC9qTsWjmtcnW8Gd7th" uri="pso/archives/pso-pn-ancienne-version.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="http://webprotege.stanford.edu/project/YjFCRy5AJithhKz3SMsyW" uri="pso/archives/pso.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="http://webprotege.stanford.edu/project/ynJjGYZhvlLUmY4pzI9Im" uri="pso/archives/pso-c-ancienne-version.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="duplicate:http://www.w3.org/2002/07/owl" uri="pso-standard-model-TBox.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="duplicate:http://www.w3.org/2002/07/owl" uri="pso-standard-model.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="shadowed:http://webprotege.stanford.edu/project/YjFCRy5AJithhKz3SMsyW" uri="pso-archive/2015-01-15/pso.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1426020028500" name="shadowed:http://www.w3.org/2002/07/owl" uri="pso/pso.xml.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426110406499" name="http://jibe-b.github.io/ontology/logic" uri="logic.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426110406499" name="http://jibe-b.github.io/ontology/method-ABox/" uri="method-ABox.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426110406499" name="http://jibe-b.github.io/ontology/method/method" uri="method.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426110406499" name="http://jibe-b.github.io/ontology/mo" uri="mo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426110406499" name="http://jibe-b.github.io/ontology/phy/" uri="archive/phy/phy.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426110406499" name="http://jibe-b.github.io/ontology/pso" uri="pso-ABox.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426110406499" name="http://jibe-b.github.io/ontology/sci" uri="sci/sci.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426110406499" name="http://jibe-b.github.io/ontology/sci-m" uri="sci-m/sci-m.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426110406499" name="http://jibe-b.github.io/ontology/sci-ps" uri="sci-ps/sci-ps.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426110406499" name="http://jibe-b.github.io/ontology/sci-ps-ABox/" uri="sci-ps-ABox/sci-ps-ABox.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426110406499" name="http://jibe-b.github.io/ontology/tech" uri="tech/tech.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426110406499" name="http://jibe-b.github.io/ontology/th-ps" uri="th-ps.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426110406499" name="http://jibe-b.github.io/ontology/th/" uri="th.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426110406499" name="http://jibe-b.github.io/ontology/top/" uri="archive/top.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426110406499" name="http://owl.man.ac.uk/2006/07/sssw/people" uri="prgm.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426110406499" name="http://webprotege.stanford.edu/project/9aEsC9qTsWjmtcnW8Gd7th" uri="pso-folder/archives/pso-pn-ancienne-version.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426110406499" name="http://webprotege.stanford.edu/project/YjFCRy5AJithhKz3SMsyW" uri="pso-folder/archives/pso.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426110406499" name="http://webprotege.stanford.edu/project/ynJjGYZhvlLUmY4pzI9Im" uri="pso-folder/archives/pso-c-ancienne-version.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426110406499" name="duplicate:http://www.w3.org/2002/07/owl" uri="pso-standard-model-TBox.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426110406499" name="duplicate:http://www.w3.org/2002/07/owl" uri="pso-standard-model.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426110406499" name="shadowed:http://webprotege.stanford.edu/project/YjFCRy5AJithhKz3SMsyW" uri="pso-archive/2015-01-15/pso.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426110406499" name="shadowed:http://www.w3.org/2002/07/owl" uri="pso-folder/pso.xml.owl"/>
     </group>
 </catalog>
