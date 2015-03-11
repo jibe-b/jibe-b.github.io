@@ -9,8 +9,8 @@
 ]>
 
 
-<rdf:RDF xmlns="http://jibe-b.github.io/ontology/th-ps-ABox/"
-     xml:base="http://jibe-b.github.io/ontology/th-ps-ABox/"
+<rdf:RDF xmlns="http://jibe-b.github.io/ontology/th-ps"
+     xml:base="http://jibe-b.github.io/ontology/th-ps"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
