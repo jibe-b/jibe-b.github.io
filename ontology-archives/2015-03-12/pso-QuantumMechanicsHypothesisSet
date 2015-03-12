@@ -18,33 +18,6 @@
     <owl:Ontology rdf:about="http://jibe-b.github.io/ontology/pso-QuantumMechanicsHypothesisSet">
         <owl:imports rdf:resource="http://jibe-b.github.io/ontology/pso"/>
     </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://jibe-b.github.io/ontology/pso-QuantumMechanicsHypothesisSet/Hamiltonian -->
-
-    <owl:NamedIndividual rdf:about="http://jibe-b.github.io/ontology/pso-QuantumMechanicsHypothesisSet/Hamiltonian">
-        <rdf:type rdf:resource="http://jibe-b.github.io/ontology/pso/Hamiltonian"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://jibe-b.github.io/ontology/pso-QuantumMechanicsHypothesisSet/WaveFunction -->
-
-    <owl:NamedIndividual rdf:about="http://jibe-b.github.io/ontology/pso-QuantumMechanicsHypothesisSet/WaveFunction">
-        <rdf:type rdf:resource="http://jibe-b.github.io/ontology/pso/WaveFunction"/>
-    </owl:NamedIndividual>
 </rdf:RDF>
 
 

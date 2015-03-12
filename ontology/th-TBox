@@ -19,13 +19,13 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://jibe-b.github.io/ontology/th-ps">
+    <owl:Ontology rdf:about="http://jibe-b.github.io/ontology/th-TBox">
         <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
         <webprotege:revision rdf:datatype="&xsd;integer">1</webprotege:revision>
         <dc:date rdf:datatype="&xsd;dateTime">Mar 11, 2015 12:12:12 PM</dc:date>
         <rdfs:comment rdf:datatype="&xsd;string">This ontology was generated from an ontology revision in WebProtege http://opendata1.opendata.u-psud.fr</rdfs:comment>
         <dc:creator rdf:datatype="&xsd;string">system</dc:creator>
-        <owl:imports rdf:resource="http://jibe-b.github.io/ontology/th-TBox"/>
+        <owl:imports rdf:resource="http://jibe-b.github.io/ontology/top"/>
     </owl:Ontology>
 </rdf:RDF>
 

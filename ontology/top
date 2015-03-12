@@ -1,24 +1,39 @@
 <?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY top "http://jibe-b.github.io/ontology/top/" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ace_lexicon "http://attempto.ifi.uzh.ch/ace_lexicon#" >
+    <!ENTITY webprotege "http://protege.stanford.edu/webprotege/" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
 <rdf:RDF xmlns="http://jibe-b.github.io/ontology/top#"
      xml:base="http://jibe-b.github.io/ontology/top"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:webprotege="http://protege.stanford.edu/webprotege/"
-     xmlns:top="http://jibe-b.github.io/ontology/top/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#"
+     xmlns:top="http://jibe-b.github.io/ontology/top/">
     <owl:Ontology rdf:about="http://jibe-b.github.io/ontology/top">
-        <webprotege:revision rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</webprotege:revision>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">Mar 12, 2015 1:52:40 AM</dc:date>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology was generated from an ontology revision in WebProtege http://opendata1.opendata.u-psud.fr</rdfs:comment>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jibe</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">system</dc:creator>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</rdfs:comment>
+        <webprotege:revision rdf:datatype="&xsd;integer">43</webprotege:revision>
+        <dc:date rdf:datatype="&xsd;dateTime">Mar 12, 2015 1:52:40 AM</dc:date>
+        <rdfs:comment rdf:datatype="&xsd;string">This ontology was generated from an ontology revision in WebProtege http://opendata1.opendata.u-psud.fr</rdfs:comment>
+        <dc:creator rdf:datatype="&xsd;string">jibe</dc:creator>
+        <dc:creator rdf:datatype="&xsd;string">system</dc:creator>
+        <rdfs:comment rdf:datatype="&xsd;string">top</rdfs:comment>
         <terms:license rdf:resource="http://creativecommons.org/licences/by/4.0/"/>
-        <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
+        <owl:imports rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl"/>
     </owl:Ontology>
     
 
@@ -36,48 +51,45 @@
 
     <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl -->
 
-    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;CN_pl"/>
     
 
 
     <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg -->
 
-    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;CN_sg"/>
     
 
 
     <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl -->
 
-    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_pl"/>
     
 
 
     <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg -->
 
-    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_sg"/>
     
 
 
     <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg -->
 
-    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_vbg"/>
     
 
 
     <!-- http://jibe-b.github.io/ontology/top/AxiomType -->
 
-    <owl:AnnotationProperty rdf:about="http://jibe-b.github.io/ontology/top/AxiomType">
-        <ace_lexicon:CN_pl>AxiomTypes</ace_lexicon:CN_pl>
-        <ace_lexicon:CN_sg>AxiomType</ace_lexicon:CN_sg>
-        <rdfs:comment xml:lang="en">should be moved</rdfs:comment>
-        <rdfs:range rdf:resource="http://jibe-b.github.io/ontology/top/AxiomType"/>
+    <owl:AnnotationProperty rdf:about="&top;AxiomType">
+        <rdfs:range rdf:resource="&top;AxiomType"/>
     </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/license -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    <owl:AnnotationProperty rdf:about="&terms;license"/>
     
 
 
@@ -94,64 +106,51 @@
 
     <!-- http://jibe-b.github.io/ontology/top/hasFoundationalHypothesis -->
 
-    <owl:ObjectProperty rdf:about="http://jibe-b.github.io/ontology/top/hasFoundationalHypothesis">
-        <rdfs:domain rdf:resource="http://jibe-b.github.io/ontology/top/TheoreticalFrame"/>
+    <owl:ObjectProperty rdf:about="&top;hasFoundationalHypothesis">
+        <rdfs:domain rdf:resource="&top;TheoreticalFrame"/>
         <rdfs:range rdf:resource="http://webprotege.stanford.edu/RCLI93MYBotVusXrhsLeatK"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://jibe-b.github.io/ontology/top/hasPart -->
-
-    <owl:ObjectProperty rdf:about="http://jibe-b.github.io/ontology/top/hasPart">
-        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RBE2bBnzXFe48EAUXahuwyw"/>
-        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RCLI93MYBotVusXrhsLeatK"/>
-        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RD1CmswOwOEib6Y662p5Oau"/>
-        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RDzIqjfKfuHS4qCmU3nXk7T"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://jibe-b.github.io/ontology/top/hasProof -->
 
-    <owl:ObjectProperty rdf:about="http://jibe-b.github.io/ontology/top/hasProof">
+    <owl:ObjectProperty rdf:about="&top;hasProof">
         <rdfs:comment>A KnowledgeProposition hasProof a derivation graph. A class is defined for this: KnowledgePropositionProof</rdfs:comment>
-        <rdfs:domain rdf:resource="http://jibe-b.github.io/ontology/top/KnowledgeElement"/>
-        <rdfs:range rdf:resource="http://jibe-b.github.io/ontology/top/KnowledgePropositionProof"/>
+        <rdfs:domain rdf:resource="&top;KnowledgeElement"/>
+        <rdfs:range rdf:resource="&top;KnowledgePropositionProof"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://jibe-b.github.io/ontology/top/sufficientToDescribePhenomenon -->
 
-    <owl:ObjectProperty rdf:about="http://jibe-b.github.io/ontology/top/sufficientToDescribePhenomenon">
+    <owl:ObjectProperty rdf:about="&top;sufficientToDescribePhenomenon">
         <rdfs:comment>A model is efficient. Some phenomenon can be described.</rdfs:comment>
-        <rdfs:domain rdf:resource="http://jibe-b.github.io/ontology/top/TheoreticalFrame"/>
-        <owl:propertyDisjointWith rdf:resource="http://jibe-b.github.io/ontology/top/unsufficientToDescribePhenomenon"/>
-        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R8Zu21bHXBXzTiymp2l7RzX"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="&top;TheoreticalFrame"/>
+        <owl:propertyDisjointWith rdf:resource="&top;unsufficientToDescribePhenomenon"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://jibe-b.github.io/ontology/top/unsufficientToDescribePhenomenon -->
 
-    <owl:ObjectProperty rdf:about="http://jibe-b.github.io/ontology/top/unsufficientToDescribePhenomenon">
+    <owl:ObjectProperty rdf:about="&top;unsufficientToDescribePhenomenon">
         <rdfs:comment>A model is limited. Some phenomenon can not be described.</rdfs:comment>
-        <rdfs:domain rdf:resource="http://jibe-b.github.io/ontology/top/TheoreticalFrame"/>
-        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R8Zu21bHXBXzTiymp2l7RzX"/>
+        <rdfs:domain rdf:resource="&top;TheoreticalFrame"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://jibe-b.github.io/ontology/top/validUnderTheoreticalFrame -->
 
-    <owl:ObjectProperty rdf:about="http://jibe-b.github.io/ontology/top/validUnderTheoreticalFrame">
-        <ace_lexicon:TV_pl>validUnderTheoreticalFrame</ace_lexicon:TV_pl>
+    <owl:ObjectProperty rdf:about="&top;validUnderTheoreticalFrame">
         <ace_lexicon:TV_vbg>validUnderTheoreticalFramed</ace_lexicon:TV_vbg>
         <ace_lexicon:TV_sg>validUnderTheoreticalFrames</ace_lexicon:TV_sg>
-        <rdfs:domain rdf:resource="http://jibe-b.github.io/ontology/top/KnowledgeElement"/>
-        <rdfs:range rdf:resource="http://jibe-b.github.io/ontology/top/TheoreticalFrame"/>
+        <ace_lexicon:TV_pl>validUnderTheoreticalFrame</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="&top;KnowledgeElement"/>
+        <rdfs:range rdf:resource="&top;TheoreticalFrame"/>
     </owl:ObjectProperty>
     
 
@@ -160,9 +159,9 @@
 
     <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R9TVvAtP85MHBI3L6NEpTdq">
         <rdfs:label>resultsIn</rdfs:label>
-        <rdfs:domain rdf:resource="http://jibe-b.github.io/ontology/top/TheoreticalFrame"/>
+        <rdfs:domain rdf:resource="&top;TheoreticalFrame"/>
         <rdfs:range rdf:resource="http://webprotege.stanford.edu/RD1CmswOwOEib6Y662p5Oau"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -180,9 +179,9 @@
 
     <!-- http://jibe-b.github.io/ontology/top/proved -->
 
-    <owl:DatatypeProperty rdf:about="http://jibe-b.github.io/ontology/top/proved">
+    <owl:DatatypeProperty rdf:about="&top;proved">
         <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R5G2159Vr3gWyi0UDdlru2"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
     </owl:DatatypeProperty>
     
 
@@ -200,19 +199,16 @@
 
     <!-- http://jibe-b.github.io/ontology/top/AxiomType -->
 
-    <owl:Class rdf:about="http://jibe-b.github.io/ontology/top/AxiomType">
-        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/top/KnowledgeElementProperty"/>
-        <ace_lexicon:CN_pl>AxiomTypes</ace_lexicon:CN_pl>
-        <ace_lexicon:CN_sg>AxiomType</ace_lexicon:CN_sg>
-        <rdfs:comment xml:lang="en">should be moved</rdfs:comment>
+    <owl:Class rdf:about="&top;AxiomType">
+        <rdfs:subClassOf rdf:resource="&top;KnowledgeElementProperty"/>
     </owl:Class>
     
 
 
     <!-- http://jibe-b.github.io/ontology/top/DefinitionAxiom -->
 
-    <owl:Class rdf:about="http://jibe-b.github.io/ontology/top/DefinitionAxiom">
-        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/top/AxiomType"/>
+    <owl:Class rdf:about="&top;DefinitionAxiom">
+        <rdfs:subClassOf rdf:resource="&top;AxiomType"/>
         <ace_lexicon:CN_pl>DefinitionAxioms</ace_lexicon:CN_pl>
         <ace_lexicon:CN_sg>DefinitionAxiom</ace_lexicon:CN_sg>
     </owl:Class>
@@ -221,65 +217,60 @@
 
     <!-- http://jibe-b.github.io/ontology/top/DerivationGraph -->
 
-    <owl:Class rdf:about="http://jibe-b.github.io/ontology/top/DerivationGraph">
-        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/top/KnowledgeElement"/>
+    <owl:Class rdf:about="&top;DerivationGraph">
+        <rdfs:subClassOf rdf:resource="&top;KnowledgeElement"/>
     </owl:Class>
     
 
 
     <!-- http://jibe-b.github.io/ontology/top/EntityProperty -->
 
-    <owl:Class rdf:about="http://jibe-b.github.io/ontology/top/EntityProperty">
-        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/top/Property"/>
+    <owl:Class rdf:about="&top;EntityProperty">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Quality"/>
     </owl:Class>
     
 
 
     <!-- http://jibe-b.github.io/ontology/top/KnowledgeElement -->
 
-    <owl:Class rdf:about="http://jibe-b.github.io/ontology/top/KnowledgeElement">
-        <ace_lexicon:CN_pl>KnowledgePropositions</ace_lexicon:CN_pl>
+    <owl:Class rdf:about="&top;KnowledgeElement">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationEntity"/>
         <ace_lexicon:CN_sg>KnowledgeProposition</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>KnowledgePropositions</ace_lexicon:CN_pl>
     </owl:Class>
     
 
 
     <!-- http://jibe-b.github.io/ontology/top/KnowledgeElementProperty -->
 
-    <owl:Class rdf:about="http://jibe-b.github.io/ontology/top/KnowledgeElementProperty">
-        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/top/Property"/>
+    <owl:Class rdf:about="&top;KnowledgeElementProperty">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Quality"/>
     </owl:Class>
     
 
 
     <!-- http://jibe-b.github.io/ontology/top/KnowledgePropositionProof -->
 
-    <owl:Class rdf:about="http://jibe-b.github.io/ontology/top/KnowledgePropositionProof">
-        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/top/DerivationGraph"/>
+    <owl:Class rdf:about="&top;KnowledgePropositionProof">
+        <rdfs:subClassOf rdf:resource="&top;DerivationGraph"/>
     </owl:Class>
     
 
 
     <!-- http://jibe-b.github.io/ontology/top/Model -->
 
-    <owl:Class rdf:about="http://jibe-b.github.io/ontology/top/Model">
-        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/top/TheoreticalFrame"/>
-        <ace_lexicon:CN_sg>Model</ace_lexicon:CN_sg>
+    <owl:Class rdf:about="&top;Model">
+        <rdfs:subClassOf rdf:resource="&top;TheoreticalFrame"/>
         <ace_lexicon:CN_pl>Models</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Model</ace_lexicon:CN_sg>
     </owl:Class>
-    
-
-
-    <!-- http://jibe-b.github.io/ontology/top/Property -->
-
-    <owl:Class rdf:about="http://jibe-b.github.io/ontology/top/Property"/>
     
 
 
     <!-- http://jibe-b.github.io/ontology/top/QualifyingAxiom -->
 
-    <owl:Class rdf:about="http://jibe-b.github.io/ontology/top/QualifyingAxiom">
-        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/top/AxiomType"/>
+    <owl:Class rdf:about="&top;QualifyingAxiom">
+        <rdfs:subClassOf rdf:resource="&top;AxiomType"/>
         <ace_lexicon:CN_pl>QualifyingAtons</ace_lexicon:CN_pl>
         <ace_lexicon:CN_sg>QualifyingAton</ace_lexicon:CN_sg>
     </owl:Class>
@@ -288,8 +279,8 @@
 
     <!-- http://jibe-b.github.io/ontology/top/TheoreticalFrame -->
 
-    <owl:Class rdf:about="http://jibe-b.github.io/ontology/top/TheoreticalFrame">
-        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/top/KnowledgeElement"/>
+    <owl:Class rdf:about="&top;TheoreticalFrame">
+        <rdfs:subClassOf rdf:resource="&top;KnowledgeElement"/>
         <ace_lexicon:CN_pl>TheoreticalFrames</ace_lexicon:CN_pl>
         <ace_lexicon:CN_sg>TheoreticalFrame</ace_lexicon:CN_sg>
     </owl:Class>
@@ -298,8 +289,8 @@
 
     <!-- http://jibe-b.github.io/ontology/top/Theory -->
 
-    <owl:Class rdf:about="http://jibe-b.github.io/ontology/top/Theory">
-        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/top/TheoreticalFrame"/>
+    <owl:Class rdf:about="&top;Theory">
+        <rdfs:subClassOf rdf:resource="&top;TheoreticalFrame"/>
         <ace_lexicon:CN_sg>Theory</ace_lexicon:CN_sg>
         <ace_lexicon:CN_pl>Theories</ace_lexicon:CN_pl>
     </owl:Class>
@@ -310,15 +301,7 @@
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/R5G2159Vr3gWyi0UDdlru2">
         <rdfs:label>KnowledgeProposition</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/top/KnowledgeElement"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R8Zu21bHXBXzTiymp2l7RzX -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R8Zu21bHXBXzTiymp2l7RzX">
-        <rdfs:label>pso:Phenomenon</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&top;KnowledgeElement"/>
     </owl:Class>
     
 
@@ -345,7 +328,7 @@
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/RCLI93MYBotVusXrhsLeatK">
         <rdfs:label>Hypothesis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/top/KnowledgeElement"/>
+        <rdfs:subClassOf rdf:resource="&top;KnowledgeElement"/>
     </owl:Class>
     
 
@@ -365,9 +348,25 @@
         <rdfs:label>HypothesisSet</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCLI93MYBotVusXrhsLeatK"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&top;AxiomType">
+        <ace_lexicon:CN_sg>AxiomType</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>AxiomTypes</ace_lexicon:CN_pl>
+        <rdfs:comment xml:lang="en">should be moved</rdfs:comment>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
 

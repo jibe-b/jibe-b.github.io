@@ -132,7 +132,6 @@
     <!-- http://jibe-b.github.io/ontology/mo/Distribution -->
 
     <Class rdf:about="http://jibe-b.github.io/ontology/mo/Distribution">
-        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/mo/MathematicalExpression"/>
         <ace_lexicon:CN_sg>Distribution</ace_lexicon:CN_sg>
         <ace_lexicon:CN_pl>Distributions</ace_lexicon:CN_pl>
     </Class>
@@ -142,7 +141,6 @@
     <!-- http://jibe-b.github.io/ontology/mo/Function -->
 
     <Class rdf:about="http://jibe-b.github.io/ontology/mo/Function">
-        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/mo/MathematicalExpression"/>
         <ace_lexicon:CN_sg>Function</ace_lexicon:CN_sg>
         <ace_lexicon:CN_pl>Functions</ace_lexicon:CN_pl>
     </Class>
@@ -155,22 +153,6 @@
         <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/mo/Number"/>
         <ace_lexicon:CN_pl>Integers</ace_lexicon:CN_pl>
         <ace_lexicon:CN_sg>Integer</ace_lexicon:CN_sg>
-    </Class>
-    
-
-
-    <!-- http://jibe-b.github.io/ontology/mo/MathematicalExpression -->
-
-    <Class rdf:about="http://jibe-b.github.io/ontology/mo/MathematicalExpression">
-        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationRealization"/>
-    </Class>
-    
-
-
-    <!-- http://jibe-b.github.io/ontology/mo/MathematicalObject -->
-
-    <Class rdf:about="http://jibe-b.github.io/ontology/mo/MathematicalObject">
-        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
     </Class>
     
 
@@ -188,7 +170,6 @@
     <!-- http://jibe-b.github.io/ontology/mo/Number -->
 
     <Class rdf:about="http://jibe-b.github.io/ontology/mo/Number">
-        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/mo/MathematicalExpression"/>
         <ace_lexicon:CN_pl>Nombres</ace_lexicon:CN_pl>
         <ace_lexicon:CN_sg>Nombre</ace_lexicon:CN_sg>
     </Class>
@@ -198,7 +179,6 @@
     <!-- http://jibe-b.github.io/ontology/mo/Operator -->
 
     <Class rdf:about="http://jibe-b.github.io/ontology/mo/Operator">
-        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/mo/MathematicalExpression"/>
         <ace_lexicon:CN_sg>Opérateur</ace_lexicon:CN_sg>
         <ace_lexicon:CN_pl>Opérateur</ace_lexicon:CN_pl>
     </Class>
@@ -248,7 +228,6 @@
     <!-- http://jibe-b.github.io/ontology/mo/Variable -->
 
     <Class rdf:about="http://jibe-b.github.io/ontology/mo/Variable">
-        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/mo/MathematicalExpression"/>
         <ace_lexicon:CN_pl>Variables</ace_lexicon:CN_pl>
         <ace_lexicon:CN_sg>Variable</ace_lexicon:CN_sg>
     </Class>

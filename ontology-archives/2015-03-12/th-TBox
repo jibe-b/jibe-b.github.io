@@ -27,33 +27,6 @@
         <dc:creator rdf:datatype="&xsd;string">system</dc:creator>
         <owl:imports rdf:resource="http://jibe-b.github.io/ontology/th-TBox"/>
     </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://jibe-b.github.io/ontology/th-ps/PhysicalEquation -->
-
-    <owl:Class rdf:about="http://jibe-b.github.io/ontology/th-ps/PhysicalEquation">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBE2bBnzXFe48EAUXahuwyw"/>
-    </owl:Class>
-    
-
-
-    <!-- http://jibe-b.github.io/ontology/th-ps/SchroedingerEquation -->
-
-    <owl:Class rdf:about="http://jibe-b.github.io/ontology/th-ps/SchroedingerEquation">
-        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/th-ps/PhysicalEquation"/>
-    </owl:Class>
 </rdf:RDF>
 
 
