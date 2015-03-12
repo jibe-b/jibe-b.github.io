@@ -5,7 +5,9 @@
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY top "http://jibe-b.github.io/ontology/top/" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY th-ps "http://jibe-b.github.io/ontology/th-ps/" >
     <!ENTITY webprotege "http://protege.stanford.edu/webprotege/" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
 ]>
@@ -14,11 +16,13 @@
 <rdf:RDF xmlns="http://jibe-b.github.io/ontology/th-ps#"
      xml:base="http://jibe-b.github.io/ontology/th-ps"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:th-ps="http://jibe-b.github.io/ontology/th-ps/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:webprotege="http://protege.stanford.edu/webprotege/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:top="http://jibe-b.github.io/ontology/top/">
     <owl:Ontology rdf:about="http://jibe-b.github.io/ontology/th-ps">
         <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
         <webprotege:revision rdf:datatype="&xsd;integer">1</webprotege:revision>
@@ -33,7 +37,7 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Classes
+    // Data properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
@@ -41,19 +45,176 @@
     
 
 
-    <!-- http://jibe-b.github.io/ontology/th-ps/PhysicalEquation -->
+    <!-- http://jibe-b.github.io/ontology/th-ps/hasAssociatedOntology -->
 
-    <owl:Class rdf:about="http://jibe-b.github.io/ontology/th-ps/PhysicalEquation">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBE2bBnzXFe48EAUXahuwyw"/>
-    </owl:Class>
+    <owl:DatatypeProperty rdf:about="&th-ps;hasAssociatedOntology">
+        <rdfs:domain rdf:resource="http://jibe-b.github.io/ontology/R5G2159Vr3gWyi0UDdlru2"/>
+        <rdfs:domain rdf:resource="http://jibe-b.github.io/ontology/RCLI93MYBotVusXrhsLeatK"/>
+        <rdfs:range rdf:resource="&xsd;anyURI"/>
+    </owl:DatatypeProperty>
     
 
 
-    <!-- http://jibe-b.github.io/ontology/th-ps/SchroedingerEquation -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <owl:Class rdf:about="http://jibe-b.github.io/ontology/th-ps/SchroedingerEquation">
-        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/th-ps/PhysicalEquation"/>
-    </owl:Class>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/th-ps/AtomInJJCoupling -->
+
+    <owl:NamedIndividual rdf:about="&th-ps;AtomInJJCoupling">
+        <rdf:type rdf:resource="&top;Model"/>
+        <top:hasFoundationalHypothesis rdf:resource="&th-ps;AtomInJJCouplingHypothesisSet"/>
+        <top:hasResult rdf:resource="&th-ps;AtomInJJCouplingKnowledgePropositionSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/th-ps/AtomInJJCouplingHypothesisSet -->
+
+    <owl:NamedIndividual rdf:about="&th-ps;AtomInJJCouplingHypothesisSet">
+        <rdf:type rdf:resource="http://jibe-b.github.io/ontology/RDzIqjfKfuHS4qCmU3nXk7T"/>
+        <top:isFoundationalHypothesisOf rdf:resource="&th-ps;AtomInJJCoupling"/>
+        <top:isHypothesisOf rdf:resource="&th-ps;AtomInJJCouplingKnowledgePropositionSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/th-ps/AtomInJJCouplingKnowledgePropositionSet -->
+
+    <owl:NamedIndividual rdf:about="&th-ps;AtomInJJCouplingKnowledgePropositionSet">
+        <rdf:type rdf:resource="http://jibe-b.github.io/ontology/RD1CmswOwOEib6Y662p5Oau"/>
+        <top:isResultOf rdf:resource="&th-ps;AtomInJJCoupling"/>
+        <top:hasHypothesis rdf:resource="&th-ps;AtomInJJCouplingHypothesisSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/th-ps/AtomInLSCoupling -->
+
+    <owl:NamedIndividual rdf:about="&th-ps;AtomInLSCoupling">
+        <rdf:type rdf:resource="&top;Model"/>
+        <top:hasFoundationalHypothesis rdf:resource="&th-ps;AtomInLSCouplingHypothesisSet"/>
+        <top:hasResult rdf:resource="&th-ps;AtomInLSCouplingKnowledgePropositionSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/th-ps/AtomInLSCouplingHypothesisSet -->
+
+    <owl:NamedIndividual rdf:about="&th-ps;AtomInLSCouplingHypothesisSet">
+        <rdf:type rdf:resource="http://jibe-b.github.io/ontology/RDzIqjfKfuHS4qCmU3nXk7T"/>
+        <top:isFoundationalHypothesisOf rdf:resource="&th-ps;AtomInLSCoupling"/>
+        <top:isHypothesisOf rdf:resource="&th-ps;AtomInLSCouplingKnowledgePropositionSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/th-ps/AtomInLSCouplingKnowledgePropositionSet -->
+
+    <owl:NamedIndividual rdf:about="&th-ps;AtomInLSCouplingKnowledgePropositionSet">
+        <rdf:type rdf:resource="http://jibe-b.github.io/ontology/RD1CmswOwOEib6Y662p5Oau"/>
+        <top:isResultOf rdf:resource="&th-ps;AtomInLSCoupling"/>
+        <top:hasHypothesis rdf:resource="&th-ps;AtomInLSCouplingHypothesisSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/th-ps/AtomWithIndependentElectrons -->
+
+    <owl:NamedIndividual rdf:about="&th-ps;AtomWithIndependentElectrons">
+        <rdf:type rdf:resource="&top;Model"/>
+        <top:hasFoundationalHypothesis rdf:resource="&th-ps;AtomWithIndependentElectronsHypothesisSet"/>
+        <top:hasResult rdf:resource="&th-ps;AtomWithIndependentElectronsKnowledgePropositionSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/th-ps/AtomWithIndependentElectronsHypothesisSet -->
+
+    <owl:NamedIndividual rdf:about="&th-ps;AtomWithIndependentElectronsHypothesisSet">
+        <rdf:type rdf:resource="http://jibe-b.github.io/ontology/RDzIqjfKfuHS4qCmU3nXk7T"/>
+        <top:isFoundationalHypothesisOf rdf:resource="&th-ps;AtomWithIndependentElectrons"/>
+        <top:isHypothesisOf rdf:resource="&th-ps;AtomWithIndependentElectronsKnowledgePropositionSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/th-ps/AtomWithIndependentElectronsKnowledgePropositionSet -->
+
+    <owl:NamedIndividual rdf:about="&th-ps;AtomWithIndependentElectronsKnowledgePropositionSet">
+        <rdf:type rdf:resource="http://jibe-b.github.io/ontology/RD1CmswOwOEib6Y662p5Oau"/>
+        <top:isResultOf rdf:resource="&th-ps;AtomWithIndependentElectrons"/>
+        <top:hasHypothesis rdf:resource="&th-ps;AtomWithIndependentElectronsHypothesisSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/th-ps/QuantumMechanicsHypothesisSet -->
+
+    <owl:NamedIndividual rdf:about="&th-ps;QuantumMechanicsHypothesisSet">
+        <rdf:type rdf:resource="http://jibe-b.github.io/ontology/RDzIqjfKfuHS4qCmU3nXk7T"/>
+        <th-ps:hasAssociatedOntology rdf:datatype="&xsd;anyURI">http://jibe-b.github.io/ontology/pso-QuantumMechanicsHypothesisSet</th-ps:hasAssociatedOntology>
+        <top:isFoundationalHypothesisOf rdf:resource="&th-ps;QuantumMechanicsTheory"/>
+        <top:isHypothesisOf rdf:resource="&th-ps;QuantumMechanicsTheoryKnowledgePropositionSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/th-ps/QuantumMechanicsTheory -->
+
+    <owl:NamedIndividual rdf:about="&th-ps;QuantumMechanicsTheory">
+        <rdf:type rdf:resource="&top;Theory"/>
+        <top:hasFoundationalHypothesis rdf:resource="&th-ps;QuantumMechanicsHypothesisSet"/>
+        <top:hasResult rdf:resource="&th-ps;QuantumMechanicsTheoryKnowledgePropositionSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/th-ps/QuantumMechanicsTheoryKnowledgePropositionSet -->
+
+    <owl:NamedIndividual rdf:about="&th-ps;QuantumMechanicsTheoryKnowledgePropositionSet">
+        <rdf:type rdf:resource="http://jibe-b.github.io/ontology/RD1CmswOwOEib6Y662p5Oau"/>
+        <th-ps:hasAssociatedOntology rdf:datatype="&xsd;anyURI">http://jibe-b.github.io/ontology/pso-QuantumMechanicsKnowledgePropositionSet</th-ps:hasAssociatedOntology>
+        <top:hasHypothesis rdf:resource="&th-ps;QuantumMechanicsHypothesisSet"/>
+        <top:isResultOf rdf:resource="&th-ps;QuantumMechanicsTheory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/th-ps/StandardModel -->
+
+    <owl:NamedIndividual rdf:about="&th-ps;StandardModel">
+        <rdf:type rdf:resource="&top;Model"/>
+        <top:hasFoundationalHypothesis rdf:resource="&th-ps;StandardModelHypothesisSet"/>
+        <top:hasResult rdf:resource="&th-ps;StandardModelKnowledgePropositionSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/th-ps/StandardModelHypothesisSet -->
+
+    <owl:NamedIndividual rdf:about="&th-ps;StandardModelHypothesisSet">
+        <rdf:type rdf:resource="http://jibe-b.github.io/ontology/RDzIqjfKfuHS4qCmU3nXk7T"/>
+        <th-ps:hasAssociatedOntology rdf:datatype="&xsd;anyURI">http://jibe-b.github.io/ontology/pso-StandardModelHypothesisSet</th-ps:hasAssociatedOntology>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/th-ps/StandardModelKnowledgePropositionSet -->
+
+    <owl:NamedIndividual rdf:about="&th-ps;StandardModelKnowledgePropositionSet">
+        <rdf:type rdf:resource="http://jibe-b.github.io/ontology/RD1CmswOwOEib6Y662p5Oau"/>
+        <th-ps:hasAssociatedOntology rdf:datatype="&xsd;anyURI">http://jibe-b.github.io/ontology/pso-StandardModelKnowledgePropositionSet</th-ps:hasAssociatedOntology>
+        <top:isResultOf rdf:resource="&th-ps;StandardModel"/>
+        <top:hasHypothesis rdf:resource="&th-ps;StandardModelHypothesisSet"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 

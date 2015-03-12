@@ -107,61 +107,56 @@
     <!-- http://jibe-b.github.io/ontology/top/hasFoundationalHypothesis -->
 
     <owl:ObjectProperty rdf:about="&top;hasFoundationalHypothesis">
-        <rdfs:domain rdf:resource="&top;TheoreticalFrame"/>
-        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RCLI93MYBotVusXrhsLeatK"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://jibe-b.github.io/ontology/top/hasProof -->
-
-    <owl:ObjectProperty rdf:about="&top;hasProof">
-        <rdfs:comment>A KnowledgeProposition hasProof a derivation graph. A class is defined for this: KnowledgePropositionProof</rdfs:comment>
-        <rdfs:domain rdf:resource="&top;KnowledgeElement"/>
-        <rdfs:range rdf:resource="&top;KnowledgePropositionProof"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://jibe-b.github.io/ontology/top/sufficientToDescribePhenomenon -->
-
-    <owl:ObjectProperty rdf:about="&top;sufficientToDescribePhenomenon">
-        <rdfs:comment>A model is efficient. Some phenomenon can be described.</rdfs:comment>
-        <rdfs:domain rdf:resource="&top;TheoreticalFrame"/>
-        <owl:propertyDisjointWith rdf:resource="&top;unsufficientToDescribePhenomenon"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://jibe-b.github.io/ontology/top/unsufficientToDescribePhenomenon -->
-
-    <owl:ObjectProperty rdf:about="&top;unsufficientToDescribePhenomenon">
-        <rdfs:comment>A model is limited. Some phenomenon can not be described.</rdfs:comment>
-        <rdfs:domain rdf:resource="&top;TheoreticalFrame"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://jibe-b.github.io/ontology/top/validUnderTheoreticalFrame -->
-
-    <owl:ObjectProperty rdf:about="&top;validUnderTheoreticalFrame">
-        <ace_lexicon:TV_vbg>validUnderTheoreticalFramed</ace_lexicon:TV_vbg>
-        <ace_lexicon:TV_sg>validUnderTheoreticalFrames</ace_lexicon:TV_sg>
-        <ace_lexicon:TV_pl>validUnderTheoreticalFrame</ace_lexicon:TV_pl>
-        <rdfs:domain rdf:resource="&top;KnowledgeElement"/>
+        <rdfs:domain rdf:resource="http://jibe-b.github.io/ontology/RCLI93MYBotVusXrhsLeatK"/>
         <rdfs:range rdf:resource="&top;TheoreticalFrame"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://webprotege.stanford.edu/R9TVvAtP85MHBI3L6NEpTdq -->
+    <!-- http://jibe-b.github.io/ontology/top/hasHypothesis -->
 
-    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R9TVvAtP85MHBI3L6NEpTdq">
-        <rdfs:label>resultsIn</rdfs:label>
+    <owl:ObjectProperty rdf:about="&top;hasHypothesis">
+        <rdfs:range rdf:resource="http://jibe-b.github.io/ontology/RCLI93MYBotVusXrhsLeatK"/>
         <rdfs:domain rdf:resource="&top;TheoreticalFrame"/>
-        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RD1CmswOwOEib6Y662p5Oau"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/top/hasResult -->
+
+    <owl:ObjectProperty rdf:about="&top;hasResult">
+        <rdfs:range rdf:resource="http://jibe-b.github.io/ontology/RD1CmswOwOEib6Y662p5Oau"/>
+        <rdfs:domain rdf:resource="&top;TheoreticalFrame"/>
+        <owl:inverseOf rdf:resource="&top;isResultOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/top/isFoundationalHypothesisOf -->
+
+    <owl:ObjectProperty rdf:about="&top;isFoundationalHypothesisOf">
+        <rdfs:range rdf:resource="http://jibe-b.github.io/ontology/RCLI93MYBotVusXrhsLeatK"/>
+        <rdfs:domain rdf:resource="&top;TheoreticalFrame"/>
+        <owl:inverseOf rdf:resource="&top;hasFoundationalHypothesis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/top/isHypothesisOf -->
+
+    <owl:ObjectProperty rdf:about="&top;isHypothesisOf">
+        <rdfs:domain rdf:resource="http://jibe-b.github.io/ontology/RCLI93MYBotVusXrhsLeatK"/>
+        <rdfs:range rdf:resource="&top;TheoreticalFrame"/>
+        <owl:inverseOf rdf:resource="&top;hasHypothesis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/top/isResultOf -->
+
+    <owl:ObjectProperty rdf:about="&top;isResultOf">
+        <rdfs:domain rdf:resource="http://jibe-b.github.io/ontology/RD1CmswOwOEib6Y662p5Oau"/>
+        <rdfs:range rdf:resource="&top;TheoreticalFrame"/>
     </owl:ObjectProperty>
     
 
@@ -180,7 +175,7 @@
     <!-- http://jibe-b.github.io/ontology/top/proved -->
 
     <owl:DatatypeProperty rdf:about="&top;proved">
-        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R5G2159Vr3gWyi0UDdlru2"/>
+        <rdfs:domain rdf:resource="http://jibe-b.github.io/ontology/R5G2159Vr3gWyi0UDdlru2"/>
         <rdfs:range rdf:resource="&xsd;boolean"/>
     </owl:DatatypeProperty>
     
@@ -194,6 +189,90 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/R5G2159Vr3gWyi0UDdlru2 -->
+
+    <owl:Class rdf:about="http://jibe-b.github.io/ontology/R5G2159Vr3gWyi0UDdlru2">
+        <rdfs:label>KnowledgeProposition</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&top;hasHypothesis"/>
+                        <owl:someValuesFrom rdf:resource="http://jibe-b.github.io/ontology/RCLI93MYBotVusXrhsLeatK"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&top;isResultOf"/>
+                        <owl:someValuesFrom rdf:resource="&top;TheoreticalFrame"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/R9jVDHQq4O3LaTENMKeXytH -->
+
+    <owl:Class rdf:about="http://jibe-b.github.io/ontology/R9jVDHQq4O3LaTENMKeXytH">
+        <rdfs:label>ElementaryHypothesis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/RCLI93MYBotVusXrhsLeatK"/>
+    </owl:Class>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/RBE2bBnzXFe48EAUXahuwyw -->
+
+    <owl:Class rdf:about="http://jibe-b.github.io/ontology/RBE2bBnzXFe48EAUXahuwyw">
+        <rdfs:label>ElementaryKnowledgeProposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/R5G2159Vr3gWyi0UDdlru2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/RCLI93MYBotVusXrhsLeatK -->
+
+    <owl:Class rdf:about="http://jibe-b.github.io/ontology/RCLI93MYBotVusXrhsLeatK">
+        <rdfs:label>Hypothesis</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&top;isFoundationalHypothesisOf"/>
+                        <owl:someValuesFrom rdf:resource="&top;TheoreticalFrame"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&top;isHypothesisOf"/>
+                        <owl:someValuesFrom rdf:resource="http://jibe-b.github.io/ontology/R5G2159Vr3gWyi0UDdlru2"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/RD1CmswOwOEib6Y662p5Oau -->
+
+    <owl:Class rdf:about="http://jibe-b.github.io/ontology/RD1CmswOwOEib6Y662p5Oau">
+        <rdfs:label>KnowledgePropositionSet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/R5G2159Vr3gWyi0UDdlru2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/RDzIqjfKfuHS4qCmU3nXk7T -->
+
+    <owl:Class rdf:about="http://jibe-b.github.io/ontology/RDzIqjfKfuHS4qCmU3nXk7T">
+        <rdfs:label>HypothesisSet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://jibe-b.github.io/ontology/RCLI93MYBotVusXrhsLeatK"/>
+    </owl:Class>
     
 
 
@@ -215,14 +294,6 @@
     
 
 
-    <!-- http://jibe-b.github.io/ontology/top/DerivationGraph -->
-
-    <owl:Class rdf:about="&top;DerivationGraph">
-        <rdfs:subClassOf rdf:resource="&top;KnowledgeElement"/>
-    </owl:Class>
-    
-
-
     <!-- http://jibe-b.github.io/ontology/top/EntityProperty -->
 
     <owl:Class rdf:about="&top;EntityProperty">
@@ -231,28 +302,10 @@
     
 
 
-    <!-- http://jibe-b.github.io/ontology/top/KnowledgeElement -->
-
-    <owl:Class rdf:about="&top;KnowledgeElement">
-        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationEntity"/>
-        <ace_lexicon:CN_sg>KnowledgeProposition</ace_lexicon:CN_sg>
-        <ace_lexicon:CN_pl>KnowledgePropositions</ace_lexicon:CN_pl>
-    </owl:Class>
-    
-
-
     <!-- http://jibe-b.github.io/ontology/top/KnowledgeElementProperty -->
 
     <owl:Class rdf:about="&top;KnowledgeElementProperty">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Quality"/>
-    </owl:Class>
-    
-
-
-    <!-- http://jibe-b.github.io/ontology/top/KnowledgePropositionProof -->
-
-    <owl:Class rdf:about="&top;KnowledgePropositionProof">
-        <rdfs:subClassOf rdf:resource="&top;DerivationGraph"/>
     </owl:Class>
     
 
@@ -280,7 +333,22 @@
     <!-- http://jibe-b.github.io/ontology/top/TheoreticalFrame -->
 
     <owl:Class rdf:about="&top;TheoreticalFrame">
-        <rdfs:subClassOf rdf:resource="&top;KnowledgeElement"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&top;hasFoundationalHypothesis"/>
+                        <owl:someValuesFrom rdf:resource="http://jibe-b.github.io/ontology/RCLI93MYBotVusXrhsLeatK"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&top;hasResult"/>
+                        <owl:someValuesFrom rdf:resource="http://jibe-b.github.io/ontology/R5G2159Vr3gWyi0UDdlru2"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
         <ace_lexicon:CN_pl>TheoreticalFrames</ace_lexicon:CN_pl>
         <ace_lexicon:CN_sg>TheoreticalFrame</ace_lexicon:CN_sg>
     </owl:Class>
@@ -293,60 +361,6 @@
         <rdfs:subClassOf rdf:resource="&top;TheoreticalFrame"/>
         <ace_lexicon:CN_sg>Theory</ace_lexicon:CN_sg>
         <ace_lexicon:CN_pl>Theories</ace_lexicon:CN_pl>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R5G2159Vr3gWyi0UDdlru2 -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R5G2159Vr3gWyi0UDdlru2">
-        <rdfs:label>KnowledgeProposition</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&top;KnowledgeElement"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/R9jVDHQq4O3LaTENMKeXytH -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/R9jVDHQq4O3LaTENMKeXytH">
-        <rdfs:label>ElementaryHypothesis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCLI93MYBotVusXrhsLeatK"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RBE2bBnzXFe48EAUXahuwyw -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RBE2bBnzXFe48EAUXahuwyw">
-        <rdfs:label>ElementaryKnowledgeProposition</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R5G2159Vr3gWyi0UDdlru2"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RCLI93MYBotVusXrhsLeatK -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RCLI93MYBotVusXrhsLeatK">
-        <rdfs:label>Hypothesis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&top;KnowledgeElement"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RD1CmswOwOEib6Y662p5Oau -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RD1CmswOwOEib6Y662p5Oau">
-        <rdfs:label>KnowledgePropositionSet</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R5G2159Vr3gWyi0UDdlru2"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/RDzIqjfKfuHS4qCmU3nXk7T -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/RDzIqjfKfuHS4qCmU3nXk7T">
-        <rdfs:label>HypothesisSet</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCLI93MYBotVusXrhsLeatK"/>
     </owl:Class>
     
 

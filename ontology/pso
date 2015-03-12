@@ -144,23 +144,13 @@
     
 
 
-    <!-- http://jibe-b.github.io/ontology/pso/hasPart -->
-
-    <owl:ObjectProperty rdf:about="&pso;hasPart">
-        <ace_lexicon:TV_vbg>hasParted</ace_lexicon:TV_vbg>
-        <ace_lexicon:TV_sg>hasParts</ace_lexicon:TV_sg>
-        <ace_lexicon:TV_pl>hasPart</ace_lexicon:TV_pl>
-        <rdfs:subPropertyOf rdf:resource="&pso;topPhysicalObjectPropertyObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://jibe-b.github.io/ontology/pso/hasPhysicalQuantity -->
 
     <owl:ObjectProperty rdf:about="&pso;hasPhysicalQuantity">
         <ace_lexicon:TV_vbg>hasPhysicalQuantitied</ace_lexicon:TV_vbg>
         <ace_lexicon:TV_sg>hasPhysicalQuantities</ace_lexicon:TV_sg>
         <ace_lexicon:TV_pl>hasPhysicalQuantity</ace_lexicon:TV_pl>
+        <rdfs:subPropertyOf rdf:resource="&pso;topPhysicalObjectPropertyObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -196,7 +186,6 @@
         <ace_lexicon:TV_sg>inPhysicalStates</ace_lexicon:TV_sg>
         <rdfs:range rdf:resource="&pso;PhysicalState"/>
         <rdfs:subPropertyOf rdf:resource="&pso;inState"/>
-        <rdfs:domain rdf:resource="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
     </owl:ObjectProperty>
     
 
@@ -210,19 +199,24 @@
         <ace_lexicon:TV_sg>inStates</ace_lexicon:TV_sg>
         <rdfs:range rdf:resource="&pso;State"/>
         <rdfs:subPropertyOf rdf:resource="&pso;topPhysicalObjectPropertyObjectProperty"/>
-        <rdfs:domain rdf:resource="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://jibe-b.github.io/ontology/pso/isPartOf -->
+    <!-- http://jibe-b.github.io/ontology/pso/isFinalStateOf -->
 
-    <owl:ObjectProperty rdf:about="&pso;isPartOf">
-        <ace_lexicon:TV_vbg>isPartOfed</ace_lexicon:TV_vbg>
-        <ace_lexicon:TV_sg>isPartOfs</ace_lexicon:TV_sg>
-        <ace_lexicon:TV_pl>isPartOf</ace_lexicon:TV_pl>
-        <owl:inverseOf rdf:resource="&pso;hasPart"/>
-        <rdfs:subPropertyOf rdf:resource="&pso;topPhysicalObjectPropertyObjectProperty"/>
+    <owl:ObjectProperty rdf:about="&pso;isFinalStateOf">
+        <owl:inverseOf rdf:resource="&pso;hasFinalState"/>
+        <rdfs:subPropertyOf rdf:resource="&pso;phaseTransitionObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/isInitialStateOf -->
+
+    <owl:ObjectProperty rdf:about="&pso;isInitialStateOf">
+        <owl:inverseOf rdf:resource="&pso;hasInitialState"/>
+        <rdfs:subPropertyOf rdf:resource="&pso;phaseTransitionObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -264,8 +258,7 @@
         <ace_lexicon:TV_vbg>hasObjectPropertied</ace_lexicon:TV_vbg>
         <ace_lexicon:TV_sg>hasObjectProperties</ace_lexicon:TV_sg>
         <rdfs:range rdf:resource="&pso;ObjectProperty"/>
-        <rdfs:domain rdf:resource="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="&pso;topPhysicalObjectPropertyObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -277,9 +270,8 @@
         <ace_lexicon:TV_pl>hasQuantity</ace_lexicon:TV_pl>
         <ace_lexicon:TV_sg>hasQuantities</ace_lexicon:TV_sg>
         <ace_lexicon:TV_vbg>hasQuantitied</ace_lexicon:TV_vbg>
-        <rdfs:domain rdf:resource="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
+        <rdfs:subPropertyOf rdf:resource="&pso;topPhysicalObjectPropertyObjectProperty"/>
         <rdfs:range rdf:resource="http://jibe-bgithub.io/ontology/pso/Quantity"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -291,8 +283,8 @@
         <ace_lexicon:TV_vbg>hasQuantityPropertied</ace_lexicon:TV_vbg>
         <ace_lexicon:TV_sg>hasQuantityProperties</ace_lexicon:TV_sg>
         <ace_lexicon:TV_pl>hasQuantityProperty</ace_lexicon:TV_pl>
+        <rdfs:subPropertyOf rdf:resource="&pso;topPhysicalObjectPropertyObjectProperty"/>
         <rdfs:domain rdf:resource="http://jibe-bgithub.io/ontology/pso/Quantity"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -632,7 +624,6 @@ Boolean values are only in PhysicalProperty dataproperties</rdfs:comment>
         <ace_lexicon:TV_pl>hasSpin</ace_lexicon:TV_pl>
         <ace_lexicon:TV_sg>hasSpins</ace_lexicon:TV_sg>
         <rdfs:subPropertyOf rdf:resource="&pso;hasQuanticNumberValue"/>
-        <rdfs:domain rdf:resource="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
     </owl:DatatypeProperty>
     
 
@@ -807,7 +798,6 @@ Boolean values are only in PhysicalProperty dataproperties</rdfs:comment>
         <ace_lexicon:TV_pl>PhysicalObjectDataProperty</ace_lexicon:TV_pl>
         <ace_lexicon:TV_vbg>PhysicalObjectDataPropertied</ace_lexicon:TV_vbg>
         <ace_lexicon:TV_sg>PhysicalObjectDataProperties</ace_lexicon:TV_sg>
-        <rdfs:domain rdf:resource="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
     </owl:DatatypeProperty>
     
@@ -847,7 +837,7 @@ Boolean values are only in PhysicalProperty dataproperties</rdfs:comment>
     <!-- http://jibe-b.github.io/ontology/pso/AbstractObject -->
 
     <owl:Class rdf:about="&pso;AbstractObject">
-        <rdfs:subClassOf rdf:resource="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
+        <rdfs:subClassOf rdf:resource="&pso;PhysicalObject"/>
         <ace_lexicon:CN_sg>AbstractObject</ace_lexicon:CN_sg>
         <ace_lexicon:CN_pl>AbstractObjects</ace_lexicon:CN_pl>
         <rdfs:comment xml:lang="en">defined by the variation of a physical quantity, but only accessible by abstraction and by calculation.
@@ -880,43 +870,6 @@ Exemple: surface de Fermi.</rdfs:comment>
     <!-- http://jibe-b.github.io/ontology/pso/Agregate -->
 
     <owl:Class rdf:about="&pso;Agregate">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&pso;KnownNumberOfElementObject"/>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&pso;hasPart"/>
-                                        <owl:someValuesFrom rdf:resource="&pso;Atom"/>
-                                    </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&pso;hasPart"/>
-                                        <owl:onClass rdf:resource="&pso;Atom"/>
-                                        <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">100</owl:maxQualifiedCardinality>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&pso;hasPart"/>
-                                <owl:someValuesFrom rdf:resource="&pso;Molecule"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&pso;hasPart"/>
-                                <owl:onClass rdf:resource="&pso;Molecule"/>
-                                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">100</owl:maxQualifiedCardinality>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&pso;KnownNumberOfElementObject"/>
         <ace_lexicon:CN_sg>agregate</ace_lexicon:CN_sg>
         <ace_lexicon:CN_pl>agregates</ace_lexicon:CN_pl>
@@ -964,18 +917,6 @@ Exemple: surface de Fermi.</rdfs:comment>
     <!-- http://jibe-b.github.io/ontology/pso/Atom -->
 
     <owl:Class rdf:about="&pso;Atom">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&pso;AtomicOrMolecularEntity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&pso;hasPart"/>
-                        <owl:onClass rdf:resource="&pso;Nucleus"/>
-                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&pso;AtomicOrMolecularEntity"/>
         <ace_lexicon:CN_sg>atom</ace_lexicon:CN_sg>
         <ace_lexicon:CN_pl>atoms</ace_lexicon:CN_pl>
@@ -986,21 +927,6 @@ Exemple: surface de Fermi.</rdfs:comment>
     <!-- http://jibe-b.github.io/ontology/pso/AtomicOrMolecularEntity -->
 
     <owl:Class rdf:about="&pso;AtomicOrMolecularEntity">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&pso;KnownNumberOfElementObject"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&pso;hasPart"/>
-                        <owl:someValuesFrom rdf:resource="&pso;Electron"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&pso;hasPart"/>
-                        <owl:someValuesFrom rdf:resource="&pso;Nucleus"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&pso;KnownNumberOfElementObject"/>
         <ace_lexicon:CN_sg>AtomicConstituant</ace_lexicon:CN_sg>
         <ace_lexicon:CN_pl>AtomicConstituants</ace_lexicon:CN_pl>
@@ -1105,14 +1031,6 @@ Exemple: surface de Fermi.</rdfs:comment>
     
 
 
-    <!-- http://jibe-b.github.io/ontology/pso/CouplageResonnantATroisOndes -->
-
-    <owl:Class rdf:about="&pso;CouplageResonnantATroisOndes">
-        <rdfs:subClassOf rdf:resource="&pso;NonLinearWaveCoupling"/>
-    </owl:Class>
-    
-
-
     <!-- http://jibe-b.github.io/ontology/pso/DensityQuantity -->
 
     <owl:Class rdf:about="&pso;DensityQuantity">
@@ -1136,18 +1054,6 @@ Exemple: surface de Fermi.</rdfs:comment>
     <!-- http://jibe-b.github.io/ontology/pso/DeuteriumNucleus -->
 
     <owl:Class rdf:about="&pso;DeuteriumNucleus">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&pso;HydrogenIsotopeNucleus"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&pso;hasPart"/>
-                        <owl:onClass rdf:resource="&pso;Neutron"/>
-                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&pso;HydrogenIsotopeNucleus"/>
         <ace_lexicon:CN_sg>DeuteriumNucleus</ace_lexicon:CN_sg>
         <ace_lexicon:CN_pl>DeuteriumNucleuses</ace_lexicon:CN_pl>
@@ -1473,18 +1379,6 @@ Exemple: surface de Fermi.</rdfs:comment>
     <!-- http://jibe-b.github.io/ontology/pso/He3Nucleus -->
 
     <owl:Class rdf:about="&pso;He3Nucleus">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&pso;HeliumIsotopesNucleus"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&pso;hasPart"/>
-                        <owl:onClass rdf:resource="&pso;Neutron"/>
-                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&pso;HeliumIsotopesNucleus"/>
         <ace_lexicon:CN_pl>He3Nucleuses</ace_lexicon:CN_pl>
         <ace_lexicon:CN_sg>He3Nucleus</ace_lexicon:CN_sg>
@@ -1495,18 +1389,6 @@ Exemple: surface de Fermi.</rdfs:comment>
     <!-- http://jibe-b.github.io/ontology/pso/He4Nucleus -->
 
     <owl:Class rdf:about="&pso;He4Nucleus">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&pso;HeliumIsotopesNucleus"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&pso;hasPart"/>
-                        <owl:onClass rdf:resource="&pso;Neutron"/>
-                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&pso;HeliumIsotopesNucleus"/>
         <ace_lexicon:CN_pl>He4Nucleuses</ace_lexicon:CN_pl>
         <ace_lexicon:CN_sg>He4Nucleus</ace_lexicon:CN_sg>
@@ -1517,18 +1399,6 @@ Exemple: surface de Fermi.</rdfs:comment>
     <!-- http://jibe-b.github.io/ontology/pso/HeliumElement -->
 
     <owl:Class rdf:about="&pso;HeliumElement">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&pso;Atom"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&pso;hasPart"/>
-                        <owl:onClass rdf:resource="&pso;HeliumIsotopesNucleus"/>
-                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&pso;Atom"/>
         <ace_lexicon:CN_pl>HeliumElements</ace_lexicon:CN_pl>
         <ace_lexicon:CN_sg>HeliumElement</ace_lexicon:CN_sg>
@@ -1539,18 +1409,6 @@ Exemple: surface de Fermi.</rdfs:comment>
     <!-- http://jibe-b.github.io/ontology/pso/HeliumIsotopesNucleus -->
 
     <owl:Class rdf:about="&pso;HeliumIsotopesNucleus">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&pso;Nucleus"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&pso;hasPart"/>
-                        <owl:onClass rdf:resource="&pso;Proton"/>
-                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&pso;Nucleus"/>
         <ace_lexicon:CN_sg>HeliumIsotopesNucleus</ace_lexicon:CN_sg>
         <ace_lexicon:CN_pl>HeliumIsotopesNucleuses</ace_lexicon:CN_pl>
@@ -1581,18 +1439,6 @@ Exemple: surface de Fermi.</rdfs:comment>
     <!-- http://jibe-b.github.io/ontology/pso/HydrogenIsotopeNucleus -->
 
     <owl:Class rdf:about="&pso;HydrogenIsotopeNucleus">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&pso;Nucleus"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&pso;hasPart"/>
-                        <owl:onClass rdf:resource="&pso;Proton"/>
-                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&pso;Nucleus"/>
         <ace_lexicon:CN_pl>HydrogenIsotopeNucleuses</ace_lexicon:CN_pl>
         <ace_lexicon:CN_sg>HydrogenIsotopeNucleus</ace_lexicon:CN_sg>
@@ -1603,37 +1449,10 @@ Exemple: surface de Fermi.</rdfs:comment>
     <!-- http://jibe-b.github.io/ontology/pso/HydrogenNucleus -->
 
     <owl:Class rdf:about="&pso;HydrogenNucleus">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&pso;HydrogenIsotopeNucleus"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&pso;hasPart"/>
-                        <owl:someValuesFrom rdf:resource="&pso;Neutron"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&pso;HydrogenIsotopeNucleus"/>
         <ace_lexicon:CN_pl>HydrogenNucleuses</ace_lexicon:CN_pl>
         <ace_lexicon:CN_sg>HydrogenNucleus</ace_lexicon:CN_sg>
     </owl:Class>
-    <owl:Axiom>
-        <rdfs:comment xml:lang="fr">L&apos;information qu&apos;il n&apos;y a pas de neutron dans l&apos;atone d&apos;hydrogène n&apos;est pas suffisante pour le résonneur, qui considère que cette classe est sous-classe de Nothing.</rdfs:comment>
-        <owl:annotatedSource rdf:resource="&pso;HydrogenNucleus"/>
-        <owl:annotatedProperty rdf:resource="&owl;equivalentClass"/>
-        <owl:annotatedTarget>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&pso;HydrogenIsotopeNucleus"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&pso;hasPart"/>
-                        <owl:someValuesFrom rdf:resource="&pso;Neutron"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -1668,23 +1487,6 @@ Exemple: surface de Fermi.</rdfs:comment>
     <!-- http://jibe-b.github.io/ontology/pso/Ion -->
 
     <owl:Class rdf:about="&pso;Ion">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&pso;AtomicOrMolecularEntity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&pso;hasPart"/>
-                        <owl:onClass rdf:resource="&pso;Electron"/>
-                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&pso;hasPart"/>
-                        <owl:onClass rdf:resource="&pso;Nucleus"/>
-                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&pso;AtomicOrMolecularEntity"/>
         <ace_lexicon:CN_pl>Ions</ace_lexicon:CN_pl>
         <ace_lexicon:CN_sg>Ion</ace_lexicon:CN_sg>
@@ -1766,14 +1568,6 @@ Exemple: surface de Fermi.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://jibe-bgithub.io/ontology/pso/QuanticNumber"/>
         <ace_lexicon:CN_pl>LeptonicNumbers</ace_lexicon:CN_pl>
         <ace_lexicon:CN_sg>LeptonicNumber</ace_lexicon:CN_sg>
-    </owl:Class>
-    
-
-
-    <!-- http://jibe-b.github.io/ontology/pso/LinearPhenomenon -->
-
-    <owl:Class rdf:about="&pso;LinearPhenomenon">
-        <rdfs:subClassOf rdf:resource="http://jibe-bgithub.io/ontology/pso/ClassicalPhenomenon"/>
     </owl:Class>
     
 
@@ -1885,18 +1679,6 @@ Exemple: surface de Fermi.</rdfs:comment>
     <!-- http://jibe-b.github.io/ontology/pso/MolecularIon -->
 
     <owl:Class rdf:about="&pso;MolecularIon">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&pso;AtomicOrMolecularEntity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&pso;hasPart"/>
-                        <owl:onClass rdf:resource="&pso;Electron"/>
-                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&pso;AtomicOrMolecularEntity"/>
         <ace_lexicon:CN_pl>MolecularIons</ace_lexicon:CN_pl>
         <ace_lexicon:CN_sg>MolecularIon</ace_lexicon:CN_sg>
@@ -1907,18 +1689,6 @@ Exemple: surface de Fermi.</rdfs:comment>
     <!-- http://jibe-b.github.io/ontology/pso/Molecule -->
 
     <owl:Class rdf:about="&pso;Molecule">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&pso;AtomicOrMolecularEntity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&pso;hasPart"/>
-                        <owl:onClass rdf:resource="&pso;Nucleus"/>
-                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&pso;AtomicOrMolecularEntity"/>
         <ace_lexicon:CN_sg>molecule</ace_lexicon:CN_sg>
         <ace_lexicon:CN_pl>molecules</ace_lexicon:CN_pl>
@@ -2084,14 +1854,6 @@ Exemple: surface de Fermi.</rdfs:comment>
     
 
 
-    <!-- http://jibe-b.github.io/ontology/pso/NonLinearPhenomenon -->
-
-    <owl:Class rdf:about="&pso;NonLinearPhenomenon">
-        <rdfs:subClassOf rdf:resource="http://jibe-bgithub.io/ontology/pso/ClassicalPhenomenon"/>
-    </owl:Class>
-    
-
-
     <!-- http://jibe-b.github.io/ontology/pso/NonLinearWave -->
 
     <owl:Class rdf:about="&pso;NonLinearWave">
@@ -2100,32 +1862,9 @@ Exemple: surface de Fermi.</rdfs:comment>
     
 
 
-    <!-- http://jibe-b.github.io/ontology/pso/NonLinearWaveCoupling -->
-
-    <owl:Class rdf:about="&pso;NonLinearWaveCoupling">
-        <rdfs:subClassOf rdf:resource="&pso;NonLinearPhenomenon"/>
-    </owl:Class>
-    
-
-
     <!-- http://jibe-b.github.io/ontology/pso/Nucleus -->
 
     <owl:Class rdf:about="&pso;Nucleus">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&pso;KnownNumberOfElementObject"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&pso;hasPart"/>
-                        <owl:someValuesFrom rdf:resource="&pso;Neutron"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&pso;hasPart"/>
-                        <owl:someValuesFrom rdf:resource="&pso;Proton"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&pso;KnownNumberOfElementObject"/>
         <ace_lexicon:CN_pl>nucleuses</ace_lexicon:CN_pl>
         <ace_lexicon:CN_sg>nucleus</ace_lexicon:CN_sg>
@@ -2161,22 +1900,20 @@ Exemple: surface de Fermi.</rdfs:comment>
     
 
 
-    <!-- http://jibe-b.github.io/ontology/pso/PhaseTransition -->
-
-    <owl:Class rdf:about="&pso;PhaseTransition">
-        <rdfs:subClassOf rdf:resource="&pso;LinearPhenomenon"/>
-        <ace_lexicon:CN_pl>PhaseTransitions</ace_lexicon:CN_pl>
-        <ace_lexicon:CN_sg>PhaseTransition</ace_lexicon:CN_sg>
-    </owl:Class>
-    
-
-
     <!-- http://jibe-b.github.io/ontology/pso/Photon -->
 
     <owl:Class rdf:about="&pso;Photon">
         <rdfs:subClassOf rdf:resource="&pso;ElementaryBoson"/>
         <ace_lexicon:CN_sg>Photon</ace_lexicon:CN_sg>
         <ace_lexicon:CN_pl>Photons</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/PhysicalObject -->
+
+    <owl:Class rdf:about="&pso;PhysicalObject">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalBody"/>
     </owl:Class>
     
 
@@ -2272,24 +2009,6 @@ Exemple: surface de Fermi.</rdfs:comment>
     
 
 
-    <!-- http://jibe-b.github.io/ontology/pso/RaidissementDuFrontDOnde -->
-
-    <owl:Class rdf:about="&pso;RaidissementDuFrontDOnde">
-        <rdfs:subClassOf rdf:resource="&pso;WavePhenomenon"/>
-    </owl:Class>
-    
-
-
-    <!-- http://jibe-b.github.io/ontology/pso/RelativisticPhenomenon -->
-
-    <owl:Class rdf:about="&pso;RelativisticPhenomenon">
-        <rdfs:subClassOf rdf:resource="http://jibe-bgithub.io/ontology/pso/PhysicalPhenomenon"/>
-        <ace_lexicon:CN_pl>RelativisticPhenomenons</ace_lexicon:CN_pl>
-        <ace_lexicon:CN_sg>RelativisticPhenomenon</ace_lexicon:CN_sg>
-    </owl:Class>
-    
-
-
     <!-- http://jibe-b.github.io/ontology/pso/Reversibility -->
 
     <owl:Class rdf:about="&pso;Reversibility">
@@ -2307,16 +2026,6 @@ Exemple: surface de Fermi.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="&pso;PositionQuantity"/>
         <ace_lexicon:CN_pl>SecondDerivativePositionQuantities</ace_lexicon:CN_pl>
         <ace_lexicon:CN_sg>SecondDerivativePositionQuantity</ace_lexicon:CN_sg>
-    </owl:Class>
-    
-
-
-    <!-- http://jibe-b.github.io/ontology/pso/SolidLiquidPhaseTransition -->
-
-    <owl:Class rdf:about="&pso;SolidLiquidPhaseTransition">
-        <rdfs:subClassOf rdf:resource="&pso;PhaseTransition"/>
-        <ace_lexicon:CN_pl>SolidLiquidPhaseTransitions</ace_lexicon:CN_pl>
-        <ace_lexicon:CN_sg>SolidLiquidPhaseTransition</ace_lexicon:CN_sg>
     </owl:Class>
     
 
@@ -2527,18 +2236,6 @@ Exemple: surface de Fermi.</rdfs:comment>
     <!-- http://jibe-b.github.io/ontology/pso/TritiumNucleus -->
 
     <owl:Class rdf:about="&pso;TritiumNucleus">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&pso;HydrogenIsotopeNucleus"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&pso;hasPart"/>
-                        <owl:onClass rdf:resource="&pso;Neutron"/>
-                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&pso;HydrogenIsotopeNucleus"/>
         <ace_lexicon:CN_sg>TritiumNucleus</ace_lexicon:CN_sg>
         <ace_lexicon:CN_pl>TritiumNucleuses</ace_lexicon:CN_pl>
@@ -2577,35 +2274,10 @@ Exemple: surface de Fermi.</rdfs:comment>
     
 
 
-    <!-- http://jibe-b.github.io/ontology/pso/WaveBreakdown -->
-
-    <owl:Class rdf:about="&pso;WaveBreakdown">
-        <rdfs:subClassOf rdf:resource="&pso;WavePhenomenon"/>
-        <rdfs:comment>Fr: effondrement</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://jibe-b.github.io/ontology/pso/WaveFunction -->
 
     <owl:Class rdf:about="&pso;WaveFunction">
         <rdfs:subClassOf rdf:resource="&pso;ObjectPhysicalQuantity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://jibe-b.github.io/ontology/pso/WavePhenomenon -->
-
-    <owl:Class rdf:about="&pso;WavePhenomenon">
-        <rdfs:subClassOf rdf:resource="http://jibe-bgithub.io/ontology/pso/ClassicalPhenomenon"/>
-    </owl:Class>
-    
-
-
-    <!-- http://jibe-b.github.io/ontology/pso/WavePropagation -->
-
-    <owl:Class rdf:about="&pso;WavePropagation">
-        <rdfs:subClassOf rdf:resource="&pso;WavePhenomenon"/>
     </owl:Class>
     
 
@@ -2630,40 +2302,9 @@ Exemple: surface de Fermi.</rdfs:comment>
     
 
 
-    <!-- http://jibe-b.github.io/ontology/pso/orLinearPhenomenon -->
-
-    <owl:Class rdf:about="&pso;orLinearPhenomenon">
-        <rdfs:subClassOf rdf:resource="&pso;RelativisticPhenomenon"/>
-        <ace_lexicon:CN_pl>orLinearPhenomenons</ace_lexicon:CN_pl>
-        <ace_lexicon:CN_sg>orLinearPhenomenon</ace_lexicon:CN_sg>
-    </owl:Class>
-    
-
-
-    <!-- http://jibe-b.github.io/ontology/pso/orWavePhenomenon -->
-
-    <owl:Class rdf:about="&pso;orWavePhenomenon">
-        <rdfs:subClassOf rdf:resource="&pso;RelativisticPhenomenon"/>
-        <ace_lexicon:CN_sg>orWavePhenomenon</ace_lexicon:CN_sg>
-        <ace_lexicon:CN_pl>orWavePhenomenons</ace_lexicon:CN_pl>
-    </owl:Class>
-    
-
-
     <!-- http://jibe-b.github.io/ontology/top/EntityProperty -->
 
     <owl:Class rdf:about="http://jibe-b.github.io/ontology/top/EntityProperty"/>
-    
-
-
-    <!-- http://jibe-bgithub.io/ontology/pso/ClassicalPhenomenon -->
-
-    <owl:Class rdf:about="http://jibe-bgithub.io/ontology/pso/ClassicalPhenomenon">
-        <rdfs:label>ClassicalPhenomenon</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://jibe-bgithub.io/ontology/pso/PhysicalPhenomenon"/>
-        <ace_lexicon:CN_pl>ClassicalPhenomenons</ace_lexicon:CN_pl>
-        <ace_lexicon:CN_sg>ClassicalPhenomenon</ace_lexicon:CN_sg>
-    </owl:Class>
     
 
 
@@ -2696,7 +2337,7 @@ Non elementary particles are not divided between matter and anti matter. But the
 
     <owl:Class rdf:about="http://jibe-bgithub.io/ontology/pso/FieldObject">
         <rdfs:label>FieldObject</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
+        <rdfs:subClassOf rdf:resource="&pso;PhysicalObject"/>
         <ace_lexicon:CN_pl>FieldObjects</ace_lexicon:CN_pl>
         <ace_lexicon:CN_sg>FieldObject</ace_lexicon:CN_sg>
     </owl:Class>
@@ -2736,29 +2377,6 @@ Non elementary particles are not divided between matter and anti matter. But the
     
 
 
-    <!-- http://jibe-bgithub.io/ontology/pso/PhysicalObject -->
-
-    <owl:Class rdf:about="http://jibe-bgithub.io/ontology/pso/PhysicalObject">
-        <rdfs:label>Object</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalBody"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://jibe-bgithub.io/ontology/pso/hasQuantity"/>
-                <owl:someValuesFrom rdf:resource="http://jibe-bgithub.io/ontology/pso/Quantity"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://jibe-bgithub.io/ontology/pso/hasObjectProperty"/>
-                <owl:someValuesFrom rdf:resource="&pso;ObjectProperty"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">An object is caracterised by the variation of at least one physical quantity. The variation of this physical quantity defines the borders of this object.</rdfs:comment>
-        <rdfs:comment xml:lang="en">a Physical Object has only one property: its existence.</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://jibe-bgithub.io/ontology/pso/PhysicalPhenomenon -->
 
     <owl:Class rdf:about="http://jibe-bgithub.io/ontology/pso/PhysicalPhenomenon">
@@ -2792,21 +2410,10 @@ This means they would only be linked to theories with a property such as &quot;d
 
     <owl:Class rdf:about="http://jibe-bgithub.io/ontology/pso/QuanticObject">
         <rdfs:label>QuanticObject</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://jibe-bgithub.io/ontology/pso/PhysicalObject"/>
+        <rdfs:subClassOf rdf:resource="&pso;PhysicalObject"/>
         <ace_lexicon:CN_pl>QuanticObjects</ace_lexicon:CN_pl>
         <rdfs:comment xml:lang="en">Object, which behaviour are quantic.</rdfs:comment>
         <ace_lexicon:CN_sg>QuanticObject</ace_lexicon:CN_sg>
-    </owl:Class>
-    
-
-
-    <!-- http://jibe-bgithub.io/ontology/pso/QuanticPhenomenon -->
-
-    <owl:Class rdf:about="http://jibe-bgithub.io/ontology/pso/QuanticPhenomenon">
-        <rdfs:label>QuanticPhenomenon</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://jibe-bgithub.io/ontology/pso/PhysicalPhenomenon"/>
-        <ace_lexicon:CN_pl>QuanticPhenomenons</ace_lexicon:CN_pl>
-        <ace_lexicon:CN_sg>QuanticPhenomenon</ace_lexicon:CN_sg>
     </owl:Class>
     
 
@@ -2854,7 +2461,6 @@ This means they would only be linked to theories with a property such as &quot;d
     <!-- http://jibe-b.github.io/ontology/pso/RaidissementDuFrontDOnde -->
 
     <owl:NamedIndividual rdf:about="&pso;RaidissementDuFrontDOnde">
-        <rdf:type rdf:resource="&pso;RaidissementDuFrontDOnde"/>
         <pso:isLinear_Phenomenon rdf:datatype="&xsd;boolean">false</pso:isLinear_Phenomenon>
         <pso:isClassical_Phenomenon rdf:datatype="&xsd;boolean">true</pso:isClassical_Phenomenon>
     </owl:NamedIndividual>

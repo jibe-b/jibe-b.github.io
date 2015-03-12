@@ -17,9 +17,24 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:pso="http://jibe-b.github.io/ontology/pso/">
-    <owl:Ontology rdf:about="http://jibe-b.github.io/ontology/AtomH0+HeCouplageLS">
-        <owl:imports rdf:resource="http://jibe-b.github.io/ontology/AtomH0+HeCouplageLSHypothesisSet"/>
-    </owl:Ontology>
+    <owl:Ontology rdf:about="http://jibe-b.github.io/ontology/pso-AtomWithIndependentElectrons"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://jibe-b.github.io/ontology/pso/hasMathematicalExpression -->
+
+    <owl:DatatypeProperty rdf:about="&pso;hasMathematicalExpression"/>
     
 
 
@@ -36,9 +51,9 @@
 
     <!-- http://jibe-b.github.io/ontology/pso-QuantumMechanicsHypothesisSet/Hamiltonian -->
 
-    <rdf:Description rdf:about="http://jibe-b.github.io/ontology/pso-QuantumMechanicsHypothesisSet/Hamiltonian">
+    <owl:NamedIndividual rdf:about="http://jibe-b.github.io/ontology/pso-QuantumMechanicsHypothesisSet/Hamiltonian">
         <pso:hasMathematicalExpression>H=H_0+H_e+H_(SO)</pso:hasMathematicalExpression>
-    </rdf:Description>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 

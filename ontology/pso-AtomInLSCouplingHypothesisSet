@@ -15,9 +15,8 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="file:/home/www/ontology/pso-AtomH0+HeHypothesisSet">
-        <owl:imports rdf:resource="http://jibe-b.github.io/ontology/pso-QuantumMechanicsHypothesisSet"/>
-        <owl:imports rdf:resource="http://jibe-b.github.io/ontology/pso-StandardModelHypothesisSet"/>
+    <owl:Ontology rdf:about="http://jibe-b.github.io/ontology/AtomInLSCouplingHypothesisSet">
+        <owl:imports rdf:resource="http://jibe-b.github.io/ontology/pso-QuantumMechanics"/>
     </owl:Ontology>
 </rdf:RDF>
 
