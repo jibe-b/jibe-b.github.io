@@ -1,9 +1,0 @@
-# A kind of scientific blog
-
-
-## Projects on the way
-
-
-Please make the best use of the projects that are realeased under [the CC-BY licence](http://creativecommons.org/licenses/by/4.0/).
-
-And the best use is to use it, improve it, adapt it and distribute either my version or yours, as long as you cite me as the original author.
