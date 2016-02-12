@@ -4,141 +4,39 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <title>Project PSO (Physical Sciences Ontology)</title>
+  <title>Projet PSO (Physical Sciences Ontology)</title>
   <style type="text/css">code{white-space: pre;}</style>
-  <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+  <link rel="stylesheet" href="http://jibe-b.github.io/css/style.css" type="text/css" />
   
   <script src="http://assets.annotateit.org/annotator/v1.2.5/annotator-full.min.js"></script>
   <link rel="stylesheet" href="http://assets.annotateit.org/annotator/v1.2.5/annotator.min.css">
-  
-  
-  <!-- Piwik -->
-  <script type="text/javascript">
-    var _paq = _paq || [];
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="//ppaggenppwoblem.piwikpro.com/";
-      _paq.push(['setTrackerUrl', u+'piwik.php']);
-      _paq.push(['setSiteId', 1]);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
-  <noscript><p><img src="http//ppaggenppwoblem.piwikpro.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
-  <!-- End Piwik Code -->
 </head>
 <body>
 <p><a href="https://github.com/jibe-b/jibe-b.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a></p>
-<p><nav> <a href="../../index.html">Home</a> <a href="../../project/">Projects</a> <a href="../../ontology/">PSO ontology</a> <a href="../../blog/">Blog</a> <a href="../../aboutme.html">About</a> <a href="http://hypothes.is/">Comment with Hypothes.is</a> </nav></p>
+<p><nav> <a href="../../index.html">Home</a> <a href="../../project/">Projects</a> <a href="../../ontology/">PSO ontology</a> <a href="../../blog/">Blog</a> <a href="../../aboutme.html">About</a> </nav></p>
 <div id="header">
-<h1 class="title">Project PSO (Physical Sciences Ontology)</h1>
+<h1 class="title">Projet PSO (Physical Sciences Ontology)</h1>
 </div>
-<h1 id="état-davancement-27-février-2015">État d'avancement (27 février 2015)</h1>
-<p>Voici en quelques mots l'état d'avancement de la méthode de création d'ontologies.</p>
-<p>Les ontologies produites</p>
-<h2 id="bases-de-lontologie">- Bases de l'ontologie</h2>
-<ol style="list-style-type: decimal">
-<li>Définition de described classes</li>
-<li>à l'aide de Datatype Properties, qui correspondent à des caractères (boolean) et à des quantités (valeurs)</li>
-<li><p>à l'aide d'Object Properties, qui correspondent à des relations entre entités</p></li>
-<li><p>une classe est associée à chaque caractère, quantité et une rolification lie la Property et la Class</p></li>
-<li><p>seuls les axiomes nécessaires à la cohérence de l'ontologie sont stockés. Le reste va dans l'ABox</p></li>
-</ol>
-<h2 id="knowledge-base">- Knowledge base</h2>
-<ol start="6" style="list-style-type: decimal">
-<li>TBox et ABox sont séparés (deux fichiers owl : x et x-ABox) : x-ABox importe x.</li>
-<li><p>Les deux ontologies ont vocation à avoir la même URI (x-ABox est utilisable, x est séparée pour être aisément débugguée), ce qui permettra de faire du meta-modelling (individus de même nom que la classe)</p></li>
-<li>Les ontologies sont limitées à un sujet restreint.</li>
-<li><p>Les ontologies sont couplées par deux dans des ontologies associant leur noms et des axiomes et assertions sont stockées dans l'ontologie résultante.</p></li>
-</ol>
-<h2 id="graph">- Graph</h2>
-<ol style="list-style-type: decimal">
-<li>Choix de l'emploi de Named Graphs pour stocker séparément tous les triplets dépendant d'un contexte.</li>
-<li><p>Dans le Main Graph : tout ce qui ne dépend pas d'un contexte (donc discussions générales sur les :</p>
-<ul>
-<li>KnowledgeProposition</li>
-<li>MathExpression</li>
-<li>Model (=ModelResults)</li>
-<li>Hypothèses</li>
-</ul>
-<p>exemple : Model123 hasHypothesis HypothesisABC . KnowledgePropositionXYZ validInModel Model123 .</p></li>
-<li><p>Dans les Named Graph : les triplets valables sous condition:</p>
-<ul>
-<li>HypothesisABC {ex:a ex:rel ex:b .}</li>
-<li>Model {ex:A ex:rel ex:B .}</li>
-</ul></li>
-</ol>
-<p>Context and results graphs (i.e. Hypothesis and models (results)) are intended to be merged.</p>
-<h2 id="workflow-acquisition-de-contenus-tbox-et-abox">- Workflow (acquisition de contenus TBox et ABox)</h2>
-<ol style="list-style-type: decimal">
-<li>Annotation de ressources -&gt; écriture de Named Graphs</li>
-<li>Extraction de classes et propriétés -&gt; écriture d'ontologie (TBox)</li>
-<li>Extraction d'individus et d'assertions -&gt; écriture d'ontologie (ABox)</li>
-<li>Exécution de raisonneur et SWRL rules -&gt; validation et complétion de l'ontologie</li>
-<li>Enrichissement des graphs</li>
-</ol>
-<h2 id="compléments-de-méthode">- Compléments de méthode</h2>
-<ol style="list-style-type: decimal">
-<li>Indication des sources : chaque axiome (TBox) et chaque assertion (ABox) a une annotation indiquant sa source.</li>
-</ol>
-<h2 id="questions-en-surpens">- Questions en surpens</h2>
-<ul>
-<li>implémentation de la rolification incomplète</li>
-</ul>
-
-<h1 id="workflow">Workflow</h1>
-<h2 id="imports-flow">Imports flow</h2>
-<h3 id="using-webprotege-desktop">Using WebProtege desktop</h3>
-<ul>
-<li>create an ontology</li>
-<li>add ontologies that are imported</li>
-<li>upload ontologies to WebProtege</li>
-</ul>
-<h3 id="using-webprotege">Using WebProtege</h3>
-<ul>
-<li>modify the ontology</li>
-<li>use dashboard and collaboration tools</li>
-<li>download</li>
-</ul>
-<h3 id="using-protege-desktop">Using Protege Desktop</h3>
-<ul>
-<li>change the “http://webprotege.stanford.edu…” URI to wnated URI</li>
-<li>publish at the corresponding URI</li>
-</ul>
-<h3 id="results">Results</h3>
-<p>Ontologies can therefore be imported by each other.</p>
-<p>The addition of an ontology to import is a major change as WebProtege does not deal with imports easily.</p>
-<h2 id="commits">Commits</h2>
-<p>Changes can be accessed by the WebProtege dashboard pannel. All details are stored there.</p>
-<p>Versions that are uploaded to the server (http://jibe-b.github.io/ontology/) are associated to a commit that explicits the changes that have been made. In particular, minor and major changes are indicated.</p>
-
-
-
-<hr />
-<h3 id="what-comes-next-is-under-changes">what comes next is under changes</h3>
-<h2 id="project-definition">Project definition</h2>
-<p>Creation of an ontology for the description of Physical Sciences.</p>
-<h2 id="last-released-version">Last released version</h2>
+<h2 id="définition-du-projet">Définition du projet</h2>
+<p>Création d'une ontologie de description des sciences physiques.</p>
+<h2 id="dernière-version">Dernière version</h2>
 <p><a href="../../ontology/pso.owl">version-0.0.1</a></p>
-<h3 id="graph-visualisation">Graph visualisation</h3>
-<p><a href="http://vowl.visualdataweb.org/webvowl/index.html#iri=http://jibe-b.github.io/ontology/pso/pso.owl"><img alt="PSO" width="100%" src="visualisation/pso-viz.png">Interactive visualisation</img></a></p>
-<h3 id="tree-visualisation">Tree visualisation</h3>
-<p><a href="http://opendata1.opendata.u-psud.fr:8080/webprotege/#Edit:projectId=27a08a93-6a87-4d3d-a018-a6c8212fb414"><img alt="Protégé snapshot" width="100%" src="visualisation/protege-snapshot.png">Webprotégé</img></a></p>
-<h2 id="development-notebook">Development Notebook</h2>
+<p><a href="http://vowl.visualdataweb.org/webvowl/index.html#iri=http://jibe-b.github.io/ontology/pso.owl"><img alt="PSO" width="100%" src="pso-viz.png">Interactive visualisation</img></a></p>
+<p><a href="pso-development.html">versions en développment</a> (hébergées par la plateforme <a href="http://www.opendata.u-psud.fr">OpenData@UPSud</a>)</p>
+<h2 id="carnet-de-développement-research-notebook">Carnet de développement (Research Notebook)</h2>
 <p><a href="pso-notebook.html">Carnet</a></p>
 <h2 id="associated-rdf-graph">Associated RDF graph</h2>
-<p>In the creation workflow of the ontology, RDF triples ar written. They will soon be displayed here.</p>
+<p>Comming soon.</p>
+<h2 id="contexte-intention">Contexte, intention</h2>
+<p>Le développement des technologies du web sémantique permet une gestion des données plus riche et plus rigoureuse que le simple stockage dans des bases de données relationnelles. Le développement d'ontologies (description formelle des relations entre concepts) permet</p>
+<p>l'interopérabilité entre les jeux de donnée, la visualisation et l'étude des relations entre concepts.</p>
+<p>Les ontologies sont nombreuses en biologie (plus de 300 sur <a href="http://bioportal.bioontology.org/">Bioportal</a>) mais peu d'ontologies ont été développées en sciences physiques.</p>
+<p>Ce projet consiste donc dans le développement d'une ontologie de description des sciences physiques.</p>
 <h2 id="article-de-présentation">Article de présentation</h2>
 <p><a href="https://www.authorea.com/users/5676/articles/14396/_show_article">Article (début d'écriture prochainement)</a> sur Authorea.</p>
 <h2 id="documentation">Documentation</h2>
 <p><a href="https://www.zotero.org/groups/pso/items">Bibliographie et sources</a></p>
 <p><a href="annotated-bibliography.png">Annotation de la bibliographie</a></p>
-<h2 id="motivations-for-this-project">Motivations for this project</h2>
-<p>Le développement des technologies du web sémantique permet une gestion des données plus riche et plus rigoureuse que le simple stockage dans des bases de données relationnelles. Le développement d'ontologies (description formelle des relations entre concepts) permet</p>
-<p>l'interopérabilité entre les jeux de donnée, la visualisation et l'étude des relations entre concepts.</p>
-<p>Les ontologies sont nombreuses en biologie (plus de 300 sur <a href="http://bioportal.bioontology.org/">Bioportal</a>) mais peu d'ontologies ont été développées en sciences physiques.</p>
-<p>Ce projet consiste donc dans le développement d'une ontologie de description des sciences physiques.</p>
 <h3 id="préambule">Préambule</h3>
 <p>L'objectif de cette documentation est de présenter les axes de développement, les sources d'inspiration et les justifications des choix. En d'autres termes, tout ce qui n'est pas rendu explicite dans le fichier OWL produit.</p>
 <p>Dans les commentaires liés à chaque classe et chaque propriété se trouvent des informations, en particulier la source et une justification succinte de l'existence de cette classe/propriété, sa place dans l'arbre des classes/propriétés, ainsi que la combinatoire, la cardinalité, domaine et range.</p>
@@ -153,7 +51,7 @@
 <h3 id="équipe">Équipe</h3>
 <ul>
 <li>Jibé Bohuon (université Paris Sud)</li>
-<li>partenariats en cours d'établissement</li>
+<li>partenariats en cours d'établissement (INSERM, )</li>
 <li>projet ouvert aux participations</li>
 </ul>
 <h3 id="roadmap">Roadmap</h3>
@@ -164,5 +62,18 @@
 <hr />
 <p>Jibé <a href="https://twitter.com/jibe_jeybee">@jibe_jeybee</a> <a href="aboutme.html">About me</a></p>
 <p>All contents on this site are under the <a href="https://creativecommons.org/licenses/by/4.0/">free licence CC-BY</a></p>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    _paq.push(['setTrackerUrl',  'https://api.jibe-b.sandcats.io']);
+    _paq.push(['setSiteId', 1]);
+    _paq.push(['setApiToken', 'x_afTY4LkjWtYNc_L-eo0PY38tjT-FMdfSDYzrwfraV']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://txyx7oru0pkmt74nhqny.jibe-b.sandcats.io/embed.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
 </body>
 </html>

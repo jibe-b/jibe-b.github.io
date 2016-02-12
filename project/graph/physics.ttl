@@ -1,6 +1,0 @@
-
-
-@prefix pso: <http://jibe-b.github.io/ontology/pso#> .
-@prefix db: <http://dbpedia/resource/> .
-
-db:Molecule pso:madeOf db:Atom .
