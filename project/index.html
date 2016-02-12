@@ -14,58 +14,8 @@
 <body>
 <p><a href="https://github.com/jibe-b/jibe-b.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a></p>
 <p><nav> <a href="../index.html">Home</a> <a href="../project/">Projects</a> <a href="../ontology/">PSO ontology</a> <a href="../blog/">Blog</a> <a href="../aboutme.html">About</a> </nav></p>
-<h1 id="état-davancement-27-février-2015">État d'avancement (27 février 2015)</h1>
-<p>Voici en quelques mots l'état d'avancement de la méthode de création d'ontologies.</p>
-<p>Les ontologies produites</p>
-<h2 id="bases-de-lontologie">- Bases de l'ontologie</h2>
-<ol style="list-style-type: decimal">
-<li>Définition de described classes</li>
-<li>à l'aide de Datatype Properties, qui correspondent à des caractères (boolean) et à des quantités (valeurs)</li>
-<li><p>à l'aide d'Object Properties, qui correspondent à des relations entre entités</p></li>
-<li><p>une classe est associée à chaque caractère, quantité et une rolification lie la Property et la Class</p></li>
-<li><p>seuls les axiomes nécessaires à la cohérence de l'ontologie sont stockés. Le reste va dans l'ABox</p></li>
-</ol>
-<h2 id="knowledge-base">- Knowledge base</h2>
-<ol start="6" style="list-style-type: decimal">
-<li>TBox et ABox sont séparés (deux fichiers owl : x et x-ABox) : x-ABox importe x.</li>
-<li><p>Les deux ontologies ont vocation à avoir la même URI (x-ABox est utilisable, x est séparée pour être aisément débugguée), ce qui permettra de faire du meta-modelling (individus de même nom que la classe)</p></li>
-<li>Les ontologies sont limitées à un sujet restreint.</li>
-<li><p>Les ontologies sont couplées par deux dans des ontologies associant leur noms et des axiomes et assertions sont stockées dans l'ontologie résultante.</p></li>
-</ol>
-<h2 id="graph">- Graph</h2>
-<ol style="list-style-type: decimal">
-<li>Choix de l'emploi de Named Graphs pour stocker séparément tous les triplets dépendant d'un contexte.</li>
-<li><p>Dans le Main Graph : tout ce qui ne dépend pas d'un contexte (donc discussions générales sur les :</p>
-<ul>
-<li>KnowledgeProposition</li>
-<li>MathExpression</li>
-<li>Model (=ModelResults)</li>
-<li>Hypothèses</li>
-</ul>
-<p>exemple : Model123 hasHypothesis HypothesisABC . KnowledgePropositionXYZ validInModel Model123 .</p></li>
-<li><p>Dans les Named Graph : les triplets valables sous condition:</p>
-<ul>
-<li>HypothesisABC {ex:a ex:rel ex:b .}</li>
-<li>Model {ex:A ex:rel ex:B .}</li>
-</ul></li>
-</ol>
-<p>Context and results graphs (i.e. Hypothesis and models (results)) are intended to be merged.</p>
-<h2 id="workflow-acquisition-de-contenus-tbox-et-abox">- Workflow (acquisition de contenus TBox et ABox)</h2>
-<ol style="list-style-type: decimal">
-<li>Annotation de ressources -&gt; écriture de Named Graphs</li>
-<li>Extraction de classes et propriétés -&gt; écriture d'ontologie (TBox)</li>
-<li>Extraction d'individus et d'assertions -&gt; écriture d'ontologie (ABox)</li>
-<li>Exécution de raisonneur et SWRL rules -&gt; validation et complétion de l'ontologie</li>
-<li>Enrichissement des graphs</li>
-</ol>
-<h2 id="compléments-de-méthode">- Compléments de méthode</h2>
-<ol style="list-style-type: decimal">
-<li>Indication des sources : chaque axiome (TBox) et chaque assertion (ABox) a une annotation indiquant sa source.</li>
-</ol>
-<h2 id="questions-en-surpens">- Questions en surpens</h2>
-<ul>
-<li>implémentation de la rolification incomplète</li>
-</ul>
+<h3 id="smd"><a href="smd/">SMd</a></h3>
+<h3 id="pso"><a href="pso/">PSO</a></h3>
 <hr />
 <p>Jibé <a href="https://twitter.com/jibe_jeybee">@jibe_jeybee</a> <a href="aboutme.html">About me</a></p>
 <p>All contents on this site are under the <a href="https://creativecommons.org/licenses/by/4.0/">free licence CC-BY</a></p>
