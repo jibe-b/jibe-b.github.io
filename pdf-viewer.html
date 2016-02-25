@@ -1,2 +1,21 @@
+<body>
+  <script src="js/pdf.js/build/pdf.js"></script>
+  <script src="js/pdf.js/build/pdf.worker.js"></script>
+  <script> if (!window.requestAnimationFrame) {
+    window.requestAnimationFrame = (function() {
+    return window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.oRequestAnimationFrame ||
+        window.msRequestAnimationFrame ||
+        function(callback, element) {
+            window.setTimeout(callback, 1000 / 60);
+        };
+    })();
+} 
 
+PDFJS.disableStream = true;
+PDFJS.getDocument('../www-factory/phd-project-structuration-genome-coarse-graining.pdf');
+</script>
+
+</body>
 
