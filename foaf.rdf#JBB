@@ -1,0 +1,60 @@
+@prefix : <./>.
+@prefix blog: <http://dig.csail.mit.edu/breadcrumbs/blog/>.
+@prefix cc: <http://creativecommons.org/ns#>.
+@prefix cert: <http://www.w3.org/ns/auth/cert#>.
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix doap: <http://usefulinc.com/ns/doap#>.
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix oldcard: <http://www.w3.org/People/Berners-Lee/card#>.
+@prefix s: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix sioc: <http://rdfs.org/sioc/ns#>.
+@prefix solid: </ns/solid/terms#>.
+@prefix space: <http://www.w3.org/ns/pim/space#>.
+@prefix w3c: <http://www.w3.org/data#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix n0: <http://creativecommons.org/licenses/by-nc/3.0/>.
+@prefix fo: <http://www.advogato.org/person/timbl/foaf.rdf#>.
+@prefix tim: <https://timbl.databox.me/>.
+@prefix twi: <http://twitter.com/>.
+@prefix timbl: <http://www.reddit.com/user/timbl/>.
+@prefix www: </>.
+@prefix d: <http://dig.csail.mit.edu/2005/ajar/ajaw/data#>.
+@prefix d0: <http://dig.csail.mit.edu/2007/01/camp/data#>.
+@prefix feed: <http://dig.csail.mit.edu/breadcrumbs/blog/feed/>.
+@prefix d1: <http://dig.csail.mit.edu/data#>.
+@prefix ind: <http://wiki.ontoworld.org/index.php/>.
+@prefix ww: <http://www.ecs.soton.ac.uk/~dt2/dlstuff/www2006_data#>.
+@prefix d2: <http://www.w3.org/2000/10/swap/data#>.
+@prefix d3: <http://www.w3.org/2011/Talks/0331-hyderabad-tbl/data#>.
+
+:card
+    cc:license
+       n0:;
+    dc:title
+       "jibe-b's FOAF file";
+    a    foaf:PersonalProfileDocument;
+    foaf:maker
+       <#i>;
+    foaf:primaryTopic
+       <#i>.
+<#i>
+    s:label
+       "jibe-b";
+    con:homePage
+       :;
+    con:publicHomePage
+       :;
+    =    fo:me;
+    cert:key
+            [ a    cert:RSAPublicKey;
+            cert:exponent
+               65537;
+            cert:modulus
+                "0000"^^xsd:hexBinary ];
+    foaf:homepage
+       :;
+    foaf:mbox
+       <user701@orange.fr>.
