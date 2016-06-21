@@ -1,60 +1,8 @@
-@prefix : <./>.
-@prefix blog: <http://dig.csail.mit.edu/breadcrumbs/blog/>.
-@prefix cc: <http://creativecommons.org/ns#>.
-@prefix cert: <http://www.w3.org/ns/auth/cert#>.
-@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#>.
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix doap: <http://usefulinc.com/ns/doap#>.
-@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
-@prefix oldcard: <http://www.w3.org/People/Berners-Lee/card#>.
-@prefix s: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix sioc: <http://rdfs.org/sioc/ns#>.
-@prefix solid: </ns/solid/terms#>.
-@prefix space: <http://www.w3.org/ns/pim/space#>.
-@prefix w3c: <http://www.w3.org/data#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix n0: <http://creativecommons.org/licenses/by-nc/3.0/>.
-@prefix fo: <http://www.advogato.org/person/timbl/foaf.rdf#>.
-@prefix tim: <https://timbl.databox.me/>.
-@prefix twi: <http://twitter.com/>.
-@prefix timbl: <http://www.reddit.com/user/timbl/>.
-@prefix www: </>.
-@prefix d: <http://dig.csail.mit.edu/2005/ajar/ajaw/data#>.
-@prefix d0: <http://dig.csail.mit.edu/2007/01/camp/data#>.
-@prefix feed: <http://dig.csail.mit.edu/breadcrumbs/blog/feed/>.
-@prefix d1: <http://dig.csail.mit.edu/data#>.
-@prefix ind: <http://wiki.ontoworld.org/index.php/>.
-@prefix ww: <http://www.ecs.soton.ac.uk/~dt2/dlstuff/www2006_data#>.
-@prefix d2: <http://www.w3.org/2000/10/swap/data#>.
-@prefix d3: <http://www.w3.org/2011/Talks/0331-hyderabad-tbl/data#>.
-
-:card
-    cc:license
-       n0:;
-    dc:title
-       "jibe-b's FOAF file";
-    a    foaf:PersonalProfileDocument;
-    foaf:maker
-       <#i>;
-    foaf:primaryTopic
-       <#i>.
-<#i>
-    s:label
-       "jibe-b";
-    con:homePage
-       :;
-    con:publicHomePage
-       :;
-    =    fo:me;
-    cert:key
-            [ a    cert:RSAPublicKey;
-            cert:exponent
-               65537;
-            cert:modulus
-                "mQENBFdpNNEBCADCDFXRlp0v+szsLtfCaS6ww00Z1DaT06VHVOajf2L3F+En+tCc1ytUoOUqvB+kancC7w48h4C6ICJwGs5NdF18zGtvEEA98EAi+jtPN3mvtdcmjDQe86wtcXyLA9p9KZEXJ6KO3iYeb2PCTXzJI3CaYVE14yXpPocj0ehhAV5J4+9X7oV7s/qRe6nNb9n8lnYcXFE81MG96sTe2anYJLxHLsQr5drn7sRf1azN1V4LFUqbRTn2mS5lddGGrCFsxEvV2VLg/SC8dGGEl6QVwhNILoBDBQ9k2QNVUe+dyLpdTnjDdlZuGwoKVnwVdTz4XLmAEdk6sH4ySlA2eqCVdG0jABEBAAG0KnVzZXI3MDEgKHBhZ2VucHdvYmxlbSkgPHVzZXI3MDFAb3JhbmdlLmZyPokBOAQTAQIAIgUCV2k00QIbAwYLCQgHAwIGFQgCCQoLBBYCAwECHgECF4AACgkQRi6k39+F33QWiwf/civQcNQQ2kqLnz8IP4/MLtd3qb2lBoxwd6UjcjQx9jYQNsujhFOOmw9Cv8gkVyjlxNCspKGNP+u26V9/mhxdUazoSBaYAjfR1p1zvv2DtgBlh3MnGcaHXkmjLgj8d9CX66o0Lc25yhr7feHEppb7OdyIeDsXLi17aIdgU1t15JsdgIHS29tyBbO27ZGwRugKS7McyULH0oUDDB8ekUT5jRnaS0C0jMQAbQJwz4YC4rAX5BdoNzxJC3E2hUHS/OQDPOsLh6MLFDPPsDMU/2abH4UWoaVCI939AXeAJ0LAKI4LA3U4D3R3vjXvQ1xb8xZrvo/yH8C/6t+7SBFx/KEsNrkBDQRXaTTRAQgA5eXyHXlOLtISn292hj8qkeNe5EkC/Ra15bhFw+JSUOoyyZa9mdXh9cxtQJVBsXIh0bjswMzbCWe3SFU2vDgyk6co7uM9U21HCyzvavY5Gcgki7lJqR6tSl7yaA9qO6qqGnQ/4EeMg/IeZKwKGCzu0kbw3po2BcVcqTp2Fed8P60vdbCAQnxpTrnxW1Wkox8KAHV6h566UATabpRigI47YXl7CgMoj3eykYq7Gs+S6K5S+e4Kg0SZ4QSkJhDa70a6pe/Fr3r2gsjRcD8u7b2nTny73KE6kdaRlp9Swt7TFufQYQNRWLVxNFYV0WOWEDUp3xw4i2jcmQ+4AA4u042FyQARAQABiQEfBBgBAgAJBQJXaTTRAhsMAAoJEEYupN/fhd9041AH/iNa2yJ7iOjbCO9T52oXgBEAswwKa8PgvQ/qo7vu4BJ9WiCyf0jOJK2O7YJ64kTIwe2dKe8JNTr3HyHwWY9UsBW4gaFrcUXPEAWWcDiUhD19uS5zFP9xuWUtbTX18cNMFkYndr1Ufkvqg+J78CWiVYDMP9o0Sw/3lM5x5x5sHGKnFb6PHyVMZ3S/GMc1TixUCElqbABZ2p6bxxy2Wz50JCZD82404vazWR73FSJzs/dfoPKL1fE9qutZKgOBP80nioTPFVCFKVfXWMOg/jhG4j4tuB+3+FMeo9FmRksunr+fmpCbXcqAXLr+l1zenScr0ZiuT6MLcQdPIg9BuXJd6xU==VvPX"^^xsd:hexBinary ];
-    foaf:homepage
-       :;
-    foaf:mbox
-       <user701@orange.fr>.
+<https://jibe-b.github.io/foaf.rdf#JBB>
+    a foaf:Person ;
+    cert:key [
+        a cert:RSAPublicKey ;
+        cert:exponent 65537 ;
+        cert:modulus "AD38D6A9A5A3ECDACB8057AD328CB1829267EAB7DD3346EFB8622C7F62A78AA3794E71E4DF6BE0FA68CC4DA9CD1035A4469BF42FF63CF4C631EE9D67973AE8FCDB94A5907580D86ABF1770399AA0A7A2F5F8872A3B6F3AD0D0DF2FAA01B6650A86553AA13D7DEF8B61051659DDCA810FFFD6E3E9C8400EC883044CB2218FC2E37C7824DCC588B5299CF568EFBE3F5DBBB0E754732F01B7AD20F003DD4B60E7A490C7C04CB5A5C0C3760C0E2EF2CE366B568BEEBB6817EEC673AA33BBE756799966FC8D99282EEC67398E01CB42463714E1A36A4C192442BC3548DE953651878A9A947A42E2BA0AD538730E7041947C5DD60AD82E0946054CC4AC94C098AF6BEF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>
+    ] ;
+    foaf:name "jibe-b" .
