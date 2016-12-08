@@ -18,18 +18,18 @@
 
 <script>
 url = window.location.href
-
-alert(url.replace('[^#]*#', 'a'))
+url_short = url.split('#')[1]
+alert(url_short)
   
   
 var iFrameObj = document.createElement('IFRAME');
-    iFrameObj.src = "http://www.linguee.de/franzoesisch-deutsch/uebersetzung/" + url + "html";    
+    iFrameObj.src = "http://www.linguee.de/franzoesisch-deutsch/uebersetzung/" + url_short + ".html";    
     iFrameObj.height = "350px"
     iFrameObj.width = "100%"
     document.body.appendChild(iFrameObj);
                               
 var iFrameObj2 = document.createElement('IFRAME');                              
-  iFrameObj2.src = "https://www.qwant.com/?t=images&q=" + url + "html";    
+  iFrameObj2.src = "https://www.qwant.com/?t=images&q=" + url_short;    
     iFrameObj2.height = "350px"
     iFrameObj2.width = "100%"
     document.body.appendChild(iFrameObj2);
