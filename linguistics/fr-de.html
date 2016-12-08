@@ -12,20 +12,25 @@
 
 <script>
 url = window.location.href
-url_short = url.split('#')[1]
+if (! url.match('#')) {var query = prompt('search for:');}
+  else {query = url.split('#')[1];}
+  
 var iFrameObj = document.createElement('IFRAME');
-    iFrameObj.src = "http://www.linguee.de/franzoesisch-deutsch/?source=franzoesisch&query=" + url_short;    
+    iFrameObj.src = "http://www.linguee.de/franzoesisch-deutsch/?source=franzoesisch&query=" + query;    
     iFrameObj.height = "350px"
     iFrameObj.width = "100%"
     document.body.appendChild(iFrameObj);
                               
 var iFrameObj2 = document.createElement('IFRAME');                              
-  iFrameObj2.src = "https://www.qwant.com/?t=images&q=" + url_short;    
+  iFrameObj2.src = "https://www.qwant.com/?t=images&q=" + query;    
     iFrameObj2.height = "350px"
     iFrameObj2.width = "100%"
     document.body.appendChild(iFrameObj2);
   
+  
 </script>
+<!--
 <script async defer src="https://hypothes.is/embed.js"></script>
+-->
 </body>
 </html>
