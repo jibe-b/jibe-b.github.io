@@ -18,7 +18,8 @@
 
 <script>
 url = window.location.href
-alert(url)
+
+alert(url.replace('[^#]*#', 'a'))
   
   
 var iFrameObj = document.createElement('IFRAME');
